@@ -2,16 +2,16 @@ import Image from "next/image"
 
 export const WhyChoose = () => {
     return (
-        <section className='max-w-[1920px] mx-auto bg-primaryBlack text-white font-poppins  pt-20 pb-20'>
+        <section className='max-w-[1920px] mx-auto bg-primaryBlack text-white pt-20 pb-20'>
             <div className='flex lg:flex-row sm:flex-row flex-col justify-between sm:gap-[50px] lg:gap-[63px]'>
                 {/* //left section  */}
                 <div className="sm:w-[60%] flex flex-col text-center sm:text-start justify-between">
 
                     <div className=" sm:pl-4 lg:pl-20 px-10 sm:px-0 flex justify-center flex-col max-w-[480px] mx-auto">
                         <span className="text-[18px] sm:text-[18px] lg:text-[35px] font-[250] tracking-[0.2px] font-springRainSolid">Why Choose</span>
-                        <h2 className='text-mobileHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold tracking-[-0.2] leading-5 sm:leading-7 lg:leading-10 mb-12'>
+                        <h4 className=' text-mobileHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold tracking-[-0.2] leading-5 sm:leading-7 lg:leading-10 mb-12'>
                             Logo Design Maker for your needs
-                        </h2>
+                        </h4>
                         <p className="text-mobBody sm:text-tabBody lg:text-lapBody text-primaryGray font-normal leading-7" >Break free from generic logos! Logo Design Maker offers seamless branding solutions with collaborative support, turning your vision into standout identities effortlessly.</p>
                     </div>
 

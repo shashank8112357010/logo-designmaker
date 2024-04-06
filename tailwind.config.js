@@ -61,11 +61,10 @@ module.exports = {
         tabTitle3: "12px",
         mobTitle3: "12px",
 
-        
+
 
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
         springRainSolid: ["springRainSolid", "sans-serif"]
       },
       screens: {

@@ -4,7 +4,7 @@ import { Carousal } from "../cardCarousal/Carousal"
 export const HeroBanner = () => {
 
     return (
-        <section className="w-full max-w-[1920px] mx-auto px-4 sm:px-10 lg:px-20 bg-primaryBlack overflow-hidden font-poppins">
+        <section className="w-full max-w-[1920px] mx-auto px-4 sm:px-10 lg:px-20 bg-primaryBlack overflow-hidden ">
             <div className="flex flex-row gap-4 items-center justify-center overflow-hidden xl:gap-10 h-[270px] xs:h-[303px] sm:h-[403px] md:h-[781px] relative">
                 <Carousal carousalDelay="carousal" />
                 <Carousal carousalDelay="carousal2" />

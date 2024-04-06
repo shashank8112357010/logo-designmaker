@@ -48,12 +48,14 @@ export const HomeSlider = () => {
     };
 
     return (
-        <section className="font-poppins bg-primaryBlack mx-auto max-w-[1920px] px-4 sm:px-20 py-8 md:py-20">
+        <section className=" bg-primaryBlack mx-auto max-w-[1920px] px-4 sm:px-20 py-8 md:py-20">
             <div className="flex justify-center items-center flex-col text-white mb-10 ">
                 <span className="font-springRainSolid text-[18px] sm:text-[35px] ">
                     See What
                 </span>
-                <h2 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] sm:tracking-[-1px] text-center max-w-[150px] sm:max-w-[180px] lg:max-w-[300px]">Our User have to Say about Us</h2>
+                <h5 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] sm:tracking-[-1px] text-center max-w-[150px] sm:max-w-[180px] lg:max-w-[300px]">
+                    Our User have to Say about Us
+                </h5>
             </div>
 
             <div className="mb-10 homeSlider relative">
@@ -75,11 +77,9 @@ export const HomeSlider = () => {
                         return (
                             <div key={index} className="max-w-[550px] sm:max-w-[700px] lg:max-w-[816px] h-[367px] w-full bg-darkBlue sm:bg-none my-10">
 
-
-
                                 <div className="bg-[#182736] flex justify-center gap-[11px] items-center  w-full px-10 py-6 rounded-[17px]">
                                     <div className="text-white flex flex-col gap-[25.99px] ">
-                                        <div className="">
+                                        <div className="border-b-1.5 customBorderBottom border-primaryGray pb-2">
                                             <img src="/home/Star.png" alt="star" className="mb-2" />
                                             <p className="italic text-white text-[16px] sm:text-[18px] lg:text-[24px] font-normal leading-[25px] sm:leading-[28px] lg:leading-[38px]">
                                                 &quot;{item.para}!&quot;
@@ -87,7 +87,6 @@ export const HomeSlider = () => {
                                             <span className=" border-y-2 border-white w-full"></span>
                                         </div>
                                         <div className="flex gap-[11.88px] items-center">
-
                                             <img src={item.img} alt={item.founder} />
                                             <div className="flex flex-col ">
                                                 <p className="text-[16px]">
@@ -100,8 +99,6 @@ export const HomeSlider = () => {
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         )
                     })
