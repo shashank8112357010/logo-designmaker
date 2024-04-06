@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export const WhyChoose = () => {
+export default function WhyChoose() {
     return (
         <section className='max-w-[1920px] mx-auto bg-primaryBlack text-white pt-20 pb-20'>
             <div className='flex lg:flex-row sm:flex-row flex-col justify-between sm:gap-[50px] lg:gap-[63px]'>
@@ -16,17 +16,22 @@ export const WhyChoose = () => {
                     </div>
 
                     <div className=" flex items-end">
-                        <div className=" ">
-                            <Image src="/home/main.png" width={620} height={700} alt="mainImg" />
+                        <div className="relative w-[235px] lg:w-[580px] h-[295px] lg:h-[700px]">
+                            <Image src="/home/main.png" alt="Choose your design maker" fill className="mx-auto" />
                         </div>
                     </div>
                 </div>
 
                 {/* Right Section  */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:gap-y-12 gap-x-8 px-10 sm:px-0 lg:px-10 ">
-                    <div className="flex flex-col  text-center sm:text-start items-center sm:items-start gap-[16px] sm:gap-[16px] lg:gap-[24px]  sm:max-w-[320px] h-[250px] mx-auto">
-                        <Image width={40} height={50} src="/home/Choose1.png" alt="" className="max-w-none " />
-                        <h5 className="text-[14px] sm:text-[14px] lg:text-[20px]  font-semibold ">
+                <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:gap-y-12 gap-x-8 px-10 sm:px-0 lg:px-10 ">
+                    <div className="absolute -bottom-6 right-0">
+                        <Image src="/home/ChooseGradient.png" width={4005} height={4000} alt="gradient" />
+                    </div>
+                    <div className="flex flex-col text-center sm:text-start items-center sm:items-start gap-[16px] sm:gap-[16px] lg:gap-[24px]  sm:max-w-[320px] mx-auto">
+                        <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
+                            <Image src="/home/Choose1.png" alt="Choose your brand" fill className="mx-auto" />
+                        </div>
+                        <h5 className="text-[14px] sm:text-[14px] lg:text-[20px] font-semibold ">
                             Your Brand, Our Expertise: One-Stop Branding!
                         </h5>
                         <p className="text-[12px] sm:text-[12px] lg:text-[16px]  font-normal leading-[18px] sm:leading-[18px] lg:leading-[28px] tracking-[-0.2px] text-primaryGray mb-2 sm:mb-0 lg:mb-0 ">
@@ -34,7 +39,9 @@ export const WhyChoose = () => {
                         </p>
                     </div>
                     <div className="flex flex-col text-center sm:text-start items-center sm:items-start gap-[16px] sm:gap-[16px] lg:gap-[24px] sm:max-w-[320px] mx-auto">
-                        <Image width={40} height={50} src="/home/Service2.png" alt="" className="max-w-none " />
+                        <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
+                            <Image src="/home/Service2.png" alt="Choose your design" fill className="mx-auto" />
+                        </div>
                         <h5 className="text-[14px] sm:text-[14px] lg:text-[20px]  font-semibold">
                             Versatile Design Experts: Experience Across Fields!
                         </h5>
@@ -43,7 +50,9 @@ export const WhyChoose = () => {
                         </p>
                     </div>
                     <div className="flex flex-col text-center sm:text-start items-center sm:items-start sm:max-w-[320px] gap-[16px] sm:gap-[16px] lg:gap-[24px] mx-auto">
-                        <Image width={40} height={50} src="/home/Choose3.png" alt="" className="max-w-none " />
+                        <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
+                            <Image src="/home/Choose3.png" alt="Choose your process" fill className="mx-auto" />
+                        </div>
                         <h5 className="text-[14px] sm:text-[14px] lg:text-[20px]  font-semibold">
                             Effortless & Clear: Our Streamlined Process!
                         </h5>
@@ -52,7 +61,9 @@ export const WhyChoose = () => {
                         </p>
                     </div>
                     <div className="flex flex-col text-center sm:text-start items-center sm:items-start gap-[24px] sm:max-w-[320px] mx-auto">
-                        <Image width={40} height={50} src="/home/Choose4.png" alt="" className="max-w-none " />
+                        <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
+                            <Image src="/home/Choose4.png" alt="Choose your priority" fill className="mx-auto" />
+                        </div>
                         <h5 className="text-[14px] sm:text-[14px] lg:text-[20px]  font-semibold">
                             Your Needs, Our Priority: Dedicated Support!
                         </h5>
@@ -61,7 +72,9 @@ export const WhyChoose = () => {
                         </p>
                     </div>
                     <div className="flex flex-col  text-center sm:text-start items-center sm:items-start gap-[16px] sm:gap-[16px] lg:gap-[24px] sm:max-w-[320px] mx-auto">
-                        <Image width={40} height={50} src="/home/Choose5.png" alt="" className="max-w-none" />
+                        <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
+                            <Image src="/home/Choose5.png" alt="Choose your brand" fill className="mx-auto" />
+                        </div>
                         <h5 className="text-[14px] sm:text-[14px] lg:text-[20px]  font-semibold">
                             Swift Results, Superior Quality: Guaranteed!
                         </h5>
@@ -70,7 +83,9 @@ export const WhyChoose = () => {
                         </p>
                     </div>
                     <div className="flex flex-col text-center sm:text-start items-center sm:items-start  gap-[16px] sm:gap-[16px] lg:gap-[24px] sm:max-w-[320px] mx-auto">
-                        <Image width={40} height={50} src="/home/Service6.png" alt="" className="max-w-none" />
+                        <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
+                            <Image src="/home/Service6.png" alt="Choose your brand" fill className="mx-auto" />
+                        </div>
                         <h5 className="text-[14px] sm:text-[14px] lg:text-[20px] font-semibold">
                             Budget-Friendly Packages: Affordable Excellence!
                         </h5>

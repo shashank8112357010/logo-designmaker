@@ -1,16 +1,16 @@
 import Image from "next/image"
 
-export const Navbar = () => {
+export default function Navbar() {
     return (
-        <section className="max-w-[1920px] mx-auto bg-secondaryBlack h-[84px] text-white px-4 sm:px-10 lg:px-20">
+        <section className="max-w-[1920px] mx-auto bg-secondaryBlack h-[114px] text-white px-4 sm:px-10 lg:px-20">
             <div className="flex justify-between items-center h-full">
                 <div className="lg:hidden">
                     <Image src="/navbar/Hamburger.png" width={26} height={10} alt="logoImg" />
                 </div>
                 <div>
-                    <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" className="hidden sm:block" />
-                    <Image src="/navbar/Logo.png" width={180} height={54} alt="logoImg" className="hidden xs:block sm:hidden" />
-                    <Image src="/navbar/Logo.png" width={140} height={54} alt="logoImg" className="block xs:hidden" />
+                    <div className="relative w-[140px] xs:w-[180px] sm:w-[230px] h-[48px] ">
+                        <Image src="/navbar/Logo.png" alt="logo design maker" fill className="mx-auto" />
+                    </div>
                 </div>
                 <div className="flex gap-4 justify-center items-center">
                     <ul className="text-[14px] gap-8 font-bold hidden lg:flex">

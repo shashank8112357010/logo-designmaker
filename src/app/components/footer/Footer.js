@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 
-export const Footer = () => {
+export default function Footer() {
     return (
         <section className="max-w-[1920px] mx-auto bg-primaryBlack text-white  sm:px-8">
 

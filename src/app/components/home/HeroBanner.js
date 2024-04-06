@@ -1,7 +1,7 @@
 import Image from "next/image"
-import { Carousal } from "../cardCarousal/Carousal"
+import Carousal from "../cardCarousal/Carousal"
 
-export const HeroBanner = () => {
+export default function HeroBanner() {
 
     return (
         <section className="w-full max-w-[1920px] mx-auto px-4 sm:px-10 lg:px-20 bg-primaryBlack overflow-hidden ">

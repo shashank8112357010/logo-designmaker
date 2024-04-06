@@ -60,9 +60,6 @@ module.exports = {
         lapTitle3: "14px",
         tabTitle3: "12px",
         mobTitle3: "12px",
-
-
-
       },
       fontFamily: {
         springRainSolid: ["springRainSolid", "sans-serif"]

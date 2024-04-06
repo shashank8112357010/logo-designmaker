@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Image from "next/image"
 
-export const FaqShowAtom = ({ data, index }) => {
+export default function FaqShowAtom({ data, index }) {
     const [show, setShow] = useState(false)
 
     return (
