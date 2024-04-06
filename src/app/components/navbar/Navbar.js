@@ -16,9 +16,8 @@ export default function Navbar() {
                     <ul className="text-[14px] gap-8 font-bold hidden lg:flex">
                         <li className="flex gap-1 justify-center">
                             <a className="hover:text-primaryGreen" href="#">
-                                Category
+                                About Us
                             </a>
-                            <Image src="/navbar/expand_icon.svg" className="cursor-pointer" width={10} height={10} alt="logoImg" />
                         </li>
                         <li className="flex gap-1 justify-center">
                             <a className="hover:text-primaryGreen" href="#">
