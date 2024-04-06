@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         primaryBlack: "#0B1926",
         secondaryBlack: "#182736",
+        buttonBlack:"#2F2F2F",
         primaryGreen: "#5CFF85",
         primaryGray: "#BDBDBD",
         primaryGrey: "#8D8D8D",
@@ -23,7 +24,7 @@ module.exports = {
       fontSize: {
         lapHeaderText: "50px",
         tabHeaderText: "30px",
-        mobHeaderText: "24px",
+        mobHeaderText: "20px",
 
         lapHeaderBody: "16px",
         tabHeaderBody: "14px",
