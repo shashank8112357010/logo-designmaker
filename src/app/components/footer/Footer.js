@@ -64,7 +64,7 @@ export const Footer = () => {
                 {/* </div> */}
                 <div className="flex-col  lg:flex gap-6 sm:block w-[250px] mx-auto sm:w-[338px] lg:w-[250px]  ">
                     <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" className="mb-5" />
-                    <p className="text-mobfooterBody sm:text-tabfooterBody lg:text-lapfooterBody font-normal font-poppins leading-5">Logo Design Maker isn't just about creating logos – we build brands. We offer a comprehensive suite of design services to cater to all your branding needs, from logo design and business cards to website development and social media graphics.</p>
+                    <p className="text-mobfooterBody sm:text-tabfooterBody lg:text-lapfooterBody font-normal font-poppins leading-5">{`Logo Design Maker isn't just about creating logos – we build brands. We offer a comprehensive suite of design services to cater to all your branding needs, from logo design and business cards to website development and social media graphics.`}</p>
                 </div>
             </div>
 

@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Image from 'next/image';
+
 const slideImages = [
     {
         para: "I was initially hesitant to outsource my logo design, but Logo Design Maker made the process incredibly smooth and enjoyable. The designer really captured the essence of my brand, and the final logo is exactly what I envisioned. Highly recommend!",
@@ -60,11 +62,11 @@ export const HomeSlider = () => {
                 {/* //right arrow  */}
                 <div className="block z-20 cursor-pointer -right-4 md:-right-2 top-[38%] md:top-[36%] lg:top-[40%] absolute"
                     onClick={next}>
-                    <img src="/home/RightArrow.svg" className="h-9 md:h-12 w-9 md:w-12" alt="RightArrow" />
+                  <Image src="/home/RightArrow.svg" className="h-9 md:h-12 w-9 md:w-12" alt="RightArrow" height={20} width={20} />
                 </div>
                 <div className="block z-20 cursor-pointer -left-4 md:-left-2 top-[38%] md:top-[36%] lg:top-[40%] absolute"
                     onClick={previous}>
-                    <img src="/home/LeftArrow.svg" className="h-9 md:h-12 w-9 md:w-12" alt="LeftArrow" />
+                     <Image src="/home/LeftArrow.svg" className="h-9 md:h-12 w-9 md:w-12" alt="LeftArrow" height={20} width={20}  />
                 </div>
                 <Slider
                     ref={slider => {
@@ -74,13 +76,10 @@ export const HomeSlider = () => {
                     {slideImages.map((item, index) => {
                         return (
                             <div key={index} className="max-w-[550px] sm:max-w-[700px] lg:max-w-[816px] h-[367px] w-full bg-darkBlue sm:bg-none my-10">
-
-
-
                                 <div className="bg-[#182736] flex justify-center gap-[11px] items-center  w-full px-10 py-6 rounded-[17px]">
                                     <div className="text-white flex flex-col gap-[25.99px] ">
                                         <div className="">
-                                            <img src="/home/Star.png" alt="star" className="mb-2" />
+                                        <Image src="/home/Star.png" alt="star" className="mb-2" height={30} width={30}  />
                                             <p className="italic text-white text-[16px] sm:text-[18px] lg:text-[24px] font-normal leading-[25px] sm:leading-[28px] lg:leading-[38px]">
                                                 &quot;{item.para}!&quot;
                                             </p>
@@ -88,7 +87,7 @@ export const HomeSlider = () => {
                                         </div>
                                         <div className="flex gap-[11.88px] items-center">
 
-                                            <img src={item.img} alt={item.founder} />
+                                        <Image src={item.img} alt={item.founder} width={100} height={100} />
                                             <div className="flex flex-col ">
                                                 <p className="text-[16px]">
                                                     {item.name}
