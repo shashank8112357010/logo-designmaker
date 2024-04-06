@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const Footer = () => {
     return (
-        <section className="max-w-[1920px] mx-auto bg-primaryBlack text-white font-poppins px-8">
+        <section className="max-w-[1920px] mx-auto bg-primaryBlack text-white  sm:px-8">
 
 
             <div className="flex justify-center flex-col sm:flex-row lg:flex-row  text-center sm:text-start gap-[33px]  sm:text-normal sm:justify-normal  flex-wrap lg:pl-10">
@@ -63,9 +63,22 @@ export const Footer = () => {
                 </div>
                 {/* </div> */}
                 <div className="flex-col  lg:flex gap-6 sm:block w-[250px] mx-auto sm:w-[338px] lg:w-[250px]  ">
-                    <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" className="mb-5" />
-                    <p className="text-mobfooterBody sm:text-tabfooterBody lg:text-lapfooterBody font-normal font-poppins leading-5">{`Logo Design Maker isn't just about creating logos – we build brands. We offer a comprehensive suite of design services to cater to all your branding needs, from logo design and business cards to website development and social media graphics.`}</p>
+                    <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" className="" />
+                    <p className="text-mobfooterBody sm:text-tabfooterBody lg:text-lapfooterBody font-normal leading-5">Logo Design Maker isn&#39;t just about creating logos – we build brands. We offer a comprehensive suite of design services to cater to all your branding needs, from logo design and business cards to website development and social media graphics.</p>
                 </div>
+            </div>
+            <div className="flex sm:justify-between justify-center items-center gap-[24px] sm:flex-row flex-col w-full mx-auto px-4 lg:px-[80px] pt-[40px] pb-[20px] ">
+                <div>
+                    <p className="text-lapTitle3 whitespace-nowrap">© 2024 LogoDesignMaker Inc. All rights reserved.</p>
+                </div>
+                <div className="flex justify-between gap-[32px]">
+                    <Image src="/footer/Facebook.png" width={18} height={18} alt="FacebookImg" />
+                    <Image src="/footer/Insta.png" width={18} height={18} alt="InstagramImg" />
+                    <Image src="/footer/Twitter.png" width={18} height={18} alt="TwitterImg" />
+                    <Image src="/footer/Lknd.png" width={18} height={18} alt="LinkedinImg" />
+                    <Image src="/footer/Pint.png" width={18} height={18} alt="PintrestImg" />
+                </div>
+
             </div>
 
         </section>

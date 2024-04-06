@@ -50,12 +50,14 @@ export const HomeSlider = () => {
     };
 
     return (
-        <section className="font-poppins bg-primaryBlack mx-auto max-w-[1920px] px-4 sm:px-20 py-8 md:py-20">
+        <section className=" bg-primaryBlack mx-auto max-w-[1920px] px-4 sm:px-20 py-8 md:py-20">
             <div className="flex justify-center items-center flex-col text-white mb-10 ">
                 <span className="font-springRainSolid text-[18px] sm:text-[35px] ">
                     See What
                 </span>
-                <h2 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] sm:tracking-[-1px] text-center max-w-[150px] sm:max-w-[180px] lg:max-w-[300px]">Our User have to Say about Us</h2>
+                <h5 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] sm:tracking-[-1px] text-center max-w-[150px] sm:max-w-[180px] lg:max-w-[300px]">
+                    Our User have to Say about Us
+                </h5>
             </div>
 
             <div className="mb-10 homeSlider relative">
@@ -99,8 +101,6 @@ export const HomeSlider = () => {
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         )
                     })
