@@ -6,7 +6,7 @@ export const Footer = () => {
         <section className="max-w-[1920px] mx-auto bg-primaryBlack text-white  sm:px-8">
 
 
-            <div className="flex justify-center flex-col sm:flex-row lg:flex-row  text-center sm:text-start gap-[33px]  sm:text-normal sm:justify-normal  flex-wrap lg:pl-10">
+            <div className="flex justify-center flex-col sm:flex-row lg:flex-row  text-center sm:text-start gap-[33px]  sm:text-normal sm:justify-normal  flex-wrap lg:pl-10 relative  ">
                 {/* <div className="flex flex-col sm:flex-row lg:flex-row"> */}
                 <div className="flex-col flex gap-4 sm:w-[200px] lg:w-[190px]">
                     <p className=" text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold">Category</p>
@@ -66,6 +66,10 @@ export const Footer = () => {
                     <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" className="" />
                     <p className="text-mobfooterBody sm:text-tabfooterBody lg:text-lapfooterBody font-normal leading-5">Logo Design Maker isn&#39;t just about creating logos – we build brands. We offer a comprehensive suite of design services to cater to all your branding needs, from logo design and business cards to website development and social media graphics.</p>
                 </div>
+                <div className="absolute bottom-[-10px] sm:bottom-[0px]  ">
+                   
+                    <Image  src="/footer/FooterGradient.png" width={1440} height={56} alt="FooterGradient" />
+                </div>
             </div>
             <div className="flex sm:justify-between justify-center items-center gap-[24px] sm:flex-row flex-col w-full mx-auto px-4 lg:px-[80px] pt-[40px] pb-[20px] ">
                 <div>
@@ -78,7 +82,6 @@ export const Footer = () => {
                     <Image src="/footer/Lknd.png" width={18} height={18} alt="LinkedinImg" />
                     <Image src="/footer/Pint.png" width={18} height={18} alt="PintrestImg" />
                 </div>
-
             </div>
 
         </section>
