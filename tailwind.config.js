@@ -66,7 +66,8 @@ module.exports = {
         springRainSolid: ["springRainSolid", "sans-serif"]
       },
       screens: {
-        xs: "460px"
+        xs: "460px",
+        lgg: "1090px"
       }
     },
   },
