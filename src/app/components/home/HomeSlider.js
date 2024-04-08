@@ -78,8 +78,8 @@ export default function HomeSlider() {
                     {...settings}>
                     {slideImages.map((item, index) => {
                         return (
-                            <div key={index} className="max-w-[550px] sm:max-w-[700px] lg:max-w-[816px] h-[367px] w-full bg-darkBlue sm:bg-none my-10">
-                                <div className="bg-[#182736] flex justify-center gap-[11px] items-center  w-full px-10 py-6 rounded-[17px]">
+                            <div key={index} className="max-w-[550px] sm:max-w-[700px] lg:max-w-[816px]  w-full bg-darkBlue sm:bg-none my-10">
+                                <div className="bg-[#182736] flex justify-center gap-[11px] items-center w-full px-10 py-6 rounded-[17px]">
                                     <div className="text-white flex flex-col gap-[25.99px] ">
                                         <div className="">
                                             <Image src="/home/Star.png" alt="star" className="mb-2" height={120} width={120} />
@@ -89,8 +89,7 @@ export default function HomeSlider() {
                                             <span className=" border-y-2 border-white w-full"></span>
                                         </div>
                                         <div className="flex gap-[11.88px] items-center">
-
-                                            <Image src={item.img} alt={item.founder} width={100} height={100} />
+                                            <Image src={item.img} alt={item.founder} width={55} height={55} />
                                             <div className="flex flex-col ">
                                                 <p className="text-[16px]">
                                                     {item.name}

@@ -2,7 +2,7 @@ export default function HumanTouch() {
 
     return (
         <section className=" max-w-[1920px] mx-auto bg-secondaryBlack text-white py-16">
-            <div className="text-center flex flex-col gap-2">
+            {/* <div className="text-center flex flex-col gap-2">
                 <div className=" lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[44px] lg:tracking-[-2px]">
                     We Design with a Human Touch
                 </div>
@@ -19,7 +19,7 @@ export default function HumanTouch() {
                     <li>Illustration & Art</li>
                     <li>Book & Magazine Design</li>
                 </ul>
-            </div>
+            </div> */}
         </section>
     )
 
