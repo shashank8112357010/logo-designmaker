@@ -1,7 +1,7 @@
 import { Card } from "@/data/Data"
 import Image from "next/image"
 
-export const Carousal = ({ carousalDelay }) => {
+export default function Carousal({ carousalDelay }) {
     return (
         <div className={`${carousalDelay} flex justify-center items-center opacity-50 gap-4 sm:gap-10 flex-col h-screen z-20`}>
             {Card.map((item) => {

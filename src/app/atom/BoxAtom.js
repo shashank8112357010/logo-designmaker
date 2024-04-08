@@ -1,10 +1,10 @@
 import Image from "next/image"
 
-export const BoxAtom = ({ image, textPosition, justifyContent, alignItems, maxWidth, headingText, paraText }) => {
+export default function BoxAtom({ image, textPosition, justifyContent, alignItems, maxWidth, headingText, paraText }) {
     return (
         <div className={`flex flex-col ${textPosition} ${justifyContent} ${alignItems} ${maxWidth} gap-[24px] mx-auto`}>
             <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
-                <Image src={image} alt="image" fill className="max-w-none mx-auto" />
+                <Image src={image} alt={headingText} fill className="max-w-none mx-auto" />
             </div>
             <h3 className="text-[14px] sm:text-[14px] lg:text-[20px]  font-semibold capitalize">
                 {headingText}

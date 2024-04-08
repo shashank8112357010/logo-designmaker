@@ -1,10 +1,10 @@
 import Image from "next/image"
-import { Carousal } from "../cardCarousal/Carousal"
+import Carousal from "../cardCarousal/Carousal"
 
-export const HeroBanner = () => {
+export default function HeroBanner() {
 
     return (
-        <section className="w-full max-w-[1920px] mx-auto px-4 sm:px-10 lg:px-20 bg-primaryBlack overflow-hidden ">
+        <section className="w-full max-w-[1920px] mx-auto bg-primaryBlack overflow-hidden ">
             <div className="flex flex-row gap-4 items-center justify-center overflow-hidden xl:gap-10 h-[270px] xs:h-[303px] sm:h-[403px] md:h-[781px] relative">
                 <Carousal carousalDelay="carousal" />
                 <Carousal carousalDelay="carousal2" />
@@ -19,7 +19,7 @@ export const HeroBanner = () => {
                     <Image src="/home/bannerBottom.png" width={1107} height={291} alt="linear-gradient-bottom" />
                 </div>
 
-                <main className="top-[20%] md:top-[20%] z-40 sm:w-[984px] max-w-[984px] min-h-[341px] absolute sm:px-0">
+                <main className="top-[20%] md:top-[20%] z-30 sm:w-[984px] max-w-[984px] min-h-[341px] absolute sm:px-0">
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
                         <h1 className="w-full text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px]">Design your dream logo: Unleash your <br />
                             <span className="font-[100px] font-springRainSolid text-primaryGreen tracking-wide">Brand&apos;s personality</span>
@@ -27,7 +27,7 @@ export const HeroBanner = () => {
                         <div className="text-white flex flex-col justify-center items-center">
                             <p className="mb-2 sm:mb-8 w-full text-center text-mobHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[19px] sm:leading-[22px] lg:leading-[25px] tracking-[-0.2px]">Ditch the robots, craft a logo you&apos;ll love with a human designer by your side.</p>
                             <div className="flex flex-row relative">
-                                <input className="inputPlaceholder w-[208px] sm:w-[340px] lg:w-[484px] h-[28px] sm:h-[46px] lg:h-[57px] border-[1px] text-gray-500 pl-4 sm:pl-6 lg:pl-10 outline-none rounded-[20px]" placeholder="Search To Services"
+                                <input className="inputPlaceholder w-[208px] sm:w-[340px] lg:w-[484px] h-[30px] sm:h-[46px] lg:h-[57px] border-[1px] text-gray-500 pl-4 sm:pl-6 lg:pl-10 outline-none rounded-[20px]" placeholder="Search To Services"
                                 />
                                 <div className="absolute w-8 sm:w-12 lg:w-16 h-8 sm:h-12 lg:h-16 bg-primaryGreen rounded-full right-[-4px] top-[-2px] lg:top-[-4px] flex justify-center items-center cursor-pointer">
                                     <Image src="/home/logoSearch.png" width={12} height={12} className="block md:hidden" alt="logoSearch" />

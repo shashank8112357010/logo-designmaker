@@ -1,8 +1,8 @@
 'use client'
-import { FaqShowAtom } from "@/app/atom/FaqShowAtom"
+import FaqShowAtom from "@/app/atom/FaqShowAtom"
 import { faqs } from "@/data/Data"
 
-export const Faq = () => {
+export default function Faq() {
 
     return (
         <section className="bg-primaryBlack text-white max-w-[1920px] mx-auto pb-28  px-4 sm:px-10 lg:px-20">

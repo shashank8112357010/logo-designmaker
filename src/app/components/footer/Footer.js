@@ -1,11 +1,9 @@
 import Image from "next/image"
 
 
-export const Footer = () => {
+export default function Footer() {
     return (
         <section className="max-w-[1920px] mx-auto bg-primaryBlack text-white  sm:px-8">
-
-
             <div className="flex justify-center flex-col sm:flex-row lg:flex-row  text-center sm:text-start gap-[33px]  sm:text-normal sm:justify-normal  flex-wrap lg:pl-10 relative  ">
                 {/* <div className="flex flex-col sm:flex-row lg:flex-row"> */}
                 <div className="flex-col flex gap-4 sm:w-[200px] lg:w-[190px]">
@@ -73,7 +71,7 @@ export const Footer = () => {
             </div>
             <div className="flex sm:justify-between justify-center items-center gap-[24px] sm:flex-row flex-col w-full mx-auto px-4 lg:px-[80px] pt-[40px] pb-[20px] ">
                 <div>
-                    <p className="text-lapTitle3 whitespace-nowrap">© 2024 LogoDesignMaker Inc. All rights reserved.</p>
+                    <p className="text-[12px] whitespace-nowrap">© 2024 LogoDesignMaker Inc. All rights reserved.</p>
                 </div>
                 <div className="flex justify-between gap-[32px]">
                     <Image src="/footer/Facebook.png" width={18} height={18} alt="FacebookImg" />
