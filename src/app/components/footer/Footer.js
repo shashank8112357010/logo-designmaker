@@ -47,12 +47,19 @@ export default function Footer() {
             <div className="flex justify-center flex-col sm:flex-row lg:flex-row  text-center sm:text-start gap-[33px]  sm:text-normal sm:justify-normal  flex-wrap lg:pl-10 relative  ">
                 {/* <div className="flex flex-col sm:flex-row lg:flex-row"> */}
                 {
-                    footerLinks && footerLinks.map((footer , index) => {
+                    footerLinks && footerLinks.map((footer, index) => {
                         return (
                             <div key={index} className={`flex-col flex gap-4  ${footer.heading === "Category" ? 'sm:w-[200px] lg:w-[190px]' : footer.heading === "Get design" ? 'sm:w-[210px] lg:w-[180px]' : footer.heading === "Support" ? 'sm:w-[200px] lg:w-[100px]' : footer.heading === "Company" ? 'sm:w-[200px] lg:w-[120px]' : "lg:w-[100px]"}   `}
                             >
                                 <p className=" text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold">{footer.heading}</p>
-                                <ul className="text-mobfooterLinks sm:text-tabfooterLinks  lg:text-lapfooterLinks leading-8 font-normal text-primaryGrey"> {footer.data.map((item , indexx) => <li className="cursor-pointer" key={indexx}>{item}</li>)}
+                                <ul className="text-mobfooterLinks sm:text-tabfooterLinks  lg:text-lapfooterLinks leading-8 font-normal text-primaryGrey">
+                                    {footer.data.map((item, indexx) => (
+                                        <li className="cursor-pointer" key={indexx}>
+                                            <a href="#" >
+                                                {item}
+                                            </a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         )
@@ -75,7 +82,7 @@ export default function Footer() {
                 </div>
                 <div className="flex justify-between gap-[32px]">
                     {
-                        socialLinks.map((links , index) => {
+                        socialLinks.map((links, index) => {
                             return (
                                 <Image key={index} src={`/footer/${links.img}.png`} width={18} height={18} alt={`${links.img}Img`} />
                             )

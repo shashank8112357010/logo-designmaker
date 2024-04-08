@@ -23,29 +23,21 @@ export default function TellStory() {
 
             <div className="flex flex-col-reverse md:flex-col max-w-[1220px] mx-auto">
                 <div className="px-4 sm:px-20 py-8 md:py-10 items-center md:items-end">
-                    <div className="font-bold text-[14px] lg:text-[21px] flex gap-1 sm:gap-2 w-full items-center justify-center md:justify-end">
+                    <div className=" font-bold text-[14px] lg:text-[21px] flex gap-1 sm:gap-2 w-full items-center justify-center md:justify-end">
                         {
-                            [1, 2, 3, 4, 5, 6].map((num) => {
+                            [1, 2, 3, 4, 5, 6].map((num, index) => {
                                 return (
                                     <button
                                         onClick={() => handleContent(num)}
-                                        key={num} className="w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full bg-secondaryBlack text-white">
+                                        key={num} className={`${num === index + 1 ? "bg-white text-secondaryBlack" : "bg-secondaryBlack text-white"} w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full `}>
                                         {num}
                                     </button>
                                 )
                             })
                         }
-                        {/* <button className="w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full text-secondaryBlack bg-white">1</button>
-                        <button className="w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full bg-secondaryBlack text-white">3</button>
-                        <button className="w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full bg-secondaryBlack text-white">4</button>
-                        <button className="w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full bg-secondaryBlack text-white">5</button>
-                        <button className="w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full bg-secondaryBlack text-white">6</button> */}
                     </div>
                 </div>
-
-                {content &&
-                    <TellStoryContent content={content} />
-                }
+                {content &&<TellStoryContent content={content} />}
             </div>
         </section >
     )

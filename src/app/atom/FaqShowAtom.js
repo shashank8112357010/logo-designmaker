@@ -17,7 +17,9 @@ export default function FaqShowAtom({ data, index }) {
                 <Image src={show ? "/home/UpArrow.png" : "/home/DownArrow.png"} width={15} height={15} alt={show ? "DownArrowImg" : "UpArrowImg"} />
 
             </div>
-            {show && <p className="text-mobBody max-w-xl lg:max-w-3xl sm:text-tabBody lg:text-lapBody text-primaryGrey">{data.ans}</p>}
+            <p className={`transition-all duration-500 ease-in-out ${show ? "h-32" : "h-0 opacity-0"} text-mobBody max-w-xl lg:max-w-3xl sm:text-tabBody lg:text-lapBody text-primaryGrey`}>
+                {data.ans}
+            </p>
         </div>
     )
 }
