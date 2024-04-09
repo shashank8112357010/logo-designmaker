@@ -43,8 +43,8 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <div className={`-z-40 bg-primaryBlack flex flex-col lg:hidden absolute ${hide ? "left-[0px]" : "-py-0 -left-[72rem]"} bg-lightWhite w-full transition-all duration-500 ease-in-out rounded-br-[20px] rounded-bl-[20px]`} >
-                <div className="bg-primaryBlack absolute w-full">
+            <div className={`-z-40 bg-secondaryBlack flex flex-col lg:hidden absolute ${hide ? "left-[0px] top-20" : "-py-0 top-12 -left-[72rem]"} bg-lightWhite w-full transition-all duration-500 ease-in-out rounded-br-[20px] rounded-bl-[20px]`} >
+                <div className="bg-secondaryBlack absolute w-full">
                     <div className="p-8">
                         <ul className="flex flex-col gap-4 text-[14px] text-white font-semibold">
                             <li className="customBorderBottom border-primaryGrey pb-2 cursor-pointer"><a>About Us</a></li>

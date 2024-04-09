@@ -21,6 +21,14 @@
     display: none !important;
 }
 
+.homeSlider>.slick-slider .slick-dots li button {
+    display: block !important;
+}
+
+.homeSlider>.slick-slider .slick-dots li button:before {
+    font-size: 8px;
+}
+
 .homeSlider>.slick-initialized .slick-slide {
     display: flex;
     justify-content: center;
@@ -60,6 +68,7 @@
 .customBorder {
     border: 1px solid;
 }
+
 .customBorderBottom {
     border-bottom: 0.5px solid;
 }
@@ -82,3 +91,9 @@
     }
 }
 
+.inputDesign::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #2F2F2F;
+}

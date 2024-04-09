@@ -30,3 +30,13 @@ export const faqs = [
     { id: 4, ques: "How can I get started?", ans: "Getting started is easy! Simply visit our website and fill out a brief form outlining your brand and design preferences. A member of our team will then be in touch to discuss your project further and answer any questions you may have. " }
 ]
 
+
+//Home > tellStoryContent
+export const tellStoryContent = [
+    { img: "/home/TellStoryBgMob", step: 1, heading: "Tell Your Story", para: "Craft a logo that instantly communicates your brands narrative. Share your unique style preferences and brand ethos with us to tailor a distinctive logo that resonates with your audience." },
+    { img: "/home/Card1.png", step: 2, heading: "Next, establish the visual style and overall atmosphere.", para: "Craft a logo that instantly communicates your brands narrative. Share your unique style preferences and brand ethos with us to tailor a distinctive logo that resonates with your audience." },
+    { img: "/home/Card2.png", step: 3, heading: "Tell Your Next Design Logo", para: "Our team will work closely with you to ensure every element of your logo embodies your brand's essence. Share your vision, values, and desired aesthetic, and let us transform them into a captivating logo that leaves a lasting impression." },
+    { img: "/home/Card3.png", step: 4, heading: "Share your style preferences and brand", para: "Craft a logo that instantly communicates your brands narrative. Share your unique style preferences and brand ethos with us to tailor a distinctive logo that resonates with your audience." },
+    { img: "/home/Card4.png", step: 5, heading: "Next, establish the visual style and overall atmosphere.", para: "Craft a logo that instantly communicates your brands narrative. Share your unique style preferences and brand ethos with us to tailor a distinctive logo that resonates with your audience" },
+    { img: "/home/Card5.png", step: 6, heading: "Tell Your Final Review", para: "Our team will work closely with you to ensure every element of your logo embodies your brand's essence. Share your vision, values, and desired aesthetic, and let us transform them into a captivating logo that leaves a lasting impression." },
+]

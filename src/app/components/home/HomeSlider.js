@@ -81,14 +81,14 @@ export default function HomeSlider() {
                             <div key={index} className="max-w-[550px] sm:max-w-[700px] lg:max-w-[816px]  w-full bg-darkBlue sm:bg-none my-10">
                                 <div className="bg-[#182736] flex justify-center gap-[11px] items-center w-full px-10 py-6 rounded-[17px]">
                                     <div className="text-white flex flex-col gap-[25.99px] ">
-                                        <div className="">
+                                        <div className="customBorderBottom border-[#CCCCCC] pb-3">
                                             <Image src="/home/Star.png" alt="star" className="mb-2" height={120} width={120} />
                                             <p className="italic text-white text-[16px] sm:text-[18px] lg:text-[24px] font-normal leading-[25px] sm:leading-[28px] lg:leading-[38px]">
                                                 &quot;{item.para}!&quot;
                                             </p>
                                             <span className=" border-y-2 border-white w-full"></span>
                                         </div>
-                                        <div className="flex gap-[11.88px] items-center">
+                                        <div className="flex gap-[11.88px] items-center ">
                                             <Image src={item.img} alt={item.founder} width={55} height={55} />
                                             <div className="flex flex-col ">
                                                 <p className="text-[16px]">

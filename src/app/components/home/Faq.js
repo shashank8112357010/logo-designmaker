@@ -1,6 +1,7 @@
 'use client'
 import FaqShowAtom from "@/app/atom/FaqShowAtom"
 import { faqs } from "@/data/Data"
+import { useState } from "react"
 
 export default function Faq() {
 
