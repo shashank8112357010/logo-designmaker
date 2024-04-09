@@ -1,8 +1,17 @@
+'use client'
 import Image from "next/image"
+import { useState } from "react"
+ 
 
 
 export default function Footer() {
 
+const [openFooterLinks , setOpenFooterLinks ] = useState(
+    {
+        isOpen:false,
+        heading:null,
+    }
+)
     const footerLinks = [
         {
             "heading": "Category",
@@ -49,7 +58,7 @@ export default function Footer() {
                 {
                     footerLinks && footerLinks.map((footer, index) => {
                         return (
-                            <div key={index} className={`flex-col flex gap-4  ${footer.heading === "Category" ? 'sm:w-[200px] lg:w-[190px]' : footer.heading === "Get design" ? 'sm:w-[210px] lg:w-[180px]' : footer.heading === "Support" ? 'sm:w-[200px] lg:w-[100px]' : footer.heading === "Company" ? 'sm:w-[200px] lg:w-[120px]' : "lg:w-[100px]"}   `}
+                            <div key={index} className={`flex-col flex gap-4  ${footer.heading === "Category" ? 'sm:w-[200px] lg:w-[190px]' : footer.heading === "Get design" ? 'sm:w-[210px] lg:w-[180px]' : footer.heading === "Support" ? 'sm:w-[200px] lg:w-[100px]' : footer.heading === "Company" ? 'sm:w-[200px] lg:w-[120px]' : "lg:w-[100px]"} hidden sm:block `}
                             >
                                 <p className=" text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold">{footer.heading}</p>
                                 <ul className="text-mobfooterLinks sm:text-tabfooterLinks  lg:text-lapfooterLinks leading-8 font-normal text-primaryGrey">
@@ -65,6 +74,41 @@ export default function Footer() {
                         )
                     })
                 }
+                <div className=" block sm:hidden mb-32"  >
+
+                 {console.log(openFooterLinks)}
+                 {
+                    
+                    footerLinks.map((footer,index)=>{
+                        return(
+<>
+
+
+                            <div key={index} className="flex justify-center gap-6 py-7 " onClick={()=>setOpenFooterLinks({heading:footer.heading , isOpen:!openFooterLinks.isOpen})} >
+                                 
+                              <p className=" text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold ">{footer.heading}</p>
+                            
+                              <Image className="inline float-end mt-1" src={openFooterLinks.isOpen ? "/home/UpArrow.png" : "/home/DownArrow.png"} width={15} height={15} alt={openFooterLinks.isOpen ? "DownArrowImg" : "UpArrowImg"} />
+                            </div> 
+                          
+                             
+                            <ul className={`text-mobfooterLinks sm:text-tabfooterLinks  lg:text-lapfooterLinks leading-8 font-normal text-primaryGrey cursor-pointer transition-all duration-500 ease-in-out ${openFooterLinks.isOpen && openFooterLinks.heading==footer.heading ? "h-60" : "h-0 opacity-0"}`}>
+                            {footer.data.map((item, index) => (
+                                <li className="cursor-pointer" key={index}>
+                                    {/* <a href="#" > */}
+                                        {item} 
+                                    {/* </a> */} 
+                                </li>
+                            ))}
+                        </ul>
+                         
+</>
+                        )
+                    })  
+                 }
+                </div>
+                    
+
                 <div className="flex-col  lg:flex gap-6 sm:block w-[250px] mx-auto sm:w-[338px] lg:w-[250px]  ">
                     <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" className="" />
                     <p className="text-mobfooterBody sm:text-tabfooterBody lg:text-lapfooterBody font-normal leading-5">
@@ -86,7 +130,7 @@ export default function Footer() {
                             return (
                                 <Image key={index} src={`/footer/${links.img}.png`} width={18} height={18} alt={`${links.img}Img`} />
                             )
-                        })
+                        }) 
                     }
                 </div>
             </div>
