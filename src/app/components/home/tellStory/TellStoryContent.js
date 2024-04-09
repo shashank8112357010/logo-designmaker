@@ -19,7 +19,7 @@ export default function TellStoryContent({ content }) {
                     return (
                         <>
                             <div key={item.step} className="flex flex-col md:flex-row lg:px-20 items-center gap-8 ">
-                                <Image src="/home/TellStoryBgLap.png" width={301} height={516} className="bg-green-500 hidden md:block" alt={item.heading} />
+                                <Image src="/home/TellStoryBgLap.png" width={301} height={516} className="hidden md:block" alt={item.heading} />
                                 <div className="block md:hidden relative w-[291px] md:w-[339px] h-[200px] md:h-[233px]">
                                     <Image src="/home/TellStoryBgMob.png" fill alt={item.heading} />
                                 </div>
