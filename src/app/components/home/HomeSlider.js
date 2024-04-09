@@ -51,7 +51,7 @@ export default function HomeSlider() {
     };
 
     return (
-        <section className=" bg-primaryBlack mx-auto max-w-[1920px] px-4 sm:px-20 py-8 md:py-20">
+        <section className=" bg-primaryBlack mx-auto max-w-[1920px] px-4 sm:px-20 py-8 md:pb-20 md:pt-10">
             <div className="flex justify-center items-center flex-col text-white mb-10 ">
                 <span className="font-springRainSolid text-[18px] sm:text-[35px] ">
                     See What

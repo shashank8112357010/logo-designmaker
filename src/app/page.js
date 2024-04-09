@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <HeroBanner />
       <SpeakServices />
-      {/* <HumanTouch /> */}
+      <HumanTouch />
       <WhyChoose />
       <HomeSlider />
       <TellStory />

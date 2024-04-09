@@ -11,7 +11,7 @@ export default function TellStory() {
     }
 
     return (
-        <section className=" bg-primaryBlack mx-auto max-w-[1920px] px-4 sm:px-20 py-8 md:py-20">
+        <section className=" bg-primaryBlack mx-auto max-w-[1920px] px-4 sm:px-20 py-8 md:pb-20 md:pt-0">
             <div className="flex justify-center items-center flex-col text-white mb-10 ">
                 <span className="font-springRainSolid text-[18px] sm:text-[35px] ">
                     How Does
@@ -22,7 +22,7 @@ export default function TellStory() {
             </div>
 
             <div className="flex flex-col-reverse md:flex-col max-w-[1220px] mx-auto">
-                <div className="px-4 sm:px-20 py-8 md:py-10 items-center md:items-end">
+                <div className="px-4 sm:px-20 py-8 md:pt-10 items-center md:items-end">
                     <div className=" font-bold text-[14px] lg:text-[21px] flex gap-1 sm:gap-2 w-full items-center justify-center md:justify-end">
                         {
                             [1, 2, 3, 4, 5, 6].map((num, index) => {
@@ -37,7 +37,7 @@ export default function TellStory() {
                         }
                     </div>
                 </div>
-                {content &&<TellStoryContent content={content} />}
+                {content && <TellStoryContent content={content} />}
             </div>
         </section >
     )

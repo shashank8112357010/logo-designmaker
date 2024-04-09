@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function DesignYourLogo() {
     return (
-        <section className="max-w-[1920px] mx-auto px-4 sm:px-10 lg:px-10 bg-primaryBlack text-white pb-60 pt-20 lgg:pt-0">
+        <section className="max-w-[1920px] mx-auto px-4 sm:px-10 lg:px-10 bg-primaryBlack text-white pb-60 pt-20 lgg:pt-20">
             <div className="bg-secondaryBlack relative px-5 py-7 lg:px-10 lg:py-20 rounded-[18px] flex justify-center flex-col lgg:flex-row">
 
                 <div className=" block lgg:hidden bg-red-500">
