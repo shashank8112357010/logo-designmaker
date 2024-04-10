@@ -4,19 +4,23 @@ import Image from 'next/image'; // Assuming you're using Next.js
 
 export default function FooterAccordion({ footerLinks }) {
   const [openFooterLinks, setOpenFooterLinks] = useState(null);
+<<<<<<< HEAD
   console.log("aman", footerLinks)
   console.log("varun", footerLinks[0].data)
+=======
+  
+>>>>>>> 2cd516cf0d3432f96ac173390dc025452e0e9d64
 
   const toggleAccordion = (index) => {
     setOpenFooterLinks((prevState) => (prevState === index ? null : index));
   };
 
   return (
-    <div className="block sm:hidden mb-32">
+    <div className="px-6"> 
       {footerLinks.map((link, index) => (
-        <div key={index} className="flex flex-col justify-between items-center mb-4">
+        <div key={index} className="mb-4">
           <div
-            className="flex justify-between items-center gap-10 cursor-pointer"
+            className="flex justify-between items-center gap-[10.5rem] cursor-pointer"
             onClick={() => toggleAccordion(index)}
           >
             <p className="text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold text-white">
@@ -29,9 +33,9 @@ export default function FooterAccordion({ footerLinks }) {
               alt={openFooterLinks === index ? "UpArrowImg" : "DownArrowImg"}
             />
           </div>
-          {console.log(footerLinks?.data)}
+         
           {openFooterLinks === index && (
-            <ul className="mt-2 cursor-pointer transition-all duration-500 ease-in-out">
+            <ul className="mt-2 cursor-pointer transition-all duration-500 ease-in-out flex flex-col justify-start items-start ">
               {footerLinks[index]?.data?.map((item, itemIndex) => (
                 <li key={itemIndex} className="text-primaryGrey mb-2 text-[14px] capitalize">
                   <a href="#">{item}</a>

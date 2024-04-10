@@ -21,6 +21,7 @@ export default function Footer() {
             "heading": "Support",
             "data": ["Help Desk", "Disclaimer", "Privacy Policy", "Terms  and Conditions"]
         },
+
         {
             "heading": "Company",
             "data": ["About us ", "Pricing", "About us "]
