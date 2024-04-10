@@ -1,10 +1,11 @@
+"use client"
 import { useState } from 'react';
 import Image from 'next/image'; // Assuming you're using Next.js
 
-export default function FooterAccordion ({ footerLinks }) {
+export default function FooterAccordion({ footerLinks }) {
   const [openFooterLinks, setOpenFooterLinks] = useState(null);
   console.log("aman", footerLinks)
-  console.log("varun",footerLinks[0].data)
+  console.log("varun", footerLinks[0].data)
 
   const toggleAccordion = (index) => {
     setOpenFooterLinks((prevState) => (prevState === index ? null : index));

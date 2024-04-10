@@ -6,7 +6,6 @@ export default function TellStory() {
     const [content, setContent] = useState(1)
 
     const handleContent = (num) => {
-        console.log(num)
         setContent(num)
     }
 
