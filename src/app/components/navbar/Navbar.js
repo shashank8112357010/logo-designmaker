@@ -34,6 +34,7 @@ export default function Navbar() {
                                 Services
                             </a>
                             <Image src="/navbar/expand_icon.svg" className="cursor-pointer" width={10} height={10} alt="logoImg" />
+                           
                         </li>
                         <li><a className="hover:text-primaryGreen" href="#">Price</a></li>
                         <li><a className="hover:text-primaryGreen" href="#">Contact</a></li>
@@ -41,7 +42,10 @@ export default function Navbar() {
                     <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Sign in</button>
                     <button className="hidden sm:block text-[10px] sm:text-[14px] font-semibold bg-primaryGreen border-2 border-primaryGreen hover:bg-secondaryBlack hover:border-primaryGreen text-black hover:text-white px-[14px] py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Get Started</button>
                 </div>
-            </div>
+            </div> 
+            {/* <div className="bg-red-700 flex justify-center pl-32 ">
+                    <p>varun</p>
+                </div>  */}
 
             <div className={`-z-40 bg-secondaryBlack flex flex-col lg:hidden absolute ${hide ? "left-[0px] top-20" : "-py-0 top-12 -left-[72rem]"} bg-lightWhite w-full transition-all duration-500 ease-in-out rounded-br-[20px] rounded-bl-[20px]`} >
                 <div className="bg-secondaryBlack absolute w-full">
