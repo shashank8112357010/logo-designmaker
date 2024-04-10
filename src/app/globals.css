@@ -108,3 +108,19 @@
     line-height: 15px;
     color: #2F2F2F;
 }
+
+.inputDesign2::placeholder {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2F2F2F;
+}
+
+
+.servicesBottomList {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.servicesShow:hover .servicesBottomList {
+    display: flex;
+}
