@@ -108,3 +108,9 @@
     line-height: 15px;
     color: #2F2F2F;
 }
+.inputDesign2::placeholder {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #2F2F2F;
+}
