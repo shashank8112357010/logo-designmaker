@@ -46,7 +46,7 @@ export const footerLinks = [
     { heading: "Category", data: ["Brand & Identity", "Business & Advertising", "Packaging & Label Design", "Website & App Design", "Social Media Design", "Illustration & Art", "Book & Magzine Design", "Clothing & Merchandise"] },
     { heading: "Get design", data: ["Logo design", "Business cards", "Product packaging", "Landing page design", "website development", "Social media profile banners", "Custom illustrations"] },
     { heading: "Support", data: ["Help Desk", "Disclaimer", "Privacy Policy", "Terms  and Conditions"] },
-    { heading: "Company", data: ["About us ", "Pricing", "About us "] },
+    { heading: "Company", data: ["About us ", "Pricing", "Contact us "] },
     { heading: "Resources", data: ["Documentation", "Papers", "Press Conferences"] }
 ]
 

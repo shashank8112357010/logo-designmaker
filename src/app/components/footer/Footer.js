@@ -10,12 +10,12 @@ export default function Footer() {
                 {
                     footerLinks && footerLinks.map((footer, index) => {
                         return (
-                            <div key={index} className={`flex-col gap-4 hidden sm:flex ${footer.heading === "Category" ? 'sm:w-[200px] lg:w-[190px]' : footer.heading === "Get design" ? 'sm:w-[210px] lg:w-[180px]' : footer.heading === "Support" ? 'sm:w-[200px] lg:w-[100px]' : footer.heading === "Company" ? 'sm:w-[200px] lg:w-[120px]' : "lg:w-[100px]"}   `}
+                            <div key={index} className={`flex-col gap-4 z-50 hidden sm:flex ${footer.heading === "Category" ? 'sm:w-[200px] lg:w-[190px]' : footer.heading === "Get design" ? 'sm:w-[210px] lg:w-[180px]' : footer.heading === "Support" ? 'sm:w-[200px] lg:w-[100px]' : footer.heading === "Company" ? 'sm:w-[200px] lg:w-[120px]' : "lg:w-[100px]"}   `}
                             >
                                 <p className="text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold">{footer.heading}</p>
                                 <ul className="text-mobfooterLinks sm:text-tabfooterLinks capitalize lg:text-lapfooterLinks leading-8 font-normal text-primaryGrey">
                                     {footer.data.map((item, indexx) => (
-                                        <li className="!cursor-pointer" key={indexx}>
+                                        <li className="!cursor-pointer hover:text-primaryGreen" key={indexx}>
                                             <a href="#" >
                                                 {item}
                                             </a>
@@ -31,7 +31,6 @@ export default function Footer() {
                 <div className="block sm:hidden mb-12 z-40">
                     <FooterAccordion footerLinks={footerLinks} />
                 </div>
-
 
                 <div className="flex-col flex gap-4 w-full mb-8 items-center sm:items-start mx-auto sm:w-[338px] lg:w-[250px]  ">
                     <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" />
