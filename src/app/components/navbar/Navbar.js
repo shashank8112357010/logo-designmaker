@@ -34,7 +34,7 @@ export default function Navbar() {
                                 Services
                             </a>
                             <Image src="/navbar/expand_icon.svg" className="cursor-pointer" width={10} height={10} alt="logoImg" />
-                           
+
                         </li>
                         <li><a className="hover:text-primaryGreen" href="#">Price</a></li>
                         <li><a className="hover:text-primaryGreen" href="#">Contact</a></li>
@@ -42,7 +42,7 @@ export default function Navbar() {
                     <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Sign in</button>
                     <button className="hidden sm:block text-[10px] sm:text-[14px] font-semibold bg-primaryGreen border-2 border-primaryGreen hover:bg-secondaryBlack hover:border-primaryGreen text-black hover:text-white px-[14px] py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Get Started</button>
                 </div>
-            </div> 
+            </div>
             {/* <div className="bg-red-700 flex justify-center pl-32 ">
                     <p>varun</p>
                 </div>  */}
@@ -58,7 +58,7 @@ export default function Navbar() {
                                 </a>
                                 <Image className="inline absolute float-end mt-1 top-4 right-0" src={show ? "/home/UpArrow.png" : "/home/DownArrow.png"} width={10} height={10} alt={show ? "DownArrowImg" : "UpArrowImg"} />
 
-                                <ul className={`mt-2 cursor-pointer transition-all duration-500 ease-in-out ${show ? "h-60" : "h-0 opacity-0 "}`}>
+                                <ul className={`mt-2 cursor-pointer overflow-hidden transition-all duration-500 ease-in-out ${show ? "max-h-60" : "max-h-0"}`}>
                                     {
                                         ["logo design", "buisness cards", "product packaging", "landing page design", "website development", "buisness cards", "social media profile banners", "custom illustrations"].map((item, index) => <li key={index} className="text-primaryGrey mb-2 text-[14px] capitalize"><a>{item}</a></li>)
                                     }

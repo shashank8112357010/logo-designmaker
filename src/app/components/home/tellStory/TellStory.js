@@ -28,7 +28,7 @@ export default function TellStory() {
                                 return (
                                     <button
                                         onClick={() => handleContent(num)}
-                                        key={num} className={`${num === index + 1 ? "bg-white text-secondaryBlack" : "bg-secondaryBlack text-white"} w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full `}>
+                                        key={num} className={`${content !== index + 1 ? "bg-secondaryBlack text-white" : "bg-white text-secondaryBlack"} w-[40px] lg:w-[59px] h-[40px] lg:h-[59px] rounded-full `}>
                                         {num}
                                     </button>
                                 )
