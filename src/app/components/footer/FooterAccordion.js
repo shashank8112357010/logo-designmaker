@@ -4,19 +4,13 @@ import Image from 'next/image'; // Assuming you're using Next.js
 
 export default function FooterAccordion({ footerLinks }) {
   const [openFooterLinks, setOpenFooterLinks] = useState(null);
-<<<<<<< HEAD
-  console.log("aman", footerLinks)
-  console.log("varun", footerLinks[0].data)
-=======
-  
->>>>>>> 2cd516cf0d3432f96ac173390dc025452e0e9d64
 
   const toggleAccordion = (index) => {
     setOpenFooterLinks((prevState) => (prevState === index ? null : index));
   };
 
   return (
-    <div className="px-6"> 
+    <div className="px-6">
       {footerLinks.map((link, index) => (
         <div key={index} className="mb-4">
           <div
@@ -33,7 +27,7 @@ export default function FooterAccordion({ footerLinks }) {
               alt={openFooterLinks === index ? "UpArrowImg" : "DownArrowImg"}
             />
           </div>
-         
+
           {openFooterLinks === index && (
             <ul className="mt-2 cursor-pointer transition-all duration-500 ease-in-out flex flex-col justify-start items-start ">
               {footerLinks[index]?.data?.map((item, itemIndex) => (
