@@ -5,7 +5,7 @@ import { BoxData } from "@/data/Data";
 export default function SpeakServices() {
 
     return (
-        <section className=" max-w-[1920px] mx-auto bg-secondaryBlack text-white py-16 px-4 sm:px-[]">
+        <section className=" max-w-[1920px] mx-auto bg-secondaryBlack text-white pt-16 pb-12 sm:py-16 px-4">
             <div className="text-center flex flex-col gap-2">
                 <h2 className=" lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[44px] lg:tracking-[-2px]">
                     Create a Design That Speaks Volumes

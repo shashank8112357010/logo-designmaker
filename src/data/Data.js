@@ -1,4 +1,4 @@
-// Home > HeroBanner 
+//Home > HeroBanner 
 export const Card = [
     { id: 1, img: "/home/Card1.png" },
     { id: 2, img: "/home/Card2.png" },
@@ -39,4 +39,22 @@ export const tellStoryContent = [
     { img: "/home/Card3.png", step: 4, heading: "Share your style preferences and brand", para: "Craft a logo that instantly communicates your brands narrative. Share your unique style preferences and brand ethos with us to tailor a distinctive logo that resonates with your audience." },
     { img: "/home/Card4.png", step: 5, heading: "Next, establish the visual style and overall atmosphere.", para: "Craft a logo that instantly communicates your brands narrative. Share your unique style preferences and brand ethos with us to tailor a distinctive logo that resonates with your audience" },
     { img: "/home/Card5.png", step: 6, heading: "Tell Your Final Review", para: "Our team will work closely with you to ensure every element of your logo embodies your brand's essence. Share your vision, values, and desired aesthetic, and let us transform them into a captivating logo that leaves a lasting impression." },
+]
+
+//footer 
+export const footerLinks = [
+    { heading: "Category", data: ["Brand & Identity", "Business & Advertising", "Packaging & Label Design", "Website & App Design", "Social Media Design", "Illustration & Art", "Book & Magzine Design", "Clothing & Merchandise"] },
+    { heading: "Get design", data: ["Logo design", "Business cards", "Product packaging", "Landing page design", "website development", "Social media profile banners", "Custom illustrations"] },
+    { heading: "Support", data: ["Help Desk", "Disclaimer", "Privacy Policy", "Terms  and Conditions"] },
+    { heading: "Company", data: ["About us ", "Pricing", "About us "] },
+    { heading: "Resources", data: ["Documentation", "Papers", "Press Conferences"] }
+]
+
+//footer 
+export const socialLinks = [
+    { img: "Facebook", },
+    { img: "Insta", },
+    { img: "Twitter", },
+    { img: "Lknd", },
+    { img: "Pint", }
 ]
