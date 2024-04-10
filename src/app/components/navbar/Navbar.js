@@ -46,23 +46,23 @@ export default function Navbar() {
             <div className={`-z-40 bg-secondaryBlack flex flex-col lg:hidden absolute ${hide ? "left-[0px] top-20" : "-py-0 top-12 -left-[72rem]"} bg-lightWhite w-full transition-all duration-500 ease-in-out rounded-br-[20px] rounded-bl-[20px]`} >
                 <div className="bg-secondaryBlack absolute w-full">
                     <div className="p-8">
-                        <ul className="flex flex-col gap-4 text-[14px] text-white font-semibold">
-                            <li className="customBorderBottom border-primaryGrey pb-2 cursor-pointer"><a>About Us</a></li>
-                            <li className={`customBorderBottom  border-primaryGrey pb-2 transition-all duration-700 ease-in-out cursor-pointer `} onClick={() => setShow(!show)}>
-                                <a>
+                        <ul className="flex flex-col text-[14px] text-white font-semibold">
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer"><a>About Us</a></li>
+                            <li className={`customBorderBottom pt-3 pb-2 border-primaryGrey transition-all duration-700 ease-in-out cursor-pointer relative`} >
+                                <a onClick={() => setShow(!show)} className="block">
                                     Services
                                 </a>
-                                <Image className="inline float-end mt-1" src={show ? "/home/UpArrow.png" : "/home/DownArrow.png"} width={10} height={10} alt={show ? "DownArrowImg" : "UpArrowImg"} />
+                                <Image className="inline absolute float-end mt-1 top-4 right-0" src={show ? "/home/UpArrow.png" : "/home/DownArrow.png"} width={10} height={10} alt={show ? "DownArrowImg" : "UpArrowImg"} />
 
-                                <ul className={`mt-2 cursor-pointer transition-all duration-500 ease-in-out ${show ? "h-60" : "h-0 opacity-0"}`} >
+                                <ul className={`mt-2 cursor-pointer transition-all duration-500 ease-in-out ${show ? "h-60" : "h-0 opacity-0 "}`}>
                                     {
                                         ["logo design", "buisness cards", "product packaging", "landing page design", "website development", "buisness cards", "social media profile banners", "custom illustrations"].map((item, index) => <li key={index} className="text-primaryGrey mb-2 text-[14px] capitalize"><a>{item}</a></li>)
                                     }
                                 </ul>
                             </li>
-                            <li className="customBorderBottom border-primaryGrey pb-2 cursor-pointer"><a>Pricing</a></li>
-                            <li className="customBorderBottom border-primaryGrey pb-2 cursor-pointer"><a>Contact</a></li>
-                            <li className="customBorderBottom border-primaryGrey pb-2 cursor-pointer"><a>Resources</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer"><a>Pricing</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer"><a>Contact</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer"><a>Resources</a></li>
                         </ul>
                     </div>
                 </div>

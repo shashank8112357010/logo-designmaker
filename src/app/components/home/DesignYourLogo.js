@@ -24,24 +24,24 @@ export default function DesignYourLogo() {
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-[22px] items-center w-full justify-center lgg:justify-start">
-                        <div className="flex gap-1 items-center">
+                        <div className="flex gap-1 items-center w-[200px] sm:w-auto">
                             <div className="h-[20px] w-[20px] relative">
                                 <Image src="/home/BulletPoint.png" alt="BulltePointImg" fill />
                             </div>
-                            <p className="text-[14px] sm:text-[14px] lg:text-[18px]  whitespace-nowrap">Free 7-day trial</p>
+                            <p className="text-[14px] ml-1 sm:text-[14px] lg:text-[18px]  whitespace-nowrap">Free 7-day trial</p>
                         </div>
 
-                        <div className="flex items-center">
+                        <div className="flex items-center w-[200px] sm:w-auto">
                             <div className="h-[20px] w-[20px] relative">
                                 <Image src="/home/BulletPoint.png" alt="BulltePointImg" fill />
                             </div>
-                            <p className="text-[14px] sm:text-[14px] lg:text-[18px] whitespace-nowrap">No credit card required</p>
+                            <p className="text-[14px] ml-1 sm:text-[14px] lg:text-[18px] whitespace-nowrap">No credit card required</p>
                         </div>
-                        <div className="flex gap-1 items-center">
+                        <div className="flex gap-1 items-center w-[200px] sm:w-auto">
                             <div className="h-[20px] w-[20px] relative">
                                 <Image src="/home/BulletPoint.png" alt="BulltePointImg" fill />
                             </div>
-                            <p className="text-[14px] sm:text-[14px] lg:text-[18px] whitespace-nowrap">Cancel anytime</p>
+                            <p className="text-[14px] ml-1 sm:text-[14px] lg:text-[18px] whitespace-nowrap">Cancel anytime</p>
                         </div>
                     </div>
                 </div>

@@ -54,7 +54,7 @@ export default function Footer() {
                                 <p className=" text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold">{footer.heading}</p>
                                 <ul className="text-mobfooterLinks sm:text-tabfooterLinks  lg:text-lapfooterLinks leading-8 font-normal text-primaryGrey">
                                     {footer.data.map((item, indexx) => (
-                                        <li className="cursor-pointer" key={indexx}>
+                                        <li className="!cursor-pointer" key={indexx}>
                                             <a href="#" >
                                                 {item}
                                             </a>

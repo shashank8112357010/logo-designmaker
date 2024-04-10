@@ -10,20 +10,21 @@ export default function FaqShowAtom({ data, index, openIndex, setOpenIndex }) {
     };
 
     return (
-        <div className="flex flex-col gap-6 pb-2 cursor-pointer " onClick={toggleAccordion}
-            style={{ borderBottom: index !== data.length - 1 ? '1px solid #ccc' : 'none' }}
+        <div className="flex flex-col gap-2 pb-2 customBorderBottom2 border-white"
         >
-            <div className="flex items-center justify-between gap-4 cursor-pointer">
-                <p className=" text-mobTitle sm:text-tabTitle lg:text-lapTitle font-normal leading-6 sm:leading-6 lg:leading-9 cursor-pointer" >
+            <div className="flex items-center justify-between gap-4 cursor-pointer" onClick={toggleAccordion}>
+                <div className=" text-mobTitle sm:text-tabTitle lg:text-lapTitle font-normal leading-6 sm:leading-6 lg:leading-9 cursor-pointer w-full block" >
                     {data.ques}
-                </p>
+                </div>
 
                 <Image src={isOpen ? "/home/UpArrow.png" : "/home/DownArrow.png"} width={15} height={15} alt={isOpen ? "DownArrowImg" : "UpArrowImg"} />
 
             </div>
-            <p className={`transition-all duration-500 ease-in-out ${isOpen ? "h-32" : "h-0 opacity-0"} text-mobBody max-w-xl lg:max-w-3xl sm:text-tabBody lg:text-lapBody text-primaryGrey`}>
-                {data.ans}
-            </p>
+            <div className="overflow-hidden">
+                <p className={`transition-all duration-500 ease-in-out ${isOpen ? "h-32 xs:h-24" : "h-0"} text-mobBody max-w-xl lg:max-w-3xl sm:text-tabBody lg:text-lapBody text-primaryGrey`}>
+                    {data.ans}
+                </p>
+            </div>
 
         </div>
     )
