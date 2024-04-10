@@ -1,7 +1,12 @@
 import Image from "next/image"
 
+import FooterAccordion from "./FooterAccordion"
+
+
 
 export default function Footer() {
+
+    
 
     const footerLinks = [
         {
@@ -25,6 +30,7 @@ export default function Footer() {
             "data": ["Documentation", "Papers", "Press Conferences"]
         }
     ]
+    
     const socialLinks = [
         {
             img: "Facebook",
@@ -65,6 +71,12 @@ export default function Footer() {
                         )
                     })
                 }
+                <div className=" block sm:hidden mb-32 "  >
+                   <FooterAccordion footerLinks={footerLinks}/>
+
+                </div>
+
+
                 <div className="flex-col  lg:flex gap-6 sm:block w-[250px] mx-auto sm:w-[338px] lg:w-[250px]  ">
                     <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" className="" />
                     <p className="text-mobfooterBody sm:text-tabfooterBody lg:text-lapfooterBody font-normal leading-5">
