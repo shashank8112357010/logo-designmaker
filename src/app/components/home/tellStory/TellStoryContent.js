@@ -1,8 +1,6 @@
 import { tellStoryContent } from "@/data/Data"
-import Image from "next/image"
 import React from "react";
 import Lottie from "lottie-react";
-import tellYourStory1 from "../../../../animate/tellYourStory1.json";
 
 export default function TellStoryContent({ content }) {
 
@@ -14,13 +12,10 @@ export default function TellStoryContent({ content }) {
                     return (
                         <div key={item.step} className="flex flex-col md:flex-row lg:px-20 items-center gap-8 ">
                             <div className="">
-                                <Lottie animationData={tellYourStory1} loop={true} />
+                                <Lottie animationData={item?.lottieImg} loop={true} />
                             </div>
                             <div className="flex items-center flex-col sm:max-w-[600px] justify-center text-white ">
                                 <div className="flex flex-col md:pl-12 lg:pl-28 gap-6 items-center md:items-start">
-                                    <div className="text-[18px] lg:text-[24px] leading-[21px] lg:leading-[31px]">
-                                        {item.step}
-                                    </div>
                                     <div className="text-mobTitle text-center sm:text-start sm:text-tabTitle lg:text-lapTitle font-semibold leading-[21px] lg:leading-[30px]">
                                         {item.heading}
                                     </div>

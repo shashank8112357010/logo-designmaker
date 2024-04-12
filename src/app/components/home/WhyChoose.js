@@ -24,9 +24,6 @@ export default function WhyChoose() {
 
                 {/* Right Section  */}
                 <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:gap-y-12 gap-x-8 px-10 sm:px-0 lg:px-10 ">
-                    <div className="absolute -bottom-6 right-0">
-                        <Image src="/home/ChooseGradient.png" width={4005} height={4000} alt="gradient" />
-                    </div>
                     <div className="flex flex-col text-center sm:text-start items-center sm:items-start gap-[16px] sm:gap-[16px] lg:gap-[24px]  sm:max-w-[320px] mx-auto">
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Choose1.png" alt="Choose your brand" fill className="mx-auto" />
