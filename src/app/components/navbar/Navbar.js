@@ -1,63 +1,65 @@
 "use client"
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Navbar() {
     const [hide, setHide] = useState(false)
     const [show, setShow] = useState(false)
+    const [showService, setShowService] = useState(false)
+    console.log(showService)
     const dropMenu = [
         {
-            id:1,
-           img:"/navbar/BookIcon.png",
-           heading:"Book and magazine designs",
-           subHeading:"Your Digital Content Supercharged" 
+            id: 1,
+            img: "/navbar/BookIcon.png",
+            heading: "Book and magazine designs",
+            subHeading: "Your Digital Content Supercharged"
         },
         {
-            id:2,
-           img:"/navbar/BookIcon.png",
-           heading:"Business and advertising designs",
-           subHeading:"Eye Catchy Designs That Perform" 
+            id: 2,
+            img: "/navbar/BookIcon.png",
+            heading: "Business and advertising designs",
+            subHeading: "Eye Catchy Designs That Perform"
         },
         {
-            id:3,
-           img:"/navbar/BookIcon.png",
-           heading:"Business and advertising designs",
-           subHeading:"Eye Catchy Designs That Perform" 
+            id: 3,
+            img: "/navbar/BookIcon.png",
+            heading: "Business and advertising designs",
+            subHeading: "Eye Catchy Designs That Perform"
         },
         {
-            id:4,
-           img:"/navbar/BookIcon.png",
-           heading:"Business and advertising designs",
-           subHeading:"Eye Catchy Designs That Perform" 
+            id: 4,
+            img: "/navbar/BookIcon.png",
+            heading: "Business and advertising designs",
+            subHeading: "Eye Catchy Designs That Perform"
         },
-       
     ]
+
     const dropMenus = [
         {
-            id:1,
-           img:"/navbar/BookIcon.png",
-           heading:"Book and magazine designs",
-           subHeading:"Your Digital Content Supercharged" 
+            id: 1,
+            img: "/navbar/BookIcon.png",
+            heading: "Book and magazine designs",
+            subHeading: "Your Digital Content Supercharged"
         },
         {
-            id:2,
-           img:"/navbar/BookIcon.png",
-           heading:"Book and magazine designs",
-           subHeading:"Your Digital Content Supercharged" 
+            id: 2,
+            img: "/navbar/BookIcon.png",
+            heading: "Book and magazine designs",
+            subHeading: "Your Digital Content Supercharged"
         },
         {
-            id:3,
-           img:"/navbar/BookIcon.png",
-           heading:"Book and magazine designs",
-           subHeading:"Your Digital Content Supercharged" 
+            id: 3,
+            img: "/navbar/BookIcon.png",
+            heading: "Book and magazine designs",
+            subHeading: "Your Digital Content Supercharged"
         },
         {
-            id:4,
-           img:"/navbar/BookIcon.png",
-           heading:"Book and magazine designs",
-           subHeading:"Your Digital Content Supercharged" 
+            id: 4,
+            img: "/navbar/BookIcon.png",
+            heading: "Book and magazine designs",
+            subHeading: "Your Digital Content Supercharged"
         },
-       
+
     ]
 
     return (
@@ -78,90 +80,101 @@ export default function Navbar() {
                 </div>
                 <div className="flex gap-4 justify-center items-center">
                     <ul className="text-[14px] gap-8 font-bold hidden lg:flex">
-                        <li className="flex gap-1 justify-center">
+                        <li className="flex gap-1 justify-center py-[10px]">
                             <a className="hover:text-primaryGreen" href="#">
                                 About Us
                             </a>
                         </li>
-                        <li className=" gap-1 flex flex-col justify-center relative">
-                            <div className="flex justify-center gap-1">
+                        <li className=" gap-1 flex flex-col servicesShow justify-center relative">
+                            <div className="flex justify-center  group gap-1 py-[10px]">
+                                <a className="" href="#" >
+                                    Services
 
-                            <a className="hover:text-primaryGreen" href="#">
-                                Services
-                            </a>
-                            <Image src="/navbar/expand_icon.svg" className="cursor-pointer" width={10} height={10} alt="logoImg" />
+                                    {/* //Dropdown services for lap screen */}
+                                    <div className={` servicesBottomList bg-darkBlack w-[910px] justify-between absolute top-[60px] -right-72`}
+                                    // onMouseEnter={serviceListBox} onMouseLeave={serviceListBoxLeave}
+                                    >
+
+                                        <div className="flex flex-col justify-center gap-8 pl-[52px] pt-6 pb-10">
+                                            <div className="text-[16px] font-normal leading-[28px] tracking-[1px]">
+                                                SERVICES
+                                            </div>
+
+                                            <div className="flex justify-center gap-[39px]">
+                                                <div className="flex flex-col items-start">
+                                                    {
+                                                        dropMenu.map((item) => {
+                                                            return (
+                                                                <div key={item.id} className="flex justify-center items-start gap-1" >
+                                                                    <div className="relative w-4 h-4">
+                                                                        <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
+                                                                    </div>
+                                                                    <div>
+                                                                        <p className="text-lapTitle3 leading-[19px] font-bold mb-[1px]">
+                                                                            {item.heading}
+                                                                        </p>
+                                                                        <p className="text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
+                                                                            {item.subHeading}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            )
+                                                        })
+                                                    }
+
+                                                </div>
+                                                <div className="flex flex-col">
+                                                    {
+                                                        dropMenus.map((item) => {
+                                                            return (
+                                                                <div key={item.id} className="flex justify-center items-start gap-1 " >
+                                                                    <div className="relative w-4 h-4">
+                                                                        <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
+                                                                    </div>
+                                                                    <div>
+                                                                        <p className="text-lapTitle3 leading-[19px] font-bold mb-[1px]">
+                                                                            {item.heading}
+                                                                        </p>
+                                                                        <p className="text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
+                                                                            {item.subHeading}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            )
+                                                        })
+                                                    }
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div className="flex flex-col justify-center items-center bg-lightBlack px-4">
+                                            <Image width={163} height={163} src='/navbar/DropDownMedia.png' alt="BookIconImg" />
+                                            <div className="w-[187px] flex flex-col gap-y-2 pr-2">
+                                                <p className="text-lapfooterBody leading-[21px] tracking-[6%] font-normal capitalize">BOOK A CALL </p>
+                                                <p className="text-lapTitle3 font-bold leading-[19px] -tracking-[1%]">Want to know if Logo design maker is A good fit?</p>
+                                            </div>
+                                            <div className="flex relative items-center justify-center w-[190px] pb-2 px-4 py-8" >
+                                                <input type="text" placeholder="Enter Your Email" className="inputDesign2 text-primaryBlack outline-none border-none rounded-[45px] py-1 pr-[5px] pl-[10px] w-[190px]" />
+                                                <div className="absolute right-[4px] top-[33px]">
+                                                    <button className="bg-buttonBlack text-[10px] leading-[14px] font-semibold rounded-[45px] py-[5px] px-[8px]">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <Image src="/navbar/expand_icon.svg" className="cursor-pointer" width={10} height={10} alt="logoImg" />
                             </div>
-                     
                         </li>
-                        <li><a className="hover:text-primaryGreen" href="#">Price</a></li>
-                        <li><a className="hover:text-primaryGreen" href="#">Contact</a></li>
+                        <li><a className="hover:text-primaryGreen flex item-center justify-center py-[10px]" href="#">Price</a></li>
+                        <li><a className="hover:text-primaryGreen flex item-center justify-center py-[10px]" href="#">Contact</a></li>
                     </ul>
                     <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Sign in</button>
                     <button className="hidden sm:block text-[10px] sm:text-[14px] font-semibold bg-primaryGreen border-2 border-primaryGreen hover:bg-secondaryBlack hover:border-primaryGreen text-black hover:text-white px-[14px] py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Get Started</button>
                 </div>
-                <div className="bg-darkBlack w-[910px] flex justify-between  absolute top-[112px] right-[154px]">
-                    
-                    <div className="flex flex-col justify-center gap-6 pl-[20px] py-10"> 
-                    <div>
-                       <p className="text-[16px] font-normal leading-[28px] tracking-[6%]">SERVICES</p> 
-                    </div>
-                    <div className="flex  justify-center gap-[39px]">
-                        <div className="flex flex-col items-start">
-                        {
-                            dropMenu.map((item)=>{
-                                return(
-                                    <div key={item.id} className="flex justify-center items-start gap-[6px] " >
 
-                                    <Image width={15} height={15} src={item.img} alt="BookIconImg"/>
-                                   <div>
-                                    <p className="text-lapTitle3 leading-[19px] font-bold">{item.heading}</p>
-                                    <p className="text-lapfooterBody text-primaryGrey  font-normal leading-[21px]">{item.subHeading}</p> 
-                                   </div>
-                                    </div> 
-                                )
-                            })
-                        }
-                            
-                        </div>
-                        <div className="flex flex-col">
-                        {
-                            dropMenus.map((item)=>{
-                                return(
-                                    <div key={item.id} className="flex justify-center items-start gap-[6px] " >
+            </div>
 
-                                    <Image width={15} height={15} src={item.img} alt="BookIconImg"/>
-                                   <div>
-                                    <p className="text-lapTitle3 leading-[19px] font-bold">{item.heading}</p>
-                                    <p className="text-lapfooterBody text-primaryGrey  font-normal leading-[21px]">{item.subHeading}</p> 
-                                   </div>
-                                    </div> 
-                                )
-                            })
-                        }
-                                    
-                        </div>
-                    </div>
-
-                    </div>
-                    <div className="flex flex-col justify-center items-center bg-lightBlack w-[236px]">
-                    <Image width={163} height={163} src='/navbar/DropDownMedia.png' alt="BookIconImg"/>
-                    <div className="w-[187px] flex flex-col  gap-2 pr-2 ">
-                        <p className="text-lapfooterBody leading-[21px] tracking-[6%] font-normal capitalize">BOOK A CALL </p>
-                        <p className="text-lapTitle3 font-bold leading-[19px] -tracking-[1%]">Want to know if Logo design maker is A good fit?</p>
-                    </div>
-                    <div className="flex relative items-center justify-center w-[200px] pb-2 px-4  " >
-                            <input type="text" placeholder="Enter Your Email" className="text-primaryBlack outline-none border-none rounded-[45px] inputDesign2 pt-[2px] pr-[5px] pb-[2px] pl-[10px] " />
-                            <div className="absolute right-[18px] top-[5px] sm:top-0">
-                                <button className="bg-buttonBlack text-[10px] leading-[14px] font-semibold rounded-[45px] py-[5px] px-[8px]">Start</button>
-                            </div>
-                        </div>
-                    </div>
-                    {/* 2pxtop, 5pxrigth, 2pxbottom, 10.01pxleft */}
-            </div> 
-
-
-            </div> 
-          
 
             <div className={`-z-40 bg-secondaryBlack flex flex-col lg:hidden absolute ${hide ? "left-[0px] top-20" : "-py-0 top-12 -left-[72rem]"} bg-lightWhite w-full transition-all duration-500 ease-in-out rounded-br-[20px] rounded-bl-[20px]`} >
                 <div className="bg-secondaryBlack absolute w-full">
@@ -187,7 +200,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
