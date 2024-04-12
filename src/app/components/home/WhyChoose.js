@@ -3,11 +3,11 @@ import Image from "next/image"
 export default function WhyChoose() {
     return (
         <section className='max-w-[1920px] mx-auto bg-primaryBlack text-white pt-20 pb-20'>
-            <div className='flex lg:flex-row sm:flex-row flex-col  sm:gap-[30px] lg:gap-[63px]'>
+            <div className='flex  md:flex-row flex-col  sm:gap-[30px] lg:gap-[63px]'>
                 {/* //left section  */}
-                 <div className="sm:w-[40%] flex flex-col text-center sm:text-start justify-between">
+                 <div className="md:w-[40%] flex flex-col text-center md:text-start justify-between">
 
-                    <div className=" sm:pl-4 lg:pl-0 px-10 sm:px-0 flex justify-center flex-col max-w-[370px] mx-auto">
+                    <div className=" md:pl-4 lg:pl-0 px-10 md:px-0 flex justify-center flex-col max-w-[370px] mx-auto">
                         <span className="text-[18px] sm:text-[18px] lg:text-[35px] font-[250] tracking-[0.2px] font-springRainSolid">Why Choose</span>
                         <h4 className=' text-mobileHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold tracking-[-0.2] leading-5 sm:leading-7 lg:leading-10 mb-12'>
                             Logo Design Maker for your needs
@@ -23,9 +23,9 @@ export default function WhyChoose() {
                 </div>
 
                 {/* Right Section  */}
-                <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:gap-y-12 gap-x-16 px-10 sm:px-0 lg:px-10 ">
+                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-y-12 gap-x-16 px-10 md:px-0 lg:px-10 ">
                    
-                    <div className="flex flex-col text-center sm:text-start items-center sm:items-start gap-[16px] sm:gap-[16px] lg:gap-[24px] w-[200px] sm:w-[180px] lg:w-[248px] mx-auto">
+                    <div className="flex flex-col text-center md:text-start items-center md:items-start gap-[16px] md:gap-[16px] lg:gap-[24px] w-[200px] md:w-[180px] lg:w-[248px] mx-auto">
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Choose1.png" alt="Choose your brand" fill className="mx-auto" />
                         </div>
@@ -36,7 +36,7 @@ export default function WhyChoose() {
                             We provide a comprehensive suite of design services under one roof, saving you time and resources.
                         </p>
                     </div>
-                    <div className="flex flex-col text-center sm:text-start items-center sm:items-start gap-[16px] sm:gap-[16px] lg:gap-[24px] w-[200px] sm:w-[180px] lg:w-[248px] mx-auto">
+                    <div className="flex flex-col text-center md:text-start items-center md:items-start gap-[16px] md:gap-[16px] lg:gap-[24px] w-[200px] md:w-[180px] lg:w-[248px] mx-auto">
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Service2.png" alt="Choose your design" fill className="mx-auto" />
                         </div>
@@ -47,7 +47,7 @@ export default function WhyChoose() {
                             Our team boasts expertise in diverse areas, ensuring a design solution tailored to your specific industry.
                         </p>
                     </div>
-                    <div className="flex flex-col text-center sm:text-start items-center sm:items-start w-[200px] sm:w-[180px] lg:w-[248px] gap-[16px] sm:gap-[16px] lg:gap-[24px] mx-auto">
+                    <div className="flex flex-col text-center md:text-start items-center md:items-start w-[200px] md:w-[180px] lg:w-[248px] gap-[16px] md:gap-[16px] lg:gap-[24px] mx-auto">
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Choose3.png" alt="Choose your process" fill className="mx-auto" />
                         </div>
@@ -58,7 +58,7 @@ export default function WhyChoose() {
                             We offer a clear roadmap, keeping you informed and involved throughout the entire project.
                         </p>
                     </div>
-                    <div className="flex flex-col text-center sm:text-start items-center sm:items-start gap-[24px] w-[200px] sm:w-[180px] lg:w-[248px] mx-auto">
+                    <div className="flex flex-col text-center md:text-start items-center md:items-start gap-[24px] w-[200px] md:w-[180px] lg:w-[248px] mx-auto">
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Choose4.png" alt="Choose your priority" fill className="mx-auto" />
                         </div>
@@ -69,7 +69,7 @@ export default function WhyChoose() {
                             Our support team is here to help, always ready to answer your questions and assist you every step of the way.
                         </p>
                     </div>
-                    <div className="flex flex-col  text-center sm:text-start items-center sm:items-start gap-[16px] sm:gap-[16px] lg:gap-[24px] w-[250px] sm:w-[180px] lg:w-[248px] mx-auto">
+                    <div className="flex flex-col  text-center md:text-start items-center md:items-start gap-[16px] md:gap-[16px] lg:gap-[24px] w-[250px] md:w-[180px] lg:w-[248px] mx-auto">
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Choose5.png" alt="Choose your brand" fill className="mx-auto" />
                         </div>
@@ -80,7 +80,7 @@ export default function WhyChoose() {
                             We deliver high-quality results efficiently, ensuring you can launch your brand promptly.
                         </p>
                     </div>
-                    <div className="flex flex-col text-center sm:text-start items-center sm:items-start  gap-[16px] sm:gap-[16px] lg:gap-[24px] w-[250px] sm:w-[180px] lg:w-[248px] mx-auto">
+                    <div className="flex flex-col text-center md:text-start items-center md:items-start  gap-[16px] md:gap-[16px] lg:gap-[24px] w-[250px] md:w-[180px] lg:w-[248px] mx-auto">
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Service6.png" alt="Choose your brand" fill className="mx-auto" />
                         </div>
