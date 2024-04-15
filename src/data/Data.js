@@ -10,7 +10,6 @@ export const tellStoryContent = [
     { lottieImg: tellYourStory1, step: 6, heading: "Tell Your Final Review", para: "Our team will work closely with you to ensure every element of your logo embodies your brand's essence. Share your vision, values, and desired aesthetic, and let us transform them into a captivating logo that leaves a lasting impression." },
 ]
 
-
 //Home > HeroBanner 
 export const Card = [
     { id: 1, img: "/home/Card1.png" },
@@ -43,7 +42,6 @@ export const faqs = [
     { id: 4, ques: "How can I get started?", ans: "Getting started is easy! Simply visit our website and fill out a brief form outlining your brand and design preferences. A member of our team will then be in touch to discuss your project further and answer any questions you may have. " }
 ]
 
-
 //footer 
 export const footerLinks = [
     { heading: "Category", data: ["Brand & Identity", "Business & Advertising", "Packaging & Label Design", "Website & App Design", "Social Media Design", "Illustration & Art", "Book & Magzine Design", "Clothing & Merchandise"] },
@@ -60,4 +58,60 @@ export const socialLinks = [
     { img: "Twitter", },
     { img: "Lknd", },
     { img: "Pint", }
+]
+
+
+export const dropMenu = [
+    {
+        id: 1,
+        img: "/navbar/BookIcon.png",
+        heading: "Book and magazine designs",
+        subHeading: "Your Digital Content Supercharged"
+    },
+    {
+        id: 2,
+        img: "/navbar/BookIcon.png",
+        heading: "Clothing and Merchandise",
+        subHeading: "Eye Catchy Designs That Perform"
+    },
+    {
+        id: 3,
+        img: "/navbar/BookIcon.png",
+        heading: "Illustration and Art",
+        subHeading: "Eye Catchy Designs That Perform"
+    },
+    {
+        id: 4,
+        img: "/navbar/BookIcon.png",
+        heading: "Social Media Design",
+        subHeading: "Eye Catchy Designs That Perform"
+    },
+]
+
+export const dropMenus = [
+    {
+        id: 1,
+        img: "/navbar/BookIcon.png",
+        heading: "Book and magazine designs",
+        subHeading: "Your Digital Content Supercharged"
+    },
+    {
+        id: 2,
+        img: "/navbar/BookIcon.png",
+        heading: "Book and magazine designs",
+        subHeading: "Your Digital Content Supercharged"
+    },
+    {
+        id: 3,
+        img: "/navbar/BookIcon.png",
+        heading: "Book and magazine designs",
+        subHeading: "Your Digital Content Supercharged"
+    },
+    {
+        id: 4,
+        img: "/navbar/BookIcon.png",
+        heading: "Book and magazine designs",
+        subHeading: "Your Digital Content Supercharged"
+    },
+
 ]

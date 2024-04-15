@@ -1,4 +1,5 @@
 import Image from "next/image"
+
 export default function DesignYourLogo() {
     return (
         <section className="max-w-[1920px] mx-auto px-4 sm:px-10 lg:px-10 bg-primaryBlack text-white pb-20 sm:pb-48 pt-20 lgg:pt-20">
@@ -17,7 +18,7 @@ export default function DesignYourLogo() {
                     </div>
                     <div className="flex justify-center items-center w-full lgg:justify-start">
                         <div className="flex relative items-center justify-center px-2 lgg:justify-start w-[300px] sm:w-[420px]" >
-                            <input type="text" placeholder="Enter Your Email" className="text-primaryBlack outline-none border-none rounded-[45px] inputDesign w-[300px] sm:w-[420px] py-4 px-8 sm:py-6 sm:px-12" />
+                            <input type="text" placeholder="Enter Your Email" className="text-primaryBlack outline-none border-none rounded-[45px] inputDesign w-[300px] sm:w-[420px] py-4 pl-8 pr-24 sm:py-6 sm:pl-12 sm:pr-36" />
                             <div className="absolute right-4 top-[5px] sm:top-1">
                                 <button className="bg-buttonBlack sm:px-[36px] sm:py-[20px] px-[20px] py-[10px] rounded-[45px]">Start</button>
                             </div>

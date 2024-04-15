@@ -1,69 +1,14 @@
 "use client"
+import { dropMenu, dropMenus } from "@/data/Data"
 import Image from "next/image"
 import { useState } from "react"
 
 export default function Navbar() {
     const [hide, setHide] = useState(false)
     const [show, setShow] = useState(false)
-    const [showService, setShowService] = useState(false)
-    console.log(showService)
-    const dropMenu = [
-        {
-            id: 1,
-            img: "/navbar/BookIcon.png",
-            heading: "Book and magazine designs",
-            subHeading: "Your Digital Content Supercharged"
-        },
-        {
-            id: 2,
-            img: "/navbar/BookIcon.png",
-            heading: "Clothing and Merchandise",
-            subHeading: "Eye Catchy Designs That Perform"
-        },
-        {
-            id: 3,
-            img: "/navbar/BookIcon.png",
-            heading: "Illustration and Art",
-            subHeading: "Eye Catchy Designs That Perform"
-        },
-        {
-            id: 4,
-            img: "/navbar/BookIcon.png",
-            heading: "Social Media Design",
-            subHeading: "Eye Catchy Designs That Perform"
-        },
-    ]
-
-    const dropMenus = [
-        {
-            id: 1,
-            img: "/navbar/BookIcon.png",
-            heading: "Book and magazine designs",
-            subHeading: "Your Digital Content Supercharged"
-        },
-        {
-            id: 2,
-            img: "/navbar/BookIcon.png",
-            heading: "Book and magazine designs",
-            subHeading: "Your Digital Content Supercharged"
-        },
-        {
-            id: 3,
-            img: "/navbar/BookIcon.png",
-            heading: "Book and magazine designs",
-            subHeading: "Your Digital Content Supercharged"
-        },
-        {
-            id: 4,
-            img: "/navbar/BookIcon.png",
-            heading: "Book and magazine designs",
-            subHeading: "Your Digital Content Supercharged"
-        },
-
-    ]
 
     return (
-        <section className="relative max-w-[1920px] z-[999] mx-auto bg-secondaryBlack h-[84px] text-white pr-4">
+        <section className="max-w-[1920px] z-[999] mx-auto bg-secondaryBlack h-[84px] text-white pr-4 fixed left-0 right-0">
             <div className="flex justify-between items-center h-full relative">
                 <div className="lg:hidden cursor-pointer px-4 sm:px-10 lg:px-20" onClick={() => setHide(!hide)}>
                     {hide ?
@@ -181,7 +126,6 @@ export default function Navbar() {
                     <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Sign in</button>
                     <button className="hidden sm:block text-[10px] sm:text-[14px] font-semibold bg-primaryGreen border-2 border-primaryGreen hover:bg-secondaryBlack hover:border-primaryGreen text-black hover:text-white px-[14px] py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Get Started</button>
                 </div>
-
             </div>
 
 
