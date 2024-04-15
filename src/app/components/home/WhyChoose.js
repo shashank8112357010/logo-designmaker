@@ -5,17 +5,17 @@ export default function WhyChoose() {
         <section className='max-w-[1920px] mx-auto bg-primaryBlack text-white pt-20 pb-20'>
             <div className='flex  md:flex-row flex-col  sm:gap-[30px] lg:gap-[63px]'>
                 {/* //left section  */}
-                 <div className="md:w-[40%] flex flex-col text-center md:text-start justify-between">
+                <div className="md:w-[40%] flex flex-col text-center md:text-start justify-between">
 
                     <div className=" md:pl-4 lg:pl-0 px-10 md:px-0 flex justify-center flex-col max-w-[370px] mx-auto">
                         <span className="text-[18px] sm:text-[18px] lg:text-[35px] font-[250] tracking-[0.2px] font-springRainSolid">Why Choose</span>
                         <h4 className=' text-mobileHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold tracking-[-0.2] leading-5 sm:leading-7 lg:leading-10 mb-12'>
                             Logo Design Maker for your needs
                         </h4>
-                        <p className="text-mobBody sm:text-tabBody lg:text-lapBody text-primaryGray font-normal leading-7" >Break free from generic logos! Logo Design Maker offers seamless branding solutions with collaborative support, turning your vision into standout identities effortlessly.</p>
+                        <p className="text-mobBody sm:text-tabBody lg:text-lapBody text-primaryGray font-normal leading-[18px] lg:leading-7" >Break free from generic logos! Logo Design Maker offers seamless branding solutions with collaborative support, turning your vision into standout identities effortlessly.</p>
                     </div>
 
-                    <div className=" flex items-end">
+                    <div className="flex items-end">
                         <div className="relative w-[235px] lg:w-[438px] h-[295px] lg:h-[546px]">
                             <Image src="/home/main.png" alt="Choose your design maker" fill className="mx-auto" />
                         </div>
@@ -23,8 +23,8 @@ export default function WhyChoose() {
                 </div>
 
                 {/* Right Section  */}
-                <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-y-12 gap-x-16 px-10 md:px-0 lg:px-10 ">
-                   
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-5 md:gap-y-12 gap-x-16 px-10 md:px-0 lg:px-10 ">
+
                     <div className="flex flex-col text-center md:text-start items-center md:items-start gap-[16px] md:gap-[16px] lg:gap-[24px] w-[200px] md:w-[180px] lg:w-[248px] mx-auto">
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Choose1.png" alt="Choose your brand" fill className="mx-auto" />
@@ -62,7 +62,7 @@ export default function WhyChoose() {
                         <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                             <Image src="/home/Choose4.png" alt="Choose your priority" fill className="mx-auto" />
                         </div>
-                        <h5 className="text-[14px] sm:text-[14px] lg:text-[20px]  font-semibold">
+                        <h5 className="text-[14px] sm:text-[14px] lg:text-[20px] font-semibold">
                             Your Needs, Our Priority: Dedicated Support!
                         </h5>
                         <p className="text-[12px] sm:text-[12px] lg:text-[16px] font-normal leading-[18px] sm:leading-[18px] lg:leading-[28px] tracking-[-0.2px] text-primaryGray mb-2 sm:mb-0 lg:mb-0">
@@ -91,8 +91,8 @@ export default function WhyChoose() {
                             We cater to businesses of all sizes, offering competitive pricing plans.
                         </p>
                     </div>
-                </div>     
-            </div>   
+                </div>
+            </div>
         </section>
     )
 }
