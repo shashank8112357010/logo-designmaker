@@ -1,11 +1,13 @@
 "use client"
 import { dropMenu, dropMenus } from "@/data/Data"
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 
 export default function Navbar() {
     const [hide, setHide] = useState(false)
     const [show, setShow] = useState(false)
+    const [dropDownMenu, setDropDownMenu] = useState(true)
 
     return (
         <section className="max-w-[1920px] z-[999] mx-auto bg-secondaryBlack h-[84px] text-white pr-4 fixed left-0 right-0">
@@ -18,11 +20,11 @@ export default function Navbar() {
                     }
                 </div>
 
-                <div className="px-4 sm:px-10 lg:px-20">
+                <Link href="/" className="px-4 sm:px-10 lg:px-20">
                     <div className="relative w-[140px] xs:w-[180px] sm:w-[230px] h-[28px] xs:h-[36px] sm:h-[48px]">
                         <Image src="/navbar/Logo.png" alt="logo design maker" fill className="mx-auto" />
                     </div>
-                </div>
+                </Link>
                 <div className="flex gap-4 justify-center items-center h-full">
                     <ul className="text-[14px] gap-8 font-bold hidden lg:flex h-full">
                         <li className="flex gap-1 justify-center items-center py-[10px]">
@@ -32,83 +34,87 @@ export default function Navbar() {
                         </li>
                         <li className="gap-1 flex flex-col servicesShow h-full justify-center z-10 relative">
                             <div className="flex justify-center gap-1 py-[10px] pr-4">
-                                <div className="hover:text-primaryGreen cursor-pointer">
-                                    <a className="services" href="#" >
-                                        Services
-                                    </a>
+                                <div className="hover:text-primaryGreen cursor-pointer"
+                                    onMouseEnter={() => setDropDownMenu(true)}
+                                >
+                                    Services
                                     <div className="servicesAfter"></div>
                                 </div>
 
                                 {/* //Dropdown services for lap screen */}
-                                <div className={`servicesBottomList bg-darkBlack w-[910px] justify-between `}
-                                >
-
-                                    <div className="flex flex-col justify-center gap-8 pl-[52px] pt-6 pb-10">
-                                        <div className="text-[16px] font-normal leading-[28px] tracking-[1px]">
-                                            SERVICES
-                                        </div>
-
-                                        <div className="flex justify-center gap-[39px]">
-                                            <div className="flex flex-col items-start">
-                                                {
-                                                    dropMenu.map((item) => {
-                                                        return (
-                                                            <div key={item.id} className="flex justify-center items-start gap-1" >
-                                                                <div className="relative w-4 h-4">
-                                                                    <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
-                                                                </div>
-                                                                <div>
-                                                                    <p className="text-lapTitle3 leading-[19px] font-bold mb-[1px]">
-                                                                        {item.heading}
-                                                                    </p>
-                                                                    <p className="text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
-                                                                        {item.subHeading}
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        )
-                                                    })
-                                                }
+                                {dropDownMenu && (
+                                    <div className={`servicesBottomList bg-darkBlack w-[910px] justify-between `}>
+                                        <div className="flex flex-col justify-center gap-8 pl-[52px] pt-6 pb-10">
+                                            <div className="text-[16px] font-normal leading-[28px] tracking-[1px]">
+                                                SERVICES
                                             </div>
-                                            <div className="flex flex-col">
-                                                {
-                                                    dropMenus.map((item) => {
-                                                        return (
-                                                            <div key={item.id} className="flex justify-center items-start gap-1">
-                                                                <div className="relative w-4 h-4">
-                                                                    <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
-                                                                </div>
-                                                                <div>
-                                                                    <p className="text-lapTitle3 leading-[19px] font-bold mb-[1px]">
-                                                                        {item.heading}
-                                                                    </p>
-                                                                    <p className="text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
-                                                                        {item.subHeading}
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        )
-                                                    })
-                                                }
 
+                                            <div className="flex justify-center gap-[39px]">
+                                                <div className="flex flex-col items-start">
+                                                    {
+                                                        dropMenu.map((item) => {
+                                                            return (
+                                                                <div key={item.id} className="flex mb-1 items-start gap-1" >
+                                                                    <div className="relative w-4 h-4">
+                                                                        <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
+                                                                    </div>
+                                                                    <div>
+                                                                        <Link href={`/services/${item.url}`} className="hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
+                                                                            onClick={() => setDropDownMenu(!dropDownMenu)}
+                                                                        >
+                                                                            {item.heading}
+                                                                        </Link>
+                                                                        <p className="text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
+                                                                            {item.subHeading}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                                <div className="flex flex-col">
+                                                    {
+                                                        dropMenus.map((item) => {
+                                                            return (
+                                                                <div key={item.id} className="flex mb-1 items-start gap-1">
+                                                                    <div className="relative w-4 h-4">
+                                                                        <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
+                                                                    </div>
+                                                                    <div>
+                                                                        <Link href={`/services/${item.url}`} className="hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
+                                                                            onClick={() => setDropDownMenu(!dropDownMenu)}
+                                                                        >
+                                                                            {item.heading}
+                                                                        </Link>
+                                                                        <p className="text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
+                                                                            {item.subHeading}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div className="flex flex-col justify-center items-center bg-lightBlack px-4 pb-4">
+                                            <Image width={163} height={163} src='/navbar/DropDownMedia.png' alt="BookIconImg" />
+                                            <div className="w-[187px] flex flex-col gap-y-2 pr-2">
+                                                <p className="text-lapfooterBody leading-[21px] tracking-[6%] font-normal capitalize">BOOK A CALL </p>
+                                                <p className="text-lapTitle3 font-bold leading-[19px] -tracking-[1%]">Want to know if Logo design maker is A good fit?</p>
+                                            </div>
+                                            <div className="flex relative items-center justify-center w-[190px] pb-2 px-4 py-8" >
+                                                <input type="text" placeholder="Enter Your Email" className="inputDesign2 text-primaryBlack outline-none border-none rounded-[45px] py-1 pr-[5px] pl-[10px] w-[190px]" />
+                                                <div className="absolute right-[4px] top-[34px]">
+                                                    <button className="bg-buttonBlack text-[10px] leading-[14px] font-semibold rounded-[45px] py-[5px] px-[8px]">Send</button>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
-                                    <div className="flex flex-col justify-center items-center bg-lightBlack px-4 pb-4">
-                                        <Image width={163} height={163} src='/navbar/DropDownMedia.png' alt="BookIconImg" />
-                                        <div className="w-[187px] flex flex-col gap-y-2 pr-2">
-                                            <p className="text-lapfooterBody leading-[21px] tracking-[6%] font-normal capitalize">BOOK A CALL </p>
-                                            <p className="text-lapTitle3 font-bold leading-[19px] -tracking-[1%]">Want to know if Logo design maker is A good fit?</p>
-                                        </div>
-                                        <div className="flex relative items-center justify-center w-[190px] pb-2 px-4 py-8" >
-                                            <input type="text" placeholder="Enter Your Email" className="inputDesign2 text-primaryBlack outline-none border-none rounded-[45px] py-1 pr-[5px] pl-[10px] w-[190px]" />
-                                            <div className="absolute right-[4px] top-[34px]">
-                                                <button className="bg-buttonBlack text-[10px] leading-[14px] font-semibold rounded-[45px] py-[5px] px-[8px]">Send</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                )
+                                }
                             </div>
                         </li>
 
@@ -128,7 +134,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-
+            {/* //mobile services  */}
             <div className={`-z-40 bg-secondaryBlack flex flex-col lg:hidden absolute ${hide ? "left-[0px] top-20" : "-py-0 top-12 -left-[72rem]"} bg-lightWhite w-full transition-all duration-500 ease-in-out rounded-br-[20px] rounded-bl-[20px]`} >
                 <div className="bg-secondaryBlack absolute w-full">
                     <div className="p-8">

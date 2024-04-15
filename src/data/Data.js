@@ -66,25 +66,29 @@ export const dropMenu = [
         id: 1,
         img: "/navbar/BookIcon.png",
         heading: "Book and magazine designs",
-        subHeading: "Your Digital Content Supercharged"
+        subHeading: "Your Digital Content Supercharged",
+        url: "book-and-magazine-designs"
     },
     {
         id: 2,
         img: "/navbar/BookIcon.png",
         heading: "Clothing and Merchandise",
-        subHeading: "Eye Catchy Designs That Perform"
+        subHeading: "Eye Catchy Designs That Perform",
+        url: "clothing-and-merchandise"
     },
     {
         id: 3,
         img: "/navbar/BookIcon.png",
         heading: "Illustration and Art",
-        subHeading: "Eye Catchy Designs That Perform"
+        subHeading: "Eye Catchy Designs That Perform",
+        url: "illustration-and-art"
     },
     {
         id: 4,
         img: "/navbar/BookIcon.png",
         heading: "Social Media Design",
-        subHeading: "Eye Catchy Designs That Perform"
+        subHeading: "Eye Catchy Designs That Perform",
+        url: "social-media-design"
     },
 ]
 
@@ -92,26 +96,30 @@ export const dropMenus = [
     {
         id: 1,
         img: "/navbar/BookIcon.png",
-        heading: "Book and magazine designs",
-        subHeading: "Your Digital Content Supercharged"
+        heading: "Packaging and Label designs",
+        subHeading: "Your Digital Content Supercharged",
+        url: "packaging-and-label-designs"
     },
     {
         id: 2,
         img: "/navbar/BookIcon.png",
-        heading: "Book and magazine designs",
-        subHeading: "Your Digital Content Supercharged"
+        heading: "Website and App Design",
+        subHeading: "your-digital-content-supercharged",
+        url: "website-and-app-design"
     },
     {
         id: 3,
         img: "/navbar/BookIcon.png",
-        heading: "Book and magazine designs",
-        subHeading: "Your Digital Content Supercharged"
+        heading: "Brand And Identity Design",
+        subHeading: "Your Digital Content Supercharged",
+        url: "brand-and-identity-design"
     },
     {
         id: 4,
         img: "/navbar/BookIcon.png",
-        heading: "Book and magazine designs",
-        subHeading: "Your Digital Content Supercharged"
+        heading: "Business and advertising designs",
+        subHeading: "Your Digital Content Supercharged",
+        url: "business-and-advertising-designs"
     },
 
 ]
