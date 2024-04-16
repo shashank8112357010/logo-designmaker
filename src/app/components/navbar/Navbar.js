@@ -1,4 +1,5 @@
 "use client"
+import ButtonAtom from "@/app/atom/ButtonAtom"
 import { dropMenu, dropMenus } from "@/data/Data"
 import Image from "next/image"
 import Link from "next/link"
@@ -21,7 +22,7 @@ export default function Navbar() {
                 </div>
 
                 <Link href="/" className="px-4 sm:px-10 lg:px-20">
-                    <div className="relative w-[140px] xs:w-[180px] sm:w-[230px] h-[28px] xs:h-[36px] sm:h-[48px]">
+                    <div className="relative w-[140px] xs:w-[180px] sm:w-[200px] h-[28px] xs:h-[36px] sm:h-[40px]">
                         <Image src="/navbar/Logo.png" alt="logo design maker" fill className="mx-auto" />
                     </div>
                 </Link>
@@ -58,13 +59,13 @@ export default function Navbar() {
                                                                     <div className="relative w-4 h-4">
                                                                         <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
                                                                     </div>
-                                                                    <div>
-                                                                        <Link href={`/services/${item.url}`} className="hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
+                                                                    <div className="hover:underline">
+                                                                        <Link href={`/services/${item.url}`} className="servicesHeading hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
                                                                             onClick={() => setDropDownMenu(!dropDownMenu)}
                                                                         >
                                                                             {item.heading}
                                                                         </Link>
-                                                                        <p className="text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
+                                                                        <p className="servicesSubHeading text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
                                                                             {item.subHeading}
                                                                         </p>
                                                                     </div>
@@ -81,13 +82,13 @@ export default function Navbar() {
                                                                     <div className="relative w-4 h-4">
                                                                         <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
                                                                     </div>
-                                                                    <div>
-                                                                        <Link href={`/services/${item.url}`} className="hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
+                                                                    <div className="hover:underline">
+                                                                        <Link href={`/services/${item.url}`} className="servicesHeading hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
                                                                             onClick={() => setDropDownMenu(!dropDownMenu)}
                                                                         >
                                                                             {item.heading}
                                                                         </Link>
-                                                                        <p className="text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
+                                                                        <p className="servicesSubHeading text-lapfooterBody text-primaryGrey mb-[1px] font-normal leading-[21px]">
                                                                             {item.subHeading}
                                                                         </p>
                                                                     </div>
@@ -129,8 +130,10 @@ export default function Navbar() {
                             </a>
                         </li>
                     </ul>
-                    <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Sign in</button>
-                    <button className="hidden sm:block text-[10px] sm:text-[14px] font-semibold bg-primaryGreen border-2 border-primaryGreen hover:bg-secondaryBlack hover:border-primaryGreen text-black hover:text-white px-[14px] py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">Get Started</button>
+                    <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">
+                        Sign in
+                    </button>
+                    <ButtonAtom displayy="hidden sm:block" title="Get Started" />
                 </div>
             </div>
 
