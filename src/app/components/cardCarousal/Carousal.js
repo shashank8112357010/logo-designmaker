@@ -15,7 +15,7 @@ export default function Carousal({ carousalDelay }) {
                         {location === "/" ?
                             <Image src={item.img} width={223} height={405} alt={item.id} priority />
                             :
-                            <div className="w-[70px] sm:w-[100px] lg:w-[130px] h-[150px] lg:h-[200px] relative">
+                            <div className="w-[70px] sm:w-[100px] lg:w-[85px] h-[150px] lg:h-[150px] relative">
                                 <Image src={item.img} fill alt={item.id} priority />
                             </div>
                         }

@@ -3,17 +3,17 @@ import Carousal from "../cardCarousal/Carousal";
 import ButtonAtom from "@/app/atom/ButtonAtom";
 import { Card } from "@/data/Data";
 
-export default function CommonServicesBanner() {
+export default function ServicesBanner() {
     return (
         <div className="w-full">
 
             <div className="flex flex-row gap-4 items-center justify-center overflow-hidden xl:gap-10 h-[380px] xs:h-[383px] sm:h-[503px] lg:h-[501px] relative">
-                <div className="w-[100px] sm:w-[250px] lg:w-[400px] h-screen flex flex-row-reverse gap-x-3 overflow-hidden absolute left-0">
+                <div className="w-[100px] sm:w-[250px] lg:w-[250px] h-screen flex flex-row-reverse gap-x-3 overflow-hidden absolute left-0">
                     <Carousal carousalDelay="carousal" />
                     <Carousal carousalDelay="carousal2" />
                     <Carousal carousalDelay="carousal" />
                 </div>
-                <div className="w-[100px] sm:w-[250px] lg:w-[400px] h-screen flex flex-row gap-x-3 overflow-hidden absolute right-0">
+                <div className="w-[100px] sm:w-[250px] lg:w-[250px] h-screen flex flex-row gap-x-3 overflow-hidden absolute right-0">
                     <Carousal carousalDelay="carousal" />
                     <Carousal carousalDelay="carousal2" />
                     <Carousal carousalDelay="carousal" />

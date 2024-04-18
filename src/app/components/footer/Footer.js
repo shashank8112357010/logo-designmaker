@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <section className="max-w-[1920px] mx-auto bg-secondaryBlack pt-10 sm:bg-primaryBlack text-white sm:px-8">
-            <div className="flex justify-center flex-col sm:flex-row sm:pb-8 lg:pb-16 lg:flex-row text-center sm:text-start gap-[33px] sm:text-normal sm:justify-normal flex-wrap lg:pl-10 relative  ">
+            <div className="flex max-w-[1920px] mx-auto  justify-center flex-col sm:flex-row sm:pb-8 lg:pb-16 lg:flex-row text-center sm:text-start gap-[33px] sm:text-normal sm:justify-normal flex-wrap lg:pl-10 relative">
                 {
                     footerLinks && footerLinks.map((footer, index) => {
                         return (

@@ -17,15 +17,16 @@ export default function FooterAccordion({ footerLinks }) {
             className="flex justify-between items-center gap-[10.5rem] cursor-pointer"
             onClick={() => toggleAccordion(index)}
           >
-            <p className="text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold text-white leading-[24px]">
+            <p className="text-mobfooterTitle whitespace-nowrap  sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold text-white leading-[24px]">
               {link.heading}
             </p>
-            <Image
-              src={openFooterLinks === index ? "/home/UpArrow.png" : "/home/DownArrow.png"}
-              width={10}
-              height={4}
-              alt={openFooterLinks === index ? "UpArrowImg" : "DownArrowImg"}
-            />
+            <div className="w-2 h-[5px] relative">
+              <Image
+                src={openFooterLinks === index ? "/home/UpArrow.png" : "/home/DownArrow.png"}
+                fill
+                alt={openFooterLinks === index ? "UpArrowImg" : "DownArrowImg"}
+              />
+            </div>
           </div>
 
           <ul className={`${(openFooterLinks === index) ? "max-h-60" : "max-h-0"} overflow-hidden mt-2 cursor-pointer transition-all duration-500 ease-in-out flex flex-col justify-start items-start`}>

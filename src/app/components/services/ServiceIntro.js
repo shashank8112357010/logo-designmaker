@@ -1,7 +1,7 @@
 import ButtonAtom from "@/app/atom/ButtonAtom";
 import Image from "next/image";
 
-export default function CommonIntro({ imgSrc, subHeading1, subHeading2, heading1, heading2, heading3, para1, para2, withButton, flexDirection }) {
+export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading1, heading2, heading3, para1, para2, withButton, flexDirection }) {
     return (
         <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex">
             <div className={`flex ${flexDirection} text-white pt-10 pb-10 lg:pt-20 lg:pb-10 px-4 justify-center lg:justify-start sm:px-10 lg:px-10 gap-10 flex-wrap lg:flex-nowrap`}>
