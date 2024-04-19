@@ -1,5 +1,5 @@
 'use client'
-import FaqAtom from "@/app/atom/faqAtom"
+import {FaqAtom} from "@/app/atom/faqAtom"
 import { faqs } from "@/data/Data"
 import { useState } from "react"
 
