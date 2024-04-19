@@ -1,3 +1,4 @@
+"use client"
 import BoxAtom from "@/app/atom/BoxAtom";
 import { BoxData } from "@/data/Data";
 import DesignHeaderAtom from "@/app/atom/DesignHeaderAtom";
