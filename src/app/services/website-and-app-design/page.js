@@ -9,7 +9,11 @@ import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
+<<<<<<< HEAD
 import {FaqAtom} from "@/app/atom/faqAtom";
+=======
+import FaqAtom from "@/app/atom/FaqAtom";
+>>>>>>> dev
 import { faqs, servicesDesignData } from "@/data/website-and-app-design";
 
 export default function WebsiteAppDesign() {
