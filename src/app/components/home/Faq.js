@@ -1,9 +1,5 @@
 'use client'
-<<<<<<< HEAD
-import {FaqAtom} from "@/app/atom/faqAtom"
-=======
 import FaqAtom from "@/app/atom/FaqAtom"
->>>>>>> dev
 import { faqs } from "@/data/Data"
 import { useState } from "react"
 

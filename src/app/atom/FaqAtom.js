@@ -10,11 +10,14 @@ export default function FaqAtom({ faqs }) {
             <div className="flex flex-col max-w-[1023px] mx-auto gap-8">
                 <h2 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold" >FAQ&#39;S</h2>
                 {faqs.map((item, index) =>
-                    <FaqShowAtom key={item.id}
+                    <FaqShowAtom
+                        key={item.id}
                         index={index}
                         data={item}
                         openIndex={openIndex}
-                        setOpenIndex={setOpenIndex} />)}
+                        setOpenIndex={setOpenIndex}
+                    />
+                )}
             </div>
         </section>
     )
