@@ -5,7 +5,7 @@ export default function HeroBanner() {
 
     return (
         <section className="w-full max-w-[1920px] mx-auto bg-primaryBlack overflow-hidden ">
-            <div className="flex flex-row gap-4 items-center justify-center overflow-hidden xl:gap-10 h-[380px] xs:h-[383px] sm:h-[403px] md:h-[601px] relative">
+            <div className="flex flex-row gap-4 items-center justify-center overflow-hidden xl:gap-10 h-[380px] xs:h-[383px] sm:h-[403px] md:h-[700px] relative">
                 <Carousal carousalDelay="carousal" />
                 <Carousal carousalDelay="carousal2" />
                 <Carousal carousalDelay="carousal" />

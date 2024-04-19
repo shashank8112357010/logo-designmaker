@@ -45,13 +45,13 @@ export default function Navbar() {
                                 {/* //Dropdown services for lap screen */}
                                 {dropDownMenu && (
                                     <div className={`servicesBottomList bg-darkBlack w-[910px] justify-between `}>
-                                        <div className="flex flex-col justify-center gap-8 pl-[52px] pt-6 pb-10">
+                                        <div className="flex flex-col justify-center gap-8 pl-[52px] -pt-4 pb-4">
                                             <div className="text-[16px] font-normal leading-[28px] tracking-[1px]">
                                                 SERVICES
                                             </div>
 
-                                            <div className="flex justify-center gap-[39px]">
-                                                <div className="flex flex-col items-start">
+                                            <div className="flex justify-center gap-[45px]">
+                                                <div className="flex flex-col items-start gap-1">
                                                     {
                                                         dropMenu.map((item) => {
                                                             return (
@@ -74,7 +74,7 @@ export default function Navbar() {
                                                         })
                                                     }
                                                 </div>
-                                                <div className="flex flex-col">
+                                                <div className="flex flex-col gap-1">
                                                     {
                                                         dropMenus.map((item) => {
                                                             return (
