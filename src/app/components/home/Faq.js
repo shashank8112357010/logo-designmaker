@@ -1,5 +1,5 @@
 'use client'
-import FaqAtom from "@/app/atom/faqAtom"
+import FaqAtom from "@/app/atom/FaqAtom"
 
 
 import { faqs } from "@/data/Data"
