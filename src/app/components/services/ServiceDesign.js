@@ -3,7 +3,6 @@ import Image from "next/image";
 
 export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, heading1, heading2, heading3, para, withButton, flexDirection, servicesDesignData }) {
 
-    console.log("aman=>", servicesDesignData)
 
     return (
         <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex">
