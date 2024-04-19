@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import FaqAtom from "@/app/atom/faqAtom";
+import {FaqAtom} from "@/app/atom/faqAtom";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/brand-and-identity-design";
 
