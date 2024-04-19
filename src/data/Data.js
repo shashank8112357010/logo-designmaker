@@ -42,6 +42,8 @@ export const faqs = [
     { id: 4, ques: "How can I get started?", ans: "Getting started is easy! Simply visit our website and fill out a brief form outlining your brand and design preferences. A member of our team will then be in touch to discuss your project further and answer any questions you may have. " }
 ]
 
+
+
 //footer 
 export const footerLinks = [
     { heading: "Category", data: ["Brand & Identity", "Business & Advertising", "Packaging & Label Design", "Website & App Design", "Social Media Design", "Illustration & Art", "Book & Magzine Design", "Clothing & Merchandise"] },

@@ -1,23 +1,20 @@
 import ButtonAtom from "@/app/atom/ButtonAtom";
 import Image from "next/image";
 
-const servicesDesignData = [
-    { id: 1, heading: "Get a Free Quote:", subHeading: " Fill out our quick online form to receive a free quote and discuss your specific website or app design needs with our team." },
-    { id: 2, heading: "Browse Our Portfolio:", subHeading: " Explore our diverse portfolio of Website & App Design projects across various industries to see the impact we can create." },
-    { id: 3, heading: "Download Our Design Guide:", subHeading: " Learn valuable tips and insights on crafting user-centric websites and apps that drive engagement and achieve your business goals." },
-]
+export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, heading1, heading2, heading3, para, withButton, flexDirection, servicesDesignData }) {
 
-export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, heading1, heading2, heading3, para1, para2, withButton, flexDirection }) {
+    console.log("aman=>", servicesDesignData)
+
     return (
         <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex">
             <div className={`flex ${flexDirection} text-white pb-20 lg:pb-20 px-4 items-center lg:justify-start justify-center sm:px-10 lg:px-10 flex-wrap lg:flex-nowrap`}>
                 {/* first section */}
                 <div className="md:min-w-[500px] flex justify-center items-center">
-                    <Image src={imgSrc} width={500} height={216} alt="Building Web and App Development" />
+                    <Image src={imgSrc} width={500} height={216} alt={heading2} />
                 </div>
 
                 {/* second section */}
-                <div className="max-w-[400px] sm:max-w-[480px] lg:max-w-[700px] flex flex-col gap-4 items-center  text-start">
+                <div className="max-w-[400px] sm:max-w-[480px] mt-20 lg:max-w-[700px] flex flex-col gap-4 items-center  text-start">
                     <div className="w-full uppercase text-[10px] sm:text-[14px] lg:text-[20px] leading-[11px] sm:leading-[16px] lg:leading-[23px] font-medium ">
                         {subHeading1}
                         <span className="text-primaryGreen">{subHeading2}</span>
@@ -26,11 +23,15 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                         {heading1}<span className="text-primaryGreen">{heading2}</span> <span>{heading3}</span>
                     </div>
 
+                    <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody leading-[18px] lg:leading-[28px] my-2">
+                        {para}
+                    </p>
+
                     {/* mapping Data  */}
                     <div>
                         <div>
                             {
-                                servicesDesignData.map((item) => {
+                                servicesDesignData?.map((item) => {
                                     return (
                                         <div key={item.id} className="flex flex-row justify-center gap-1">
                                             <div className="w-6 h-2 relative mt-5">
