@@ -66,30 +66,30 @@ export const socialLinks = [
 export const dropMenu = [
     {
         id: 1,
-        img: "/navbar/BookIcon.png",
+        img: "/navbar/navbarBook.png",
         heading: "Book and magazine designs",
-        subHeading: "Your Digital Content Supercharged",
+        subHeading: "Stunning designs that perform",
         url: "book-and-magazine-designs"
     },
     {
         id: 2,
-        img: "/navbar/BookIcon.png",
+        img: "/navbar/navbarClothes.png",
         heading: "Clothing and Merchandise",
-        subHeading: "Eye Catchy Designs That Perform",
+        subHeading: "All about how to use",
         url: "clothing-and-merchandise"
     },
     {
         id: 3,
-        img: "/navbar/BookIcon.png",
+        img: "/navbar/navbarIllustration.png",
         heading: "Illustration and Art",
-        subHeading: "Eye Catchy Designs That Perform",
+        subHeading: "Newest feature releases",
         url: "illustration-and-art"
     },
     {
         id: 4,
-        img: "/navbar/BookIcon.png",
+        img: "/navbar/navbarSocialMedia.png",
         heading: "Social Media Design",
-        subHeading: "Eye Catchy Designs That Perform",
+        subHeading: "Immersive assets for ever screen",
         url: "social-media-design"
     },
 ]
@@ -97,31 +97,31 @@ export const dropMenu = [
 export const dropMenus = [
     {
         id: 1,
-        img: "/navbar/BookIcon.png",
+        img: "/navbar/navbarPackaging.png",
         heading: "Packaging and Label designs",
-        subHeading: "Your Digital Content Supercharged",
+        subHeading: "Everything you need to know",
         url: "packaging-and-label-designs"
     },
     {
         id: 2,
-        img: "/navbar/BookIcon.png",
+        img: "/navbar/navbarWebsiteApp.png",
         heading: "Website and App Design",
-        subHeading: "your-digital-content-supercharged",
+        subHeading: "How our products help you",
         url: "website-and-app-design"
     },
     {
         id: 3,
-        img: "/navbar/BookIcon.png",
+        img: "/navbar/navbarBrand.png",
         heading: "Brand And Identity Design",
-        subHeading: "Your Digital Content Supercharged",
+        subHeading: "Building products and systems",
         url: "brand-and-identity-design"
     },
     {
         id: 4,
-        img: "/navbar/BookIcon.png",
+        img: "/navbar/navbarBook.png",
         heading: "Business and advertising designs",
-        subHeading: "Your Digital Content Supercharged",
-        url: "business-and-advertising-designs"
+        subHeading: "Discover books & webinars",
+        url: "Discover books & webinars"
     },
 
 ]

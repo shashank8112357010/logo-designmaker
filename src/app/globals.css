@@ -150,7 +150,7 @@
 .servicesShow:hover .servicesBottomList {
     display: flex;
     top: 83px;
-    left: -520px;
+    left: -260px;
     transition: all 0.2s ease-in-out;
     animation: slideDown 0.5s forwards;
 }
