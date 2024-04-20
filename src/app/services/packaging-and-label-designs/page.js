@@ -10,29 +10,28 @@ import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import FaqAtom from "@/app/atom/FaqAtom";
 import { faqs } from "@/data/website-and-app-design";
-import { servicesDesignData2 } from "@/data/brand-and-identity-design";
-import { servicesDesignData } from "@/data/packaging-and-label-designs";
+import { servicesDesignData1, servicesDesignData2 } from "@/data/packaging-and-label-designs";
 
 export default function PackagingLabelDesigns() {
     const [content, setContent] = useState(1)
 
     const slideData = [
         {
-            para: "Logo Design Maker completely transformed my brand identity! From the initial consultation to the final design, the process was smooth and collaborative. They truly captured the essence of my brand and created a cohesive visual experience that resonates with my target audience. I highly recommend their services to anyone looking to elevate their brand.",
+            para: "Logo Design Maker's expertise in packaging design was instrumental in the success of our new product launch. Their ability to understand our target audience and create packaging that not only looked great but also effectively communicated our brand message resulted in a significant increase in sales. We're incredibly impressed with their creativity and professionalism, and we highly recommend their design services to anyone looking to make their products stand out on crowded shelves.",
             img: "/home/TestimonialAvtar.png",
             name: "Sarah Jones",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },
         {
-            para: "Logo Design Maker completely transformed my brand identity! From the initial consultation to the final design, the process was smooth and collaborative. They truly captured the essence of my brand and created a cohesive visual experience that resonates with my target audience. I highly recommend their services to anyone looking to elevate their brand.",
+            para: "Logo Design Maker's expertise in packaging design was instrumental in the success of our new product launch. Their ability to understand our target audience and create packaging that not only looked great but also effectively communicated our brand message resulted in a significant increase in sales. We're incredibly impressed with their creativity and professionalism, and we highly recommend their design services to anyone looking to make their products stand out on crowded shelves.",
             img: "/home/TestimonialAvtar.png",
             name: "Sarah Jones",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },
         {
-            para: "Logo Design Maker completely transformed my brand identity! From the initial consultation to the final design, the process was smooth and collaborative. They truly captured the essence of my brand and created a cohesive visual experience that resonates with my target audience. I highly recommend their services to anyone looking to elevate their brand.",
+            para: "Logo Design Maker's expertise in packaging design was instrumental in the success of our new product launch. Their ability to understand our target audience and create packaging that not only looked great but also effectively communicated our brand message resulted in a significant increase in sales. We're incredibly impressed with their creativity and professionalism, and we highly recommend their design services to anyone looking to make their products stand out on crowded shelves.",
             img: "/home/TestimonialAvtar.png",
             name: "Sarah Jones",
             designation: "Developer",
@@ -45,11 +44,11 @@ export default function PackagingLabelDesigns() {
 
             <ServicesBanner heading="Design that Sells: The Power of " subHeading="Packaging & Labeling" para="In today's retail scene, first impressions are key. Packaging and labeling aren't just functional—they're powerful marketing tools. At Logo Design Maker, we grasp their importance. Our skilled designers create eye-catching packaging and labels that protect your product, attract attention, convey your brand's message, and boost sales." />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="From Concept to Creation: Crafting " subHeading2="Packaging that Captivates" heading1="From Shelf Appeal to Brand Advocacy: The Tangible Benefits of Exceptional " heading2="Packaging & Labelling" para="Investing in professional packaging and labeling design is more than just creating something visually appealing; it's a strategic investment that delivers tangible benefits for your brand:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="From Concept to Creation: Crafting " subHeading2="Packaging that Captivates" heading1="From Shelf Appeal to Brand Advocacy: The Tangible Benefits of Exceptional " heading2="Packaging & Labelling" para="Investing in professional packaging and labeling design is more than just creating something visually appealing; it's a strategic investment that delivers tangible benefits for your brand:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
-                    <DesignHeaderAtom heading="Crafting a Seamless Brand Experience with" subHeading="Logo Design Maker" para="At Logo Design Maker, we create impactful brand identities beyond just logos. Our experienced team collaborates closely with you to craft visually stunning designs that resonate with your audience and drive business growth." />
+                    <DesignHeaderAtom heading="A Symphony of Design Solutions for" subHeading="Your Products" para="We offer a comprehensive range of packaging and labeling design services to cater to your specific needs. Here's a glimpse into how we can help you create packaging and labeling that sells:" />
                 </div>
                 <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
                     <StoryAtom setContent={setContent} content={content} />
@@ -57,10 +56,10 @@ export default function PackagingLabelDesigns() {
                         <div className="w-3/3">
                             <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
                                 <div className="max-w-[280px] sm:max-w-[380px] lg:max-w-[600px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white gap-4 md:gap-0">
-                                    Stationery Design
+                                    Packaging Design
                                 </div>
                                 <p className="max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] mx-auto lg:text-[16px] sm:text-[12px] text-[12px] lg:leading-[28px]  sm:leading-[18px] leading-[18px] text-primaryGray px-4 sm:px-0 lg:px-0">
-                                    Elevate your business communications beyond the digital realm with a suite of custom-designed stationery. Our designers will create a cohesive set of letterheads, envelopes, and invoices that seamlessly integrate with your overall brand identity. Imagine the impact of crafting a handwritten note to a client on a letterhead that beautifully showcases your logo, color palette, and typography. This attention to detail reinforces professionalism and builds trust with your audience, leaving a lasting and positive impression.
+                                    From boxes and bags to bottles and tubes, we can design captivating packaging that showcases your product in style. Our designers will create visually appealing and functional packaging solutions that not only look great but also ensure your product arrives safely at its destination. We&apos;ll consider factors like material selection, size, and functionality to create packaging that enhances your brand image and protects your product.
                                 </p>
                             </div>
                             <div className="w-full mx-auto text-center md:text-start">
@@ -79,10 +78,11 @@ export default function PackagingLabelDesigns() {
 
             <SliderAtom slideData={slideData} />
 
+            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to transform your " heading2="into potent marketing tools?" heading3="into potent marketing tools?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
-            <ServiceDesign imgSrc="/services/brand and identity design.png" heading1="Ready to unlock the power of exceptional " heading2="Brand Identity design?" flexDirection="flex-row" servicesDesignData={servicesDesignData2} />
-
-            <ServicesCTA imgSrc="/services/smart-business-plan-and-corporate-strategy.png" heading="Ready to Elevate Your Brand Experience?" para="Investing in a professional brand identity design is an investment in your business's future. At Logo Design Maker, we offer a variety of branding services to suit your specific needs and budget. Whether you're looking for a standalone logo design or a comprehensive brand identity package, our team is here to help you create a memorable and impactful brand experience." />
+            <div className="mt-52">
+                <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Drive your product&apos;s success with compelling design: Act now!" para="Investing in professional packaging and labeling design is an investment in your product&apos;s success. At Logo Design Maker, we offer a comprehensive suite of design services to cater to your specific needs and product positioning. Our experienced designers can create visually captivating packaging and labels that not only grab attention but also effectively communicate your brand message and entice customers to choose your product." />
+            </div>
 
             <FaqAtom faqs={faqs} />
 

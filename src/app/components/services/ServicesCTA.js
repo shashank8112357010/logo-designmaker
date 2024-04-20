@@ -27,7 +27,7 @@ export default function ServicesCTA({ heading, para, imgSrc }) {
                 </div>
 
                 <div className="relative lgg:w-[450px]">
-                    <div className="lgg:w-[500px] xl:w-[587px] hidden lgg:block h-[600px] xl:h-[689px] absolute -top-[250px] xl:-top-[280px] -right-20 xl:-right-28">
+                    <div className="lgg:w-[480px] xl:w-[487px] hidden lgg:block h-[350px] xl:h-[549px] absolute -top-[250px] xl:-top-[280px] -right-20 xl:-right-28">
                         <Image src={imgSrc} alt="Call to action logo design" fill />
                     </div>
                 </div>
