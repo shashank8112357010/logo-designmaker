@@ -13,8 +13,8 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                 </div>
 
                 {/* second section */}
-                <div className="max-w-[400px] sm:max-w-[480px] mt-20 lg:max-w-[700px] flex flex-col gap-4 items-center  text-start">
-                    <div className="w-full uppercase text-[10px] sm:text-[14px] lg:text-[20px] leading-[11px] sm:leading-[16px] lg:leading-[23px] font-medium ">
+                <div className="max-w-[400px] sm:max-w-[480px] mt-20 lg:max-w-[740px] flex flex-col gap-4 items-center text-start">
+                    <div className="w-full uppercase text-[10px] sm:whitespace-nowrap sm:text-[14px] lg:text-[20px] leading-[11px] sm:leading-[16px] lg:leading-[23px] font-medium ">
                         {subHeading1}
                         <span className="text-primaryGreen">{subHeading2}</span>
                     </div>
@@ -37,7 +37,7 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                                                 <Image src="/services/PencilIcon.png" fill alt="pencil icon for services design" />
                                             </div>
                                             <div className="text-primaryGreen font-bold text-mobBody sm:text-tabBody lg:text-lapBody leading-[21px] sm:leading-[25px] lg:leading-[28px] tracking-[-1px] mt-2">
-                                                {item.heading}
+                                                {item.heading} &nbsp;
                                                 <span className="font-normal text-white">
                                                     {item.subHeading}
                                                 </span>

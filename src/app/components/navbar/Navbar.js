@@ -55,20 +55,20 @@ export default function Navbar() {
                                                     {
                                                         dropMenu.map((item) => {
                                                             return (
-                                                                <div key={item.id} className="flex mb-1 items-start gap-2" >
+                                                                <div key={item.id} className="flex mb-1 items-start gap-2 hover:-translate-y-1 transition-all duration-300 ease-in-out" >
                                                                     <div className="relative w-4 h-4">
                                                                         <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
                                                                     </div>
-                                                                    <div className="hover:underline flex flex-col gap-[2px]">
-                                                                        <Link href={`/services/${item.url}`} className="servicesHeading hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
+                                                                    <Link href={`/services/${item.url}`} className="hover:underline flex flex-col gap-[2px] group">
+                                                                        <div className="servicesHeading group-hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
                                                                             onClick={() => setDropDownMenu(!dropDownMenu)}
                                                                         >
                                                                             {item.heading}
-                                                                        </Link>
-                                                                        <p className="servicesSubHeading text-[14px] text-[#677489] mb-[1px] font-normal leading-[21px]">
+                                                                        </div>
+                                                                        <p className="servicesSubHeading cursor-pointer text-[14px] text-[#677489] mb-[1px] font-normal leading-[21px]">
                                                                             {item.subHeading}
                                                                         </p>
-                                                                    </div>
+                                                                    </Link>
                                                                 </div>
                                                             )
                                                         })
@@ -78,20 +78,20 @@ export default function Navbar() {
                                                     {
                                                         dropMenus.map((item) => {
                                                             return (
-                                                                <div key={item.id} className="flex mb-1 items-start gap-2">
+                                                                <div key={item.id} className="flex mb-1 items-start gap-2 hover:-translate-y-1 transition-all duration-300 ease-in-out">
                                                                     <div className="relative w-4 h-4">
                                                                         <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
                                                                     </div>
-                                                                    <div className="hover:underline">
-                                                                        <Link href={`/services/${item.url}`} className="servicesHeading hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
+                                                                    <Link href={`/services/${item.url}`} className="hover:underline group">
+                                                                        <div className="servicesHeading group-hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
                                                                             onClick={() => setDropDownMenu(!dropDownMenu)}
                                                                         >
                                                                             {item.heading}
-                                                                        </Link>
-                                                                        <p className="servicesSubHeading text-lapfooterBody text-[#677489] mb-[1px] font-normal leading-[21px]">
+                                                                        </div>
+                                                                        <p className="cursor-pointer servicesSubHeading text-lapfooterBody text-[#677489] mb-[1px] font-normal leading-[21px]">
                                                                             {item.subHeading}
                                                                         </p>
-                                                                    </div>
+                                                                    </Link>
                                                                 </div>
                                                             )
                                                         })
