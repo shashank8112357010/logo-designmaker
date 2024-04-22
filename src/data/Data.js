@@ -121,7 +121,7 @@ export const dropMenus = [
         img: "/navbar/navbarBook.png",
         heading: "Business and advertising designs",
         subHeading: "Discover books & webinars",
-        url: "Discover books & webinars"
+        url: "business-and-advertising-designs"
     },
 
 ]

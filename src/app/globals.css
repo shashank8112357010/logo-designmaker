@@ -121,8 +121,8 @@
 .servicesAfter {
     position: absolute;
     right: -0px;
-    top: 46%;
-    transform: rotate(135deg);
+    top: 43%;
+    transform: rotate(-45deg);
     margin-left: 4px;
     border-top: 0;
     border-bottom: 2px solid white;
@@ -134,8 +134,8 @@
 }
 
 .servicesShow:hover .servicesAfter {
-    transform: rotate(-45deg);
-    top: 43%;
+    transform: rotate(135deg);
+    top: 46%;
     border-bottom: 2px solid #5CFF85;
     border-left: 2px solid #5CFF85;
 }

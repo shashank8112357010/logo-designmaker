@@ -56,8 +56,8 @@ export default function Navbar() {
                                                         dropMenu.map((item) => {
                                                             return (
                                                                 <div key={item.id} className="flex mb-1 items-start gap-2 hover:-translate-y-1 transition-all duration-300 ease-in-out" >
-                                                                    <div className="relative w-4 h-4">
-                                                                        <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
+                                                                    <div className="relative w-5 h-5">
+                                                                        <Image className="absolute top-[4.2px]" width={20} height={20} src={item.img} alt="BookIconImg" />
                                                                     </div>
                                                                     <Link href={`/services/${item.url}`} className="hover:underline flex flex-col gap-[2px] group">
                                                                         <div className="servicesHeading group-hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
@@ -79,8 +79,8 @@ export default function Navbar() {
                                                         dropMenus.map((item) => {
                                                             return (
                                                                 <div key={item.id} className="flex mb-1 items-start gap-2 hover:-translate-y-1 transition-all duration-300 ease-in-out">
-                                                                    <div className="relative w-4 h-4">
-                                                                        <Image className="absolute top-[4.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
+                                                                    <div className="relative w-5 h-5">
+                                                                        <Image className="absolute top-[4.2px]" width={20} height={20} src={item.img} alt="BookIconImg" />
                                                                     </div>
                                                                     <Link href={`/services/${item.url}`} className="hover:underline group">
                                                                         <div className="servicesHeading group-hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"
@@ -130,7 +130,7 @@ export default function Navbar() {
                 <div className="bg-secondaryBlack absolute w-full">
                     <div className="p-8">
                         <ul className="flex flex-col text-[14px] text-white font-semibold">
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer"><a>About Us</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><a>About Us</a></li>
                             <li className={`customBorderBottom pt-3 pb-2 border-primaryGrey transition-all duration-700 ease-in-out cursor-pointer relative`} >
                                 <a onClick={() => setShow(!show)} className="block">
                                     Services
@@ -143,7 +143,7 @@ export default function Navbar() {
                                         {
                                             dropMenu.map((item) => {
                                                 return (
-                                                    <div key={item.id} className="flex mb-1 items-start gap-3" >
+                                                    <div key={item.id} className="flex mb-1 items-start gap-3" onClick={() => setHide(!hide)}>
                                                         <div className="relative w-4 h-4">
                                                             <Image className="absolute top-[2.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
                                                         </div>
@@ -161,7 +161,7 @@ export default function Navbar() {
                                         {
                                             dropMenus.map((item) => {
                                                 return (
-                                                    <div key={item.id} className="flex mb-1 items-start gap-3" >
+                                                    <div key={item.id} className="flex mb-1 items-start gap-3 " onClick={() => setHide(!hide)}>
                                                         <div className="relative w-4 h-4">
                                                             <Image className="absolute top-[2.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
                                                         </div>
@@ -179,9 +179,9 @@ export default function Navbar() {
                                     </div>
                                 </ul>
                             </li>
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer"><a>Pricing</a></li>
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer"><a>Contact</a></li>
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer"><a>Resources</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><a>Pricing</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><a>Contact</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><a>Resources</a></li>
                         </ul>
                     </div>
                 </div>

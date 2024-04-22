@@ -33,8 +33,8 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                                 servicesDesignData?.map((item) => {
                                     return (
                                         <div key={item.id} className="flex flex-row justify-center gap-1">
-                                            <div className="w-6 h-2 relative mt-5">
-                                                <Image src="/services/PencilIcon.png" fill alt="pencil icon for services design" />
+                                            <div className="w-6 h-2 relative mt-[18px]">
+                                                <div className="w-2 h-2 bg-primaryGreen rounded-full"></div>
                                             </div>
                                             <div className="text-primaryGreen font-bold text-mobBody sm:text-tabBody lg:text-lapBody leading-[21px] sm:leading-[25px] lg:leading-[28px] tracking-[-1px] mt-2">
                                                 {item.heading} &nbsp;
