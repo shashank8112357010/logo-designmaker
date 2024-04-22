@@ -60,7 +60,7 @@ export default function ClothingMerchandise() {
                                     Card Design or Invitation Design
                                 </div>
                                 <p className="max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] mx-auto lg:text-[16px] sm:text-[12px] text-[12px] lg:leading-[28px]  sm:leading-[18px] leading-[18px] text-primaryGray px-4 sm:px-0 lg:px-0">
-                                    Make a lasting first impression with beautifully designed cards or invitations. Whether it's a custom business card, a playful greeting card, or an elegant wedding invitation, our designers will create unique and visually captivating designs that perfectly reflect the occasion or your brand identity. From playful illustrations to elegant typography, we'll ensure your cards or invitations leave a memorable mark on the recipient.
+                                    Make a lasting first impression with beautifully designed cards or invitations. Whether it&apos;s a custom business card, a playful greeting card, or an elegant wedding invitation, our designers will create unique and visually captivating designs that perfectly reflect the occasion or your brand identity. From playful illustrations to elegant typography, we&apos;ll ensure your cards or invitations leave a memorable mark on the recipient.
                                 </p>
                             </div>
                             <div className="w-full mx-auto text-center md:text-start">
