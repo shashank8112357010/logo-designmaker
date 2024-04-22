@@ -19,7 +19,7 @@ export default function TellStoryContent({ content }) {
                                     <div className="text-mobTitle text-center sm:text-start sm:text-tabTitle lg:text-lapTitle font-semibold leading-[21px] lg:leading-[30px]">
                                         {item.heading}
                                     </div>
-                                    <p className="max-w-[330px] md:max-w-[520px] px-4 md:px-0 text-center md:text-start text-mobBody sm:text-tabBody lg:text-lapBody leading-[18px] lg:leading-[28px] text-primaryGray">
+                                    <p className="max-w-[330px] md:max-w-[520px] px-4 md:px-0 text-center md:text-start text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] text-primaryGray">
                                         {item.para}
                                     </p>
                                 </div>
@@ -47,7 +47,7 @@ export default function TellStoryContent({ content }) {
         <p className="text-mobTitle sm:text-tabTitle lg:text-lapTitle font-semibold leading-[21px] lg:leading-[30px]">
             Tell Your Story
         </p>
-        <div className="max-w-[330px] md:max-w-[520px] px-4 md:px-0 text-center md:text-start text-mobBody sm:text-tabBody lg:text-lapBody leading-[18px] lg:leading-[28px] text-primaryGray">
+        <div className="max-w-[330px] md:max-w-[520px] px-4 md:px-0 text-center md:text-start text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] text-primaryGray">
         </div>
     </div>
 </div>

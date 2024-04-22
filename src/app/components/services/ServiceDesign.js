@@ -22,7 +22,7 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                         {heading1}<span className="text-primaryGreen">{heading2}</span> <span>{heading3}</span>
                     </div>
 
-                    <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody leading-[18px] lg:leading-[28px] my-2">
+                    <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] my-2">
                         {para}
                     </p>
 
@@ -36,7 +36,7 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                                             <div className="w-6 h-2 relative mt-[18px]">
                                                 <div className="w-2 h-2 bg-primaryGreen rounded-full"></div>
                                             </div>
-                                            <div className="text-primaryGreen font-bold text-mobBody sm:text-tabBody lg:text-lapBody leading-[21px] sm:leading-[25px] lg:leading-[28px] tracking-[-1px] mt-2">
+                                            <div className="text-primaryGreen font-bold text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[21px] sm:leading-[25px] lg:leading-[28px] tracking-[-1px] mt-2">
                                                 {item.heading} &nbsp;
                                                 <span className="font-normal text-white">
                                                     {item.subHeading}

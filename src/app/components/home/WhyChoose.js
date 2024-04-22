@@ -12,7 +12,7 @@ export default function WhyChoose() {
                         <h4 className=' text-mobileHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold tracking-[-0.2] leading-5 sm:leading-7 lg:leading-10 mb-12'>
                             Logo Design Maker for your needs
                         </h4>
-                        <p className="text-mobBody sm:text-tabBody lg:text-lapBody text-primaryGray font-normal leading-[18px] lg:leading-7" >Break free from generic logos! Logo Design Maker offers seamless branding solutions with collaborative support, turning your vision into standout identities effortlessly.</p>
+                        <p className="text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] text-primaryGray font-normal leading-[18px] lg:leading-7" >Break free from generic logos! Logo Design Maker offers seamless branding solutions with collaborative support, turning your vision into standout identities effortlessly.</p>
                     </div>
 
                     <div className="flex items-end">

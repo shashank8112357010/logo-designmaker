@@ -3,7 +3,7 @@ import DesignHeaderAtom from "@/app/atom/DesignHeaderAtom";
 export default function HumanTouch() {
 
     return (
-        <section className=" max-w-[1920px] mx-auto bg-secondaryBlack text-white pt-0 md:pt-16 pb-16">
+        <section className=" max-w-[1920px] mx-auto bg-primaryBlack text-white pt-0 md:pt-16 pb-16">
 
             <DesignHeaderAtom heading="We Design with a Human Touch" para=" Our designers prioritize human connection, delving into your brand&apos;s essence for a resonant logo that propels success." />
 

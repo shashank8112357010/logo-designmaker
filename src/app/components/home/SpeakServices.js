@@ -7,7 +7,7 @@ import DesignHeaderAtom from "@/app/atom/DesignHeaderAtom";
 export default function SpeakServices() {
 
     return (
-        <section className=" max-w-[1920px] mx-auto bg-secondaryBlack text-white pt-16 pb-12 sm:py-16 px-[2px]">
+        <section className=" max-w-[1920px] mx-auto bg-primaryBlack text-white pt-16 pb-12 sm:py-16 px-[2px]">
 
             <DesignHeaderAtom
                 heading="Create a Design That Speaks Volumes"

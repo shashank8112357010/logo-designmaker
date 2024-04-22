@@ -7,6 +7,7 @@ import { useState } from "react"
 
 export default function Navbar() {
     const [hide, setHide] = useState(false)
+    console.log(hide)
     const [show, setShow] = useState(false)
     const [dropDownMenu, setDropDownMenu] = useState(true)
 
@@ -143,7 +144,13 @@ export default function Navbar() {
                                         {
                                             dropMenu.map((item) => {
                                                 return (
-                                                    <div key={item.id} className="flex mb-1 items-start gap-3" onClick={() => setHide(!hide)}>
+                                                    <div key={item.id} className="flex mb-1 items-start gap-3"
+                                                        onClick={() => {
+                                                            return (
+                                                                setHide(false),
+                                                                setShow(false)
+                                                            )
+                                                        }}>
                                                         <div className="relative w-4 h-4">
                                                             <Image className="absolute top-[2.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
                                                         </div>
@@ -161,7 +168,14 @@ export default function Navbar() {
                                         {
                                             dropMenus.map((item) => {
                                                 return (
-                                                    <div key={item.id} className="flex mb-1 items-start gap-3 " onClick={() => setHide(!hide)}>
+                                                    <div key={item.id} className="flex mb-1 items-start gap-3 "
+                                                        onClick={() => {
+                                                            return (
+                                                                setHide(false),
+                                                                setShow(false)
+                                                            )
+                                                        }}>
+
                                                         <div className="relative w-4 h-4">
                                                             <Image className="absolute top-[2.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
                                                         </div>
@@ -179,13 +193,13 @@ export default function Navbar() {
                                     </div>
                                 </ul>
                             </li>
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><a>Pricing</a></li>
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><a>Contact</a></li>
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><a>Resources</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><a>Pricing</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><a>Contact</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><a>Resources</a></li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div >
         </section >
     )
 }

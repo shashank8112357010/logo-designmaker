@@ -10,8 +10,8 @@ import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import FaqAtom from "@/app/atom/FaqAtom";
 import { faqs } from "@/data/website-and-app-design";
-import { servicesDesignData1, servicesDesignData2 } from "@/data/packaging-and-label-designs";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
+import { servicesDesignData1, servicesDesignData2 } from "@/data/social-media-design";
 
 export default function SociaMediaDesign() {
     const [content, setContent] = useState(1)
@@ -63,7 +63,7 @@ export default function SociaMediaDesign() {
                                     Twitter Header Design
                                 </div>
                                 <p className="max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] mx-auto lg:text-[16px] sm:text-[12px] text-[12px] lg:leading-[28px]  sm:leading-[18px] leading-[18px] text-primaryGray px-4 sm:px-0 lg:px-0">
-                                Twitter headers are prime real estate for grabbing attention and making a lasting first impression. We design captivating Twitter headers that showcase your brand personality, highlight essential information, and entice users to follow your profile. Think of it as a miniature billboard at the top of your Twitter page, constantly visible and ready to spark curiosity about your brand.
+                                    Twitter headers are prime real estate for grabbing attention and making a lasting first impression. We design captivating Twitter headers that showcase your brand personality, highlight essential information, and entice users to follow your profile. Think of it as a miniature billboard at the top of your Twitter page, constantly visible and ready to spark curiosity about your brand.
                                 </p>
                             </div>
                             <div className="w-full mx-auto text-center md:text-start">
@@ -84,7 +84,7 @@ export default function SociaMediaDesign() {
 
             <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="social media design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
-            <div className="mt-52">
+            <div className=" mt-8 sm:mt-32 md:mt-44">
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Brand's Growth: Take Action Today!" para="Investing in professional social media design is an investment in building a thriving online presence. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers craft captivating social media visuals that capture attention, ignite conversations, and propel your brand to social media stardom!
 " />
             </div>
