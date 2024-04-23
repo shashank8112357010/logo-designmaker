@@ -1,7 +1,31 @@
+"use client"
 import Image from "next/image"
 import Carousal from "../cardCarousal/Carousal"
+import { useEffect, useState } from "react";
 
 export default function HeroBanner() {
+    
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const texts = [
+        'Brand Personality',
+        'Website & App Design',
+        'Brand & Identity Design',
+        'Packaging & Labeling',
+        'Clothing & Merchandise Design',
+        'Illustration & Art',
+        'Business & Marketing Materials',
+        'Social Media Design',
+        'Book & Magazine Design'
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        }, 2000); // Change the interval duration as needed
+
+        return () => clearInterval(interval);
+    }, []);
+
 
     return (
         <section className="w-full max-w-[1920px] mx-auto bg-primaryBlack overflow-hidden ">
@@ -22,7 +46,7 @@ export default function HeroBanner() {
                 <main className="top-[30%] md:top-[30%] z-30 sm:w-[984px] max-w-[984px] min-h-[341px] absolute sm:px-0 sm:mt-5">
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
                         <h1 className="w-full text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] max-w-[300px] sm:max-w-5xl">Design your dream logo: Unleash your <br />
-                            <span className="font-[100px] font-springRainSolid text-primaryGreen tracking-wide">Brand&apos;s personality</span>
+                            <span className="font-[100px] font-springRainSolid text-primaryGreen tracking-wide">{texts[currentIndex]}</span>
                         </h1>
                         <div className="text-white flex flex-col justify-center items-center">
                             <p className="mb-2 sm:mb-8 text-center text-mobHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[19px] sm:leading-[22px] lg:leading-[25px] tracking-[-0.2px] max-w-[330px] sm:max-w-5xl">Ditch the robots, craft a logo you&apos;ll love with a human designer by your side.</p>
