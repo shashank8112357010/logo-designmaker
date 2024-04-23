@@ -151,8 +151,8 @@ export default function Navbar() {
                                                                 setShow(false)
                                                             )
                                                         }}>
-                                                        <div className="relative w-4 h-4">
-                                                            <Image className="absolute top-[2.2px]" width={15} height={15} src={item.img} alt="BookIconImg" />
+                                                        <div className="relative w-5 h-5">
+                                                            <Image className="absolute top-[2.2px]" width={20} height={20} src={item.img} alt="BookIconImg" />
                                                         </div>
                                                         <div className="hover:underline flex flex-col gap-[2px]">
                                                             <Link href={`/services/${item.url}`} className="servicesHeading hover:text-primaryGreen transition-all duration-300 ease-in-out text-lapTitle3 leading-[19px] font-bold mb-[1px]"

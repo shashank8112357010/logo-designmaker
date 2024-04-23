@@ -9,10 +9,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        // "gradient-radial-custom": "radial-gradient(circle , #2926B1 0%, #403DB9 38%)",
-        // "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
         primaryBlack: "#0B1926",
         secondaryBlack: "#182736",
