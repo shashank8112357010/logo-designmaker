@@ -7,7 +7,7 @@ export default function ServicesBanner({ heading, subHeading, para }) {
     return (
         <div className="w-full">
 
-            <div className="flex flex-row gap-4 items-center justify-center overflow-hidden xl:gap-10 h-[380px] xs:h-[383px] sm:h-[503px] lg:h-[501px] relative ">
+            <div className="flex flex-row gap-4 items-center justify-center overflow-hidden xl:gap-10 h-[420px] xs:h-[383px] sm:h-[583px] lg:h-[581px] relative mb-8">
 
                 <div className="absolute top-0 -left-40 xs:-left-80 sm:-left-32 lg:left-0">
                     <Image src="/services/serviceGradLeftTop.png" width={807} height={291} alt="linear-gradient-bottom" />
@@ -39,7 +39,7 @@ export default function ServicesBanner({ heading, subHeading, para }) {
 
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
                         <span className="font-[100px] text-center w-full font-springRainSolid text-white leading-[25px] lg:leading-[45px] text-[20px] lg:text-[35px]">Services</span>
-                        <h1 className="max-w-[250px] sm:max-w-[1920px] text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] lg:whitespace-nowrap">{heading}
+                        <h1 className="max-w-[250px] sm:max-w-[1920px] text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] ">{heading}
                             <br />
                             <span className="font-[100px] font-springRainSolid text-primaryGreen tracking-wide">{subHeading}</span>
                         </h1>

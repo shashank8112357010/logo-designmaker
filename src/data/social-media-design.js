@@ -1,9 +1,9 @@
 export const servicesDesignData1 = [
     { id: 1, heading: "Builds Brand Recognition & Memorability:", subHeading: "Consistent, visually appealing design style across all social platforms enhances brand identity, making your content instantly recognizable and reinforcing brand recall with your audience." },
-    { id: 2, heading: "Creates Trust & Credibility", subHeading: "  Professional social media visuals convey attention to detail and brand credibility, building trust and encouraging audience engagement and consideration." },
-    { id: 3, heading: "Differentiates You from the Competition:", subHeading: "  In a crowded social media scene, stand out with unique, visually compelling content. Our design expertise ensures attention-grabbing, curiosity-sparking creations that leave a lasting impression, setting you apart from competitors." },
+    { id: 2, heading: "Creates Trust & Credibility:", subHeading: "Professional social media visuals convey attention to detail and brand credibility, building trust and encouraging audience engagement and consideration." },
+    { id: 3, heading: "Differentiates You from the Competition:", subHeading: "In a crowded social media scene, stand out with unique, visually compelling content. Our design expertise ensures attention-grabbing, curiosity-sparking creations that leave a lasting impression, setting you apart from competitors." },
     { id: 4, heading: "Empowers Brand Storytelling: ", subHeading: "Your social media visuals tell compelling stories, conveying your brand's story, values, and personality. Captivating narratives resonate emotionally, fostering loyalty and advocacy." },
-    { id: 5, heading: "Strengthens Employee Engagement:", subHeading: " Social media aims to ignite discussions, forge connections, and prompt actions. Compelling visuals and engaging content drive higher engagement, website traffic, and conversions, be it purchases, sign-ups, or downloads." },
+    { id: 5, heading: "Strengthens Employee Engagement:", subHeading: "Social media aims to ignite discussions, forge connections, and prompt actions. Compelling visuals and engaging content drive higher engagement, website traffic, and conversions, be it purchases, sign-ups, or downloads." },
 ]
 
 

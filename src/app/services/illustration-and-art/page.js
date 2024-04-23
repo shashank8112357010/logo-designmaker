@@ -43,7 +43,6 @@ export default function IllustrationArt() {
     return (
         <section className="bg-primaryBlack overflow-hidden pt-20 max-w-[1920px] mx-auto">
 
-
             <ServicesBanner heading="Breathe Life into Your Brand: The Power of " subHeading="Illustration & Art" para="In a crowded world of information, visuals cut through the noise and make a lasting impact. At Logo Design Maker, we harness the storytelling power of illustration and art. Our talented artists craft captivating illustrations, creative graphics, and unique character designs, elevating your brand identity and forging deeper audience connections." />
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="Beyond Text & Photos: The Art of Storytelling Through " heading2=" Illustration" para1="Whether you need eye-catching illustrations for your website, engaging graphics for your marketing materials, or a one-of-a-kind mascot for your brand, we're here to help. Our illustration and art services are tailored to your specific needs and vision." para2="Through a collaborative process, we'll get to know your brand identity, target audience, and desired aesthetic. Our artists will then translate your vision into captivating visuals that resonate with your audience and leave a lasting impression." withButton={true} flexDirection="flex-row" />
