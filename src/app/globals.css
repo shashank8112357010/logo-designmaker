@@ -173,3 +173,45 @@
     transform: translate(-50%, -50%);
     z-index: 9999;
 }
+
+/* //sliding for home section  */
+.marquee-container {
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    font-weight: 250px;
+}
+
+.marquee-text {
+    position: absolute;
+    top: 4rem;
+    right: 0rem;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.marquee-text.active {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+@media (max-width : 978px) {
+    .marquee-container {
+        height: 40px;
+    }
+
+    .marquee-text {
+        top: 2.8rem;
+    }
+}
+
+@media (max-width : 640px) {
+    .marquee-container {
+        height: 17px;
+    }
+
+    .marquee-text {
+        top: 1.4rem;
+    }
+}

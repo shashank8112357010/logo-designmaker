@@ -1,5 +1,7 @@
-export default function Price () {
+import Image from "next/image";
+
+export default function Price() {
     return (
-        <div>price</div>
+        <div>aman</div>
     )
 }
