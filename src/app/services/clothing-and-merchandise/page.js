@@ -20,18 +20,21 @@ export default function ClothingMerchandise() {
         {
             para: "Logo Design Maker's expertise in t-shirt design was instrumental in launching our new clothing line. Their ability to understand our target audience and translate our vision into eye-catching designs was invaluable. We've seen a fantastic response to our new t-shirts, and they're quickly becoming a popular choice among our customers.",
             name: "Sarah Jones",
+            img: "/home/TestimonialAvtar.png",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },
         {
             para: "Logo Design Maker's expertise in t-shirt design was instrumental in launching our new clothing line. Their ability to understand our target audience and translate our vision into eye-catching designs was invaluable. We've seen a fantastic response to our new t-shirts, and they're quickly becoming a popular choice among our customers.",
             name: "Sarah Jones",
+            img: "/home/TestimonialAvtar.png",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },
         {
             para: "Logo Design Maker's expertise in t-shirt design was instrumental in launching our new clothing line. Their ability to understand our target audience and translate our vision into eye-catching designs was invaluable. We've seen a fantastic response to our new t-shirts, and they're quickly becoming a popular choice among our customers.",
             name: "Sarah Jones",
+            img: "/home/TestimonialAvtar.png",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },

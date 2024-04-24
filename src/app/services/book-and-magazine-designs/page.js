@@ -19,18 +19,21 @@ export default function BookMagazineDesigns() {
         {
             para: "Logo Design Maker's book cover design expertise was instrumental in the success of my debut novel. Their understanding of genre conventions and ability to translate my vision into a captivating design helped my book stand out on bookstore shelves and online retailers. Since the release of the book, I've seen a significant increase in sales and reader engagement.",
             name: "Sarah Jones",
+            img: "/home/TestimonialAvtar.png",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },
         {
             para: "Logo Design Maker's book cover design expertise was instrumental in the success of my debut novel. Their understanding of genre conventions and ability to translate my vision into a captivating design helped my book stand out on bookstore shelves and online retailers. Since the release of the book, I've seen a significant increase in sales and reader engagement.",
             name: "Sarah Jones",
+            img: "/home/TestimonialAvtar.png",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },
         {
             para: "Logo Design Maker's book cover design expertise was instrumental in the success of my debut novel. Their understanding of genre conventions and ability to translate my vision into a captivating design helped my book stand out on bookstore shelves and online retailers. Since the release of the book, I've seen a significant increase in sales and reader engagement.",
             name: "Sarah Jones",
+            img: "/home/TestimonialAvtar.png",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },

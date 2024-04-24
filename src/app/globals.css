@@ -215,3 +215,9 @@
         top: 1.4rem;
     }
 }
+
+/* shadow effect on cards  */
+.boxShadow:hover {
+    box-shadow: -2px 2px 3px 0px #5CFF85;
+    border-radius: 8px;
+}

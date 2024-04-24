@@ -45,7 +45,7 @@ export default function HeroBanner() {
 
                 <main className="top-[30%] md:top-[30%] z-30 sm:w-[984px] max-w-[984px] min-h-[341px] absolute sm:px-0 sm:mt-5">
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
-                        <h1 className="w-full text-mobHeaderTex text-centert sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] max-w-[300px] sm:max-w-5xl">Design your dream logo: Unleash your <br />
+                        <h1 className="w-full text-mobHeaderText text-center sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize tracking-[-1px] lg:-tracking-[3px] max-w-[300px] sm:max-w-5xl">Design your dream logo: Unleash your <br />
                             <div className="marquee-container flex justify-center items-center font-[100px] font-springRainSolid text-primaryGreen tracking-wide transition-all">
                                 {texts.map((text, index) => (
                                     <div key={index}

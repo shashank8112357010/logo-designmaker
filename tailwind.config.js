@@ -22,7 +22,7 @@ module.exports = {
       fontSize: {
         lapHeaderText: "50px",
         tabHeaderText: "30px",
-        mobHeaderText: "20px",
+        mobHeaderText: "24px",
 
         lapHeaderBody: "16px",
         tabHeaderBody: "14px",

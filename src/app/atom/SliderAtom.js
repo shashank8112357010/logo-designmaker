@@ -62,7 +62,7 @@ export default function SliderAtom({slideData}) {
                                             <p className="italic text-white text-[16px] sm:text-[18px] lg:text-[24px] font-normal leading-[25px] sm:leading-[28px] lg:leading-[38px]">
                                                 &quot;{item.para}!&quot;
                                             </p>
-                                            <span className=" border-y-2 border-white w-full"></span>
+                                            <span className="border-y-2 border-white w-full"></span>
                                         </div>
                                         <div className="flex gap-[11.88px] items-center ">
                                             <Image src={item.img} alt={item.founder} width={55} height={55} />

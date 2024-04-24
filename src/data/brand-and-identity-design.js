@@ -7,12 +7,12 @@ export const faqs = [
 ]
 
 export const servicesDesignData1 = [
-    { id: 1, heading: "Builds Brand Recognition & Memorability:", subHeading: "  A cohesive brand identity makes your company instantly recognizable across all touchpoints, from your website and social media to marketing materials and packaging." },
-    { id: 2, heading: "Creates Trust & Credibility:", subHeading: " A professional and consistent brand image instills trust and confidence in your target audience." },
-    { id: 3, heading: "Download Our Design Guide:", subHeading: " Learn more about the importance of brand identity and the benefits of professional design services." },
-    { id: 4, heading: "Differentiates You from the Competition:", subHeading: " A unique brand identity sets you apart from your competitors, making a lasting impression on potential customers." },
-    { id: 5, heading: "Empowers Brand Storytelling:", subHeading: "  Your brand identity serves as the visual language that breathes life into your brand story, connecting with customers on a deeper level." },
-    { id: 6, heading: "Strengthens Employee Engagement:", subHeading: "  A strong brand identity fosters a sense of pride and ownership among your employees, aligning them with your company's core values." },
+    { id: 1, heading: "Builds Brand Recognition & Memorability:", subHeading: "A cohesive brand identity makes your company instantly recognizable across all touchpoints, from your website and social media to marketing materials and packaging." },
+    { id: 2, heading: "Creates Trust & Credibility:", subHeading: "A professional and consistent brand image instills trust and confidence in your target audience." },
+    { id: 3, heading: "Download Our Design Guide:", subHeading: "Learn more about the importance of brand identity and the benefits of professional design services." },
+    { id: 4, heading: "Differentiates You from the Competition:", subHeading: "A unique brand identity sets you apart from your competitors, making a lasting impression on potential customers." },
+    { id: 5, heading: "Empowers Brand Storytelling:", subHeading: "Your brand identity serves as the visual language that breathes life into your brand story, connecting with customers on a deeper level." },
+    { id: 6, heading: "Strengthens Employee Engagement:", subHeading: "A strong brand identity fosters a sense of pride and ownership among your employees, aligning them with your company's core values." },
 ]
 
 export const servicesDesignData2 = [

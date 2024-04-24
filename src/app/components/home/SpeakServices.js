@@ -14,7 +14,7 @@ export default function SpeakServices() {
                 para="Crafting standout logos, we go beyond templates to create visual masterpieces uniquely tailored to your vision and values."
             />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm: gap-y-12 gap-x-8 mx-8 sm:mx-12 my-12 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 mx-8 sm:mx-12 my-12 text-center">
                 {BoxData.map((item) => <BoxAtom key={item.id} image={item.image} textPosition={item.textPosition} justifyContent={item.justifyContent} alignItems={item.alignItems} maxWidth={item.maxWidth} headingText={item.headingText} paraText={item.paraText} />)}
             </div>
         </section>

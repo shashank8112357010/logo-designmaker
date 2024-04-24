@@ -18,18 +18,21 @@ export default function BusinessAdvertisingDesigns() {
     const slideData = [
         {
             para: "Logo Design Maker's expertise in brochure design was instrumental in creating a high-quality marketing tool for our business. Their ability to understand our target audience and translate our vision into a visually appealing and informative brochure has resulted in a significant increase in customer inquiries. We're incredibly pleased with the results and highly recommend Logo Design Maker's design services.",
+            img: "/home/TestimonialAvtar.png",
             name: "Sarah Jones",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },
         {
             para: "Logo Design Maker's expertise in brochure design was instrumental in creating a high-quality marketing tool for our business. Their ability to understand our target audience and translate our vision into a visually appealing and informative brochure has resulted in a significant increase in customer inquiries. We're incredibly pleased with the results and highly recommend Logo Design Maker's design services.",
+            img: "/home/TestimonialAvtar.png",
             name: "Sarah Jones",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
         },
         {
             para: "Logo Design Maker's expertise in brochure design was instrumental in creating a high-quality marketing tool for our business. Their ability to understand our target audience and translate our vision into a visually appealing and informative brochure has resulted in a significant increase in customer inquiries. We're incredibly pleased with the results and highly recommend Logo Design Maker's design services.",
+            img: "/home/TestimonialAvtar.png",
             name: "Sarah Jones",
             designation: "Developer",
             founder: "Founder of Green Meadows Bakery"
