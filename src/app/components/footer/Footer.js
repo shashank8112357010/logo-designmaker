@@ -5,9 +5,14 @@ import { footerLinks, socialLinks } from "@/data/Data"
 export default function Footer() {
 
     return (
-        <section className="max-w-[1920px] mx-auto bg-secondaryBlack pt-10 sm:bg-[#182736]/50% text-white sm:px-8">
-            <div className="flex flex-row justify-center items-center relative">
-                <div className="flex max-w-[1920px] mx-auto  justify-center flex-col sm:flex-row sm:pb-8 lg:pb-16 lg:flex-row text-center sm:text-start gap-[33px] sm:text-normal sm:justify-normal flex-wrap relative">
+        <section className="max-w-[1920px] mx-auto bg-secondaryBlack pt-10 relative sm:bg-[#182736]/50% text-white">
+
+            {/* //footer Gradient  */}
+            <div className="absolute bottom-[-10px] sm:bottom-[0px]">
+                <Image src="/footer/FooterGradient.png" width={1440} height={56} alt="FooterGradient" />
+            </div>
+            <div className="flex flex-row justify-center items-center sm:px-8 ">
+                <div className="flex max-w-[1920px] mx-auto  justify-center flex-col sm:flex-row sm:pb-8 lg:pb-16 lg:flex-row text-center sm:text-start gap-[44px] sm:text-normal sm:justify-normal flex-wrap relative">
                     {
                         footerLinks && footerLinks.map((footer, index) => {
                             return (
@@ -40,15 +45,11 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    {/* //footer Gradient  */}
-                    <div className="absolute bottom-[-10px] sm:bottom-[0px]">
-                        <Image src="/footer/FooterGradient.png" width={1440} height={56} alt="FooterGradient" />
-                    </div>
                 </div>
             </div>
 
             {/* //mainFooteBottom */}
-            <div className="flex sm:justify-between justify-center items-center sm:flex-row flex-col w-full mx-auto pt-[40px] pb-[20px] lg:px-10 gap-4 sm:gap-0">
+            <div className="flex sm:justify-between justify-center items-center sm:flex-row flex-col w-full mx-auto pt-[40px] pb-[20px] lg:px-10 gap-4 sm:gap-0  sm:px-8">
                 <div>
                     <p className="text-[12px] whitespace-nowrap">© 2024 LogoDesignMaker Inc. All rights reserved.</p>
                 </div>
