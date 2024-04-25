@@ -65,6 +65,7 @@ export const socialLinks = [
 ]
 
 
+// navbar 
 export const dropMenu = [
     {
         id: 1,
@@ -96,6 +97,7 @@ export const dropMenu = [
     },
 ]
 
+// navbar 
 export const dropMenus = [
     {
         id: 1,
@@ -126,4 +128,19 @@ export const dropMenus = [
         url: "business-and-advertising-designs"
     },
 
+]
+
+
+//About > HomeSlider
+export const BoxAboutData = [
+    { id: 1, image: "/home/Service1.png", textPosition: "text-center", justifyContent: "justify-center", alignItems: "items-center", headingText: "Personalized approach", paraText: "We closely collaborate with you to ensure your logo reflects your brand identity flawlessly, every step of the way." },
+    { id: 2, image: "/home/Service2.png", textPosition: "text-center", justifyContent: "justify-center", alignItems: "items-center", headingText: "Experienced designers", paraText: "With expertise spanning various industries, our team excels in logo design, bringing extensive experience to every project." },
+    { id: 3, image: "/home/Service3.png", textPosition: "text-center", justifyContent: "justify-center", alignItems: "items-center", headingText: "Collaborative process", paraText: "We collaborate closely with you, incorporating your feedback at every step for a tailored design experience." },
+]
+
+//About > FAQ 
+export const AboutFaqs = [
+    { id: 1, ques: "Unveiling Your Brand Vision", ans: "Through in-depth conversations and creative brainstorming, we delve into your brand story, target audience, and the values you represent." },
+    { id: 2, ques: "Understanding Your Competitive Landscape", ans: "Through in-depth conversations and creative brainstorming, we delve into your brand story, target audience, and the values you represent." },
+    { id: 3, ques: "Strategic Design Decisions", ans: "Through in-depth conversations and creative brainstorming, we delve into your brand story, target audience, and the values you represent." },
 ]

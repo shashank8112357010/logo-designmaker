@@ -30,9 +30,9 @@ export default function Navbar() {
                 <div className="flex gap-4 justify-center items-center h-full">
                     <ul className="text-[14px] gap-8 font-bold hidden lg:flex h-full">
                         <li className="flex gap-1 justify-center items-center py-[10px]">
-                            <a className="hover:text-primaryGreen" href="#">
+                            <Link href="/about-us" className="hover:text-primaryGreen">
                                 About Us
-                            </a>
+                            </Link>
                         </li>
                         <li className="gap-1 flex flex-col servicesShow h-full justify-center z-10 relative">
                             <div className="flex justify-center gap-1 py-[10px] pr-4">

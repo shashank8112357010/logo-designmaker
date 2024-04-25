@@ -83,6 +83,9 @@
 .customBorderBottom2 {
     border-bottom: 1px solid;
 }
+.customBorderBottom3 {
+    border-bottom: 1px solid #182736;
+}
 
 
 .inputPlaceholder::placeholder {
@@ -208,11 +211,11 @@
 
 @media (max-width : 640px) {
     .marquee-container {
-        height: 17px;
+        height: 34px;
     }
 
     .marquee-text {
-        top: 1.4rem;
+        top: 2.2rem;
     }
 }
 

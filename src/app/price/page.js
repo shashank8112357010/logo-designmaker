@@ -39,8 +39,16 @@ export default function Price() {
 
             </div>
 
-            <div className="pb-32 md:pb-20 flex justify-center items-center">
-                <div className="max-w-[305px] sm:max-w-[570px] h-[700px] sm:h-[801px] rounded-[30px] flex justify-center items-center border-[1px] border-primaryGreen text-white pb-400 z-50 ">
+            <div className="pb-32 md:pb-20 flex justify-center items-center ">
+                <div className="relative max-w-[305px] sm:max-w-[570px] h-[700px] sm:h-[801px] rounded-[30px] flex justify-center items-center border-[1px] border-primaryGreen text-white pb-400 z-50 ">
+
+                    <div className="absolute top-0 left-0 right-0 w-full h-[400px] -z-50 sm:h-[600px]">
+                        <Image src="/pricing/PricingBox1.png" fill alt="linear-gradient-top" className="rounded-[20px]" />
+                    </div>
+                    <div className="absolute bottom-0 w-full h-[400px] -z-50 sm:h-[600px]">
+                        <Image src="/pricing/PricingBox2.png" fill alt="linear-gradient-bottom" className="rounded-[20px]" />
+                    </div>
+
                     <div className="flex flex-col gap-8 sm:gap-16 py-8 sm:py-16 w-[280px] sm:w-[500px] ">
                         <div className="text-mobHeaderText text-center w-full sm:text-tabHeaderText lg:text-lapHeaderText font-bold tracking-[-1px] leading-[58px]">
                             $350

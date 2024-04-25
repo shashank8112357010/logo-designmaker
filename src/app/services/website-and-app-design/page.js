@@ -84,8 +84,7 @@ export default function WebsiteAppDesign() {
 
             <ServiceDesign imgSrc="/services/ServicesDesign.png" heading1="Ready to unlock the power of exceptional " heading2="website and app design? " flexDirection="flex-row" servicesDesignData={servicesDesignData} />
 
-            <ServicesCTA imgSrc="/services/CTAImg.png" heading="Fuel Your Brand&apos;s Growth: Take Action Today!" para="Investing in professional website and app design is an investment in your brand&apos;s digital future. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced team craft a website or app that not only elevates your brand image but also delivers exceptional user experiences, drives conversions, and propels your business forward.
-"/>
+            <ServicesCTA imgSrc="/services/CTAImg.png" heading="Fuel Your Brand&apos;s Growth: Take Action Today!" para="Investing in professional website and app design is an investment in your brand&apos;s digital future. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced team craft a website or app that not only elevates your brand image but also delivers exceptional user experiences, drives conversions, and propels your business forward."/>
 
             <FaqAtom faqs={faqs} />
         </section>

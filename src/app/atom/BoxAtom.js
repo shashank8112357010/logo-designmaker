@@ -6,7 +6,7 @@ export default function BoxAtom({ image, textPosition, alignItems, headingText, 
             <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">
                 <Image src={image} alt={headingText} fill className="max-w-none mx-auto" />
             </div>
-            <h3 className="text-[14px] sm:text-[14px] lg:text-[20px]  font-semibold capitalize">
+            <h3 className="text-[14px] sm:text-[14px] lg:text-[20px] text-white font-semibold capitalize">
                 {headingText}
             </h3>
             <p className="text-[12px] sm:text-[12px] lg:text-[16px]  font-normal leading-[18px] sm:leading-[18px] max-w-[213px] lg:max-w-[295px] lg:leading-[28px] text-primaryGray ">

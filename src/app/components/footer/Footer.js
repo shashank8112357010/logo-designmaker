@@ -9,7 +9,7 @@ export default function Footer() {
 
             {/* //footer Gradient  */}
             <div className="absolute bottom-[-10px] sm:bottom-[0px]">
-                <Image src="/footer/FooterGradient.png" width={1440} height={56} alt="FooterGradient" />
+                <Image src="/footer/FooterGradient.png" width={1920} height={56} alt="FooterGradient" />
             </div>
             <div className="flex flex-row justify-center items-center sm:px-8 ">
                 <div className="flex max-w-[1920px] mx-auto  justify-center flex-col sm:flex-row sm:pb-8 lg:pb-16 lg:flex-row text-center sm:text-start gap-[44px] sm:text-normal sm:justify-normal flex-wrap relative">
