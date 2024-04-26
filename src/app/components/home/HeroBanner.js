@@ -27,6 +27,8 @@ export default function HeroBanner() {
         }
     }
 
+    
+
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);

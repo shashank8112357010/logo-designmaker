@@ -222,7 +222,13 @@
 
 /* shadow effect on cards  */
 .boxShadow:hover {
-    box-shadow: -2px 2px 3px 0px #5CFF85;
+    box-shadow: 2px 2px 3px 0px #5CFF85;
+    border-radius: 8px;
+}
+
+/* shadow effect on pricing cards  */
+.PricingboxShadow:hover {
+    box-shadow: 0.1px 0.1px 10px 0.2px #5CFF85;
     border-radius: 8px;
 }
 
@@ -241,5 +247,25 @@
 }
 
 .scrollBar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* //scrollbar property  */
+.scrollBarPrice::-webkit-scrollbar {
+    width: 1px;
+    height: 4px;
+}
+
+.scrollBarPrice::-webkit-scrollbar-track {
+    background: #182736;
+}
+
+.scrollBarPrice::-webkit-scrollbar-thumb {
+    background: #5CFF85;
+    border-radius: 5px;
+}
+
+.scrollBarPrice::-webkit-scrollbar-thumb:hover {
     background: #555;
 }

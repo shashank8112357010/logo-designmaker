@@ -38,7 +38,7 @@ export default function AboutUs() {
                             Unveiling the Soul of Logo Design:
                             Your Brand&apos;s Creative Companion
                         </h1>
-                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[-1px] text-white text-center max-w-[350px] sm:max-w-[500px]">
+                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
                             Welcome to the heart of Logo Design Maker, where passionate designers and strategic thinking collide to craft memorable logos that elevate your brand.
                         </p>
                     </div>

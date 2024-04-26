@@ -1,13 +1,14 @@
 import tellYourStory1 from "../animate/tellYourStory1.json";
 import tellYourStory2 from "../animate/tellYourStory2.json";
 import tellYourStory3 from "../animate/tellYourStory3.json";
+import tellYourStory4 from "../animate/tellYourStory4.json";
 
 //Home > tellStoryContent
 export const tellStoryContent = [
     { lottieImg: tellYourStory1, step: 1, heading: "Tell Your Story", para: "Share your brand vision, inspiration, and any specific ideas you may have. The more we know about your brand, the better we can capture its essence in your logo." },
     { lottieImg: tellYourStory2, step: 2, heading: "Connect with a Designer", para: "Schedule a convenient video call with one of our talented designers. This initial conversation allows you to discuss your brand vision in detail and ask any questions you may have. Our designer will actively listen to your ideas and gain a deep understanding of your brand's unique personality." },
     { lottieImg: tellYourStory3, step: 3, heading: "Refine Your Vision", para: "After the video call, our designer will present initial logo concepts based on your discussions. This collaborative stage allows you to provide feedback and suggestions. We encourage open communication to ensure the logo aligns perfectly with your brand identity." },
-    { lottieImg: tellYourStory1, step: 4, heading: "Design Magic Happens", para: "Once you've approved a concept direction, our designer will take center stage and bring your vision to life. They will meticulously craft your logo, paying close attention to detail and ensuring it resonates with your target audience." },
+    { lottieImg: tellYourStory4, step: 4, heading: "Design Magic Happens", para: "Once you've approved a concept direction, our designer will take center stage and bring your vision to life. They will meticulously craft your logo, paying close attention to detail and ensuring it resonates with your target audience." },
     { lottieImg: tellYourStory1, step: 5, heading: "Unlimited Revisions", para: "We understand that finding the perfect logo is an iterative process. That's why we offer unlimited revisions throughout the design phase. You can provide feedback on colors, fonts, and overall layout until you're completely satisfied with the final product." },
     { lottieImg: tellYourStory1, step: 6, heading: "Download & Brand with Confidence", para: "Upon your final approval, you'll receive your logo in various formats suitable for print and digital use. With your brand identity firmly established, you can now confidently launch your business or elevate your existing brand image." },
 ]
