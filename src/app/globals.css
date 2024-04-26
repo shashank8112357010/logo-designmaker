@@ -83,6 +83,7 @@
 .customBorderBottom2 {
     border-bottom: 1px solid;
 }
+
 .customBorderBottom3 {
     border-bottom: 1px solid #182736;
 }
@@ -223,4 +224,22 @@
 .boxShadow:hover {
     box-shadow: -2px 2px 3px 0px #5CFF85;
     border-radius: 8px;
+}
+
+/* //scrollbar property  */
+.scrollBar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+    background: #182736;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+    background: #5CFF85;
+    border-radius: 5px;
+}
+
+.scrollBar::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

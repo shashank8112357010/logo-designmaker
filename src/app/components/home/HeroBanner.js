@@ -4,7 +4,7 @@ import Carousal from "../cardCarousal/Carousal"
 import { useEffect, useState } from "react";
 
 export default function HeroBanner() {
-
+    const [currentInput, setCurrentInput] = useState(false)
     const [currentIndex, setCurrentIndex] = useState(0);
     const texts = [
         'Brand Personality',
@@ -17,6 +17,15 @@ export default function HeroBanner() {
         'Social Media Design',
         'Book & Magazine Design'
     ];
+
+    const handleInput = (e) => {
+        e.preventDefault()
+        if (e.target.value.length === 0) {
+            setCurrentInput(false)
+        } else {
+            setCurrentInput(true)
+        }
+    }
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -57,9 +66,25 @@ export default function HeroBanner() {
                         </h1>
                         <div className="text-white flex flex-col justify-center items-center">
                             <p className="mb-2 sm:mb-8 text-center text-mobHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[19px] sm:leading-[22px] lg:leading-[25px] tracking-[-0.2px] max-w-[330px] sm:max-w-5xl">Ditch the robots, craft a logo you&apos;ll love with a human designer by your side.</p>
-                            <div className="flex flex-row relative">
-                                <input className="inputPlaceholder w-[208px] sm:w-[340px] lg:w-[484px] h-[30px] sm:h-[46px] lg:h-[57px] border-[1px] text-gray-500 pl-4 sm:pl-6 lg:pl-10 outline-none rounded-[20px]" placeholder="Search To Services"
+                            <div className="flex flex-row relative ">
+                                {
+                                    currentInput && (
+                                        <ul className="scrollBar absolute -top-60 left-0 right-0 h-[240px] overflow-y-scroll rounded-t-xl">
+                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">Magazine Design</li>
+                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">Book Cover Design</li>
+                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">option3</li>
+                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">option4</li>
+                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">Book Cover Design</li>
+                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">option3</li>
+                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">option4</li>
+                                        </ul>
+                                    )
+                                }
+                                <input className={`${!currentInput ? "rounded-[20px]" : "rounded-b-[20px]"} inputPlaceholder w-[208px] sm:w-[340px] lg:w-[484px] h-[30px] sm:h-[46px] lg:h-[57px] border-[1px] text-gray-500 pl-4 sm:pl-6 lg:pl-10 outline-none rounded-b-[20px]`}
+                                    placeholder="Search To Services"
+                                    onChange={handleInput}
                                 />
+
                                 <div className="absolute w-8 sm:w-12 lg:w-16 h-8 sm:h-12 lg:h-16 bg-primaryGreen rounded-full right-[-4px] top-[-2px] lg:top-[-4px] flex justify-center items-center cursor-pointer">
                                     <Image src="/home/logoSearch.png" width={12} height={12} className="block md:hidden" alt="logoSearch" />
                                     <Image src="/home/logoSearch.png" width={20} height={20} className="hidden md:block" alt="logoSearch" />

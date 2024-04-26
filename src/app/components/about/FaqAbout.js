@@ -13,7 +13,7 @@ export default function FaqAbout({ data, index, openIndex, setOpenIndex, setCurr
     };
 
     return (
-        <div className={`${isOpen && "bg-secondaryBlack"} flex flex-col gap-8 pb-2 customBorderBottom3 py-6 px-4 rounded-[20px] `}
+        <div className={`${isOpen && "bg-secondaryBlack"} flex flex-col gap-8 pb-5 customBorderBottom3 py-6 px-4 rounded-[20px] `}
         >
             <div className="flex items-center justify-between gap-4 cursor-pointer" onClick={toggleAccordion}>
                 <div className="text-mobTitle sm:text-tabTitle lg:text-lapTitle font-semibold leading-[21px] cursor-pointer w-full block">

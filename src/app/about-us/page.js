@@ -85,7 +85,7 @@ export default function AboutUs() {
                         {AboutImg.filter((item) => item.id === currentIndex)
                             .map((item) => {
                                 return (
-                                    <div className="md:min-w-[400px] flex justify-center items-center">
+                                    <div key={item.id} className="md:min-w-[400px] flex justify-center items-center">
                                         <Image src={item.img} width={375} height={240} alt="AboutHumanAI" />
                                     </div>
                                 )
