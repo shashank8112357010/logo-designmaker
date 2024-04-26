@@ -27,7 +27,7 @@ export default function AboutUs() {
                         </span>
                         <h1 className="w-full text-mobHeaderTex text-centert sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] max-w-[300px] sm:max-w-5xl">
                             Unveiling the Soul of Logo Design:
-                            Your Brand's Creative Companion
+                            Your Brand&apos;s Creative Companion
                         </h1>
                         <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[-1px] text-white text-center max-w-[350px] sm:max-w-[500px]">
                             Welcome to the heart of Logo Design Maker, where passionate designers and strategic thinking collide to craft memorable logos that elevate your brand.
@@ -63,7 +63,7 @@ export default function AboutUs() {
                                 <span className="text-primaryGreen">&nbsp; Why We Go Beyond AI</span>
                             </div>
                             <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] ">
-                                In the age of automation, you might wonder why choose human designers over AI logo makers? The answer lies in the power of human connection and strategic thinking. Unlike AI, our designers don't just generate generic visuals. They take the time to understand your brand on a deeper level.
+                                In the age of automation, you might wonder why choose human designers over AI logo makers? The answer lies in the power of human connection and strategic thinking. Unlike AI, our designers don&apos;t just generate generic visuals. They take the time to understand your brand on a deeper level.
                             </p>
 
                         </div>
@@ -80,7 +80,7 @@ export default function AboutUs() {
                         {/* second section */}
                         <section className="bg-primaryBlack flex items-center text-white px-4 sm:px-10 lg:px-20">
                             <div className="flex flex-col max-w-[1023px] mx-auto gap-2">
-                                {AboutFaqs.map((item, index) => {
+                                {/* {AboutFaqs.map((item, index) => {
 
                                     const [openIndex, setOpenIndex] = useState(null)
                                     return (
@@ -93,7 +93,7 @@ export default function AboutUs() {
                                         />
                                     )
                                 }
-                                )}
+                                )} */}
                             </div>
                         </section>
 
