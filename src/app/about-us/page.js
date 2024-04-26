@@ -9,6 +9,15 @@ import FaqAbout from "../components/about/FaqAbout";
 import ServicesCTA from "../components/services/ServicesCTA";
 
 export default function AboutUs() {
+    const [openIndex, setOpenIndex] = useState(0)
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const AboutImg = [
+        { id: 0, img: "/about/AboutHumanAI.png" },
+        { id: 1, img: "/services/CTAImg.png" },
+        { id: 2, img: "/about/AboutHumanAI.png" },
+    ]
+
     return (
         <section className="w-full max-w-[1920px] mx-auto bg-primaryBlack pb-32">
             <div className="flex flex-row gap-4 items-center justify-center xl:gap-10 h-[250px] xs:h-[283px] sm:h-[553px] relative">
@@ -70,19 +79,23 @@ export default function AboutUs() {
                     </div>
                 </main>
 
-                <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex">
-                    <div className={`flex text-white pb-20 lg:pb-20 px-4 items-center justify-center sm:px-10 lg:px-10 flex-wrap lg:flex-nowrap pt-10`}>
+                <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex pb-10 ">
+                    <div className={`flex text-white pb-20 lg:pb-20 px-4 items-center justify-center sm:px-10 lg:px-10 flex-wrap lg:flex-nowrap pt-10 `}>
                         {/* first section */}
-                        <div className="md:min-w-[400px] flex justify-center items-center">
-                            <Image src="/about/AboutHumanAI.png" width={375} height={240} alt="AboutHumanAI" />
-                        </div>
+                        {AboutImg.filter((item) => item.id === currentIndex)
+                            .map((item) => {
+                                return (
+                                    <div className="md:min-w-[400px] flex justify-center items-center">
+                                        <Image src={item.img} width={375} height={240} alt="AboutHumanAI" />
+                                    </div>
+                                )
+                            })}
+
 
                         {/* second section */}
-                        <section className="bg-primaryBlack flex items-center text-white px-4 sm:px-10 lg:px-20">
-                            {/* <div className="flex flex-col max-w-[1023px] mx-auto gap-2">
+                        <section className="bg-primaryBlack mt-8 lg:mt-0 flex items-center text-white px-4 sm:px-10 lg:px-20">
+                            <div className="flex flex-col max-w-[1023px] mx-auto gap-2">
                                 {AboutFaqs.map((item, index) => {
-
-                                    const [openIndex, setOpenIndex] = useState(null)
                                     return (
                                         <FaqAbout
                                             key={item.id}
@@ -90,11 +103,12 @@ export default function AboutUs() {
                                             data={item}
                                             openIndex={openIndex}
                                             setOpenIndex={setOpenIndex}
+                                            setCurrentIndex={setCurrentIndex}
                                         />
                                     )
                                 }
                                 )}
-                            </div> */}
+                            </div>
                         </section>
 
 

@@ -1,12 +1,15 @@
 'use client'
 import Image from "next/image"
 
-export default function FaqAbout({ data, index, openIndex, setOpenIndex }) {
-    // if openIndex === null , it is equal to index
+export default function FaqAbout({ data, index, openIndex, setOpenIndex, setCurrentIndex }) {
     const isOpen = openIndex === index;
 
     const toggleAccordion = () => {
-        setOpenIndex(isOpen ? null : index);
+        if (isOpen) {
+            return;
+        }
+        setOpenIndex(index);
+        setCurrentIndex(index)
     };
 
     return (

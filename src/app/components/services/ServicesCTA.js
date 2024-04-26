@@ -6,7 +6,7 @@ export default function ServicesCTA({ heading, para, imgSrc }) {
     const { pathname } = usePathname()
 
     return (
-        <section className="max-w-[1920px] mx-auto px-4 sm:px-10 lg:px-10 bg-primaryBlack text-white pb-20 pt-20 lg:pt-10">
+        <section className="max-w-[1920px] mx-auto flex justify-center px-4 sm:px-10 lg:px-10 bg-primaryBlack text-white pb-20 pt-20 lg:pt-10">
             <div className="bg-secondaryBlack relative px-5 py-2 lg:px-8 lg:py-10 rounded-[18px] flex justify-center flex-col lgg:flex-row">
 
                 <div className="block lgg:hidden bg-red-500">
