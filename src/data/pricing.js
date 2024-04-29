@@ -1,6 +1,6 @@
 export const priceCardData = [
     {
-        id: 0, img: "/pricing/PricingBasicLogo.png", category: "Basic", para: " Unleash the Power of Your Business with Pro Plan.", money: "$350", pricingList: [{
+        id: 0, img: "/pricing/PricingBasicLogo.png", category: "Basic", para: " Unleash the Power of Your Business with Pro Plan.", money: "$350", translateOnHover: false, pricingList: [{
             id: "Basic", list: [
                 "Logo design (3 variations)",
                 "Business Card design",
@@ -15,7 +15,7 @@ export const priceCardData = [
         }]
     },
     {
-        id: 1, img: "/pricing/PricingPro.png", category: "Popular", para: "Take Your Business to the Next Level with Business Plan.", money: "$540", pricingList: [{
+        id: 1, img: "/pricing/PricingProBlack.png", category: "Popular", para: "Take Your Business to the Next Level with Business Plan.", money: "$540", translateOnHover: true, pricingList: [{
             id: "Popular", list: [
                 "Logo design (2 variations)",
                 "Business Card design",
@@ -30,7 +30,7 @@ export const priceCardData = [
         }]
     },
     {
-        id: 2, img: "/pricing/PricingPro.png", category: "Pro", para: "Unleash the Power of Your Business with Pro Plan.", money: "$620", pricingList: [{
+        id: 2, img: "/pricing/PricingPro.png", category: "Pro", para: "Unleash the Power of Your Business with Pro Plan.", money: "$620", translateOnHover: false, pricingList: [{
             id: "Pro", list: [
                 "Logo design (1 variations)",
                 "Business Card design",

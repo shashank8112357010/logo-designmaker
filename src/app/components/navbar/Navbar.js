@@ -113,10 +113,10 @@ export default function Navbar() {
                                 Price
                             </Link>
                         </li>
-                        <li className="flex item-center py-[10px] gap-1 justify-center">
-                            <a className="hover:text-primaryGreen h-full flex justify-center items-center" href="#">
+                        <li className="flex z-10 item-center py-[10px] gap-1 justify-center">
+                            <Link href="/contact" className="hover:text-primaryGreen h-full flex justify-center items-center">
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">
@@ -194,7 +194,7 @@ export default function Navbar() {
                                 </ul>
                             </li>
                             <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><Link href="/price">Pricing</Link></li>
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><a>Contact</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><Link href="/contact">Contact</Link></li>
                             <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><a>Resources</a></li>
                         </ul>
                     </div>

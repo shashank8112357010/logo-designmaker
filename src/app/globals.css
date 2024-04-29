@@ -227,9 +227,9 @@
 }
 
 /* shadow effect on pricing cards  */
-.PricingboxShadow:hover {
+.PricingboxShadow {
     box-shadow: 0.1px 0.1px 10px 0.2px #5CFF85;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 
 /* //scrollbar property  */

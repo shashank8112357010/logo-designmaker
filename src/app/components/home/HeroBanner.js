@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 export default function HeroBanner() {
     const [currentInput, setCurrentInput] = useState(false)
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [showInput, setShowInput] = useState(false)
+
     const texts = [
         'Brand Personality',
         'Website & App Design',
@@ -18,6 +20,10 @@ export default function HeroBanner() {
         'Book & Magazine Design'
     ];
 
+    useEffect(() => {
+        // const scrollHeight = window.screenY()
+    }, [showInput])
+
     const handleInput = (e) => {
         e.preventDefault()
         if (e.target.value.length === 0) {
@@ -27,7 +33,7 @@ export default function HeroBanner() {
         }
     }
 
-    
+
 
     useEffect(() => {
         const interval = setInterval(() => {

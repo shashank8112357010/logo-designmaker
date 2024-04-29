@@ -5,7 +5,7 @@ import { priceCardData } from "@/data/pricing";
 export default function Price() {
 
     return (
-        <section className="w-full max-w-[1920px] mx-auto bg-primaryBlack ">
+        <section className="w-full max-w-[1920px] mx-auto bg-primaryBlack">
             <div className="flex flex-row gap-4 items-center justify-center xl:gap-10 h-[250px] xs:h-[283px] sm:h-[403px] relative">
 
                 <div className="absolute top-20 md:top-32 left-0 w-[313px] md:w-[650px] h-[205px] md:h-[500px]">
@@ -35,16 +35,16 @@ export default function Price() {
                 </main>
             </div>
 
-            <div className="pb-32 md:pb-20 flex items-center justify-center pt-52 ">
-                <div className="bg-secondaryBlack rounded-[20px] flex flex-row max-w-[1237px] gap-1 px-6 sm:px-8 py-8 overflow-scroll scrollBarPrice">
+            <div className="pb-32 md:pb-20 flex items-center justify-center pt-52 px-4">
+                <div className="bg-secondaryBlack rounded-[20px] flex flex-row max-w-[1237px] gap-1 px-6 sm:px-8 py-8 flex-wrap justify-center">
 
                     {priceCardData.map((item) => {
                         return (
-                            <div key={item.id} className="group PricingboxShadow hover:bg-primaryBlack relative max-w-[305px] sm:max-w-[375px] h-[700px] sm:h-[801px] rounded-[30px] flex justify-center items-center text-white pb-400 z-50 hover:-translate-y-4 transition-all duration-300 ease-in-out ">
+                            <div key={item.id} className={`group relative max-w-[305px] sm:max-w-[375px] h-[700px] sm:h-[801px] rounded-[30px] flex justify-center items-center text-white pb-400 z-50 ${item.translateOnHover && "bg-primaryBlack -translate-y-4 PricingboxShadow transition-all duration-300 ease-in-out "} `}>
 
                                 <div className="flex flex-col px-[8px] sm:px-8 gap-4 py-8 sm:py-16 w-[280px] sm:w-[410px]">
 
-                                    <div className="w-[44px] h-[44px] flex justify-center items-center group-hover:bg-primaryGreen border-primaryGreen border-2 rounded-[11.1px]">
+                                    <div className={`w-[44px] h-[44px] flex justify-center items-center ${item.translateOnHover && "bg-primaryGreen border-primaryGreen border-2"}  border-primaryGreen border-2 rounded-[11.1px]`}>
                                         <Image src={item.img} alt="image of pricing" width={19} height={19} />
                                     </div>
 
@@ -78,10 +78,10 @@ export default function Price() {
                                                     )
                                                 })))}
                                         </div>
-
                                     </div>
+
                                     <div className="w-full">
-                                        <button className={`group-hover:bg-primaryGreen group-hover:text-black text-[10px] sm:text-[18px] mt-2 font-normal bg-transparent border-[1px] border-primaryGreen hover:bg-secondaryBlack text-white hover:text-white px-[14px] py-[8px] rounded-[4px] w-full transition-all duration-300 ease-in-out`} aria-disabled="true">
+                                        <button className={`${item.translateOnHover && "bg-primaryGreen text-black"}  text-[10px] sm:text-[18px] mt-2 font-normal border-[1px] border-primaryGreen hover:bg-secondaryBlack hover:text-white px-[14px] py-[8px] rounded-[4px] w-full transition-all duration-300 ease-in-out`} aria-disabled="true">
                                             Get Started
                                         </button>
                                     </div>
@@ -97,9 +97,6 @@ export default function Price() {
         </section >
     )
 }
-
-
-
 
 
 {/* <div className="pb-32 md:pb-20 flex justify-center items-center ">
