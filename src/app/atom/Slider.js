@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Image from 'next/image';
 
-export default function SliderAtom({slideData}) {
+export default function Sliderr({ slideData }) {
     let sliderRef = useRef(null);
     const next = () => {
         sliderRef.slickNext();

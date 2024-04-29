@@ -1,4 +1,4 @@
-export default function DesignHeaderAtom({ heading, para, subHeading }) {
+export default function DesignHeader({ heading, para, subHeading }) {
     return (
         <div className="text-center flex flex-col items-center gap-2 mb-6">
             <div className="max-w-[280px] sm:max-w-[380px] lg:max-w-[700px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white">

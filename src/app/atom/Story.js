@@ -1,4 +1,4 @@
-export default function StoryAtom({ content, setContent }) {
+export default function Story({ content, setContent }) {
 
     return (
         <div className="px-4 sm:px-20 py-8 md:pt-10 items-center md:items-end">

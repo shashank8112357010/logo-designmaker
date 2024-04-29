@@ -1,4 +1,4 @@
-import SliderAtom from "@/app/atom/SliderAtom";
+import Sliderr from "@/app/atom/Slider";
 
 export default function HomeSlider() {
 
@@ -27,7 +27,7 @@ export default function HomeSlider() {
     ];
 
     return (
-        <SliderAtom slideData={slideData} />
+        <Sliderr slideData={slideData} />
     );
 };
 

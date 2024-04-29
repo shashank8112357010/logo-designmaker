@@ -1,14 +1,14 @@
 "use client"
-import ButtonAtom from "@/app/atom/ButtonAtom";
-import DesignHeaderAtom from "@/app/atom/DesignHeaderAtom";
-import SliderAtom from "@/app/atom/SliderAtom";
-import StoryAtom from "@/app/atom/StoryAtom";
+import Button from "@/app/atom/Button";
+import DesignHeader from "@/app/atom/DesignHeader";
+import Sliderr from "@/app/atom/Slider";
+import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
 import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import FaqAtom from "@/app/atom/FaqAtom";
+import Faq from "@/app/atom/Faqq";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/illustration-and-art";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
@@ -51,10 +51,10 @@ export default function IllustrationArt() {
 
             <div>
                 <div className="pt-20">
-                    <DesignHeaderAtom heading="A Symphony of " subHeading="Illustration & Art Solutions" para="We offer a diverse range of illustration and art services to cater to your specific brand needs. Here's a glimpse into how we can help you tell your brand story through the power of visuals:" />
+                    <DesignHeader heading="A Symphony of " subHeading="Illustration & Art Solutions" para="We offer a diverse range of illustration and art services to cater to your specific brand needs. Here's a glimpse into how we can help you tell your brand story through the power of visuals:" />
                 </div>
                 <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
-                    <StoryAtom setContent={setContent} content={content} />
+                    <Story setContent={setContent} content={content} />
                     <div className="w-full flex flex-col-reverse gap-12 md:gap-0 md:flex-row justify-evenly items-center">
                         <div className="w-3/3">
                             <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
@@ -66,7 +66,7 @@ export default function IllustrationArt() {
                                 </p>
                             </div>
                             <div className="w-full mx-auto text-center md:text-start">
-                                <ButtonAtom title="Get Started Now" />
+                                <Button title="Get Started Now" />
                             </div>
                         </div>
                         <div className="hidden md:block">
@@ -79,7 +79,7 @@ export default function IllustrationArt() {
                 </div>
             </div>
 
-            <SliderAtom slideData={slideData} />
+            <Sliderr slideData={slideData} />
 
             <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="illustration and art " heading3="for your brand?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
@@ -88,7 +88,7 @@ export default function IllustrationArt() {
 " />
             </div>
 
-            <FaqAtom faqs={faqs} />
+            <Faq faqs={faqs} />
 
         </section>
     )

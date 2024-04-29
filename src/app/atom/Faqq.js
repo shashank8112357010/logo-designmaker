@@ -1,8 +1,8 @@
 'use client'
-import FaqShowAtom from "@/app/atom/FaqShowAtom"
+import FaqShow from "@/app/atom/FaqShow"
 import { useState } from "react"
 
-export default function FaqAtom({ faqs }) {
+export default function Faqq({ faqs }) {
     const [openIndex, setOpenIndex] = useState(null)
 
     return (
@@ -10,7 +10,7 @@ export default function FaqAtom({ faqs }) {
             <div className="flex flex-col max-w-[1023px] mx-auto gap-8">
                 <h2 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold" >FAQ&#39;S</h2>
                 {faqs.map((item, index) =>
-                    <FaqShowAtom
+                    <FaqShow
                         key={item.id}
                         index={index}
                         data={item}

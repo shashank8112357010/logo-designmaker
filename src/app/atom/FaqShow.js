@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 
-export default function FaqShowAtom({ data, index, openIndex, setOpenIndex }) {
+export default function FaqShow({ data, index, openIndex, setOpenIndex }) {
     // if openIndex === null , it is equal to index
     const isOpen = openIndex === index;
 

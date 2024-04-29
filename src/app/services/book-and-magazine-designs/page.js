@@ -1,14 +1,14 @@
 "use client"
-import ButtonAtom from "@/app/atom/ButtonAtom";
-import DesignHeaderAtom from "@/app/atom/DesignHeaderAtom";
-import SliderAtom from "@/app/atom/SliderAtom";
-import StoryAtom from "@/app/atom/StoryAtom";
+import Button from "@/app/atom/Button";
+import DesignHeader from "@/app/atom/DesignHeader";
+import Sliderr from "@/app/atom/Slider";
+import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
 import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import FaqAtom from "@/app/atom/FaqAtom";
+import Faq from "@/app/atom/Faqq";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/book-and-magazine-designs";
 
@@ -49,10 +49,10 @@ export default function BookMagazineDesigns() {
 
             <div>
                 <div className="pt-20">
-                    <DesignHeaderAtom heading="A Symphony of Design Solutions for" subHeading=" Your Publication" para="We offer a range of book and magazine design services to cater to your specific needs. Here's a closer look at how we can help you create a publication that stands out on the shelf or in the digital landscape:" />
+                    <DesignHeader heading="A Symphony of Design Solutions for" subHeading=" Your Publication" para="We offer a range of book and magazine design services to cater to your specific needs. Here's a closer look at how we can help you create a publication that stands out on the shelf or in the digital landscape:" />
                 </div>
                 <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
-                    <StoryAtom setContent={setContent} content={content} />
+                    <Story setContent={setContent} content={content} />
                     <div className="w-full flex flex-col-reverse gap-12 md:gap-0 md:flex-row justify-evenly items-center">
                         <div className="w-3/3">
                             <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
@@ -64,7 +64,7 @@ export default function BookMagazineDesigns() {
                                 </p>
                             </div>
                             <div className="w-full mx-auto text-center md:text-start">
-                                <ButtonAtom title="Get Started Now" />
+                                <Button title="Get Started Now" />
                             </div>
                         </div>
                         <div className="hidden md:block">
@@ -77,7 +77,7 @@ export default function BookMagazineDesigns() {
                 </div>
             </div>
 
-            <SliderAtom slideData={slideData} />
+            <Sliderr slideData={slideData} />
 
             <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
@@ -85,7 +85,7 @@ export default function BookMagazineDesigns() {
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />
             </div>
 
-            <FaqAtom faqs={faqs} />
+            <Faq faqs={faqs} />
 
         </section>
     )

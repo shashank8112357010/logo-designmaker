@@ -1,4 +1,4 @@
-export default function InputAtom({ type, id, placeholder }) {
+export default function Input({ type, id, placeholder }) {
     return (
         <input type={type}
             id={id}

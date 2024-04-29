@@ -1,8 +1,8 @@
 "use client"
-import ButtonAtom from "@/app/atom/ButtonAtom";
-import DesignHeaderAtom from "@/app/atom/DesignHeaderAtom";
-import SliderAtom from "@/app/atom/SliderAtom";
-import StoryAtom from "@/app/atom/StoryAtom";
+import Button from "@/app/atom/Button";
+import DesignHeader from "@/app/atom/DesignHeader";
+import Sliderr from "@/app/atom/Slider";
+import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
 import Image from "next/image";
 import { useState } from "react";
@@ -11,7 +11,7 @@ import ServiceIntro from "@/app/components/services/ServiceIntro";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 
 import { faqs, servicesDesignData } from "@/data/website-and-app-design";
-import FaqAtom from "@/app/atom/FaqAtom";
+import Faq from "@/app/atom/Faqq";
 
 export default function WebsiteAppDesign() {
     const [content, setContent] = useState(1)
@@ -52,10 +52,10 @@ export default function WebsiteAppDesign() {
 
             <div>
                 <div className="pt-20">
-                    <DesignHeaderAtom heading="A Symphony of Services: Building Your" subHeading="Digital Presence" para="We offer a diverse range of website and app design solutions to cater to your specific needs. Here's a closer look at some of the ways we can help you build your digital oasis" />
+                    <DesignHeader heading="A Symphony of Services: Building Your" subHeading="Digital Presence" para="We offer a diverse range of website and app design solutions to cater to your specific needs. Here's a closer look at some of the ways we can help you build your digital oasis" />
                 </div>
                 <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
-                    <StoryAtom setContent={setContent} content={content} />
+                    <Story setContent={setContent} content={content} />
                     <div className="w-full flex flex-col-reverse gap-12 md:gap-0 md:flex-row justify-evenly items-center">
                         <div className="w-3/3">
                             <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
@@ -67,7 +67,7 @@ export default function WebsiteAppDesign() {
                                 </p>
                             </div>
                             <div className="w-full mx-auto text-center md:text-start">
-                                <ButtonAtom title="Get Started Now" />
+                                <Button title="Get Started Now" />
                             </div>
                         </div>
                         <div className="hidden md:block">
@@ -80,13 +80,13 @@ export default function WebsiteAppDesign() {
                 </div>
             </div>
 
-            <SliderAtom slideData={slideData} />
+            <Sliderr slideData={slideData} />
 
             <ServiceDesign imgSrc="/services/ServicesDesign.png" heading1="Ready to unlock the power of exceptional " heading2="website and app design? " flexDirection="flex-row" servicesDesignData={servicesDesignData} />
 
-            <ServicesCTA imgSrc="/services/CTAImg.png" heading="Fuel Your Brand&apos;s Growth: Take Action Today!" para="Investing in professional website and app design is an investment in your brand&apos;s digital future. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced team craft a website or app that not only elevates your brand image but also delivers exceptional user experiences, drives conversions, and propels your business forward."/>
+            <ServicesCTA imgSrc="/services/CTAImg.png" heading="Fuel Your Brand&apos;s Growth: Take Action Today!" para="Investing in professional website and app design is an investment in your brand&apos;s digital future. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced team craft a website or app that not only elevates your brand image but also delivers exceptional user experiences, drives conversions, and propels your business forward." />
 
-            <FaqAtom faqs={faqs} />
+            <Faq faqs={faqs} />
         </section>
     )
 }

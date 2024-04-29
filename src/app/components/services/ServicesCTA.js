@@ -1,4 +1,4 @@
-import ButtonAtom from "@/app/atom/ButtonAtom"
+import Button from "@/app/atom/Button"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 
@@ -34,7 +34,7 @@ export default function ServicesCTA({ heading, para, imgSrc }) {
                             {para}
                         </p>
                         <div>
-                            <ButtonAtom title="Get Started" />
+                            <Button title="Get Started" />
                         </div>
                     </div>
                 </div>

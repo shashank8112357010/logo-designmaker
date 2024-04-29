@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import TellStoryContent from "./TellStoryContent"
-import StoryAtom from "@/app/atom/StoryAtom"
+import Story from "@/app/atom/Story"
 
 export default function TellStory() {
     const [content, setContent] = useState(1)
@@ -18,7 +18,7 @@ export default function TellStory() {
             </div>
 
             <div className="flex flex-col-reverse md:flex-col max-w-[1220px] mx-auto">
-                <StoryAtom setContent={setContent} content={content} />
+                <Story setContent={setContent} content={content} />
                 {/* here  */}
                 {content && <TellStoryContent content={content} />}
             </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Carousal from "../cardCarousal/Carousal";
-import ButtonAtom from "@/app/atom/ButtonAtom";
+import Button from "@/app/atom/Button";
 import { Card } from "@/data/Data";
 
 export default function ServicesBanner({ heading, subHeading, para }) {
@@ -49,7 +49,7 @@ export default function ServicesBanner({ heading, subHeading, para }) {
                             </p>
 
                         </div>
-                        <ButtonAtom displayy="block" title="Get Started" />
+                        <Button displayy="block" title="Get Started" />
                     </div>
                 </main>
             </div>

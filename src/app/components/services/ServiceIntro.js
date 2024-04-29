@@ -1,4 +1,4 @@
-import ButtonAtom from "@/app/atom/ButtonAtom";
+import Button from "@/app/atom/Button";
 import Image from "next/image";
 
 export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading1, heading2, heading3, para1, para2, withButton, flexDirection }) {
@@ -28,7 +28,7 @@ export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading
 
                     {withButton &&
                         <div className="lg:w-full">
-                            <ButtonAtom title="Get Started Now" displayy="block" />
+                            <Button title="Get Started Now" displayy="block" />
                         </div>
                     }
 

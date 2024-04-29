@@ -1,5 +1,5 @@
 "use client"
-import ButtonAtom from "@/app/atom/ButtonAtom"
+import Button from "@/app/atom/Button"
 import { dropMenu, dropMenus } from "@/data/Data"
 import Image from "next/image"
 import Link from "next/link"
@@ -7,7 +7,6 @@ import { useState } from "react"
 
 export default function Navbar() {
     const [hide, setHide] = useState(false)
-    console.log(hide)
     const [show, setShow] = useState(false)
     const [dropDownMenu, setDropDownMenu] = useState(true)
 
@@ -122,7 +121,7 @@ export default function Navbar() {
                     <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">
                         Sign in
                     </button>
-                    <ButtonAtom displayy="hidden sm:block" title="Get Started" />
+                    <Button displayy="hidden sm:block" title="Get Started" />
                 </div>
             </div>
 

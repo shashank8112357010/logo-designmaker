@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FormAtom from "../atom/FormAtom";
+import Form from "../atom/Form";
 
 export default function Contact() {
     return (
@@ -30,7 +30,7 @@ export default function Contact() {
                 </div>
 
                 <div className="px-4 sm:p-[20px] z-50">
-                    <FormAtom />
+                    <Form />
                 </div>
             </div>
         </section>

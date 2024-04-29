@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function BoxAtom({ image, textPosition, alignItems, headingText, paraText }) {
+export default function Box({ image, textPosition, alignItems, headingText, paraText }) {
     return (
         <div className={`flex flex-col ${textPosition} ${alignItems} boxShadow px-1 pb-4 gap-[8px] sm:gap-[16px] mx-auto transition-all duration-300 ease-in-out hover:translate-x-2 hover:-translate-y-2`}>
             <div className="relative w-[28px] lg:w-[54px] h-[28px] lg:h-[54px]">

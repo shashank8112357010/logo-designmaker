@@ -1,9 +1,9 @@
 'use client'
-import FaqAtom from "@/app/atom/FaqAtom"
+import Faqq from "@/app/atom/Faqq"
 import { faqs } from "@/data/Data"
 
 export default function Faq() {
     return (
-        <FaqAtom faqs={faqs} />
+        <Faqq faqs={faqs} />
     )
 }

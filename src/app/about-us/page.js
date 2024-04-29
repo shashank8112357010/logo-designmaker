@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
 import ServiceIntro from "../components/services/ServiceIntro";
-import DesignHeaderAtom from "../atom/DesignHeaderAtom";
-import BoxAtom from "../atom/BoxAtom";
+import DesignHeader from "../atom/DesignHeader";
+import Box from "../atom/Box";
 import { AboutFaqs, BoxAboutData } from "@/data/Data";
 import { useState } from "react";
 import FaqAbout from "../components/about/FaqAbout";
@@ -48,13 +48,13 @@ export default function AboutUs() {
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading2="Our Story: " heading3="Fueled by Passion, Guided by Expertise " para1="Logo Design Maker wasn't born out of a boardroom meeting or a desire to replicate the status quo. It stemmed from a genuine passion for design and a frustration with the limitations of AI-generated logos. We saw businesses struggling to create unique brand identities that resonated with their target audience. " para2="Enter our team of experienced designers, each with a burning desire to bridge the gap and empower businesses with logos that tell their story. Today, we collaborate with businesses of all sizes, from budding start-ups to established enterprises, helping them achieve their branding goals through custom logo design services." withButton={true} flexDirection="flex-row" />
 
             <div className="pt-20 pb-10 bg-secondaryBlack">
-                <DesignHeaderAtom
+                <DesignHeader
                     heading="Supercharge Your Brand with  Our Expertise!"
                     para="Collaborate with  logo design maker for easy and professional branding that fits your budget. With our Expertise, stand out in the market, and leave a lasting impression with instant brand recognition."
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-3 items-center lg:grid-cols-3 gap-y-16 gap-x-8 mx-8 sm:mx-12 my-12 text-center">
-                    {BoxAboutData.map((item) => <BoxAtom key={item.id} image={item.image} textPosition={item.textPosition} justifyContent={item.justifyContent} alignItems={item.alignItems} maxWidth={item.maxWidth} headingText={item.headingText} paraText={item.paraText} />)}
+                    {BoxAboutData.map((item) => <Box key={item.id} image={item.image} textPosition={item.textPosition} justifyContent={item.justifyContent} alignItems={item.alignItems} maxWidth={item.maxWidth} headingText={item.headingText} paraText={item.paraText} />)}
                 </div>
             </div>
 
