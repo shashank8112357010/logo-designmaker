@@ -132,7 +132,7 @@ export default function Navbar() {
                 <div className="bg-secondaryBlack absolute w-full">
                     <div className="p-8">
                         <ul className="flex flex-col text-[14px] text-white font-semibold">
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><a>About Us</a></li>
+                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(!hide)}><Link href="/about-us">About Us</Link></li>
                             <li className={`customBorderBottom pt-3 pb-2 border-primaryGrey transition-all duration-700 ease-in-out cursor-pointer relative`} >
                                 <a onClick={() => setShow(!show)} className="block">
                                     Services
