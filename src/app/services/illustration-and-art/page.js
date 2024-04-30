@@ -83,7 +83,7 @@ export default function IllustrationArt() {
 
             <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="illustration and art " heading3="for your brand?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
-            <div className="mt-52">
+            <div className="mt-28 sm:mt-52">
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Brand's Growth: Take Action Today!" para="Investing in professional illustration and art services is an investment in building a memorable brand identity. At Logo Design Maker, we offer a variety of illustration and art packages to suit your specific needs and budget. Let our talented artists help you tell your brand story through captivating visuals that connect with your audience and leave a lasting impression.
 " />
             </div>

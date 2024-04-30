@@ -121,7 +121,9 @@ export default function Navbar() {
                     <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">
                         Sign in
                     </button>
-                    <Button displayy="hidden sm:block" title="Get Started" />
+                    <Link href="/price">
+                        <Button displayy="hidden sm:block" title="Get Started" />
+                    </Link>
                 </div>
             </div>
 
@@ -194,7 +196,6 @@ export default function Navbar() {
                             </li>
                             <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><Link href="/price">Pricing</Link></li>
                             <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><Link href="/contact">Contact</Link></li>
-                            <li className="customBorderBottom py-3 border-primaryGrey pb-2 cursor-pointer" onClick={() => setHide(false)}><a>Resources</a></li>
                         </ul>
                     </div>
                 </div>

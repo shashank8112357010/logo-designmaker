@@ -1,6 +1,7 @@
 import Image from "next/image"
 import FooterAccordion from "./FooterAccordion"
 import { footerLinks, socialLinks } from "@/data/Data"
+import Link from "next/link"
 
 export default function Footer() {
 
@@ -20,11 +21,11 @@ export default function Footer() {
                                 >
                                     <p className="text-mobfooterTitle sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold">{footer.heading}</p>
                                     <ul className="text-mobfooterLinks sm:text-tabfooterLinks capitalize lg:text-lapfooterLinks leading-8 font-normal text-primaryGrey">
-                                        {footer.data.map((item, indexx) => (
-                                            <li className="!cursor-pointer hover:text-primaryGreen" key={indexx}>
-                                                <a href="#" >
-                                                    {item}
-                                                </a>
+                                        {footer.data?.map((item) => (
+                                            <li className="!cursor-pointer hover:text-primaryGreen" key={item.id}>
+                                                <Link href={item.url ? item.url : "#"} >
+                                                    {item?.heading}
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>

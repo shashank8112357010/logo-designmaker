@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Image from 'next/image'; // Assuming you're using Next.js
+import Link from 'next/link';
 
 export default function FooterAccordion({ footerLinks }) {
   const [openFooterLinks, setOpenFooterLinks] = useState(null);
@@ -32,7 +33,7 @@ export default function FooterAccordion({ footerLinks }) {
           <ul className={`${(openFooterLinks === index) ? "max-h-60" : "max-h-0"} overflow-hidden mt-2 cursor-pointer transition-all duration-500 ease-in-out flex flex-col justify-start items-start`}>
             {footerLinks[index]?.data?.map((item, itemIndex) => (
               <li key={itemIndex} className="text-primaryGrey mb-2 text-[14px] capitalize leading-[21px]">
-                <a href="#">{item}</a>
+                <Link href={item.url ? item.url : "#"}>{item.heading}</Link>
               </li>
             ))}
           </ul>

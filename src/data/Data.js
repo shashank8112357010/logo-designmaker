@@ -49,11 +49,83 @@ export const faqs = [
 
 //footer 
 export const footerLinks = [
-    { heading: "Category", data: ["Brand & Identity", "Business & Advertising", "Packaging & Label Design", "Website & App Design", "Social Media Design", "Illustration & Art", "Book & Magzine Design", "Clothing & Merchandise"] },
-    { heading: "Get design", data: ["Logo design", "Business cards", "Product packaging", "Landing page design", "website development", "Social media profile banners", "Custom illustrations"] },
-    { heading: "Support", data: ["Help Desk", "Disclaimer", "Privacy Policy", "Terms  and Conditions"] },
-    { heading: "Company", data: ["About us ", "Pricing", "Contact us "] },
-    { heading: "Resources", data: ["Documentation", "Papers", "Press Conferences"] }
+    {
+        heading: "Category", data: [
+            {
+                id: 1,
+                heading: "Book and magazine designs",
+                url: "/services/book-and-magazine-designs"
+            },
+            {
+                id: 2,
+                heading: "Clothing and Merchandise",
+                url: "/services/clothing-and-merchandise"
+            },
+            {
+                id: 3,
+                heading: "Illustration and Art",
+                url: "/services/illustration-and-art"
+            },
+            {
+                id: 4,
+                heading: "Social Media Design",
+                url: "/services/social-media-design"
+            },
+            {
+                id: 5,
+                heading: "Packaging and Label designs",
+                url: "/services/packaging-and-label-designs"
+            },
+            {
+                id: 6,
+                heading: "Website and App Design",
+                url: "/services/website-and-app-design"
+            },
+            {
+                id: 7,
+                heading: "Brand And Identity Design",
+                url: "/services/brand-and-identity-design"
+            },
+            {
+                id: 8,
+                heading: "Business and advertising designs",
+                url: "/services/business-and-advertising-designs"
+            },
+        ]
+    },
+    {
+        heading: "Get design", data: [
+            { heading: "Logo design" },
+            { heading: "Business cards" },
+            { heading: "Product packaging" },
+            { heading: "Landing page design" },
+            { heading: "website development" },
+            { heading: "Social media profile banners" },
+            { heading: "Custom illustrations" }
+        ]
+    },
+    {
+        heading: "Support", data: [
+            { heading: "Help Desk", },
+            { heading: "Disclaimer", },
+            { heading: "Privacy Policy" },
+            { heading: "Terms  and Conditions" }
+        ]
+    },
+    {
+        heading: "Company", data: [
+            { heading: "About us " , url : "/about-us" },
+            { heading: "Pricing" , url : "/price" },
+            { heading: "Contact us " , url : "/contact" }
+        ]
+    },
+    {
+        heading: "Resources", data: [
+            { heading: "Documentation" },
+            { heading: "Papers" },
+            { heading: "Press Conferences" }
+        ]
+    }
 ]
 
 //footer 

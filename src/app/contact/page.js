@@ -29,7 +29,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="px-4 sm:p-[20px] z-50">
+                <div className="px-4 sm:p-[20px] z-50 mb-20 sm:mb-0">
                     <Form />
                 </div>
             </div>

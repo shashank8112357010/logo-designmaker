@@ -35,8 +35,8 @@ export default function Price() {
                 </main>
             </div>
 
-            <div className="pb-32 md:pb-20 flex items-center justify-center pt-52 px-4">
-                <div className="bg-secondaryBlack rounded-[20px] flex flex-row max-w-[1237px] gap-1 px-6 sm:px-8 py-8 flex-wrap justify-center">
+            <div className="pb-32 md:pb-20 flex items-center justify-center pt-20 lg:pt-52 px-4">
+                <div className="bg-secondaryBlack rounded-[20px] flex flex-row max-w-[1237px] gap-10 sm:gap-1 px-6 sm:px-8 py-8 flex-wrap justify-center">
 
                     {priceCardData.map((item) => {
                         return (

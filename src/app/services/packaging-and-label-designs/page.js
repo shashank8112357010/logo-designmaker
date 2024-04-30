@@ -80,7 +80,7 @@ export default function PackagingLabelDesigns() {
 
             <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to transform your " heading2="into potent marketing tools?" heading3="into potent marketing tools?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
-            <div className="mt-52">
+            <div className="mt-28 sm:mt-52">
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Drive your product&apos;s success with compelling design: Act now!" para="Investing in professional packaging and labeling design is an investment in your product&apos;s success. At Logo Design Maker, we offer a comprehensive suite of design services to cater to your specific needs and product positioning. Our experienced designers can create visually captivating packaging and labels that not only grab attention but also effectively communicate your brand message and entice customers to choose your product." />
             </div>
 
