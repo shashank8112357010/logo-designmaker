@@ -219,3 +219,80 @@ export const AboutFaqs = [
     { id: 2, ques: "Understanding Your Competitive Landscape", ans: "Through in-depth conversations and creative brainstorming, we delve into your brand story, target audience, and the values you represent." },
     { id: 3, ques: "Strategic Design Decisions", ans: "Through in-depth conversations and creative brainstorming, we delve into your brand story, target audience, and the values you represent." },
 ]
+
+
+
+// heroBanner > search data 
+export const searchData = [
+    { name: 'Brand Personality', url: "category/brand-personality" },
+    { name: 'Magazine Design', url: "category/magazine-design" },
+    { name: 'Book Cover Design', url: "category/book-cover-design" },
+    { name: 'EBook Cover Design', url: "category/ebook-cover-design" },
+
+    { name: 'Service Page: Business & Advertising', url: "category/service-page-business-&-advertising" },
+    { name: 'PowerPoint Design', url: "category/powerpoint-design" },
+    { name: 'Poster Design', url: "category/poster-design" },
+    { name: 'Catalog Design', url: "category/catalog-design" },
+    { name: 'Leaflet Design', url: "category/leaflet-design" },
+    { name: 'Newspaper Ad Design', url: "category/newspaper-ad-design" },
+    { name: 'Advertisement Design', url: "category/advertisement-design" },
+    { name: 'Newsletter Design', url: "category/newsletter-design" },
+
+    { name: 'Menu Design', url: "category/menu-design" },
+    { name: 'Calendar Design', url: "category/calendar-design" },
+    { name: 'Brochure Design', url: "category/brochure-design" },
+    { name: 'Infographic Design', url: "category/infographic-design" },
+    { name: 'Email Design', url: "category/email-design" },
+    { name: 'Signage Design', url: "category/signage-design" },
+    { name: 'Billboard Design', url: "category/billboard-design" },
+    { name: 'Car, Truck or Van Wrap Design', url: "category/car,-truck-or-van-wrap-design" },
+    { name: 'Trade Show Banner Design', url: "category/trade-show-banner-design" },
+    { name: 'Trade Show Booth Design', url: "category/trade-show-booth-design" },
+    { name: 'Postcard Design', url: "category/postcard-design" },
+    { name: 'Print Flyer Design', url: "category/print-flyer-design" },
+
+    { name: 'Service Page: Clothing & Merchandise', url: "category/service-page-clothing-&-merchandise" },
+    { name: 'Sticker Design', url: "category/sticker-design" },
+    { name: 'T-Shirt Design', url: "category/t-shirt-design" },
+    { name: 'Merchandise Design', url: "category/merchandise-design" },
+    { name: 'Personalized Cup or Mug Design', url: "category/personalized-cup-or-mug-design" },
+    { name: 'Bag & Tote Design', url: "category/bag-&-tote-design" },
+    { name: 'Hat & Cap Design', url: "category/hat-&-cap-design" },
+
+    { name: 'Service Page: Illustration & Art', url: "category/service-page-illustration-&-art" },
+    { name: 'Card Design or Invitation Design', url: "category/card-design-or-invitation-design" },
+    { name: 'Photo Manipulation & Design', url: "category/photo-manipulation-&-design" },
+    { name: 'Illustration & Graphics', url: "category/illustration-&-graphics" },
+    { name: 'Character & Mascot Design', url: "category/character-&-mascot-design" },
+    { name: 'Tattoo Designs', url: "category/tattoo-designs" },
+
+    { name: 'Service Page: Social Media Design', url: "category/service-page-social-media-design" },
+    { name: 'Twitter Header Design', url: "category/twitter-header-design" },
+    { name: 'Facebook Cover Design', url: "category/facebook-cover-design" },
+    { name: 'Social Media Post Design', url: "category/social-media-post-design" },
+    { name: 'LinkedIn Cover Design', url: "category/linkedin-cover-design" },
+
+    { name: 'Service page: Packaging & Label Design', url: "category/service-page-packaging-&-label-design" },
+    { name: 'Packaging Design', url: "category/packaging-design" },
+    { name: 'Label Design', url: "category/label-design" },
+    { name: 'Mobile Cover Design', url: "category/mobile-cover-design" },
+    { name: 'CD Cover Design', url: "category/cd-cover-design" },
+
+    { name: 'Service Page: Website & App Design', url: "category/service-page-website-&-app-design" },
+    { name: 'Banner Ad Design', url: "category/banner-ad-design" },
+    { name: 'Blog Design', url: "category/blog-design" },
+    { name: 'App Icon or Button Design', url: "category/app-icon-or-button-design" },
+    { name: 'Mobile App Design', url: "category/mobile-app-design" },
+    { name: 'Website Design', url: "category/website-design" },
+    { name: 'Landing Page Design', url: "category/landing-page-design" },
+
+    { name: 'Service page: Brand & Identity Design', url: "category/service-page-brand-&-identity-design" },
+    { name: 'Stationery Design', url: "category/stationery-design" },
+    { name: 'Letterhead Design', url: "category/letterhead-design" },
+    { name: 'Envelope Design', url: "category/envelope-design" },
+    { name: 'Logo Design', url: "category/logo-design" },
+    { name: 'Business Card Design', url: "category/business-card-design" },
+    { name: 'Logo & Business Card Design', url: "category/logo-&-business-card-design" },
+    { name: 'Logo & Brand Identity Design', url: "category/logo-&-brand-identity-design" }
+];
+

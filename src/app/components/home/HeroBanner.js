@@ -2,6 +2,8 @@
 import Image from "next/image"
 import Carousal from "../cardCarousal/Carousal"
 import { useEffect, useState } from "react";
+import { searchData } from "@/data/Data";
+import Link from "next/link";
 
 export default function HeroBanner() {
     const [currentInput, setCurrentInput] = useState(false)
@@ -78,13 +80,15 @@ export default function HeroBanner() {
                                 {
                                     currentInput && (
                                         <ul className="scrollBar absolute -top-60 left-0 right-0 h-[240px] overflow-y-scroll rounded-t-xl">
-                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">Magazine Design</li>
-                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">Book Cover Design</li>
-                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">option3</li>
-                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">option4</li>
-                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">Book Cover Design</li>
-                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">option3</li>
-                                            <li className="w-full h-12 px-4 py-2 border-b border-black bg-white text-[#182736]">option4</li>
+                                            <div className="flex flex-col">
+                                                {searchData.map((item, index) => {
+                                                    return (
+                                                        <Link href={item.url} key={index} className="w-full h-12 px-4 py-2 border-b border-black !bg-white text-[#182736]">
+                                                            {item.name}
+                                                        </Link>
+                                                    )
+                                                })}
+                                            </div>
                                         </ul>
                                     )
                                 }

@@ -9,9 +9,9 @@ import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import Faq from "@/app/atom/Faqq";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/brand-and-identity-design";
+import Faqq from "@/app/atom/Faqq";
 
 export default function BrandIdentityDesign() {
     const [content, setContent] = useState(1)
@@ -84,7 +84,7 @@ export default function BrandIdentityDesign() {
 
             <ServicesCTA imgSrc="/services/smart-business-plan-and-corporate-strategy.png" heading="Ready to Elevate Your Brand Experience?" para="Investing in a professional brand identity design is an investment in your business's future. At Logo Design Maker, we offer a variety of branding services to suit your specific needs and budget. Whether you're looking for a standalone logo design or a comprehensive brand identity package, our team is here to help you create a memorable and impactful brand experience." />
 
-            <Faq faqs={faqs} />
+            <Faqq faqs={faqs} />
 
         </section>
     )

@@ -8,9 +8,9 @@ import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import Faq from "@/app/atom/Faqq";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/book-and-magazine-designs";
+import Faqq from "@/app/atom/Faqq";
 
 export default function BookMagazineDesigns() {
     const [content, setContent] = useState(1)
@@ -85,7 +85,7 @@ export default function BookMagazineDesigns() {
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />
             </div>
 
-            <Faq faqs={faqs} />
+            <Faqq faqs={faqs} />
 
         </section>
     )

@@ -8,9 +8,9 @@ import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import Faq from "@/app/atom/Faqq";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/business-and-advertising-designs";
+import Faqq from "@/app/atom/Faqq";
 
 export default function BusinessAdvertisingDesigns() {
     const [content, setContent] = useState(1)
@@ -85,7 +85,7 @@ export default function BusinessAdvertisingDesigns() {
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Business Growth with Design that Drives Results: Take Action Today!" para="Investing in professional business and marketing materials design is an investment in your brand's success. At Logo Design Maker, we offer a comprehensive suite of design services to cater to your specific needs and marketing goals. Our experienced designers can create visually compelling designs that not only grab attention but also effectively communicate your message and inspire action." />
             </div>
 
-            <Faq faqs={faqs} />
+            <Faqq faqs={faqs} />
 
         </section>
     )

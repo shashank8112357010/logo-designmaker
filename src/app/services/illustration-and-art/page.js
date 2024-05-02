@@ -8,10 +8,10 @@ import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import Faq from "@/app/atom/Faqq";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/illustration-and-art";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
+import Faqq from "@/app/atom/Faqq";
 
 export default function IllustrationArt() {
     const [content, setContent] = useState(1)
@@ -88,7 +88,7 @@ export default function IllustrationArt() {
 " />
             </div>
 
-            <Faq faqs={faqs} />
+            <Faqq faqs={faqs} />
 
         </section>
     )

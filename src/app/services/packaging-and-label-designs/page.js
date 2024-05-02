@@ -8,9 +8,9 @@ import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import Faq from "@/app/atom/Faqq";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/packaging-and-label-designs";
+import Faqq from "@/app/atom/Faqq";
 
 export default function PackagingLabelDesigns() {
     const [content, setContent] = useState(1)
@@ -84,7 +84,7 @@ export default function PackagingLabelDesigns() {
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Drive your product&apos;s success with compelling design: Act now!" para="Investing in professional packaging and labeling design is an investment in your product&apos;s success. At Logo Design Maker, we offer a comprehensive suite of design services to cater to your specific needs and product positioning. Our experienced designers can create visually captivating packaging and labels that not only grab attention but also effectively communicate your brand message and entice customers to choose your product." />
             </div>
 
-            <Faq faqs={faqs} />
+            <Faqq faqs={faqs} />
 
         </section>
     )

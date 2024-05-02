@@ -8,10 +8,10 @@ import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import Faq from "@/app/atom/Faqq";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/clothing-and-merchandise";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
+import Faqq from "@/app/atom/Faqq";
 
 export default function ClothingMerchandise() {
     const [content, setContent] = useState(1)
@@ -88,7 +88,7 @@ export default function ClothingMerchandise() {
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Brand's Growth or Express Yourself in Style: Take Action Today!" para="Investing in professional clothing and merchandise design is an investment in building brand awareness, fostering community spirit, or simply expressing your unique style. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers help you create visually captivating designs for your clothing and merchandise that not only look great but also effectively communicate your message and leave a lasting impression." />
             </div>
 
-            <Faq faqs={faqs} />
+            <Faqq faqs={faqs} />
 
         </section>
     )
