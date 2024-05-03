@@ -30,7 +30,7 @@ export default function BookCoverDesign() {
                             Design Ebooks That Sell: Stunning <span className="text-primaryGreen">Ebook Cover Design </span>
                         </h1>
                         <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
-                            Crafting captivating ebook covers is essential in today's competitive online marketplace. At Logo Design Maker, we specialize in creating designs that grab attention, accurately reflect content, and entice readers to download. Stand out with our visually engaging and strategically crafted ebook covers.                        </p>
+                            Crafting captivating ebook covers is essential in today&apos;s competitive online marketplace. At Logo Design Maker, we specialize in creating designs that grab attention, accurately reflect content, and entice readers to download. Stand out with our visually engaging and strategically crafted ebook covers.                        </p>
                     </div>
                 </main>
 

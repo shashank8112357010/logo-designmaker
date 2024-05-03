@@ -30,7 +30,8 @@ export default function MagazineDesign() {
                             Captivate Your Audience with Award-Winning <span className="text-primaryGreen">Magazine Design</span>
                         </h1>
                         <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
-                            In today's digital world, magazines still have a huge impact. At Logo Design Maker, we're all about creating eye-catching designs that really connect with people. Whether you're starting from scratch or giving your magazine a makeover, our team is here to make it happen.                        </p>
+                            In today&apos;s digital world, magazines still have a huge impact. At Logo Design Maker, we&apos;re all about creating eye-catching designs that really connect with people. Whether you&apos;re starting from scratch or giving your magazine a makeover, our team is here to make it happen.
+                        </p>
                     </div>
                 </main>
 

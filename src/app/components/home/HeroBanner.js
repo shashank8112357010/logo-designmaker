@@ -90,18 +90,18 @@ export default function HeroBanner() {
                             <div className="flex flex-row relative rounded-t-xl">
                                 {
                                     currentInput && (
-                                        <ul className={`scrollBar bg-white absolute z-50 ${showLists ? " md:top-[46px] lg:top-12 rounded-b-xl" : "bottom-[30px] sm:bottom-[45px] lg:bottom-[56px] rounded-t-xl"} left-0 right-0 ${search.length >= 2 ? 'h-auto' : 'h-[130px] sm:h-[160px] md:h-[210px] lg:h-[240px]'}  overflow-y-scroll "`}>
+                                        <ul className={`scrollBar bg-white absolute z-50 ${showLists ? "md:top-[46px] lg:top-[57.5px] rounded-b-xl" : "bottom-[30px] sm:bottom-[45px] lg:bottom-[56px] rounded-t-xl"} left-0 right-0 ${search.length >= 2 ? 'h-auto' : 'h-[130px] sm:h-[160px] md:h-[210px] lg:h-[240px]'}  overflow-y-scroll "`}>
                                             <div className="flex flex-col">
                                                 {searchData
                                                     .filter((item) => item.name.toLowerCase().includes(search.toLowerCase()))
                                                     .map((item, index) => {
-                                                        // Style the matched part of suggestion
                                                         const regex = new RegExp(`(${search})`, 'ig');
                                                         const suggestionName = item.name.replace(regex, `<span class="text-black">$1</span>`);
                                                         return (
                                                             <Link href={item.url ? item.url : "#"}
                                                                 onClick={() => handleItemSelect(item)}
-                                                                key={index} className="w-full h-12 px-4 py-2 text-[13px] md:text-[14px] lg:text-[16px] border-b border-black !bg-white text-gray-400">
+                                                                key={index}
+                                                                className="w-full h-12 px-4 z-40 py-2 text-[13px] md:text-[14px] lg:text-[16px] border-b border-black !bg-white text-gray-400">
                                                                 <div dangerouslySetInnerHTML={{ __html: suggestionName }} />
                                                             </Link>
                                                         )
@@ -119,7 +119,7 @@ export default function HeroBanner() {
                                     onChange={handleInput}
                                 />
 
-                                <div className="absolute w-8 sm:w-12 lg:w-16 h-8 sm:h-12 lg:h-16 bg-primaryGreen rounded-full right-[-4px] top-[-2px] lg:top-[-4px] flex justify-center items-center cursor-pointer">
+                                <div className="absolute w-8 z-50 sm:w-12 lg:w-16 h-8 sm:h-12 lg:h-16 bg-primaryGreen rounded-full right-[-4px] top-[-2px] lg:top-[-4px] flex justify-center items-center cursor-pointer">
                                     <Image src="/home/logoSearch.png" width={12} height={12} className="block md:hidden" alt="logoSearch" />
                                     <Image src="/home/logoSearch.png" width={20} height={20} className="hidden md:block" alt="logoSearch" />
                                 </div>

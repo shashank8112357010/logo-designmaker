@@ -27,10 +27,10 @@ export default function BookCoverDesign() {
                             Services
                         </span>
                         <h1 className="w-full text-mobHeaderTex text-centert sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] max-w-[300px] sm:max-w-5xl">
-                            Unleash Your Book's Potential with a Stunning <span className="text-primaryGreen">Book Cover Design</span>
+                            Unleash Your Book&apos;s Potential with a Stunning <span className="text-primaryGreen">Book Cover Design</span>
                         </h1>
                         <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
-                            Crafting unique book cover designs that captivate, reflect your story's essence, and entice readers to dive in. Let Logo Design Maker create your powerful marketing tool.
+                            Crafting unique book cover designs that captivate, reflect your story&apos;s essence, and entice readers to dive in. Let Logo Design Maker create your powerful marketing tool.
                         </p>
                     </div>
                 </main>
