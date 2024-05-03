@@ -19,7 +19,7 @@ export default function HumanTouch() {
                 </p>
             </div>
 
-            <ul className="flex justify-center cursor-pointer gap-5 whitespace-nowrap px-4 min-h-10 leading-[18px] overflow-auto sm:leading-[24px] text-mobTitle2 sm:text-tabTitle2 lg:text-lapTitle2 font-normal text-center ">
+            <ul className="flex justify-center cursor-pointer gap-5 whitespace-nowrap px-4 min-h-10 leading-[18px] overflow-hidden sm:leading-[24px] text-mobTitle2 sm:text-tabTitle2 lg:text-lapTitle2 font-normal text-center ">
                 <li className="hover:text-primaryGreen hover:border-b-4 hover:border-primaryGreen pb-2 px-2 z-50">Business & Advertising</li>
                 <li className="hover:text-primaryGreen hover:border-b-4 hover:border-primaryGreen pb-2 px-2 z-50">Packaging & Label Design</li>
                 <li className="hover:text-primaryGreen hover:border-b-4 hover:border-primaryGreen pb-2 px-2  z-50">Website & App Design</li>

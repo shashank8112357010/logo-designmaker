@@ -13,7 +13,7 @@ export const faqs = [
 
 export const designProcess = [
     { id: 0, heading: "Initial Consultation", para: "We start with an in-depth conversation to understand your book's concept, target audience, and vision for the cover." },
-    { id: 1, heading: "Concept Development", para: " Our designers will develop several unique book cover design concepts based on your input." },
+    { id: 1, heading: "Concept Development", para: "Our designers will develop several unique book cover design concepts based on your input." },
     { id: 2, heading: "Revisions & Refinement", para: "We work closely with you throughout the process, incorporating your feedback and refining the design until it exceeds your expectations." },
     { id: 3, heading: "Final Delivery", para: "You'll receive your final book cover design in various formats suitable for print and digital use." },
 ]

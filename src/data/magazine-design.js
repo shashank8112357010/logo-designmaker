@@ -16,5 +16,5 @@ export const designProcess = [
     { id: 1, heading: "Content & Style Analysis", para: "We analyze your content and desired aesthetic to develop a design strategy that complements your voice and message." },
     { id: 2, heading: "Concept Development", para: "Our designers will develop several unique magazine design concepts based on your input." },
     { id: 3, heading: "Revisions & Refinement", para: "We work closely with you throughout the process, incorporating your feedback and refining the design until it exceeds your expectations." },
-    { id: 3, heading: "Final Delivery", para: "You'll receive your final magazine design files, including layouts, covers, and templates, ready for print or digital publishing." },
+    { id: 4, heading: "Final Delivery", para: "You'll receive your final magazine design files, including layouts, covers, and templates, ready for print or digital publishing." },
 ]

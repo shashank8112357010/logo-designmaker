@@ -1,7 +1,6 @@
 "use client"
 import Faqq from "@/app/atom/Faqq"
 import DesignProcess from "@/app/components/home/Category/DesignProcess"
-import Faq from "@/app/components/home/Faq"
 import ServiceDesign from "@/app/components/services/ServiceDesign"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import ServicesCTA from "@/app/components/services/ServicesCTA"
