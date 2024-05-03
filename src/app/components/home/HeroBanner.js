@@ -24,11 +24,8 @@ export default function HeroBanner() {
     ];
 
     useEffect(() => {
-        console.log('coming in useEffect')
         const handleScroll = () => {
-            console.log('inside of handleScroll')
             if (window.scrollY > 100) {
-                console.log("greater than 400")
                 setShowLists(true)
             } else {
                 setShowLists(false)
