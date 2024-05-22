@@ -1,9 +1,9 @@
 import tellYourStory1 from "../animate/tellYourStory1.json";
 import tellYourStory2 from "../animate/tellYourStory2.json";
 import tellYourStory3 from "../animate/tellYourStory3.json";
-import tellYourStory4 from "../animate/tellYourStory4.json";
+import tellYourStory6 from "../animate/tellYourStory4.json";
 import tellYourStory5 from "../animate/tellYourStory5.json";
-import tellYourStory6 from "../animate/tellYourStory6.json";
+import tellYourStory4 from "../animate/tellYourStory6.json";
 
 //Home > tellStoryContent
 export const tellStoryContent = [

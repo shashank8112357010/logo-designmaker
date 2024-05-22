@@ -1,4 +1,7 @@
+"use client"
+import Lottie from "lottie-react"
 import Image from "next/image"
+import designYourLogo from "../../../animate/DesignYourLogo.json"
 
 export default function DesignYourLogo() {
     return (
@@ -8,6 +11,7 @@ export default function DesignYourLogo() {
                 <div className=" block lgg:hidden bg-red-500">
                     <div className="w-[270px] sm:w-[320px] block lgg:hidden h-[320px] sm:h-[380px] absolute -top-20 sm:-top-24 left-[5%] xs:left-[24%] md:left-[34%]">
                         <Image src="/home/DesignYourLogo.png" alt="Design your logo image" fill />
+                        {/* <Lottie animationData={designYourLogo} loop={true} /> */}
                     </div>
                 </div>
 
@@ -50,6 +54,7 @@ export default function DesignYourLogo() {
                 <div className="relative lgg:w-[450px]">
                     <div className="lgg:w-[500px] xl:w-[587px] hidden lgg:block h-[600px] xl:h-[689px] absolute -top-[120px] xl:-top-[180px] -right-20 xl:-right-28">
                         <Image src="/home/DesignYourLogo.png" alt="Design your logo image" fill />
+                        {/* <Lottie animationData={designYourLogo} loop={true} /> */}
                     </div>
                 </div>
             </div>

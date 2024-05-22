@@ -11,7 +11,7 @@ export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading
                 </div>
 
                 {/* second section */}
-                <div className="max-w-[400px] sm:max-w-[480px] lg:max-w-[700px] flex flex-col gap-4 items-center text-center lg:text-start">
+                <div className="max-w-[400px] sm:max-w-[480px] lg:max-w-[700px] flex flex-col gap-4 items-center  lg:items-start text-center lg:text-start">
                     <div className="w-full uppercase text-[10px] sm:text-[14px] lg:text-[20px] leading-[11px] sm:leading-[16px] lg:leading-[23px] font-medium ">
                         {subHeading1}
                         <span className="text-primaryGreen">{subHeading2}</span>
