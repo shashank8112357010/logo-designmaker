@@ -30,7 +30,7 @@ export default function TShirtDesign() {
                             <span className="text-primaryGreen"> T-Shirt Design </span>That Make a Statement
                         </h1>
                         <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[600px]">
-                            Turn your ideas into wearable art! Design your own custom t-shirt online with our user-friendly platform, or tap into the expertise of our talented t-shirt designers. We offer a wide range of styles and sizes to fit everyone, from men's designer tees to comfy women's graphics and fun, colorful options for kids. No matter your vision, our tools and experienced designers can help you create the perfect custom t-shirt that reflects your unique style.
+                            Turn your ideas into wearable art! Design your own custom t-shirt online with our user-friendly platform, or tap into the expertise of our talented t-shirt designers. We offer a wide range of styles and sizes to fit everyone, from men&apos;s designer tees to comfy women&apos;s graphics and fun, colorful options for kids. No matter your vision, our tools and experienced designers can help you create the perfect custom t-shirt that reflects your unique style.
                         </p>
                     </div>
                 </main>

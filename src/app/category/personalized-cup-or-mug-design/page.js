@@ -29,7 +29,7 @@ export default function PersonalizedCupOrMugDesign() {
                             Unleash Your Creativity: Design Personalized <span className="text-primaryGreen">Cups & Mugs design </span>That Make Memories
                         </h1>
                         <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
-                            Mugs and cups are more than beverage vessels; they're companions, conversation starters, and keepsakes. Personalized designs turn them into extraordinary gifts that tell a story. Imagine enjoying your coffee from a mug with a funny saying or cherished memory. Personalized wedding cups or unique mugs for coworkers leave lasting impressions. At Logo Design Maker, design your own mugs online or collaborate with our designers to create personalized cups for any occasion.
+                            Mugs and cups are more than beverage vessels; they&apos;re companions, conversation starters, and keepsakes. Personalized designs turn them into extraordinary gifts that tell a story. Imagine enjoying your coffee from a mug with a funny saying or cherished memory. Personalized wedding cups or unique mugs for coworkers leave lasting impressions. At Logo Design Maker, design your own mugs online or collaborate with our designers to create personalized cups for any occasion.
                         </p>
                     </div>
                 </main>

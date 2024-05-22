@@ -29,7 +29,7 @@ export default function MerchandiseDesign() {
                             Unleash Your Brand Potential: Get Custom <span className="text-primaryGreen">Merchandise Design </span>That Makes a Statement
                         </h1>
                         <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
-                            In today's competitive landscape, standing out is crucial. At Logo Design Maker, we help businesses create impactful merchandise that builds brand loyalty and engages customers. Design online with our platform or collaborate with our designers to bring your vision to life. Whether for promotion or custom products, we have the tools and expertise to help you succeed.
+                            In today&apos;s competitive landscape, standing out is crucial. At Logo Design Maker, we help businesses create impactful merchandise that builds brand loyalty and engages customers. Design online with our platform or collaborate with our designers to bring your vision to life. Whether for promotion or custom products, we have the tools and expertise to help you succeed.
                         </p>
                     </div>
                 </main>
