@@ -11,7 +11,7 @@ export default function PersonalizedCupOrMugDesign() {
 
     return (
         <section className="w-full max-w-[1920px] mx-auto bg-primaryBlack pb-32">
-            <div className="flex flex-row gap-4 items-center justify-center xl:gap-10 h-[250px] xs:h-[283px] sm:h-[553px] relative">
+            <div className="flex flex-row gap-4 items-center justify-center xl:gap-10 h-[550px] sm:h-[603px] md:h-[553px] relative">
 
                 <div className="absolute left-0 top-20">
                     <Image src="/pricing/LeftGrPricing.png" width={856} height={815} alt="linear-gradient-top" />
@@ -20,7 +20,7 @@ export default function PersonalizedCupOrMugDesign() {
                     <Image src="/pricing/RightGrPricing.png" width={856} height={815} alt="linear-gradient-bottom" />
                 </div>
 
-                <main className="top-[40%] md:top-[27%] z-30 min-h-[641px] absolute sm:px-0 sm:mt-5">
+                <main className="top-[25%] md:top-[27%] z-30 min-h-[641px] absolute sm:px-0 sm:mt-5">
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
                         <span className="font-[100px] text-center w-full font-springRainSolid text-white leading-[25px] lg:leading-[45px] text-[20px] lg:text-[35px]">
                             Services
@@ -35,7 +35,7 @@ export default function PersonalizedCupOrMugDesign() {
                 </main>
             </div>
 
-            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of Personalized" heading2="Cup & Mug Design" para1="Personalized cup and mug design goes beyond practicality, offering a way to express yourself, celebrate special occasions, or show someone you care. These custom designs make meaningful gifts for birthdays, holidays, weddings, or any special occasion, providing a thoughtful and unique present that can be cherished for years. Personalized cups commemorate special events like weddings, graduations, or anniversaries, adding a personal touch and serving as lasting reminders of these moments. " para2="They also offer a cost-effective method to promote your business or organization; creating mugs with your logo or slogan to distribute at events or as employee gifts can boost brand recognition. Additionally, designing your own mug with a funny saying, quote, or photo allows you to express your individuality and stand out. Personalized cup and mug design lets you create something truly special for yourself or someone you love." withButton={true} flexDirection="flex-row" />
+            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of Personalized " heading2="Cup & Mug Design" para1="Personalized cup and mug design goes beyond practicality, offering a way to express yourself, celebrate special occasions, or show someone you care. These custom designs make meaningful gifts for birthdays, holidays, weddings, or any special occasion, providing a thoughtful and unique present that can be cherished for years. Personalized cups commemorate special events like weddings, graduations, or anniversaries, adding a personal touch and serving as lasting reminders of these moments. " para2="They also offer a cost-effective method to promote your business or organization; creating mugs with your logo or slogan to distribute at events or as employee gifts can boost brand recognition. Additionally, designing your own mug with a funny saying, quote, or photo allows you to express your individuality and stand out. Personalized cup and mug design lets you create something truly special for yourself or someone you love." withButton={true} flexDirection="flex-row" />
 
             <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Mornings with Our Personalized " heading2="Cup Design Services" para="When you choose Logo Design Maker for your personalized cup & mug design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 

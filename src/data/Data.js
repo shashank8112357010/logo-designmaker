@@ -237,7 +237,6 @@ export const searchData = [
     { name: 'Newspaper Ad Design', url: "category/newspaper-ad-design" },
     { name: 'Advertisement Design', url: "category/advertisement-design" },
     { name: 'Newsletter Design', url: "category/newsletter-design" },
-
     { name: 'Menu Design', url: "category/menu-design" },
     { name: 'Calendar Design', url: "category/calendar-design" },
     { name: 'Brochure Design', url: "category/brochure-design" },
@@ -245,7 +244,7 @@ export const searchData = [
     { name: 'Email Design', url: "category/email-design" },
     { name: 'Signage Design', url: "category/signage-design" },
     { name: 'Billboard Design', url: "category/billboard-design" },
-    { name: 'Car, Truck or Van Wrap Design', url: "category/car,-truck-or-van-wrap-design" },
+    { name: 'Car, Truck or Van Wrap Design', url: "category/car-truck-or-van-wrap-design" },
     { name: 'Trade Show Banner Design', url: "category/trade-show-banner-design" },
     { name: 'Trade Show Booth Design', url: "category/trade-show-booth-design" },
     { name: 'Postcard Design', url: "category/postcard-design" },

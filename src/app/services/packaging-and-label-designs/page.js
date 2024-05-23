@@ -9,8 +9,9 @@ import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
-import { servicesDesignData1, servicesDesignData2 } from "@/data/packaging-and-label-designs";
+import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/data/packaging-and-label-designs";
 import Faqq from "@/app/atom/Faqq";
+import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 
 export default function PackagingLabelDesigns() {
     const [content, setContent] = useState(1)
@@ -50,29 +51,9 @@ export default function PackagingLabelDesigns() {
                 <div className="pt-20">
                     <DesignHeader heading="A Symphony of Design Solutions for" subHeading="Your Products" para="We offer a comprehensive range of packaging and labeling design services to cater to your specific needs. Here's a glimpse into how we can help you create packaging and labeling that sells:" />
                 </div>
-                <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} />
-                    <div className="w-full flex flex-col-reverse gap-12 md:gap-0 md:flex-row justify-evenly items-center">
-                        <div className="w-3/3">
-                            <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
-                                <div className="max-w-[280px] sm:max-w-[380px] lg:max-w-[600px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white gap-4 md:gap-0">
-                                    Packaging Design
-                                </div>
-                                <p className="max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] mx-auto lg:text-[16px] sm:text-[12px] text-[12px] lg:leading-[28px]  sm:leading-[18px] leading-[18px] text-primaryGray px-4 sm:px-0 lg:px-0">
-                                    From boxes and bags to bottles and tubes, we can design captivating packaging that showcases your product in style. Our designers will create visually appealing and functional packaging solutions that not only look great but also ensure your product arrives safely at its destination. We&apos;ll consider factors like material selection, size, and functionality to create packaging that enhances your brand image and protects your product.
-                                </p>
-                            </div>
-                            <div className="w-full mx-auto text-center md:text-start">
-                                <Button title="Get Started Now" />
-                            </div>
-                        </div>
-                        <div className="hidden md:block">
-                            <Image src="/services/ServicesSliderImg.png" alt="services slider" width={300} height={400} />
-                        </div>
-                        <div className="block md:hidden">
-                            <Image src="/services/ServiceSliderImgMob.png" alt="services slider" width={300} height={400} />
-                        </div>
-                    </div>
+                <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
+                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4]} />
+                    {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>
 

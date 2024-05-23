@@ -1,17 +1,17 @@
 
 "use client"
-import Button from "@/app/atom/Button";
 import DesignHeader from "@/app/atom/DesignHeader";
 import Sliderr from "@/app/atom/Slider";
 import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
-import Image from "next/image";
 import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
-import { servicesDesignData1, servicesDesignData2 } from "@/data/brand-and-identity-design";
+import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/data/brand-and-identity-design";
 import Faqq from "@/app/atom/Faqq";
+import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
+import Button from "@/app/atom/Button";
 
 export default function BrandIdentityDesign() {
     const [content, setContent] = useState(1)
@@ -51,29 +51,9 @@ export default function BrandIdentityDesign() {
                 <div className="pt-20">
                     <DesignHeader heading="Crafting a Seamless Brand Experience with" subHeading="Logo Design Maker" para="At Logo Design Maker, we create impactful brand identities beyond just logos. Our experienced team collaborates closely with you to craft visually stunning designs that resonate with your audience and drive business growth." />
                 </div>
-                <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} />
-                    <div className="w-full flex flex-col-reverse gap-12 md:gap-0 md:flex-row justify-evenly items-center">
-                        <div className="w-3/3">
-                            <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
-                                <div className="max-w-[280px] sm:max-w-[380px] lg:max-w-[600px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white gap-4 md:gap-0">
-                                    Stationery Design
-                                </div>
-                                <p className="max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] mx-auto lg:text-[16px] sm:text-[12px] text-[12px] lg:leading-[28px]  sm:leading-[18px] leading-[18px] text-primaryGray px-4 sm:px-0 lg:px-0">
-                                    Elevate your business communications beyond the digital realm with a suite of custom-designed stationery. Our designers will create a cohesive set of letterheads, envelopes, and invoices that seamlessly integrate with your overall brand identity. Imagine the impact of crafting a handwritten note to a client on a letterhead that beautifully showcases your logo, color palette, and typography. This attention to detail reinforces professionalism and builds trust with your audience, leaving a lasting and positive impression.
-                                </p>
-                            </div>
-                            <div className="w-full mx-auto text-center md:text-start">
-                                <Button title="Get Started Now" />
-                            </div>
-                        </div>
-                        <div className="hidden md:block">
-                            <Image src="/services/ServicesSliderImg.png" alt="services slider" width={300} height={400} />
-                        </div>
-                        <div className="block md:hidden">
-                            <Image src="/services/ServiceSliderImgMob.png" alt="services slider" width={300} height={400} />
-                        </div>
-                    </div>
+                <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
+                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5, 6, 7]} />
+                    {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>
 

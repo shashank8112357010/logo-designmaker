@@ -2,6 +2,7 @@
 import { useState } from "react"
 import TellStoryContent from "./TellStoryContent"
 import Story from "@/app/atom/Story"
+import { tellStoryContent } from "@/data/Data"
 
 export default function TellStory() {
     const [content, setContent] = useState(1)
@@ -18,9 +19,9 @@ export default function TellStory() {
             </div>
 
             <div className="flex flex-col-reverse md:flex-col max-w-[1220px] mx-auto">
-                <Story setContent={setContent} content={content} />
+                <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5, 6]} />
                 {/* here  */}
-                {content && <TellStoryContent content={content} />}
+                {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} />}
             </div>
         </section >
     )

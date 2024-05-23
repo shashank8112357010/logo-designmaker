@@ -9,9 +9,10 @@ import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
-import { servicesDesignData1, servicesDesignData2 } from "@/data/clothing-and-merchandise";
+import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/data/clothing-and-merchandise";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
 import Faqq from "@/app/atom/Faqq";
+import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 
 export default function ClothingMerchandise() {
     const [content, setContent] = useState(1)
@@ -54,29 +55,9 @@ export default function ClothingMerchandise() {
                 <div className="pt-20">
                     <DesignHeader heading="A Symphony of" subHeading=" Design Solutions for Your Apparel & Merchandise" para="We offer a comprehensive range of clothing and merchandise design services to cater to your specific needs. Here's a glimpse into how we can help you breathe life into your wearable creations:" />
                 </div>
-                <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} />
-                    <div className="w-full flex flex-col-reverse gap-12 md:gap-0 md:flex-row justify-evenly items-center">
-                        <div className="w-3/3">
-                            <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
-                                <div className="max-w-[280px] sm:max-w-[380px] lg:max-w-[600px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white gap-4 md:gap-0">
-                                    Sticker Design
-                                </div>
-                                <p className="max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] mx-auto lg:text-[16px] sm:text-[12px] text-[12px] lg:leading-[28px]  sm:leading-[18px] leading-[18px] text-primaryGray px-4 sm:px-0 lg:px-0">
-                                    Small but mighty, stickers are a versatile way to express your brand or personality. Our designers will create eye-catching sticker designs that are perfect for product packaging, promotional giveaways, or simply adding a touch of personality to laptops, water bottles, and other everyday items. From playful illustrations to bold typography, we&apos;ll ensure your stickers leave a lasting impression wherever they&apos;re placed.
-                                </p>
-                            </div>
-                            <div className="w-full mx-auto text-center md:text-start">
-                                <Button title="Get Started Now" />
-                            </div>
-                        </div>
-                        <div className="hidden md:block">
-                            <Image src="/services/ServicesSliderImg.png" alt="services slider" width={300} height={400} />
-                        </div>
-                        <div className="block md:hidden">
-                            <Image src="/services/ServiceSliderImgMob.png" alt="services slider" width={300} height={400} />
-                        </div>
-                    </div>
+                <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
+                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5, 6]} />
+                    {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>
 

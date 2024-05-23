@@ -10,8 +10,9 @@ import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
-import { servicesDesignData1, servicesDesignData2 } from "@/data/social-media-design";
+import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/data/social-media-design";
 import Faqq from "@/app/atom/Faqq";
+import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 
 export default function SociaMediaDesign() {
     const [content, setContent] = useState(1)
@@ -54,29 +55,9 @@ export default function SociaMediaDesign() {
                     <DesignHeader heading="A Symphony of" subHeading="Social Media Design Solutions" para="We offer a diverse range of social media design services to cater to your specific needs and platforms. Here's a closer look at how we can help you craft a visually stunning social media presence:
 " />
                 </div>
-                <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} />
-                    <div className="w-full flex flex-col-reverse gap-12 md:gap-0 md:flex-row justify-evenly items-center">
-                        <div className="w-3/3">
-                            <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
-                                <div className="max-w-[280px] sm:max-w-[380px] lg:max-w-[600px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white gap-4 md:gap-0">
-                                    Twitter Header Design
-                                </div>
-                                <p className="max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] mx-auto lg:text-[16px] sm:text-[12px] text-[12px] lg:leading-[28px]  sm:leading-[18px] leading-[18px] text-primaryGray px-4 sm:px-0 lg:px-0">
-                                    Twitter headers are prime real estate for grabbing attention and making a lasting first impression. We design captivating Twitter headers that showcase your brand personality, highlight essential information, and entice users to follow your profile. Think of it as a miniature billboard at the top of your Twitter page, constantly visible and ready to spark curiosity about your brand.
-                                </p>
-                            </div>
-                            <div className="w-full mx-auto text-center md:text-start">
-                                <Button title="Get Started Now" />
-                            </div>
-                        </div>
-                        <div className="hidden md:block">
-                            <Image src="/services/ServicesSliderImg.png" alt="services slider" width={300} height={400} />
-                        </div>
-                        <div className="block md:hidden">
-                            <Image src="/services/ServiceSliderImgMob.png" alt="services slider" width={300} height={400} />
-                        </div>
-                    </div>
+                <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
+                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4]} />
+                    {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>
 

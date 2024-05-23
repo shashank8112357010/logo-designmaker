@@ -9,8 +9,9 @@ import { useState } from "react";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
-import { faqs, servicesDesignData } from "@/data/website-and-app-design";
+import { faqs, servicesDesignData, tellStoryContent } from "@/data/website-and-app-design";
 import Faqq from "@/app/atom/Faqq";
+import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 
 export default function WebsiteAppDesign() {
     const [content, setContent] = useState(1)
@@ -53,29 +54,9 @@ export default function WebsiteAppDesign() {
                 <div className="pt-20">
                     <DesignHeader heading="A Symphony of Services: Building Your" subHeading="Digital Presence" para="We offer a diverse range of website and app design solutions to cater to your specific needs. Here's a closer look at some of the ways we can help you build your digital oasis" />
                 </div>
-                <div className="tellStoryContent sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} />
-                    <div className="w-full flex flex-col-reverse gap-12 md:gap-0 md:flex-row justify-evenly items-center">
-                        <div className="w-3/3">
-                            <div className="flex flex-col items-center md:items-start text-center md:text-start gap-2 mb-6">
-                                <div className="max-w-[280px] sm:max-w-[380px] lg:max-w-[600px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white gap-4 md:gap-0">
-                                    Banner Ad Design  <span className="text-primaryGreen"></span>
-                                </div>
-                                <p className="max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] mx-auto lg:text-[16px] sm:text-[12px] text-[12px] lg:leading-[28px]  sm:leading-[18px] leading-[18px] text-primaryGray px-4 sm:px-0 lg:px-0">
-                                    Captivate your audience on the web with eye-catching banner ads that grab attention and drive traffic to your website or landing page. Our designers understand the art of balancing visual appeal with concise messaging to create impactful banner ads that resonate with your target audience. Whether you&apos;re promoting a special offer, showcasing a new product launch, or driving brand awareness, our banner ad designs will help you achieve your marketing goals.
-                                </p>
-                            </div>
-                            <div className="w-full mx-auto text-center md:text-start">
-                                <Button title="Get Started Now" />
-                            </div>
-                        </div>
-                        <div className="hidden md:block">
-                            <Image src="/services/ServicesSliderImg.png" alt="services slider" width={300} height={400} />
-                        </div>
-                        <div className="block md:hidden">
-                            <Image src="/services/ServiceSliderImgMob.png" alt="services slider" width={300} height={400} />
-                        </div>
-                    </div>
+                <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
+                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5, 6, 7]} />
+                    {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>
 
