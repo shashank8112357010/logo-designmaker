@@ -39,13 +39,15 @@ export default function AboutUs() {
                             Your Brand&apos;s Creative Companion
                         </h1>
                         <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
-                            Welcome to the heart of Logo Design Maker, where passionate designers and strategic thinking collide to craft memorable logos that elevate your brand.
+                            Welcome to the heart of Logo Design Maker, where passionate designers and strategic thinking collide to craft <strong> memorable logos</strong> that elevate your brand.
                         </p>
                     </div>
                 </main>
 
             </div>
-            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading2="Our Story: " heading3="Fueled by Passion, Guided by Expertise " para1="Logo Design Maker wasn't born out of a boardroom meeting or a desire to replicate the status quo. It stemmed from a genuine passion for design and a frustration with the limitations of AI-generated logos. We saw businesses struggling to create unique brand identities that resonated with their target audience. " para2="Enter our team of experienced designers, each with a burning desire to bridge the gap and empower businesses with logos that tell their story. Today, we collaborate with businesses of all sizes, from budding start-ups to established enterprises, helping them achieve their branding goals through custom logo design services." withButton={true} flexDirection="flex-row" />
+            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading2="Our Story: " heading3="Fueled by Passion, Guided by Expertise "
+                para1={<span><strong>Logo Design Maker</strong> wasn&apos;t born out of a boardroom meeting or a desire to replicate the status quo. It stemmed from a genuine passion for design and a frustration with the limitations of AI-generated logos. We saw businesses struggling to create <strong> unique brand identities </strong> that resonated with their target audience.</span>}
+                para2={<span>Enter our team of experienced designers, each with a burning desire to bridge the gap and empower businesses with logos that tell their story. Today, we collaborate with businesses of all sizes, from budding start-ups to established enterprises, helping them achieve their branding goals through <strong>custom logo design services. </strong></span>} withButton={true} flexDirection="flex-row" />
 
             <div className="pt-20 pb-10 bg-secondaryBlack">
                 <DesignHeader
@@ -67,10 +69,10 @@ export default function AboutUs() {
 
                         {/* first section */}
                         <div className="max-w-[900px] flex flex-col gap-4 items-center text-center lg:text-start">
-                            <div className="w-full uppercase lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white ">
+                            <h2 className="w-full uppercase lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white ">
                                 The Human Advantage:
                                 <span className="text-primaryGreen">&nbsp; Why We Go Beyond AI</span>
-                            </div>
+                            </h2>
                             <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] ">
                                 In the age of automation, you might wonder why choose human designers over AI logo makers? The answer lies in the power of human connection and strategic thinking. Unlike AI, our designers don&apos;t just generate generic visuals. They take the time to understand your brand on a deeper level.
                             </p>

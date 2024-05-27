@@ -48,9 +48,9 @@ export default function Price() {
                                         <Image src={item.img} alt="image of pricing" width={19} height={19} />
                                     </div>
 
-                                    <div className=" font-medium text-[22px] lg:text-[36px]">
+                                    <h2 className=" font-medium text-[22px] lg:text-[36px]">
                                         {item.category}
-                                    </div>
+                                    </h2>
 
                                     <p className=" text-mobTitle2 sm:text-tabTitle2 lg:text-lapTitle2">
                                         {item.para}

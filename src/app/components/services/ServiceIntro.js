@@ -16,9 +16,9 @@ export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading
                         {subHeading1}
                         <span className="text-primaryGreen">{subHeading2}</span>
                     </div>
-                    <div className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px]">
+                    <h2 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px]">
                         {heading1}<span className="text-primaryGreen">{heading2}</span> <span>{heading3}</span>
-                    </div>
+                    </h2>
                     <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] ">
                         {para1}
                     </p>

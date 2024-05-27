@@ -11,7 +11,7 @@ export default function page() {
                     <Image src="/pricing/RightGrPricing.png" width={856} height={615} alt="linear-gradient-bottom" />
                 </div>
                 <div className="top-[30%] z-30 min-h-[541px] absolute sm:px-0 sm:mt-5">
-                    <div className="font-bold text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText tracking-[-1px] lg:-tracking-[3px] leading-[20px] sm:leading-[28px] pb-2 sm:pb-0 lg:leading-[58.85px]">Disclaimer</div>
+                    <h1 className="font-bold text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText tracking-[-1px] lg:-tracking-[3px] leading-[20px] sm:leading-[28px] pb-2 sm:pb-0 lg:leading-[58.85px]">Disclaimer</h1>
                 </div>
             </div>
             <p className="z-30 px-4 sm:px-10 lg:px-20 sm:pt-7 pb-8  text-white text-lapHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium sm:leading-[25px] tacking-[1px]">
@@ -21,31 +21,60 @@ export default function page() {
 
             <div className="px-4 sm:px-10 lg:px-20">
 
-                <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">
-                    The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
-                </p>
-                <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">
-                    All the information on this website - https://logo-designmaker.com/contact - is published in good faith and for general information purpose only. logo-designmaker does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (logo-designmaker), is strictly at your own risk. logo-designmaker will not be liable for any losses and/or damages in connection with the use of our website.
-                </p>
-                <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">
-                    If you require any more information or have any questions about our site&apos;s disclaimer, please feel free to contact us by email at legal@logo-designmaker.com.
-                    From our website, you can visit other websites by following hyperlinks to such external sites. While we strive to provide only quality links to useful and ethical websites, we have no control over the content and nature of these sites. These links to other websites do not imply a recommendation for all the content found on these sites. Site owners and content may change without notice and may occur before we have the opportunity to remove a link which may have gone &apos;bad&apos;.
-                </p>
-                <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">
-                    Please be also aware that when you leave our website, other sites may have different privacy policies and terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their &apos;Terms of Service&apos; before engaging in any business or uploading any information.
-                </p>
-
-                <div className="pb-10 pt-10">
-                    <div className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
-                        Consent
-                    </div>
-                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+                <div className="pb-10 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Use Condition
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">Your acceptance to these Terms of Use is indicated by your use of logo-designmaker. Kindly give them serious reading. This page is not for you if you disagree. We keep the right to change these terms at any moment and without warning.</p>
                 </div>
-                <div className="pb-20">
-                    <div className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
-                        Update
-                    </div>
-                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">Should we update, amend or make any changes to this document, those changes will be prominently posted here.</p>
+                <div className="pb-10 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Ownership and Use of the Logo
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">Logos made with our service are licensed for usage to you.  The extent of the license given (e.g., personal, commercial use) is detailed in our particular price plans. Every right not specifically granted in these Terms of Use is reserved by us.</p>
+                </div>
+                <div className="pb-10 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Content Disclaimer
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">Professional design advice is not provided by the information on this website, including that on branding and logo design. It is simply intended for informative purposes. Although we work hard to present correct information, we cannot promise its correctness, completeness, or dependability.
+                    </p>
+                </div>
+                <div className="pb-10 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Warranties Disclaimer
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">Concerning the use of this website and the logos made using our service, we disclaim any guarantees, expressed or implied. This covers, among other things, the guarantees of merchantability, suitability for a certain use, and non-infringement.</p>
+                </div>
+                <div className="pb-10 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Liability Limitation
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">Any losses resulting from the usage of this website or the logos made with our service are not liable by us. This covers punitive, incidental, consequential, and direct losses among others.</p>
+                </div>
+                <div className="pb-10 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Copyright and Trademark
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">Copyright and trademark laws protect all of the material on this website, including the logos. Without our express written permission, no material from this website may be copied, altered, or distributed.</p>
+                </div>
+                <div className="pb-10 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Third-Party Links
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">There could be links on this website to websites run by other parties. The practices or material of any other websites are not our responsibility.</p>
+                </div>
+                <div className="pb-10 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Governing Law
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">The laws of London shall apply and these Terms of Use shall be interpreted accordingly.</p>
+                </div>
+                <div className="pb-20 pt-4">
+                    <h2 className="font-semibold text-mobTitle sm:text-tabTitle sm:pb-2 lg:text-lapTitle leading-[30px]">
+                        Get in Touch
+                    </h2>
+                    <p className="font-normal leading-[20px] sm:leading-[28px] tracking-[0.2px] text-mobBody sm:text-tabBody lg:text-lapBody">If you would want to ask us any issues regarding these Terms of Use, email info@logo-designmaker.com.</p>
                 </div>
             </div>
 
