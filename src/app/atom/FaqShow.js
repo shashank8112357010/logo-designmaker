@@ -13,9 +13,9 @@ export default function FaqShow({ data, index, openIndex, setOpenIndex }) {
         <div className="flex flex-col gap-2 pb-2 customBorderBottom2 border-white"
         >
             <div className="flex items-center justify-between gap-4 cursor-pointer" onClick={toggleAccordion}>
-                <div className="text-mobTitle sm:text-tabTitle lg:text-lapTitle font-semibold leading-[21px] cursor-pointer w-full block">
+                <h3 className="text-mobTitle sm:text-tabTitle lg:text-lapTitle font-semibold leading-[21px] cursor-pointer w-full block">
                     {data.ques}
-                </div>
+                </h3>
 
                 <Image src={isOpen ? "/home/UpArrow.png" : "/home/DownArrow.png"} width={15} height={15} alt={isOpen ? "DownArrowImg" : "UpArrowImg"} />
             </div>

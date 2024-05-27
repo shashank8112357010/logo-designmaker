@@ -16,9 +16,9 @@ export default function TellStoryContent({ content, tellStoryContent, rowReverse
                             </div>
                             <div className="flex items-center flex-col sm:max-w-[600px] justify-center text-white ">
                                 <div className={`flex flex-col  ${rowReverse ? "lg:pl-0" : "md:pl-12 lg:pl-28"} gap-6 items-center md:items-start`}>
-                                    <div className="text-mobTitle text-center sm:text-start sm:text-tabTitle lg:text-lapTitle font-semibold leading-[21px] lg:leading-[30px]">
+                                    <h3 className="text-mobTitle text-center sm:text-start sm:text-tabTitle lg:text-lapTitle font-semibold leading-[21px] lg:leading-[30px]">
                                         {item.heading}
-                                    </div>
+                                    </h3>
                                     <p className="max-w-[330px] md:max-w-[520px] px-4 md:px-0 text-center md:text-start text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] text-primaryGray">
                                         {item.para}
                                     </p>
