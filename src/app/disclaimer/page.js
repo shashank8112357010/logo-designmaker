@@ -14,10 +14,6 @@ export default function page() {
                     <h1 className="font-bold text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText tracking-[-1px] lg:-tracking-[3px] leading-[20px] sm:leading-[28px] pb-2 sm:pb-0 lg:leading-[58.85px]">Disclaimer</h1>
                 </div>
             </div>
-            <p className="z-30 px-4 sm:px-10 lg:px-20 sm:pt-7 pb-8  text-white text-lapHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium sm:leading-[25px] tacking-[1px]">
-                If you require any more information or have any questions about our site&apos;s disclaimer, please feel free to contact us by email at legal@logo-designmaker.com.
-                If you require any more information or have any questions about our sites disclaimer, please feel free to contact us by email at legal@logo-designmaker.com.
-            </p>
 
             <div className="px-4 sm:px-10 lg:px-20">
 
