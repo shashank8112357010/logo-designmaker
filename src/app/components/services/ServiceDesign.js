@@ -14,13 +14,13 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
 
                 {/* second section */}
                 <div className="max-w-[400px] pl-10 sm:max-w-[480px] mt-20 lg:max-w-[740px] flex flex-col gap-4 items-center text-start">
-                    <div className="w-full uppercase text-[10px] sm:whitespace-nowrap sm:text-[14px] lg:text-[20px] leading-[11px] sm:leading-[16px] lg:leading-[23px] font-medium ">
+                    <h2 className="w-full uppercase text-[10px] sm:whitespace-nowrap sm:text-[14px] lg:text-[20px] leading-[11px] sm:leading-[16px] lg:leading-[23px] font-medium ">
                         {subHeading1}
                         <span className="text-primaryGreen">{subHeading2}</span>
-                    </div>
-                    <div className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px]">
+                    </h2>
+                    <h2 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px]">
                         {heading1}<span className="text-primaryGreen">{heading2}</span> <span>{heading3}</span>
-                    </div>
+                    </h2>
 
                     <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] my-2">
                         {para}

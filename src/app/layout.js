@@ -15,15 +15,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-      <meta name="robots" content="noindex, nofollow" />
-      </head>
-      <body className={poppins.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <head>
+          <meta name="robots" content="noindex, nofollow" />
+        </head>
+        <body className={poppins.className}>
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }

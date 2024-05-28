@@ -12,6 +12,20 @@ import { servicesDesignData1, servicesDesignData2 } from "@/data/book-and-magazi
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 import { tellStoryContent } from "@/data/book-and-magazine-designs";
+import Head from 'next/head';
+
+// export function generateMetaData() {
+//     return {
+//         title: "Book & Magazine Design Services | Logo Design Maker",
+//         description: "Elevate your publications with Logo Design Maker's book & magazine design services. We craft captivating covers & layouts that grab attention & drive sales.",
+//         keyword: "Logo Design Maker, Book cover design, Magazine design, Book layout, Magazine layout, Design services for publications, Professional book design services, Professional magazine design services, Book cover design company, Magazine design company, E-book cover design services"
+//     };
+// }
+
+// export const metadata = {
+//     title: "Book and magazine Page",
+//     description: "Book",
+// };
 
 export default function BookMagazineDesigns() {
     const [content, setContent] = useState(1)
@@ -40,34 +54,49 @@ export default function BookMagazineDesigns() {
         },
     ];
 
+    const metaData = {
+        title: "Aman Book & Magazine Design Services | Logo Design Maker",
+        description: "Elevate your publications with Logo Design Maker's book & magazine design services. We craft captivating covers & layouts that grab attention & drive sales.",
+        keywords: "Logo Design Maker, Book cover design, Magazine design, Book layout, Magazine layout, Design services for publications, Professional book design services, Professional magazine design services, Book cover design company, Magazine design company, E-book cover design services"
+    }
 
     return (
-        <section className="bg-primaryBlack overflow-hidden pt-20 max-w-[1920px] mx-auto">
+        <>
+            <Head>
+                <title>{metaData.title}</title>
+                <meta name="description" content={metaData.description} />
+                <meta name="keywords" content={metaData.keywords} />
+            </Head>
 
-            <ServicesBanner heading="Captivate Readers, Fuel Imagination: Unleash the Power of " subHeading="Book & Magazine Design" para="In publishing, first impressions matter. At Logo Design Maker, we create captivating book covers and magazine layouts that grab attention and accurately represent your content. With our eye-catching visuals and captivating typography, we'll entice readers and boost sales." />
+            <section className="bg-primaryBlack overflow-hidden pt-20 max-w-[1920px] mx-auto">
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="Beyond Aesthetics: " subHeading2=" Design that Tells a Story" heading1="The Power of the First Look: Design that Ignites " heading2="Curiosity and Drives Sales" para="Investing in professional book and magazine design offers more than just a pretty cover or layout. It's a strategic investment that delivers a range of benefits for your publication:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+                <ServicesBanner heading="Captivate Readers, Fuel Imagination: Unleash the Power of " subHeading="Book & Magazine Design" para="In publishing, first impressions matter. At Logo Design Maker, we create captivating book covers and magazine layouts that grab attention and accurately represent your content. With our eye-catching visuals and captivating typography, we'll entice readers and boost sales." />
 
-            <div>
-                <div className="pt-20">
-                    <DesignHeader heading="A Symphony of Design Solutions for" subHeading=" Your Publication" para="We offer a range of book and magazine design services to cater to your specific needs. Here's a closer look at how we can help you create a publication that stands out on the shelf or in the digital landscape:" />
+                <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="Beyond Aesthetics: " subHeading2=" Design that Tells a Story" heading1="The Power of the First Look: Design that Ignites " heading2="Curiosity and Drives Sales" para="Investing in professional book and magazine design offers more than just a pretty cover or layout. It's a strategic investment that delivers a range of benefits for your publication:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+
+                <div>
+                    <div className="pt-20">
+                        <DesignHeader heading="A Symphony of Design Solutions for" subHeading=" Your Publication" para="We offer a range of book and magazine design services to cater to your specific needs. Here's a closer look at how we can help you create a publication that stands out on the shelf or in the digital landscape:" />
+                    </div>
+                    <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
+                        <Story setContent={setContent} content={content} arrayData={[1, 2, 3]} />
+                        {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
+                    </div>
                 </div>
-                <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3]} />
-                    {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
+
+                <Sliderr slideData={slideData} />
+
+                <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+
+                <div className=" mt-8 sm:mt-32 md:mt-44">
+                    <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />
                 </div>
-            </div>
 
-            <Sliderr slideData={slideData} />
+                <Faqq faqs={faqs} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
-
-            <div className=" mt-8 sm:mt-32 md:mt-44">
-                <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />
-            </div>
-
-            <Faqq faqs={faqs} />
-
-        </section>
+            </section>
+        </>
     )
 }
+
+

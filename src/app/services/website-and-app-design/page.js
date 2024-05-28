@@ -13,6 +13,7 @@ import { faqs, servicesDesignData, tellStoryContent } from "@/data/website-and-a
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 
+
 export default function WebsiteAppDesign() {
     const [content, setContent] = useState(1)
 
@@ -22,7 +23,7 @@ export default function WebsiteAppDesign() {
             img: "/home/TestimonialAvtar.png",
             name: "Sarah Jones",
             designation: "Developer",
-            founder: 'Owner of "Blooming Yoga Studio”'
+            founder: 'Owner of "Blooming Yoga Studio'
         },
         {
             para: "Working with Logo Design Maker on my website design was a truly collaborative experience. Their team listened carefully to my vision and translated it into a stunning and user-friendly website. Since launching the new website, I've seen a significant increase in website traffic, qualified leads, and overall brand engagement.",
@@ -39,7 +40,6 @@ export default function WebsiteAppDesign() {
             founder: 'Owner of "Blooming Yoga Studio”'
         },
     ];
-
 
 
     return (

@@ -27,9 +27,9 @@ export default function ServicesCTA({ heading, para, imgSrc }) {
 
                 <div className="w-full lgg:w-[556px] pb-10 lgg:pb-0 pt-40 sm:pt-72 lgg:pt-0 lg:mx-1 flex flex-col justify-center items-center lgg:justify-normal lg:items-start gap-[22px]">
                     <div className="flex flex-col items-center lgg:items-start justify-center gap-[11px]">
-                        <div className="text-mobHeaderText text-center lgg:text-start sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[22px] sm:leading-[33px] lg:leading-[58px] tracking-[-1px]">
+                        <h2 className="text-mobHeaderText text-center lgg:text-start sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[22px] sm:leading-[33px] lg:leading-[58px] tracking-[-1px]">
                             {heading}
-                        </div>
+                        </h2>
                         <p className="text-mobHeaderBody text-center lgg:text-start sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[21px] lg:leading-[25px] ">
                             {para}
                         </p>
