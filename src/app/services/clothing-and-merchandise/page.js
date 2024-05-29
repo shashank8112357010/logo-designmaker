@@ -6,13 +6,15 @@ import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
 import Image from "next/image";
 import { useState } from "react";
-import ServiceDesign from "@/app/components/services/ServiceDesign";
+import ServiceDesign from "@/app/components/services/ServiceDesignTop";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/data/clothing-and-merchandise";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop";
+import ServiceDesignBottom from "@/app/components/services/ServiceDesignBottom";
 
 export default function ClothingMerchandise() {
     const [content, setContent] = useState(1)
@@ -49,7 +51,7 @@ export default function ClothingMerchandise() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="From Concept to Creation: Crafting  " heading2="Wearable Stories " para1="Whether you're launching a new clothing line, creating promotional merchandise for your business, or designing personalized gifts, we're here to help you translate your vision into reality. Our designers will work closely with you to understand your target audience, brand identity, and desired aesthetic." para2="Through a collaborative process, we'll develop captivating designs that resonate with your audience, spark conversations, and leave a lasting impression." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="Beyond Function: " subHeading2="Apparel & Merchandise as Walking Billboards" heading1="From Brand Awareness to Fan Engagement: The Strategic Advantages of  " heading2="Custom Clothing & Merchandise" para="Investing in professional clothing and merchandise design goes beyond creating cool t-shirts or mugs. It's a strategic investment that delivers a range of benefits:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="Beyond Function: " subHeading2="Apparel & Merchandise as Walking Billboards" heading1="From Brand Awareness to Fan Engagement: The Strategic Advantages of  " heading2="Custom Clothing & Merchandise" para="Investing in professional clothing and merchandise design goes beyond creating cool t-shirts or mugs. It's a strategic investment that delivers a range of benefits:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
@@ -63,7 +65,7 @@ export default function ClothingMerchandise() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesignBottom imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className=" mt-8 sm:mt-32 md:mt-44">
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Brand's Growth or Express Yourself in Style: Take Action Today!" para="Investing in professional clothing and merchandise design is an investment in building brand awareness, fostering community spirit, or simply expressing your unique style. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers help you create visually captivating designs for your clothing and merchandise that not only look great but also effectively communicate your message and leave a lasting impression." />

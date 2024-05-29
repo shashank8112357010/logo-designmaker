@@ -22,7 +22,7 @@ export const servicesDesignData1 = [
 
 
 export const servicesDesignData2 = [
-    { id: 1, heading: "Get a Free Quote:", subHeading: "  Fill out our quick online form to receive a free quote." },
+    { id: 1, heading: "Get a Free Quote:", subHeading: "Fill out our quick online form to receive a free quote." },
     { id: 2, heading: "Browse Our Portfolio:", subHeading: " Explore our diverse portfolio of Illustration & Art projects across various industries to see the impact we can create." },
     { id: 3, heading: "Download Our Design Guide:", subHeading: " Learn valuable tips and insights on the power of illustration and art in branding, character design principles, and the art of visual storytelling." },
 ]

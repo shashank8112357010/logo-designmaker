@@ -1,7 +1,8 @@
 "use client"
 import Faqq from "@/app/atom/Faqq"
 import DesignProcess from "@/app/components/home/Category/DesignProcess"
-import ServiceDesign from "@/app/components/services/ServiceDesign"
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop"
+import ServiceDesign from "@/app/components/services/ServiceDesignTop"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import ServicesCTA from "@/app/components/services/ServicesCTA"
 import { designProcess, faqs, servicesDesignData } from "@/data/ebook-cover-design"
@@ -38,7 +39,7 @@ export default function BookCoverDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of a Professional " heading2="EBook Cover Design" para1="Don't underestimate the power of a professional ebook cover design. A well-designed cover can significantly increase your ebook's visibility and sales. It can help your ebook stand out in crowded online marketplaces like Amazon Kindle Direct Publishing and capture the attention of potential readers scrolling through endless options." para2="Our experienced ebook cover designers understand the specific design nuances of the ebook market and can create covers that resonate with your target audience and genre" withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Ebook with Our " heading2=" Ebook Cover Design Services" para="When you choose Logo Design Maker for your magazine design, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Ebook with Our " heading2=" Ebook Cover Design Services" para="When you choose Logo Design Maker for your magazine design, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative Magazine Design Process" designProcess={designProcess} />
 

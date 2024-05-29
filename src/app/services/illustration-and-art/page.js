@@ -6,13 +6,15 @@ import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
 import Image from "next/image";
 import { useState } from "react";
-import ServiceDesign from "@/app/components/services/ServiceDesign";
+import ServiceDesign from "@/app/components/services/ServiceDesignTop";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/data/illustration-and-art";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop";
+import ServiceDesignBottom from "@/app/components/services/ServiceDesignBottom";
 
 export default function IllustrationArt() {
     const [content, setContent] = useState(1)
@@ -48,7 +50,7 @@ export default function IllustrationArt() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="Beyond Text & Photos: The Art of Storytelling Through " heading2=" Illustration" para1="Whether you need eye-catching illustrations for your website, engaging graphics for your marketing materials, or a one-of-a-kind mascot for your brand, we're here to help. Our illustration and art services are tailored to your specific needs and vision." para2="Through a collaborative process, we'll get to know your brand identity, target audience, and desired aesthetic. Our artists will then translate your vision into captivating visuals that resonate with your audience and leave a lasting impression." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="From Concept to Creation: " subHeading2="Crafting Visual Narratives" heading1="From Brand Resonance to Business Results: The Strategic Advantages of " heading2="Illustration & Art" para="Investing in professional illustration and art goes beyond creating beautiful visuals. It's a strategic investment that delivers a range of benefits for your brand:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="From Concept to Creation: " subHeading2="Crafting Visual Narratives" heading1="From Brand Resonance to Business Results: The Strategic Advantages of " heading2="Illustration & Art" para="Investing in professional illustration and art goes beyond creating beautiful visuals. It's a strategic investment that delivers a range of benefits for your brand:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
@@ -63,7 +65,7 @@ export default function IllustrationArt() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="illustration and art " heading3="for your brand?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesignBottom imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="illustration and art " heading3="for your brand?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className="mt-28 sm:mt-52">
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Brand's Growth: Take Action Today!" para="Investing in professional illustration and art services is an investment in building a memorable brand identity. At Logo Design Maker, we offer a variety of illustration and art packages to suit your specific needs and budget. Let our talented artists help you tell your brand story through captivating visuals that connect with your audience and leave a lasting impression.

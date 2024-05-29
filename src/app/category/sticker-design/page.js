@@ -1,7 +1,8 @@
 "use client"
 import Faqq from "@/app/atom/Faqq"
 import DesignProcess from "@/app/components/home/Category/DesignProcess"
-import ServiceDesign from "@/app/components/services/ServiceDesign"
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop"
+import ServiceDesign from "@/app/components/services/ServiceDesignTop"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import ServicesCTA from "@/app/components/services/ServicesCTA"
 import { designProcess, faqs, servicesDesignData } from "@/data/sticker-design"
@@ -38,7 +39,7 @@ export default function StickerDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of " heading2="Sticker Design" para1="Sticker designs are more than just decorative elements. They can be a powerful tool for self-expression, brand promotion, or simply sparking a conversation. Custom stickers allow you to showcase your unique style, promote your favorite causes, or even advertise your business." para2=" With endless possibilities for customization, sticker design opens doors for creativity and self-expression." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your World with Our " heading2="Sticker Design Services" para="When you choose Logo Design Maker for your sticker design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your World with Our " heading2="Sticker Design Services" para="When you choose Logo Design Maker for your sticker design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative Sticker Design Process" designProcess={designProcess} />
 

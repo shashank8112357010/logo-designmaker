@@ -55,7 +55,7 @@ export const footerLinks = [
         heading: "Category", data: [
             {
                 id: 1,
-                heading: "Book and magazine designs",
+                heading: "Book and magazine design",
                 url: "/services/book-and-magazine-designs"
             },
             {
@@ -70,28 +70,28 @@ export const footerLinks = [
             },
             {
                 id: 4,
-                heading: "Social Media Design",
+                heading: "Social Media design",
                 url: "/services/social-media-design"
             },
             {
                 id: 5,
-                heading: "Packaging and Label designs",
+                heading: "Packaging & Label design",
                 url: "/services/packaging-and-label-designs"
             },
             {
                 id: 6,
-                heading: "Website and App Design",
+                heading: "Website & App design",
                 url: "/services/website-and-app-design"
             },
             {
-                id: 7,
-                heading: "Brand And Identity Design",
-                url: "/services/brand-and-identity-design"
+                id: 8,
+                heading: "Business and advertising",
+                url: "/services/business-and-advertising-designs"
             },
             {
-                id: 8,
-                heading: "Business and advertising designs",
-                url: "/services/business-and-advertising-designs"
+                id: 7,
+                heading: "Brand & Identity design",
+                url: "/services/brand-and-identity-design"
             },
         ]
     },

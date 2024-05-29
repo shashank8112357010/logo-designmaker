@@ -1,7 +1,8 @@
 "use client"
 import Faqq from "@/app/atom/Faqq"
 import DesignProcess from "@/app/components/home/Category/DesignProcess"
-import ServiceDesign from "@/app/components/services/ServiceDesign"
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop"
+import ServiceDesign from "@/app/components/services/ServiceDesignTop"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import ServicesCTA from "@/app/components/services/ServicesCTA"
 import { designProcess, faqs, servicesDesignData } from "@/data/book-cover-design"
@@ -39,7 +40,7 @@ export default function BookCoverDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of a Professional " heading2="Book Cover Design" para1="In today's competitive publishing landscape, a professional book cover design is more important than ever. A well-designed cover can significantly increase your book's visibility and sales. It can help your book stand out on crowded shelves and online marketplaces, attracting the right readers and boosting your book's success." para2="Our experienced book cover designers understand the importance of creating covers that are not only visually appealing but also strategically designed to resonate with your target audience." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Book with Our " heading2="Book Cover Design Services" para="When you choose Logo Design Maker for your book cover design, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Book with Our " heading2="Book Cover Design Services" para="When you choose Logo Design Maker for your book cover design, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative Book Cover Design Process" designProcess={designProcess} />
 

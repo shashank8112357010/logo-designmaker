@@ -4,12 +4,14 @@ import Sliderr from "@/app/atom/Slider";
 import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
 import { useState } from "react";
-import ServiceDesign from "@/app/components/services/ServiceDesign";
+import ServiceDesign from "@/app/components/services/ServiceDesignTop";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/data/business-and-advertising-designs";
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop";
+import ServiceDesignBottom from "@/app/components/services/ServiceDesignBottom";
 
 export default function BusinessAdvertisingDesigns() {
     const [content, setContent] = useState(1)
@@ -44,7 +46,7 @@ export default function BusinessAdvertisingDesigns() {
 
             <ServicesBanner heading="Design that Drives Results: The Power of  " subHeading="Business & Marketing Materials" para="In the competitive business world, standing out is crucial. At Logo Design Maker, we specialize in creating compelling visuals that captivate your audience. From presentations to ads to brochures, our experienced team ensures your brand message shines through." />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="Beyond Aesthetics: Design that Tells a " subHeading2="Strategic Story" heading1="From Presentations to Promotions: Design that Captures " heading2="Attention & Fuels Action" para="Investing in professional business and marketing materials design goes beyond creating visually appealing brochures or presentations. It's a strategic investment that delivers a range of benefits:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="Beyond Aesthetics: Design that Tells a " subHeading2="Strategic Story" heading1="From Presentations to Promotions: Design that Captures " heading2="Attention & Fuels Action" para="Investing in professional business and marketing materials design goes beyond creating visually appealing brochures or presentations. It's a strategic investment that delivers a range of benefits:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
@@ -58,7 +60,7 @@ export default function BusinessAdvertisingDesigns() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesignBottom imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className=" mt-8 sm:mt-32 md:mt-44">
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Business Growth with Design that Drives Results: Take Action Today!" para="Investing in professional business and marketing materials design is an investment in your brand's success. At Logo Design Maker, we offer a comprehensive suite of design services to cater to your specific needs and marketing goals. Our experienced designers can create visually compelling designs that not only grab attention but also effectively communicate your message and inspire action." />

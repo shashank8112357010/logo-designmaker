@@ -5,7 +5,7 @@ import Sliderr from "@/app/atom/Slider";
 import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
 import { useState } from "react";
-import ServiceDesign from "@/app/components/services/ServiceDesign";
+import ServiceDesign from "@/app/components/services/ServiceDesignTop";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/book-and-magazine-designs";
@@ -13,6 +13,8 @@ import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 import { tellStoryContent } from "@/data/book-and-magazine-designs";
 import Head from 'next/head';
+import ServiceDesignBottom from "@/app/components/services/ServiceDesignBottom";
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop";
 
 // export function generateMetaData() {
 //     return {
@@ -72,7 +74,7 @@ export default function BookMagazineDesigns() {
 
                 <ServicesBanner heading="Captivate Readers, Fuel Imagination: Unleash the Power of " subHeading="Book & Magazine Design" para="In publishing, first impressions matter. At Logo Design Maker, we create captivating book covers and magazine layouts that grab attention and accurately represent your content. With our eye-catching visuals and captivating typography, we'll entice readers and boost sales." />
 
-                <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="Beyond Aesthetics: " subHeading2=" Design that Tells a Story" heading1="The Power of the First Look: Design that Ignites " heading2="Curiosity and Drives Sales" para="Investing in professional book and magazine design offers more than just a pretty cover or layout. It's a strategic investment that delivers a range of benefits for your publication:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+                <ServiceDesignTop imgSrc="/services/BrandDesigns.svg" subHeading1="Beyond Aesthetics: " subHeading2=" Design that Tells a Story" heading1="The Power of the First Look: Design that Ignites " heading2="Curiosity and Drives Sales" para="Investing in professional book and magazine design offers more than just a pretty cover or layout. It's a strategic investment that delivers a range of benefits for your publication:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
                 <div>
                     <div className="pt-20">
@@ -86,7 +88,7 @@ export default function BookMagazineDesigns() {
 
                 <Sliderr slideData={slideData} />
 
-                <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+                <ServiceDesignBottom imgSrc="/services/readyToUnleash.png" heading1="Ready to unleash the power of " heading2="book and magazine design" heading3="for your publication?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
                 <div className=" mt-8 sm:mt-32 md:mt-44">
                     <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />

@@ -20,7 +20,7 @@ export const servicesDesignData1 = [
 
 
 export const servicesDesignData2 = [
-    { id: 1, heading: "Get a Free Quote:", subHeading: " Fill out our quick online form to receive a free quote and discuss your specific social media design needs with our team." },
+    { id: 1, heading: "Get a Free Quote:", subHeading: "Fill out our quick online form to receive a free quote and discuss your specific social media design needs with our team." },
     { id: 2, heading: "Browse Our Portfolio:", subHeading: " Explore our diverse portfolio of Social Media Design projects across various industries to see the impact we can create." },
     { id: 3, heading: "Download Our Design Guide:", subHeading: "  Learn valuable tips and insights on crafting a winning social media strategy, leveraging the power of visuals, and maximizing your social media engagement." },
 ]

@@ -23,7 +23,7 @@ export const faqs = [
 
 
 export const servicesDesignData = [
-    { id: 1, heading: "Get a Free Quote: ", subHeading: " Fill out our quick online form to receive a free quote and discuss your specific website or app design needs with our team." },
+    { id: 1, heading: "Get a Free Quote: ", subHeading: "Fill out our quick online form to receive a free quote and discuss your specific website or app design needs with our team." },
     { id: 2, heading: "Browse Our Portfolio: ", subHeading: " Explore our diverse portfolio of Website & App Design projects across various industries to see the impact we can create." },
     { id: 3, heading: "Download Our Design Guide: ", subHeading: " Learn valuable tips and insights on crafting user-centric websites and apps that drive engagement and achieve your business goals." },
 ]

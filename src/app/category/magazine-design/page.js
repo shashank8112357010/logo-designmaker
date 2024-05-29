@@ -2,7 +2,8 @@
 import Faqq from "@/app/atom/Faqq"
 import DesignProcess from "@/app/components/home/Category/DesignProcess"
 import Faq from "@/app/components/home/Faq"
-import ServiceDesign from "@/app/components/services/ServiceDesign"
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop"
+import ServiceDesign from "@/app/components/services/ServiceDesignTop"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import ServicesCTA from "@/app/components/services/ServicesCTA"
 import { designProcess, faqs, servicesDesignData } from "@/data/magazine-design"
@@ -38,7 +39,7 @@ export default function MagazineDesign() {
             </div>
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Art & Science of " heading2="Magazine Design" para1="Magazine design is a blend of art and science. Our designers understand the importance of visual appeal, clear hierarchy, and user-friendly layouts that guide readers through your content. We also consider the specific needs of your target audience and the overall tone of your magazine." para2="From crafting eye-catching magazine cover designs that grab attention on newsstands to designing layouts that enhance readability and information flow, we ensure your magazine delivers a truly immersive experience for your readers." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Magazine with " heading2="Our Magazine Design Services" para="When you choose Logo Design Maker for your magazine design, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Magazine with " heading2="Our Magazine Design Services" para="When you choose Logo Design Maker for your magazine design, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative Magazine Design Process" designProcess={designProcess} />
 

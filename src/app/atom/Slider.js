@@ -55,7 +55,7 @@ export default function Sliderr({ slideData }) {
                     {slideData.map((item, index) => {
                         return (
                             <div key={index} className="max-w-[550px] sm:max-w-[700px] lg:max-w-[816px]  w-full bg-darkBlue sm:bg-none my-10">
-                                <div className="bg-[#182736] flex justify-center gap-[11px] items-center w-full px-10 py-6 rounded-[17px]">
+                                <div className="bg-[#182736] flex justify-center gap-[11px] items-center w-full px-4 sm:px-10 py-6 rounded-[17px]">
                                     <div className="text-white flex flex-col gap-[25.99px] ">
                                         <div className="customBorderBottom border-[#CCCCCC] pb-3">
                                             <Image src="/home/Star.png" alt="star" className="mb-2" height={120} width={120} />

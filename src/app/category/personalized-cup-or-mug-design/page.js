@@ -1,7 +1,8 @@
 "use client"
 import Faqq from "@/app/atom/Faqq"
 import DesignProcess from "@/app/components/home/Category/DesignProcess"
-import ServiceDesign from "@/app/components/services/ServiceDesign"
+import ServiceDesignTop from "@/app/components/services/ServiceDesignTop"
+import ServiceDesign from "@/app/components/services/ServiceDesignTop"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import ServicesCTA from "@/app/components/services/ServicesCTA"
 import { designProcess, faqs, servicesDesignData } from "@/data/personalized-cup-or-mug-design"
@@ -37,7 +38,7 @@ export default function PersonalizedCupOrMugDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of Personalized " heading2="Cup & Mug Design" para1="Personalized cup and mug design goes beyond practicality, offering a way to express yourself, celebrate special occasions, or show someone you care. These custom designs make meaningful gifts for birthdays, holidays, weddings, or any special occasion, providing a thoughtful and unique present that can be cherished for years. Personalized cups commemorate special events like weddings, graduations, or anniversaries, adding a personal touch and serving as lasting reminders of these moments. " para2="They also offer a cost-effective method to promote your business or organization; creating mugs with your logo or slogan to distribute at events or as employee gifts can boost brand recognition. Additionally, designing your own mug with a funny saying, quote, or photo allows you to express your individuality and stand out. Personalized cup and mug design lets you create something truly special for yourself or someone you love." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/investInBrandDesign.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Mornings with Our Personalized " heading2="Cup Design Services" para="When you choose Logo Design Maker for your personalized cup & mug design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Mornings with Our Personalized " heading2="Cup Design Services" para="When you choose Logo Design Maker for your personalized cup & mug design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative Cup or Mug Design Process" designProcess={designProcess} />
 
