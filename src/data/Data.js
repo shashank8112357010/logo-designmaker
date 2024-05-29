@@ -109,9 +109,9 @@ export const footerLinks = [
     {
         heading: "Support", data: [
             { heading: "Help Desk", },
-            { heading: "Disclaimer", url: "disclaimer" },
-            { heading: "Privacy Policy", url: "privacy-policy" },
-            { heading: "Terms Of Use", url: "terms-of-use" }
+            { heading: "Disclaimer", url: "/disclaimer" },
+            { heading: "Privacy Policy", url: "/privacy-policy" },
+            { heading: "Terms Of Use", url: "/terms-of-use" }
         ]
     },
     {
