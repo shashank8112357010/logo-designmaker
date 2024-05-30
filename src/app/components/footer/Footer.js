@@ -39,7 +39,7 @@ export default function Footer() {
                         <FooterAccordion footerLinks={footerLinks} />
                     </div>
 
-                    <div className="flex-col flex  px-2 sm:ml-8 gap-4  mb-8 items-center sm:items-start mx-auto w-[338px] lg:w-[250px]  ">
+                    <div className="flex-col flex px-2 sm:ml-8 gap-4  mb-8 items-center sm:items-start mx-auto w-[320px] sm:w-[338px] lg:w-[250px]">
                         <Image src="/navbar/Logo.png" width={230} height={54} alt="logoImg" />
                         <p className="text-mobfooterBody max-w-[500px] px-1 sm:text-tabfooterBody lg:text-lapfooterBody font-normal leading-[18px]">
                             {`Logo Design Maker isn't just about creating logos – we build brands. We offer a comprehensive suite of design services to cater to all your branding needs, from logo design and business  cards to website development and social media graphics.`}
@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
 
             {/* //mainFooteBottom */}
-            <div className="flex sm:justify-between justify-center items-center sm:flex-row flex-col w-full mx-auto pt-[40px] pb-[20px] lg:px-10 gap-4 sm:gap-0  sm:px-8">
+            <div className="flex sm:justify-between justify-center items-center sm:flex-row flex-col w-full mx-auto pt-[40px] pb-[20px] lg:px-10 gap-4 sm:gap-0 sm:px-8">
                 <div>
                     <p className="text-[12px] whitespace-nowrap">© 2024 LogoDesignMaker Inc. All rights reserved.</p>
                 </div>

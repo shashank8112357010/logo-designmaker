@@ -1,11 +1,9 @@
 "use client"
-import Button from "@/app/atom/Button";
 import DesignHeader from "@/app/atom/DesignHeader";
 import Sliderr from "@/app/atom/Slider";
 import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
 import { useState } from "react";
-import ServiceDesign from "@/app/components/services/ServiceDesignTop";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2 } from "@/data/book-and-magazine-designs";
@@ -13,8 +11,7 @@ import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 import { tellStoryContent } from "@/data/book-and-magazine-designs";
 import Head from 'next/head';
-import ServiceDesignBottom from "@/app/components/services/ServiceDesignBottom";
-import ServiceDesignTop from "@/app/components/services/ServiceDesignTop";
+import ServiceDesign from "@/app/components/services/ServiceDesign";
 
 // export function generateMetaData() {
 //     return {
@@ -72,15 +69,16 @@ export default function BookMagazineDesigns() {
 
             <section className="bg-primaryBlack overflow-hidden pt-20 max-w-[1920px] mx-auto">
 
-                <ServicesBanner heading="Captivate Readers, Fuel Imagination: Unleash the Power of " subHeading="Book & Magazine Design" para="In publishing, first impressions matter. At Logo Design Maker, we create captivating book covers and magazine layouts that grab attention and accurately represent your content. With our eye-catching visuals and captivating typography, we'll entice readers and boost sales." />
+                <ServicesBanner heading="Captivate Readers, Fuel Imagination: Unleash the Power of " subHeading="Book & Magazine Design" para={<span>As they say in publishing, first impressions count. An <strong>engaging magazine design</strong> or <strong>book cover design</strong> can make the difference between a reader picking it up and glancing right past it. We here at <strong> Logo Design Maker</strong> are aware of how important book design is to the success of your publication.</span>} />
 
-                <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="Beyond Aesthetics: " subHeading2=" Design that Tells a Story" heading1="The Power of the First Look: Design that Ignites " heading2="Curiosity and Drives Sales" para="Investing in professional book and magazine design offers more than just a pretty cover or layout. It's a strategic investment that delivers a range of benefits for your publication:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+                <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="Beyond Aesthetics: " subHeading2=" Design that Tells a Story" heading1="Professional " heading2="Book & Magazine Design" heading3=": A Strategic Investment for Success"
+                    flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
-                <div>
+                <div className="">
                     <div className="pt-20">
-                        <DesignHeader heading="A Symphony of Design Solutions for" subHeading=" Your Publication" para="We offer a range of book and magazine design services to cater to your specific needs. Here's a closer look at how we can help you create a publication that stands out on the shelf or in the digital landscape:" />
+                        <DesignHeader heading="A Symphony of Design Solutions for" subHeading=" Your Publication" para={<span>We provide several <strong> book design </strong> and <strong> magazine design </strong>services to meet your particular requirements. The following provides a closer look at how we may assist you in producing a magazine that is unique on the shelf or online:</span>} />
                     </div>
-                    <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
+                    <div className="tellStoryContent flex  flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
                         <Story setContent={setContent} content={content} arrayData={[1, 2, 3]} />
                         {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                     </div>
@@ -88,10 +86,10 @@ export default function BookMagazineDesigns() {
 
                 <Sliderr slideData={slideData} />
 
-                <ServiceDesignBottom imgSrc="/services/readyToUnleash.png" heading1="Ready to unleash the power of " heading2="book and magazine design" heading3="for your publication?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+                <ServiceDesign imgSrc="/services/readyToUnleash.png" heading1="Need Help with Your Book Design Project?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
-                <div className=" mt-8 sm:mt-32 md:mt-44">
-                    <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />
+                <div className="">
+                    <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />
                 </div>
 
                 <Faqq faqs={faqs} />

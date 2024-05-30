@@ -1,18 +1,15 @@
 "use client"
-import Button from "@/app/atom/Button";
 import DesignHeader from "@/app/atom/DesignHeader";
 import Sliderr from "@/app/atom/Slider";
 import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
-import Image from "next/image";
 import { useState } from "react";
-import ServiceDesign from "@/app/components/services/ServiceDesignTop";
 import ServiceIntro from "@/app/components/services/ServiceIntro";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs, servicesDesignData, tellStoryContent } from "@/data/website-and-app-design";
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
-import ServiceDesignBottom from "@/app/components/services/ServiceDesignBottom";
+import ServiceDesign from "@/app/components/services/ServiceDesign";
 
 
 export default function WebsiteAppDesign() {
@@ -63,7 +60,7 @@ export default function WebsiteAppDesign() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesignBottom imgSrc="/services/ServicesDesign.png" heading1="Ready to unlock the power of exceptional " heading2="website and app design? " flexDirection="flex-row" servicesDesignData={servicesDesignData} />
+            <ServiceDesign imgSrc="/services/ServicesDesign.png" heading1="Ready to unlock the power of exceptional " heading2="website and app design? " flexDirection="flex-row" servicesDesignData={servicesDesignData} />
 
             <ServicesCTA imgSrc="/services/CTAImg.png" heading="Fuel Your Brand&apos;s Growth: Take Action Today!" para="Investing in professional website and app design is an investment in your brand&apos;s digital future. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced team craft a website or app that not only elevates your brand image but also delivers exceptional user experiences, drives conversions, and propels your business forward." />
 

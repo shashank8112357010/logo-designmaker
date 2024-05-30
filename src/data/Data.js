@@ -221,7 +221,6 @@ export const AboutFaqs = [
 ]
 
 
-
 // heroBanner > search data 
 export const searchData = [
     { name: 'Brand Personality', url: "category/brand-personality" },
@@ -294,4 +293,7 @@ export const searchData = [
     { name: 'Logo & Business Card Design', url: "category/logo-&-business-card-design" },
     { name: 'Logo & Brand Identity Design', url: "category/logo-&-brand-identity-design" }
 ];
+
+
+
 

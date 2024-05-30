@@ -1,8 +1,7 @@
 "use client"
 import Faqq from "@/app/atom/Faqq"
 import DesignProcess from "@/app/components/home/Category/DesignProcess"
-import ServiceDesignTop from "@/app/components/services/ServiceDesignTop"
-import ServiceDesign from "@/app/components/services/ServiceDesignTop"
+import ServiceDesign from "@/app/components/services/ServiceDesign"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import ServicesCTA from "@/app/components/services/ServicesCTA"
 import { designProcess, faqs, servicesDesignData } from "@/data/t-shirt-design"
@@ -39,7 +38,7 @@ export default function TShirtDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of " heading2="T-Shirt Design" para1="T-shirt design goes beyond aesthetics. It's a powerful tool for self-expression and brand building. Custom t-shirts can be a conversation starter, a way to promote your favorite band or cause, or simply a fun way to show off your personality. Men's designer t-shirts can elevate a casual look, while women's designer t-shirts can add a touch of individuality to any outfit." para2="T-shirt designs can also be used for marketing purposes. Create custom t-shirts with your brand logo or slogan for your company, sports team, or event. The possibilities for t-shirt design are endless!" withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Wardrobe with Our " heading2="T-Shirt Design Services" para="When you choose Logo Design Maker for your t-shirt design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Wardrobe with Our " heading2="T-Shirt Design Services" para="When you choose Logo Design Maker for your t-shirt design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative T-Shirt Design Process" designProcess={designProcess} />
 

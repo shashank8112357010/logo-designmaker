@@ -1,8 +1,7 @@
 "use client"
 import Faqq from "@/app/atom/Faqq"
 import DesignProcess from "@/app/components/home/Category/DesignProcess"
-import ServiceDesignTop from "@/app/components/services/ServiceDesignTop"
-import ServiceDesign from "@/app/components/services/ServiceDesignTop"
+import ServiceDesign from "@/app/components/services/ServiceDesign"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import ServicesCTA from "@/app/components/services/ServicesCTA"
 import { designProcess, faqs, servicesDesignData } from "@/data/merchandise-design"
@@ -38,7 +37,7 @@ export default function MerchandiseDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of " heading2="Merchandise Design" para1="Merchandise design goes beyond functionality; it's a strategic marketing tool that connects you with your customers on a deeper level. Custom-designed merchandise can boost brand awareness through eye-catching items featuring your logo and branding message, driving recognition wherever they go. It also enhances customer engagement by serving as conversation starters, strengthening the bond between your brand and your audience. " para2="Merchandise design goes beyond functionality; it's a strategic marketing tool that connects you with your customers on a deeper level. Custom-designed merchandise can boost brand awareness through eye-catching items featuring your logo and branding message, driving recognition wherever they go. It also enhances customer engagement by serving as conversation starters, strengthening the bond between your brand and your audience. " withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your World with Our " heading2="Merchandise Design Services" para="When you choose Logo Design Maker for your merchandise design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your World with Our " heading2="Merchandise Design Services" para="When you choose Logo Design Maker for your merchandise design needs, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative Merchandise Design Process" designProcess={designProcess} />
 

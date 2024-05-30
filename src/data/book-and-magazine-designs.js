@@ -4,29 +4,28 @@ import tellYourStory3 from "../animate/tellYourStory3.json";
 
 //  tellStoryContent
 export const tellStoryContent = [
-    { lottieImg: tellYourStory1, step: 1, urlLink: "/category/magazine-design", heading: "Magazine Design", para: "Capture the essence of your magazine and entice readers with a visually stunning and user-friendly design. Our team will create captivating layouts that showcase your articles, photographs, and advertisements in a way that is both aesthetically pleasing and easy to navigate. Whether you're launching a lifestyle magazine, a business publication, or a niche-specific periodical, we'll ensure your magazine design reflects your brand identity and engages readers from cover to cover." },
-    { lottieImg: tellYourStory2, step: 2, urlLink: "/category/book-cover-design", heading: "Book Cover Design", para: "A book cover is a billboard for your story. It's the first thing a potential reader sees, and it needs to grab attention and accurately reflect the content within. Our designers will create visually stunning book covers that showcase the essence of your book's genre, theme, and characters. From captivating illustrations to compelling typography, we'll ensure your book cover entices readers to pick it up and dive into the world you've created." },
-    { lottieImg: tellYourStory3, step: 3, urlLink: "/category/ebook-cover-design", heading: "EBook Cover Design", para: "In today&apos;s digital age, ebooks are a popular format for readers. But just like with print books, a well-designed ebook cover is essential for standing out in a crowded online marketplace. We offer specialized ebook cover design services to create visually compelling covers that are optimized for various ebook platforms and enticing potential readers to download your book." },
+    { lottieImg: tellYourStory1, step: 1, urlLink: "/category/magazine-design", heading: "Magazine Design", para: "Using an eye-catching and intuitive design, capture the spirit of your magazine and draw readers in with it. Our staff will design visually appealing and intuitively navigable layouts that highlight your articles, images, and adverts. We'll make sure your <strong> magazine design </strong> matches your company identity and engages readers from cover to cover whether you're starting a lifestyle magazine, a business publication, or a periodical focused on a certain specialty." },
+    { lottieImg: tellYourStory2, step: 2, urlLink: "/category/book-cover-design", heading: "Book Cover Design", para: "Your tale is on display on the cover of your book. Being the first thing a prospective reader sees, it must be eye-catching and fairly represent the material inside. Our designers will produce visually arresting book covers that highlight the main ideas, characters, and genre of your work. We'll make sure your <strong> book cover </strong>, which includes eye-catching graphics and typeface, makes people want to pick it up and explore the world you've created." },
+    { lottieImg: tellYourStory3, step: 3, urlLink: "/category/ebook-cover-design", heading: "EBook Cover Design", para: "Readers choose ebooks as a format in the current digital era. But in a congested online market, an ebook cover that is well-designed is crucial, much as with print publications. Our specialist <strong>ebook cover design services</strong> allow you to produce eye-catching covers that are suitable for a variety of ebook platforms and will tempt customers to download your book." },
 ]
 
 
 export const servicesDesignData1 = [
     {
         id: 1,
-        subHeading: "Professional design plays a pivotal role in the success of publications, offering numerous benefits that elevate them above the competition. A meticulously crafted cover or layout not only captivates attention but also establishes instant recognition in both physical and digital marketplaces. By effectively communicating the genre and theme through visual elements, such as imagery and typography, a publication sets clear expectations for readers, enhancing their engagement and overall experience."
+        subHeading: "Designing books and magazines well involves more than just coming up with a pretty cover or arrangement. It's about creating a coherent visual story that appeals to your intended audience and enhances the written material. Working directly with you, our designers will ascertain the genre, intended readership, and general concept of your work. We will create a design concept through this cooperative process that not only draws attention but also faithfully represents the spirit of your newspaper, making a lasting impact on prospective readers."
     },
     {
         id: 2,
-        subHeading: "Magazines, in particular, benefit from consistent design styles across issues, fostering a strong brand identity and cultivating reader loyalty. Ultimately, the allure of a well-designed publication translates into increased sales and conversions, as it entices potential readers to delve into its contents, driving success in a crowded market."
+        subHeading: "Investing in excellent <strong> magazine design </strong> and <strong> book design </strong> provides key advantages. A well-designed cover and layout attract attention, distinguish your work, and convey the genre and tone to readers. Simple, appealing designs enhance engagement and ease navigation. Consistent design across magazine issues strengthens brand identity and fosters reader loyalty, potentially boosting sales and conversions."
     }
 ];
 
 
 
 export const servicesDesignData2 = [
-    { id: 1, heading: "Get a Free Quote:", subHeading: "Fill out our quick online form to receive a free quote and discuss your specific design needs with our team." },
-    { id: 2, heading: "Browse Our Portfolio:", subHeading: " Explore our diverse portfolio of Book & Magazine Design projects across various genres and formats to see the impact we can create." },
-    { id: 3, heading: "Download Our Design Guide:", subHeading: " Learn valuable tips and insights on crafting captivating book covers, creating user-friendly magazine layouts, and designing for the digital age." },
+    { id: 1, subHeading: "With a publishing that shines out, release your vision and enthrall your audience! Our staff of skilled designers can help you produce an effective and visually attractive work whether you're writing a novel or starting a magazine.  Are you trying to find a book cover design that encapsulates your story? Our job is to turn your idea into a striking work of art.  Maybe you need to mix facts and aesthetics in a layout for a new book on human design? Experts at creating intuitive layouts that lead readers through your material are our designers.  " },
+    { id: 2, subHeading: "Do you see your magazine with a modern, interesting design? We'll create a distinctive style that appeals to your intended market and captures the essence of your business.  With Logo Design Maker at your side, you can take advantage of a variety of services, including professional editorial advice and smooth project management in addition to the original concept creation and design implementation. We will cooperate to realize your publishing idea so that your book reaches its maximum potential and makes a lasting impression on readers." },
 ]
 
 

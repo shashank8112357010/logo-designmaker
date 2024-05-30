@@ -1,19 +1,15 @@
 "use client"
-import Button from "@/app/atom/Button";
 import DesignHeader from "@/app/atom/DesignHeader";
 import Sliderr from "@/app/atom/Slider";
 import Story from "@/app/atom/Story";
 import ServicesBanner from "@/app/components/services/ServicesBanner";
-import Image from "next/image";
 import { useState } from "react";
-import ServiceDesign from "@/app/components/services/ServiceDesignTop";
 import ServicesCTA from "@/app/components/services/ServicesCTA";
 import { faqs } from "@/data/website-and-app-design";
 import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/data/packaging-and-label-designs";
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
-import ServiceDesignTop from "@/app/components/services/ServiceDesignTop";
-import ServiceDesignBottom from "@/app/components/services/ServiceDesignBottom";
+import ServiceDesign from "@/app/components/services/ServiceDesign";
 
 export default function PackagingLabelDesigns() {
     const [content, setContent] = useState(1)
@@ -47,7 +43,7 @@ export default function PackagingLabelDesigns() {
 
             <ServicesBanner heading="Design that Sells: The Power of " subHeading="Packaging & Labeling" para="In today's retail scene, first impressions are key. Packaging and labeling aren't just functional—they're powerful marketing tools. At Logo Design Maker, we grasp their importance. Our skilled designers create eye-catching packaging and labels that protect your product, attract attention, convey your brand's message, and boost sales." />
 
-            <ServiceDesignTop imgSrc="/services/BrandDesigns.png" subHeading1="From Concept to Creation: Crafting " subHeading2="Packaging that Captivates" heading1="From Shelf Appeal to Brand Advocacy: The Tangible Benefits of Exceptional " heading2="Packaging & Labelling" para="Investing in professional packaging and labeling design is more than just creating something visually appealing; it's a strategic investment that delivers tangible benefits for your brand:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="From Concept to Creation: Crafting " subHeading2="Packaging that Captivates" heading1="From Shelf Appeal to Brand Advocacy: The Tangible Benefits of Exceptional " heading2="Packaging & Labelling" para="Investing in professional packaging and labeling design is more than just creating something visually appealing; it's a strategic investment that delivers tangible benefits for your brand:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
@@ -61,7 +57,7 @@ export default function PackagingLabelDesigns() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesignBottom imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to transform your " heading2="into potent marketing tools?" heading3="into potent marketing tools?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to transform your " heading2="into potent marketing tools?" heading3="into potent marketing tools?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className="mt-28 sm:mt-52">
                 <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Drive your product&apos;s success with compelling design: Act now!" para="Investing in professional packaging and labeling design is an investment in your product&apos;s success. At Logo Design Maker, we offer a comprehensive suite of design services to cater to your specific needs and product positioning. Our experienced designers can create visually captivating packaging and labels that not only grab attention but also effectively communicate your brand message and entice customers to choose your product." />
