@@ -6,14 +6,14 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
 
     return (
         <main className="max-w-[1920px]  mx-auto w-full justify-center items-center flex">
-            <div className={`flex ${flexDirection} text-white  pb-20 lg:pb-20 px-4  items-center lg:justify-start justify-center sm:px-10 lg:px-10 flex-wrap lg:flex-nowrap  gap-x-60`}>
+            <div className={`flex ${flexDirection} text-white  pb-20 lg:pb-20   items-center lg:justify-between lg:w-[94.1%] justify-center  sm:px-10 lg:mx-auto flex-wrap lg:flex-nowrap`}>
                 {/* first section */}
-                <div className=" flex justify-center items-center ">
-                    <Image src={imgSrc} width={350} height={350} alt={heading2} />
+                <div className=" flex justify-center items-center  lg:min-w-[450px] ">
+                    <Image src={imgSrc} width={450} height={350} alt={heading2} />
                 </div>
 
                 {/* second section */}
-                <div className="max-w-[400px]  sm:max-w-[480px] mt-20 lg:max-w-[760px] flex flex-col gap-4 items-center text-start">
+                <div className="max-w-[400px]  sm:max-w-[480px] mt-20 lg:max-w-[730px] flex flex-col gap-4 lg:items-start items-center text-start">
                     <h2 className="w-full  uppercase text-[10px] sm:whitespace-nowrap sm:text-[14px] lg:text-[20px] leading-[11px] sm:leading-[16px] lg:leading-[23px] font-medium ">
                         {subHeading1}
                         <span className="text-primaryGreen">{subHeading2}</span>
