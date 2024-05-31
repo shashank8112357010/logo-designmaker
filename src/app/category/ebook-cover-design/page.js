@@ -8,8 +8,6 @@ import { designProcess, faqs, servicesDesignData } from "@/data/ebook-cover-desi
 import Image from "next/image"
 
 export default function BookCoverDesign() {
-
-
     return (
         <section className="w-full max-w-[1920px] mx-auto bg-primaryBlack pb-32">
             <div className="flex flex-row gap-4 items-center justify-center xl:gap-10 h-[250px] xs:h-[283px] sm:h-[553px] relative">

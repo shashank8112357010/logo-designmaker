@@ -35,7 +35,7 @@ export default function ServicesBanner({ heading, subHeading, para }) {
                 </div>
 
 
-                <main className="top-[15%] md:top-[20%] lg:top-[12%] z-30 sm:w-[984px] max-w-[984px] min-h-[341px] absolute sm:px-0">
+                <main className="top-[15%] md:top-[20%] lg:top-[12%] z-30 sm:w-[984px] max-w-[1024px] min-h-[341px] absolute sm:px-0">
 
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
                         <span className="font-[100px] text-center w-full font-springRainSolid text-white leading-[25px] lg:leading-[45px] text-[20px] lg:text-[35px]">Services</span>

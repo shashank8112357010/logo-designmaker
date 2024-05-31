@@ -43,28 +43,28 @@ export default function ClothingMerchandise() {
     return (
         <section className="bg-primaryBlack overflow-hidden pt-20 max-w-[1920px] mx-auto">
 
-            <ServicesBanner heading="Wear Your Brand, Spread the Word: The Power of  " subHeading="Clothing & Merchandise Design" para="Today, clothing and merchandise go beyond function, serving as tools for self-expression, brand promotion, and community. At Logo Design Maker, we recognize their unique potential. Our expert designers craft visually stunning designs that communicate your brand message or personal style effectively." />
+            <ServicesBanner heading="Wear Your Brand, Spread the Word: The Power of  " subHeading="Clothing & Merchandise Design" para={<span>Clothes and goods now  days serve purposes beyond their original intent. They are today potent instruments for community development, brand marketing, and self-expression.<strong> Custom clothing and merchandise design</strong> has a special potential, which we at Logo Design Maker recognize.</span>} />
 
-            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="From Concept to Creation: Crafting  " heading2="Wearable Stories " para1="Whether you're launching a new clothing line, creating promotional merchandise for your business, or designing personalized gifts, we're here to help you translate your vision into reality. Our designers will work closely with you to understand your target audience, brand identity, and desired aesthetic." para2="Through a collaborative process, we'll develop captivating designs that resonate with your audience, spark conversations, and leave a lasting impression." withButton={true} flexDirection="flex-row" />
+            <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="From Concept to Creation: Crafting  " heading2="Wearable Stories " para1={<span>Whether you're launching a new clothing line, creating promotional <strong> merchandise for your business </strong>, or designing personalized gifts, we're here to help you translate your vision into reality. Our designers will work closely with you to understand your target audience, brand identity, and desired aesthetic." para2="Through a collaborative process, we'll develop captivating designs that resonate with your audience, spark conversations, and leave a lasting impression.</span>} withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="Beyond Function: " subHeading2="Apparel & Merchandise as Walking Billboards" heading1="From Brand Awareness to Fan Engagement: The Strategic Advantages of  " heading2="Custom Clothing & Merchandise" para="Investing in professional clothing and merchandise design goes beyond creating cool t-shirts or mugs. It's a strategic investment that delivers a range of benefits:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesign imgSrc="/services/customClothing&merhcandise.png" subHeading1="Beyond Function: " subHeading2="Apparel & Merchandise as Walking Billboards" heading1="The Strategic Benefits of " heading2="Custom Clothing & Merchandise" heading3=": From Brand Awareness to Fan Involvement" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
-                    <DesignHeader heading="A Symphony of" subHeading=" Design Solutions for Your Apparel & Merchandise" para="We offer a comprehensive range of clothing and merchandise design services to cater to your specific needs. Here's a glimpse into how we can help you breathe life into your wearable creations:" />
+                    <DesignHeader heading="For Your " subHeading=" Clothing and Merchandise" subHeading2=", a Symphony of Design Solutions" para="We provide a full spectrum of services for product and clothes design to meet your particular requirements. This is a sneak peek of how we can assist you in giving your wearable inventions life" />
                 </div>
                 <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5, 6]} />
+                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5]} />
                     {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Get Started Now to Grow Your Brand or Express Yourself " heading2="Stylishly!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
-            <div className=" mt-8 sm:mt-32 md:mt-44">
-                <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Brand's Growth or Express Yourself in Style: Take Action Today!" para="Investing in professional clothing and merchandise design is an investment in building brand awareness, fostering community spirit, or simply expressing your unique style. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers help you create visually captivating designs for your clothing and merchandise that not only look great but also effectively communicate your message and leave a lasting impression." />
+            <div className="mt-8 sm:mt-32 md:mt-44">
+                <ServicesCTA imgSrc="/services/takeYourAction.png" heading={<span>Ready to unleash the power of clothing and merchandise design?</span>} para={<span>Don't become part of the throng. Using personalized apparel and products created by <strong>Logo Design Maker</strong>, make a statement and stand out.<strong> Get in touch with us</strong> now and together we can turn your concepts into wearable masterpieces!</span>} />
             </div>
 
             <Faqq faqs={faqs} />

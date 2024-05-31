@@ -7,7 +7,7 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
         <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex">
             <div className={`flex ${flexDirection} mt-20 text-white pb-20 lg:pb-20 px-4 items-center lg:justify-start justify-center sm:px-10 lg:px-10 flex-wrap lg:flex-nowrap`}>
                 {/* first section */}
-                <div className=" flex justify-center items-center min-w-[300px] sm:min-w-[400px] h-[300px] sm:h-[360px] relative ">
+                <div className=" flex justify-center items-center min-w-[300px] sm:min-w-[400px] h-[300px] sm:h-[400px] relative ">
                     <Image src={imgSrc} fill alt={heading2} />
                 </div>
 
