@@ -11,9 +11,9 @@ export default function FooterAccordion({ footerLinks }) {
   };
 
   return (
-    <div className="px-6 max-w-[450px]">
+    <div className="px-6 w-[500px]">
       {footerLinks.map((link, index) => (
-        <div key={index} className="mb-4 ">
+        <div key={index} className="mb-4">
           <div
             className="flex justify-between items-center gap-[10.5rem] cursor-pointer"
             onClick={() => toggleAccordion(index)}
@@ -21,7 +21,7 @@ export default function FooterAccordion({ footerLinks }) {
             <p className="text-mobfooterTitle whitespace-nowrap  sm:text-tabfooterTitle lg:text-lapfooterTitle font-bold text-white leading-[24px]">
               {link.heading}
             </p>
-            <div className="w-2 h-[5px] relative">
+            <div className="w-[14px] h-[7px] relative">
               <Image
                 src={openFooterLinks === index ? "/home/UpArrow.png" : "/home/DownArrow.png"}
                 fill

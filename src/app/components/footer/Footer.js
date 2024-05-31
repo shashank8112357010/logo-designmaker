@@ -13,7 +13,7 @@ export default function Footer() {
                 <Image src="/footer/FooterGradient.png" width={1920} height={56} alt="FooterGradient" />
             </div>
             <div className="flex flex-row justify-center items-center sm:px-8 ">
-                <div className="flex max-w-[1920px] mx-auto  justify-center flex-col sm:flex-row sm:pb-8 lg:pb-16 lg:flex-row text-center sm:text-start gap-[20px] sm:text-normal  sm:justify-normal flex-wrap relative">
+                <div className="flex max-w-[1920px] mx-auto justify-center flex-col sm:flex-row sm:pb-8 lg:pb-16 lg:flex-row text-center sm:text-start gap-[20px] sm:text-normal  sm:justify-normal flex-wrap relative ">
                     {
                         footerLinks && footerLinks.map((footer, index) => {
                             return (
@@ -35,7 +35,7 @@ export default function Footer() {
                     }
 
                     {/* mobileScreenFooter lists */}
-                    <div className="block sm:hidden mb-12 z-40">
+                    <div className="flex justify-center sm:hidden mb-12 z-40 w-full">
                         <FooterAccordion footerLinks={footerLinks} />
                     </div>
 

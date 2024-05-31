@@ -63,7 +63,7 @@ export default function IllustrationArt() {
 
             <ServiceDesign imgSrc="/services/readyToUnleash.png" heading1="Boost the Development of Your " heading2="Brand " heading3=": Act Right Now!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
-            <div className="mt-28 sm:mt-28">
+            <div className="mt-0 md:mt-28">
                 <ServicesCTA imgSrc="/services/takeYourAction.png" heading="All set to give your brand the power of art and illustration?" para="Tell your brand narrative, but make it visual! Work with Logo Design Maker to let our group of gifted artists to bring your brand to life with eye-catching images and distinctive graphics that enthrall your audience and take your business to new heights. Contact us now to start creating a work of art based on your brand identity!" />
             </div>
 
