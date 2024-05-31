@@ -61,7 +61,7 @@ export default function ClothingMerchandise() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Get Started Now to Grow Your Brand or Express Yourself " heading2="Stylishly!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesign imgSrc="/services/readyToUnleash.png" heading1="Get Started Now to Grow Your Brand or Express Yourself " heading2="Stylishly!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className="mt-8 sm:mt-32 md:mt-44">
                 <ServicesCTA imgSrc="/services/takeYourAction.png" heading={<span>Ready to unleash the power of clothing and merchandise design?</span>} para={<span>Don't become part of the throng. Using personalized apparel and products created by <strong>Logo Design Maker</strong>, make a statement and stand out.<strong> Get in touch with us</strong> now and together we can turn your concepts into wearable masterpieces!</span>} />

@@ -11,9 +11,9 @@ export default function FooterAccordion({ footerLinks }) {
   };
 
   return (
-    <div className="px-6">
+    <div className="px-6 max-w-[450px]">
       {footerLinks.map((link, index) => (
-        <div key={index} className="mb-4">
+        <div key={index} className="mb-4 ">
           <div
             className="flex justify-between items-center gap-[10.5rem] cursor-pointer"
             onClick={() => toggleAccordion(index)}

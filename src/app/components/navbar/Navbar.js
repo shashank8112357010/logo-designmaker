@@ -118,11 +118,9 @@ export default function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {/* <button className="text-[10px] sm:text-[14px] font-semibold border-2 border-primaryGreen hover:bg-primaryGreen text-white hover:text-black px-[16px] sm:px-[28px] py-[6px] sm:py-[8px] rounded-[4px] transition-all duration-300 ease-in-out">
-                        Sign in
-                    </button> */}
+
                     <Link href="/price">
-                        <Button displayy="hidden sm:block" title="Get Started" />
+                        <Button displayy="block" title="Get Started" />
                     </Link>
                 </div>
             </div>
