@@ -7,7 +7,7 @@ export default function ServicesCTA({ heading, para, imgSrc }) {
 
     return (
         <section className="max-w-[1920px] mx-auto flex justify-center px-4 sm:px-10 lg:px-10 bg-primaryBlack text-white pb-20 pt-20 lg:pt-10">
-            <div className="bg-secondaryBlack relative px-5 py-2 lg:px-8 lg:py-10 rounded-[18px] flex justify-center flex-col lgg:flex-row">
+            <div className="bg-secondaryBlack relative px-6 pl-3  py-2 lg:px-8  lg:py-10 rounded-[18px] flex justify-between flex-col lgg:flex-row w-[94%]">
                 <div className="w-full lgg:w-[710px] pb-10 lgg:pb-0 pt-12 lgg:pt-0 lg:mx-1 flex flex-col justify-center items-center lgg:justify-normal lg:items-start gap-[22px]">
                     <div className="flex flex-col items-center lgg:items-start justify-center gap-[16px]">
                         <h2 className="text-mobHeaderText text-center lgg:text-start sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[22px] sm:leading-[33px] lg:leading-[58px] tracking-[-1px]">
