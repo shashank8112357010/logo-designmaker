@@ -61,14 +61,14 @@ export default function AboutUs() {
             </div>
 
 
-            {/* 4th section  */}
+            {/* {/ 4th section  /} */}
             <div>
                 <main className="max-w-[1920px] mx-auto w-full items-center flex pt-10">
 
-                    <div className={`flex flex-row-reverse mx-10 text-white pt-10 pb-10 lg:pt-20 lg:pb-10 px-4 justify-center lg:justify-start bg-red-700 sm:px-10 lg:px-20 gap-10 flex-wrap lg:flex-nowrap`}>
+                    <div className={`flex flex-row-reverse text-white pt-10 pb-10 lg:pt-20 lg:pb-10 px-4 justify-center lg:justify-start sm:px-10 lg:px-20 gap-10 flex-wrap lg:flex-nowrap`}>
 
-                        {/* first section */}
-                        <div className="max-w-[1024px]  flex flex-col gap-4 items-center text-center justify-center">
+                        {/* {/ first section /} */}
+                        <div className="max-w-[900px] flex flex-col gap-4 items-center text-center lg:text-start">
                             <h2 className="w-full uppercase lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white ">
                                 The Human Advantage:
                                 <span className="text-primaryGreen">&nbsp; Why We Go Beyond AI</span>
@@ -83,7 +83,7 @@ export default function AboutUs() {
 
                 <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex pb-10 ">
                     <div className={`flex text-white pb-20 lg:pb-20 px-4 items-center justify-center sm:px-10 lg:px-10 flex-wrap lg:flex-nowrap pt-10 `}>
-                        {/* first section */}
+                        {/* {/ first section /} */}
                         {AboutImg.filter((item) => item.id === currentIndex)
                             .map((item) => {
                                 return (
@@ -94,7 +94,7 @@ export default function AboutUs() {
                             })}
 
 
-                        {/* second section */}
+                        {/* {/ second section /} */}
                         <section className="bg-primaryBlack mt-8 lg:mt-0 flex items-center text-white px-4 sm:px-10 lg:px-20">
                             <div className="flex flex-col max-w-[1023px] mx-auto gap-2">
                                 {AboutFaqs.map((item, index) => {
@@ -116,7 +116,7 @@ export default function AboutUs() {
 
                     </div>
                 </main>
-                <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Ready to unlock the full potential of your brand?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
+                <ServicesCTA imgSrc="/services/brand and identity design.png" heading="Ready to unlock the full potential of your brand?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
             </div>
 
         </section>
