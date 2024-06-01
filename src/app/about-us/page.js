@@ -63,59 +63,61 @@ export default function AboutUs() {
 
             {/* 4th section  */}
             <div>
-                <main className="max-w-[1920px] mx-auto w-full items-center flex pt-10">
+                <div className="flex-col justify-center items-center lg:mx-12 ">
+                    <main className="max-w-[1920px] mx-auto  w-full items-center flex pt-10">
 
-                    <div className={`flex flex-row-reverse mx-10 text-white pt-10 pb-10 lg:pt-20 lg:pb-10 px-4 justify-center lg:justify-start bg-red-700 sm:px-10 lg:px-20 gap-10 flex-wrap lg:flex-nowrap`}>
+                        <div className={`flex flex-row-reverse text-white pt-10 pb-10 lg:pt-20 lg:pb-10 px-4 justify-center lg:justify-start sm:px-10 lg:px-20 gap-10 flex-wrap lg:flex-nowrap `}>
 
-                        {/* first section */}
-                        <div className="max-w-[1024px]  flex flex-col gap-4 items-center text-center justify-center">
-                            <h2 className="w-full uppercase lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white ">
-                                The Human Advantage:
-                                <span className="text-primaryGreen">&nbsp; Why We Go Beyond AI</span>
-                            </h2>
-                            <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] ">
-                                In the age of automation, you might wonder why choose human designers over AI logo makers? The answer lies in the power of human connection and strategic thinking. Unlike AI, our designers don&apos;t just generate generic visuals. They take the time to understand your brand on a deeper level.
-                            </p>
+                            {/* first section */}
+                            <div className="max-w-[1037px] flex flex-col gap-8 items-center text-center lg:text-start">
+                                <h2 className="w-full uppercase lg:text-[38px] space-x-2 sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white ">
+                                    The Human Advantage:
+                                    <span className="text-primaryGreen">&nbsp; Why We Go Beyond AI</span>
+                                </h2>
+                                <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] ">
+                                    In the age of automation, you might wonder why choose human designers over AI logo makers? The answer lies in the power of human connection and strategic thinking. Unlike AI, our designers don&apos;t just generate generic visuals. They take the time to understand your brand on a deeper level.
+                                </p>
+
+                            </div>
+                        </div>
+                    </main>
+
+                    <main className="max-w-[1920px] mx-auto lg:mx-8 w-full justify-center items-center flex pb-10 ">
+                        <div className={`flex text-white pb-20 lg:pb-20 px-4 lg:gap-16   items-center justify-center sm:px-10 lg:px-10 lg:pl-20 flex-wrap lg:flex-nowrap pt-10 `}>
+                            {/* first section */}
+                            {AboutImg.filter((item) => item.id === currentIndex)
+                                .map((item) => {
+                                    return (
+                                        <div key={item.id} className="md:min-w-[400px] flex justify-center items-center">
+                                            <Image src={item.img} width={375} height={240} alt="AboutHumanAI" />
+                                        </div>
+                                    )
+                                })}
+
+
+                            {/* second section */}
+                            <section className="bg-primaryBlack mt-8 lg:mt-0 flex items-center text-white px-4 sm:px-10 lg:px-20">
+                                <div className="flex flex-col max-w-[1123px] w-full mx-auto gap-2">
+                                    {AboutFaqs.map((item, index) => {
+                                        return (
+                                            <FaqAbout
+                                                key={item.id}
+                                                index={index}
+                                                data={item}
+                                                openIndex={openIndex}
+                                                setOpenIndex={setOpenIndex}
+                                                setCurrentIndex={setCurrentIndex}
+                                            />
+                                        )
+                                    }
+                                    )}
+                                </div>
+                            </section>
+
 
                         </div>
-                    </div>
-                </main>
-
-                <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex pb-10 ">
-                    <div className={`flex text-white pb-20 lg:pb-20 px-4 items-center justify-center sm:px-10 lg:px-10 flex-wrap lg:flex-nowrap pt-10 `}>
-                        {/* first section */}
-                        {AboutImg.filter((item) => item.id === currentIndex)
-                            .map((item) => {
-                                return (
-                                    <div key={item.id} className="md:min-w-[400px] flex justify-center items-center">
-                                        <Image src={item.img} width={375} height={240} alt="AboutHumanAI" />
-                                    </div>
-                                )
-                            })}
-
-
-                        {/* second section */}
-                        <section className="bg-primaryBlack mt-8 lg:mt-0 flex items-center text-white px-4 sm:px-10 lg:px-20">
-                            <div className="flex flex-col max-w-[1023px] mx-auto gap-2">
-                                {AboutFaqs.map((item, index) => {
-                                    return (
-                                        <FaqAbout
-                                            key={item.id}
-                                            index={index}
-                                            data={item}
-                                            openIndex={openIndex}
-                                            setOpenIndex={setOpenIndex}
-                                            setCurrentIndex={setCurrentIndex}
-                                        />
-                                    )
-                                }
-                                )}
-                            </div>
-                        </section>
-
-
-                    </div>
-                </main>
+                    </main>
+                </div>
                 <ServicesCTA imgSrc="/services/brand and identity design.png" heading="Ready to unlock the full potential of your brand?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
             </div>
 
