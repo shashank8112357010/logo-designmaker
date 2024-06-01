@@ -65,10 +65,10 @@ export default function AboutUs() {
             <div>
                 <main className="max-w-[1920px] mx-auto w-full items-center flex pt-10">
 
-                    <div className={`flex flex-row-reverse text-white pt-10 pb-10 lg:pt-20 lg:pb-10 px-4 justify-center lg:justify-start sm:px-10 lg:px-20 gap-10 flex-wrap lg:flex-nowrap`}>
+                    <div className={`flex flex-row-reverse mx-10 text-white pt-10 pb-10 lg:pt-20 lg:pb-10 px-4 justify-center lg:justify-start bg-red-700 sm:px-10 lg:px-20 gap-10 flex-wrap lg:flex-nowrap`}>
 
                         {/* first section */}
-                        <div className="max-w-[900px] flex flex-col gap-4 items-center text-center lg:text-start">
+                        <div className="max-w-[1024px]  flex flex-col gap-4 items-center text-center justify-center">
                             <h2 className="w-full uppercase lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white ">
                                 The Human Advantage:
                                 <span className="text-primaryGreen">&nbsp; Why We Go Beyond AI</span>
