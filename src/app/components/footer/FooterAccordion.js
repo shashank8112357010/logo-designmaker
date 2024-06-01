@@ -11,7 +11,7 @@ export default function FooterAccordion({ footerLinks }) {
   };
 
   return (
-    <div className="px-6 w-[500px]">
+    <div className="px-6 w-full">
       {footerLinks.map((link, index) => (
         <div key={index} className="mb-4">
           <div
