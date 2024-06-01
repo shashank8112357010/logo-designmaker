@@ -44,7 +44,7 @@ export default function StickerDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="Your Trusted Partner for Exceptional Sticker Design" para1="At Logo Design Maker, we are passionate about helping individuals and businesses create impactful sticker designs. We offer a user-friendly platform for those who want to design their own stickers online, and a dedicated design team for those seeking professional assistance." para2="At Logo Design Maker, we are passionate about helping individuals and businesses create impactful sticker designs. We offer a user-friendly platform for those who want to design their own stickers online, and a dedicated design team for those seeking professional assistance." withButton={true} flexDirection="flex-row" />
 
-            <ServicesCTA imgSrc="/services/brand and identity design.png" heading="Still Need Help? We're Here for You!" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
+            <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Still Need Help? We're Here for You!" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
 
             <Faqq faqs={faqs} />
 

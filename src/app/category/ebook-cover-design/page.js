@@ -42,7 +42,7 @@ export default function BookCoverDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="Why Choose Us: Unparalleled Quality & Exceptional Service" para1="At Logo Design Maker, we are passionate about helping authors bring their ebooks to life with captivating ebook cover designs. We believe a professional cover is an investment in your ebook's success. We offer a collaborative and transparent process, ensuring you're involved every step of the way." para2="Our team of experienced and talented ebook cover designers is dedicated to creating high-quality covers that not only look amazing but also effectively market your ebook and drive sales." withButton={true} flexDirection="flex-row" />
 
-            <ServicesCTA imgSrc="/services/brand and identity design.png" heading="Ready to Make Your Ebook Shine?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
+            <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Ready to Make Your Ebook Shine?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
             <Faqq faqs={faqs} />
 
         </section>

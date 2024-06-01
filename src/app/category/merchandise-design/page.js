@@ -43,7 +43,7 @@ export default function MerchandiseDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="Your Trusted Partner for Exceptional Merchandise Design" para1="At Logo Design Maker, we are passionate about helping businesses create merchandise design that strengthens their brand identity and connects with their target audience. We offer a user-friendly online platform for those who want to design merchandise online, and a dedicated design team for those seeking professional assistance." para2="We use top-of-the-line printing technologies and premium materials to ensure your merchandise is not only visually stunning but also built to last. Our commitment to excellent customer service, fast turnaround times, and competitive pricing makes us the perfect partner for all your merchandise design needs." withButton={true} flexDirection="flex-row" />
 
-            <ServicesCTA imgSrc="/services/brand and identity design.png" heading="Still Need Help? We're Here for You!" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
+            <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Still Need Help? We're Here for You!" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
 
             <Faqq faqs={faqs} />
 

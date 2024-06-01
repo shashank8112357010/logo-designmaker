@@ -15,7 +15,7 @@ export default function DesignYourLogo() {
                     </div>
                 </div>
 
-                <div className="w-full lgg:w-[556px] pt-60 sm:pt-72 lgg:pt-0 lg:mx-1 flex flex-col justify-center items-center lgg:justify-normal lg:items-start gap-[22px]">
+                <div className="w-full lgg:w-[556px] pt-60 sm:pt-72 lgg:pt-0 lg:mx-1 flex flex-col justify-center items-center lgg:justify-normal lg:items-center gap-[22px]">
                     <div className="flex flex-col justify-center items-center gap-[11px]">
                         <h5 className="text-mobHeaderText text-center lg:text-start sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[22px] sm:leading-[33px] lg:leading-[58px] tracking-[-1px]">Ready to Design Your Dream Logo?</h5>
                         <p className="text-mobHeaderBody text-center lg:text-start sm:text-tabHeaderBody lg:text-lapHeaderBody font-normal lg:font-medium leading-[21px] lg:leading-[25px] ">&#34;Discover your brand&#39;s power with Logo Design Maker. Get in touch for a free consultation now</p>

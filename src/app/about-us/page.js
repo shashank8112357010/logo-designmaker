@@ -116,7 +116,7 @@ export default function AboutUs() {
 
                     </div>
                 </main>
-                <ServicesCTA imgSrc="/services/brand and identity design.png" heading="Ready to unlock the full potential of your brand?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
+                <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Ready to unlock the full potential of your brand?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
             </div>
 
         </section>

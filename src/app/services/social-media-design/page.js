@@ -64,7 +64,7 @@ export default function SociaMediaDesign() {
             <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="social media design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className=" mt-8 sm:mt-32 md:mt-44">
-                <ServicesCTA imgSrc="/services/smart-analytical-data-on-an-open-laptop.png" heading="Fuel Your Brand's Growth: Take Action Today!" para="Investing in professional social media design is an investment in building a thriving online presence. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers craft captivating social media visuals that capture attention, ignite conversations, and propel your brand to social media stardom!
+                <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Fuel Your Brand's Growth: Take Action Today!" para="Investing in professional social media design is an investment in building a thriving online presence. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers craft captivating social media visuals that capture attention, ignite conversations, and propel your brand to social media stardom!
 " />
             </div>
 

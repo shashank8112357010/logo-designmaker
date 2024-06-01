@@ -61,7 +61,7 @@ export default function BrandIdentityDesign() {
 
             <ServiceDesign imgSrc="/services/brand and identity design.png" heading1="Ready to unlock the power of exceptional " heading2="Brand Identity design?" flexDirection="flex-row" servicesDesignData={servicesDesignData2} />
 
-            <ServicesCTA imgSrc="/services/smart-business-plan-and-corporate-strategy.png" heading="Ready to Elevate Your Brand Experience?" para="Investing in a professional brand identity design is an investment in your business's future. At Logo Design Maker, we offer a variety of branding services to suit your specific needs and budget. Whether you're looking for a standalone logo design or a comprehensive brand identity package, our team is here to help you create a memorable and impactful brand experience." />
+            <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Ready to Elevate Your Brand Experience?" para="Investing in a professional brand identity design is an investment in your business's future. At Logo Design Maker, we offer a variety of branding services to suit your specific needs and budget. Whether you're looking for a standalone logo design or a comprehensive brand identity package, our team is here to help you create a memorable and impactful brand experience." />
 
             <Faqq faqs={faqs} />
 

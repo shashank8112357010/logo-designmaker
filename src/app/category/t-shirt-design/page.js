@@ -44,7 +44,7 @@ export default function TShirtDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="Your Trusted Partner for Exceptional T-Shirt Design" para1="AAt Logo Design Maker, we are passionate about helping individuals and businesses create impactful t-shirt designs. We offer a user-friendly platform for those who want to design their own t-shirt online and a dedicated design team for those seeking professional assistance. We use top-of-the-line printing technologies and premium t-shirt materials to ensure your custom t-shirts are not only visually stunning but also comfortable and durable." para2="Whether you're looking for men's designer t-shirts with a sophisticated touch, women's designer t-shirts with a fashion-forward flair, or fun graphic tees for kids, we have the expertise to bring your vision to life. Our commitment to excellent customer service and fast turnaround times makes us the perfect partner for all your t-shirt design needs." withButton={true} flexDirection="flex-row" />
 
-            <ServicesCTA imgSrc="/services/brand and identity design.png" heading="Still Need Help? We're Here for You!" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
+            <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Still Need Help? We're Here for You!" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
 
             <Faqq faqs={faqs} />
 

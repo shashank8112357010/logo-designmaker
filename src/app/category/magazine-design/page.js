@@ -43,7 +43,7 @@ export default function MagazineDesign() {
 
             <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="A Trusted Partner for Exceptional Magazine Design" para1="At Logo Design Maker, we are passionate about helping publishers create magazines that stand out from the crowd. We offer a collaborative and transparent process, ensuring you're involved every step of the way." para2="Our team of experienced and talented designers is dedicated to exceeding your expectations and delivering magazine designs that are not only visually stunning but also strategically designed to engage your readers and achieve your business goals." withButton={true} flexDirection="flex-row" />
 
-            <ServicesCTA imgSrc="/services/brand and identity design.png" heading="Ready to Unlock Your Book's Full Potential?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
+            <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Ready to Unlock Your Book's Full Potential?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
 
             <Faqq faqs={faqs} />
 
