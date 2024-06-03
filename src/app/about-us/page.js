@@ -55,7 +55,7 @@ export default function AboutUs() {
                     para="Collaborate with  logo design maker for easy and professional branding that fits your budget. With our Expertise, stand out in the market, and leave a lasting impression with instant brand recognition."
                 />
 
-                <div className="grid grid-cols-1 md:grid-cols-3 items-center lg:grid-cols-3 gap-y-16 gap-x-8 mx-8 sm:mx-12 my-12 text-center">
+                <div className="grid grid-cols-1 my-12 md:grid-cols-3 items-center lg:grid-cols-3 gap-y-16 gap-x-8 mx-8 sm:mx-12 text-center">
                     {BoxAboutData.map((item) => <Box key={item.id} image={item.image} textPosition={item.textPosition} justifyContent={item.justifyContent} alignItems={item.alignItems} maxWidth={item.maxWidth} headingText={item.headingText} paraText={item.paraText} />)}
                 </div>
             </div>

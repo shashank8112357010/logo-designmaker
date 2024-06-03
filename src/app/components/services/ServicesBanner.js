@@ -39,10 +39,10 @@ export default function ServicesBanner({ heading, subHeading, para }) {
 
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
                         <span className="font-[100px] text-center w-full font-springRainSolid text-white leading-[25px] lg:leading-[45px] text-[20px] lg:text-[35px]">Services</span>
-                        <h1 className="max-w-[250px] sm:max-w-[500px] lg:max-w-[1920px] text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] ">{heading}
+                        <div className="max-w-[250px] sm:max-w-[500px] lg:max-w-[1920px] text-mobHeaderText sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] ">{heading}
                             <br />
-                            <span className="font-[100px] font-springRainSolid text-primaryGreen tracking-wide">{subHeading}</span>
-                        </h1>
+                            <h1 className="font-[100px] font-springRainSolid text-primaryGreen tracking-wide">{subHeading}</h1>
+                        </div>
                         <div className="text-white flex flex-col justify-center items-center">
                             <p className="mb-2 text-center text-mobHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[19px] sm:leading-[22px] lg:leading-[25px] tracking-[-0.2px] max-w-[320px] sm:max-w-[550px] lg:max-w-[700px]">
                                 {para}

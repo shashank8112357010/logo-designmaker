@@ -50,7 +50,7 @@ export default function PackagingLabelDesigns() {
                     <DesignHeader heading="A Symphony of Design Solutions for" subHeading="Your Products" para="We offer a comprehensive range of packaging and labeling design services to cater to your specific needs. Here's a glimpse into how we can help you create packaging and labeling that sells:" />
                 </div>
                 <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4]} />
+                    <Story setContent={setContent} content={content} arrayData={[1, 2]} />
                     {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>

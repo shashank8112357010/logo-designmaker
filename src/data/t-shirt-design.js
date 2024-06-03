@@ -4,6 +4,7 @@ export const servicesDesignData = [
     { id: 3, heading: "Fast Turnaround & Competitive Pricing: ", subHeading: " We understand the importance of getting your custom t-shirts quickly. We offer fast turnaround times and competitive pricing to fit your budget." },
 ]
 
+
 export const faqs = [
     { id: 1, ques: "What type of t-shirts do you offer?", ans: "We offer a variety of high-quality t-shirts in different styles, colors, and sizes for men, women, and children. This includes classic crew neck tees, v-necks, tank tops, and more. We also offer a variety of fabric options, such as cotton, polyester blends, and moisture-wicking materials. Let us know your preferences and we'll help you choose the perfect t-shirt for your custom design." },
     { id: 2, ques: "Can I upload my own artwork for my t-shirt design?", ans: "The design process typically takes 2-3 weeks, depending on the complexity of your project and the number of revisions required. However, we strive to deliver high-quality results efficiently while maintaining open communication throughout the process." },

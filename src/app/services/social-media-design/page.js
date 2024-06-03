@@ -42,16 +42,15 @@ export default function SociaMediaDesign() {
     return (
         <section className="bg-primaryBlack overflow-hidden pt-20 max-w-[1920px] mx-auto">
 
-            <ServicesBanner heading="Spark Conversations, Fuel Engagement: The Power of " subHeading="Social Media Design" para="In today's digital era, social media is king for brand awareness and audience connection. To stand out, captivating visuals are key. At Logo Design Maker, we specialize in crafting attention-grabbing designs that elevate your social media presence." />
+            <ServicesBanner heading="Stand Out in the Crowd with Captivating Visuals" subHeading="Social Media Design" para={<span>Social media rules the modern digital world. It&apos;s a thriving area to increase brand recognition, establish relationships with your intended market, and foster a devoted following. How, though, do you distinguish yourself? Key is <strong> social media design! </strong> Offering complete <strong> social media design services</strong>, Logo Design Maker also provides <strong>social media graphic design</strong> and <strong>social media post design</strong>. We create visually striking content that draws in viewers, starts discussions, and elevates your social media profile.</span>} />
 
-            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="Capture Attention, Cultivate Connections: " heading2="Social Media  " heading3="as Your Brand's Playground" para1="Effective social media design goes beyond simply creating aesthetically pleasing graphics. It's about crafting a cohesive visual narrative that resonates with your target audience and aligns with your brand identity. Our team of experienced social media designers will work closely with you to understand your brand voice, target demographics, and social media goals." para2="Through this collaborative process, we'll develop a social media design strategy that utilizes captivating visuals to tell your brand story, engage your audience, and ultimately drive desired results, whether it's brand awareness, lead generation, or increased sales." withButton={true} flexDirection="flex-row" />
+            <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="Building Visual Stories Beyond " heading2="Likes and Shares" para1={<span> <strong>Social media graphic design </strong> that works goes beyond just producing visually appealing images. It&apos;s about creating a unified visual story that fits with your brand identity and speaks to your intended audience. Working directly with you, our team of skilled<strong> social media designers</strong> will ascertain your target demographics, social media objectives, and brand voice.</span>} para2={<span>Through this cooperative process, we will create a successful<strong> social media design strategy </strong>that uses eye-catching images to connect your audience, communicate your brand story, and eventually provide the desired outcomes—increased sales, lead generation, or brand exposure.</span>} withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="Beyond Likes & Shares: " subHeading2="Building Visual Stories" heading1="Beyond Likes & Shares: The Strategic Advantages of Compelling  " heading2="Social Media Design" para="Investing in professional social media design offers more than just creating pretty pictures. It's a strategic investment that delivers a range of benefits for your brand:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignBeyond.png" subHeading1="Beyond Likes & Shares: " subHeading2="Building Visual Stories" heading1="Above and Beyond Likes and Shares: The Strategic Benefits of Engaging " heading2="Social Media Design" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
-                    <DesignHeader heading="A Symphony of" subHeading="Social Media Design Solutions" para="We offer a diverse range of social media design services to cater to your specific needs and platforms. Here's a closer look at how we can help you craft a visually stunning social media presence:
-" />
+                    <DesignHeader heading="A Symphony of" subHeading="Social Media Design" subHeading2=" Options" para={<span>We provide a broad selection of <strong> social media design services </strong> to suit your particular requirements and platforms. A closer look at how we could assist you in creating an eye-catching social media presence follows:</span>} />
                 </div>
                 <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
                     <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4]} />
@@ -61,11 +60,10 @@ export default function SociaMediaDesign() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="social media design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignEarth.png" heading1="Start Growing Your " heading2=" Brand Right Now!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className=" mt-8 sm:mt-32 md:mt-44">
-                <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Fuel Your Brand's Growth: Take Action Today!" para="Investing in professional social media design is an investment in building a thriving online presence. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers craft captivating social media visuals that capture attention, ignite conversations, and propel your brand to social media stardom!
-" />
+                <ServicesCTA imgSrc="/services/SocialMediaDesignFuel.png" heading="Fuel Your Brand's Growth: Take Action Today!" para="Never become part of the background noise. Using visually striking social media graphics created by Logo Design Maker, stand out from the competition. Make contact with us now to turn your social media presence into a brand-growth and engagement magnet!" />
             </div>
 
             <Faqq faqs={faqs} />

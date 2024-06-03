@@ -13,18 +13,6 @@ import { tellStoryContent } from "@/data/book-and-magazine-designs";
 import Head from 'next/head';
 import ServiceDesign from "@/app/components/services/ServiceDesign";
 
-// export function generateMetaData() {
-//     return {
-//         title: "Book & Magazine Design Services | Logo Design Maker",
-//         description: "Elevate your publications with Logo Design Maker's book & magazine design services. We craft captivating covers & layouts that grab attention & drive sales.",
-//         keyword: "Logo Design Maker, Book cover design, Magazine design, Book layout, Magazine layout, Design services for publications, Professional book design services, Professional magazine design services, Book cover design company, Magazine design company, E-book cover design services"
-//     };
-// }
-
-// export const metadata = {
-//     title: "Book and magazine Page",
-//     description: "Book",
-// };
 
 export default function BookMagazineDesigns() {
     const [content, setContent] = useState(1)

@@ -53,7 +53,7 @@ export default function WebsiteAppDesign() {
                     <DesignHeader heading="A Symphony of Services: Building Your" subHeading="Digital Presence" para="We offer a diverse range of website and app design solutions to cater to your specific needs. Here's a closer look at some of the ways we can help you build your digital oasis" />
                 </div>
                 <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5, 6, 7]} />
+                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5]} />
                     {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>
