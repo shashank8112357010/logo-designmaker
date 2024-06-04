@@ -145,7 +145,7 @@ export const dropMenu = [
     {
         id: 1,
         img: "/navbar/navbarBook.png",
-        heading: "Book and magazine designs",
+        heading: "Book and Magazine Designs",
         subHeading: "Stunning designs that perform",
         url: "book-and-magazine-designs"
     },
@@ -198,7 +198,7 @@ export const dropMenus = [
     {
         id: 4,
         img: "/navbar/navbarBook.png",
-        heading: "Business and advertising designs",
+        heading: "Business and Advertising Designs",
         subHeading: "Discover books & webinars",
         url: "business-and-advertising-designs"
     },

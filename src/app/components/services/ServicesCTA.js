@@ -22,7 +22,7 @@ export default function ServicesCTA({ heading, para, imgSrc }) {
                     </div>
                 </div>
                 <div className="flex justify-center lgg:justify-start">
-                    <div className="w-[250px] xs:w-[300px] sm:w-[350px] lgg:w-[440px] block h-[200px] xs:h-[250px] sm:h-[290px] lgg:h-[360px] mb-3 relative">
+                    <div className="w-[250px] xs:w-[300px] sm:w-[350px] lgg:w-[440px] block h-[200px] xs:h-[250px] sm:h-[290px] lgg:h-[380px] mb-3 relative">
                         <Image src={imgSrc} alt="Call to action logo design" fill />
                     </div>
                 </div>

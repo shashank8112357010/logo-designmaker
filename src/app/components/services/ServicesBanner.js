@@ -44,7 +44,7 @@ export default function ServicesBanner({ heading, subHeading, para }) {
                             <h1 className="font-[100px] font-springRainSolid text-primaryGreen tracking-wide">{subHeading}</h1>
                         </div>
                         <div className="text-white flex flex-col justify-center items-center">
-                            <p className="mb-2 text-center text-mobHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[19px] sm:leading-[22px] lg:leading-[25px] tracking-[-0.2px] max-w-[320px] sm:max-w-[550px] lg:max-w-[700px]">
+                            <p className="mb-2 text-center text-mobHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[19px] sm:leading-[22px] lg:leading-[25px] tracking-[-0.2px] max-w-[320px] sm:max-w-[550px] lg:max-w-[800px]">
                                 {para}
                             </p>
 

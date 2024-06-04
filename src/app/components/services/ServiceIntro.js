@@ -1,7 +1,7 @@
 import Button from "@/app/atom/Button";
 import Image from "next/image";
 
-export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading1, heading2, heading3, para1, para2, withButton, flexDirection }) {
+export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading1, heading2, heading3, para1, para2, para3, withButton, flexDirection }) {
     return (
         <main className="max-w-[1920px] mx-auto w-full justify-center items-center flex">
             <div className={`flex ${flexDirection} text-white pt-10 pb-10 lg:pt-20 lg:pb-10 px-4 justify-center lg:justify-start sm:px-10 lg:px-10 gap-10 flex-wrap lg:flex-nowrap`}>
@@ -25,6 +25,11 @@ export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading
                     <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] my-2">
                         {para2}
                     </p>
+                    {para3 &&
+                        <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] my-2">
+                            {para3}
+                        </p>
+                    }
 
                     {withButton &&
                         <div className="lg:w-full">

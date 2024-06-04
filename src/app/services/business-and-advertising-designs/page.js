@@ -10,6 +10,7 @@ import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/da
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
+import ServiceIntro from "@/app/components/services/ServiceIntro";
 
 export default function BusinessAdvertisingDesigns() {
     const [content, setContent] = useState(1)
@@ -44,24 +45,29 @@ export default function BusinessAdvertisingDesigns() {
 
             <ServicesBanner heading="Design that Drives Results: The Power of  " subHeading="Business & Marketing Materials" para="In the competitive business world, standing out is crucial. At Logo Design Maker, we specialize in creating compelling visuals that captivate your audience. From presentations to ads to brochures, our experienced team ensures your brand message shines through." />
 
-            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="Beyond Aesthetics: Design that Tells a " subHeading2="Strategic Story" heading1="From Presentations to Promotions: Design that Captures " heading2="Attention & Fuels Action" para="Investing in professional business and marketing materials design goes beyond creating visually appealing brochures or presentations. It's a strategic investment that delivers a range of benefits:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="Eye-Catching " heading2=" Advertising Design" heading3=" Services to Propel Your Business"
+                para1={<span>Specifically, at Logo Design Maker, we embrace the importance of your brand&apos;s consistent imIn the competitive landscape of business today, one has to stand out. Effective advertisement is all about attractive visuals and communicating clearly to attract attention for the proper and effective <strong> advertising your brand</strong>. Here at Logo Design Maker, we recognize that powerful advertising requires powerful <strong>advertising design services</strong>.</span>}
+                para2={<span>Our designers are able to create visuals that are so attractive that they can effectively portray your brand and your message in an effective way, whether it&apos;s a captivating presentation, a persuasive advertisement, or an informative brochure.
+                </span>} withButton={true} flexDirection="flex-row" />
+
+            <ServiceDesign imgSrc="/services/SocialMediaDesignBeyond.png" subHeading1="Beyond Aesthetics: Design that Tells a " subHeading2="Strategic Story" heading1="The Strategic Benefits of Professional " heading2="Advertising Design" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
-                    <DesignHeader heading="A Symphony of" subHeading=" Design Solutions for Your Apparel & Merchandise" para="We offer a comprehensive range of clothing and merchandise design services to cater to your specific needs. Here's a glimpse into how we can help you breathe life into your wearable creations:" />
+                    <DesignHeader heading="A Symphony of" subHeading="Advertising Design" subHeading2="Solutions for Your Needs" para={<span>We provide a full suite of <strong>advertising design services</strong> to help you cater to your specific needs and marketing goals. Here&apos;s a closer look at how we can help you create impactful visuals that get results:</span>} />
                 </div>
                 <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
-                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]} />
+                    <Story setContent={setContent} content={content} arrayData={[1, 2, 3, 4, 5]} />
                     {content && <TellStoryContent content={content} tellStoryContent={tellStoryContent} rowReverse={true} />}
                 </div>
             </div>
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to unleash the power of " heading2="clothing and merchandise design?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignEarth.png" heading1="Grow Your Business with Results-Driven Design: Do It Now!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className=" mt-8 sm:mt-32 md:mt-44">
-                <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Fuel Your Business Growth with Design that Drives Results: Take Action Today!" para="Investing in professional business and marketing materials design is an investment in your brand's success. At Logo Design Maker, we offer a comprehensive suite of design services to cater to your specific needs and marketing goals. Our experienced designers can create visually compelling designs that not only grab attention but also effectively communicate your message and inspire action." />
+                <ServicesCTA imgSrc="/services/SocialMediaDesignFuel.png" heading="Think you have what it takes to level up in business?" para="Don't settle for generic marketing materials. Design with Logo Design Maker and let our professional group of designers do the rest. Contact us today to transform your marketing strategy with impactful design solutions." />
             </div>
 
             <Faqq faqs={faqs} />

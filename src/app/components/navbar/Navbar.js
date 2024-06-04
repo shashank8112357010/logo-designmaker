@@ -10,6 +10,7 @@ export default function Navbar() {
     const [show, setShow] = useState(false)
     const [dropDownMenu, setDropDownMenu] = useState(true)
 
+
     return (
         <section className="max-w-[1920px] z-[999] mx-auto bg-secondaryBlack h-[84px] text-white pr-4 fixed left-0 right-0">
             <div className="flex justify-between items-center h-full relative">
