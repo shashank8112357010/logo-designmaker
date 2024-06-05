@@ -39,7 +39,7 @@ export default function MagazineDesign() {
                 <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="The Art & Science of " heading2="Magazine Design" para1="Designing a magazine combines science and art. Visual appeal, a clear hierarchy, and user-friendly layouts that lead readers through your material are all important to our designers. We also take into account the general tenor of your publication and the particular requirements of your target reader." para2={<span>We guarantee your magazine provides a very immersive experience for your readers, from creating visually arresting <strong> magazine cover designs</strong> that draw attention on newsstands to creating layouts that improve reading and content flow.</span>} withButton={true} flexDirection="flex-row" />
             </div>
 
-            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Magazine with " heading2="Our Magazine Design Services" para={<span>You gain the following when you use <strong> Logo Design Maker </strong>for your magazine design:</span>} flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignBeyond.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Magazine with " heading2="Our Magazine Design Services" para={<span>You gain the following when you use <strong> Logo Design Maker </strong>for your magazine design:</span>} flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative Magazine Design Process" designProcess={designProcess} />
 
