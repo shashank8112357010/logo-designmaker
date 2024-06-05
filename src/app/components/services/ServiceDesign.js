@@ -24,7 +24,7 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                         {heading1}<span className="text-primaryGreen">{heading2}</span> <span>{heading3}</span>
                     </h2>
 
-                    <p className="font-normal -mb-8 text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] mt-2">
+                    <p className=" text-primaryGray font-normal -mb-8 text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] mt-2">
                         {para}
                     </p>
 
@@ -34,12 +34,12 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                             {
                                 servicesDesignData?.map((item) => {
                                     return (
-                                        <div key={item.id} className="flex flex-row justify-center gap-1">
+                                        <div key={item.id} className={`flex ${item.heading && "mt-5 mb-0"} flex-row justify-center gap-1`}>
                                             {/* <div className="w-6 h-2 relative mt-[18px]">
                                             </div> */}
-                                            <div className="text-primaryGreen font-bold text-mobBody sm:text-tabBody lg:text-lapBody leading-[21px] sm:leading-[25px] lg:leading-[28px] tracking-[-1px]">
-                                                <div className="font-normal text-primaryGray mt-4" dangerouslySetInnerHTML={{ __html: item.subHeading }}>
-                                                </div>
+                                            <div className="text-primaryGray font-bold text-mobBody sm:text-tabBody lg:text-lapBody leading-[21px] sm:leading-[25px] lg:leading-[28px] tracking-[-1px]">
+                                                {item.heading}<span className="font-normal text-primaryGray mt-4" dangerouslySetInnerHTML={{ __html: item.subHeading }}>
+                                                </span>
                                             </div>
                                         </div>
                                     )

@@ -10,8 +10,8 @@ export default function DesignProcess({ heading, designProcess }) {
                     {designProcess.map((item) => {
                         return (
                             <div key={item.id} className="w-[250px] lg:w-[350px] text-start pb-6 lg:pb-10 border-b-2 border-primaryGreen">
-                                <div className="text-white text-mobTitle sm:text-tabTitle lg:text-lapTitle font-semibold">{item.heading}</div>
-                                <div className="text-primaryGray text-mobBody sm:text-tabBody lg:text-lapBody leading-[20px] lg:leading-[28.8px] ">{item.para}</div>
+                                <div className="text-white text-mobTitle sm:text-tabTitle lg:text-lapTitle font-semibold" dangerouslySetInnerHTML={{ __html: item.heading }}></div>
+                                <div className="text-primaryGray text-mobBody sm:text-tabBody lg:text-lapBody leading-[20px] lg:leading-[28.8px] " dangerouslySetInnerHTML={{ __html: item.para }}></div>
                             </div>
                         )
                     })}
