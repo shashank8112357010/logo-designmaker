@@ -13,7 +13,7 @@ export default function ServicesCTA({ heading, para, imgSrc }) {
                         <h2 className="text-mobHeaderText text-center lgg:text-start sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[22px] sm:leading-[33px] lg:leading-[58px] tracking-[-1px]">
                             {heading}
                         </h2>
-                        <p className="text-mobHeaderBody text-center lgg:text-start sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[21px] lg:leading-[25px]">
+                        <p className="text-mobHeaderBody text-center lgg:text-start sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[21px] lg:leading-[25px] text-primaryGray">
                             {para}
                         </p>
                         <div className="mt-4">

@@ -19,14 +19,14 @@ export default function ServiceIntro({ imgSrc, subHeading1, subHeading2, heading
                     <h2 className="text-mobHeading1 sm:text-tabHeading1 lg:text-lapHeading1 font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px]">
                         {heading1}<span className="text-primaryGreen">{heading2}</span> <span>{heading3}</span>
                     </h2>
-                    <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] ">
+                    <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px]  text-primaryGray">
                         {para1}
                     </p>
-                    <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] my-2">
+                    <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] my-2 text-primaryGray">
                         {para2}
                     </p>
                     {para3 &&
-                        <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] my-2">
+                        <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] my-2 text-primaryGray">
                             {para3}
                         </p>
                     }

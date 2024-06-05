@@ -86,7 +86,7 @@ export default function HeroBanner() {
                             </div>
                         </h1>
                         <div className="text-white flex flex-col justify-center items-center">
-                            <p className="mb-2 sm:mb-8 text-center text-mobHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[19px] sm:leading-[22px] lg:leading-[25px] tracking-[-0.2px] max-w-[330px] sm:max-w-5xl">Ditch the robots, craft a logo you&apos;ll love with a human designer by your side.</p>
+                            <p className="mb-2 sm:mb-8 text-center text-primaryGray text-mobHeaderBody sm:text-tabHeaderBody lg:text-lapHeaderBody font-medium leading-[19px] sm:leading-[22px] lg:leading-[25px] tracking-[-0.2px] max-w-[330px] sm:max-w-5xl">Ditch the robots, craft a logo you&apos;ll love with a human designer by your side.</p>
                             <div className="flex flex-row relative rounded-t-xl">
                                 {
                                     currentInput && (

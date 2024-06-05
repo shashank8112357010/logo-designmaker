@@ -10,6 +10,7 @@ import { servicesDesignData1, servicesDesignData2, tellStoryContent } from "@/da
 import Faqq from "@/app/atom/Faqq";
 import TellStoryContent from "@/app/components/home/tellStory/TellStoryContent";
 import ServiceDesign from "@/app/components/services/ServiceDesign";
+import ServiceIntro from "@/app/components/services/ServiceIntro";
 
 export default function PackagingLabelDesigns() {
     const [content, setContent] = useState(1)
@@ -43,11 +44,13 @@ export default function PackagingLabelDesigns() {
 
             <ServicesBanner heading="Design that Sells: The Power of " subHeading="Packaging & Labeling" para="In today's retail scene, first impressions are key. Packaging and labeling aren't just functional—they're powerful marketing tools. At Logo Design Maker, we grasp their importance. Our skilled designers create eye-catching packaging and labels that protect your product, attract attention, convey your brand's message, and boost sales." />
 
-            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="From Concept to Creation: Crafting " subHeading2="Packaging that Captivates" heading1="From Shelf Appeal to Brand Advocacy: The Tangible Benefits of Exceptional " heading2="Packaging & Labelling" para="Investing in professional packaging and labeling design is more than just creating something visually appealing; it's a strategic investment that delivers tangible benefits for your brand:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="Unleash the Power of " heading2="Custom Packaging Designs" para1={<span>First impressions of products are quite important in the competitive market of today. Leave simple packing behind! <strong>packaging label design</strong> created especially for you are effective marketing tools.</span>} para2={<span>Experienced <strong> package designers</strong> at Logo Design Maker create eye-catching, educational designs that increase sales and convey your business message. Your product is protected by our <strong> custom packaging design</strong>, which also makes it leap off the shelves rather than be missed.</span>} withButton={true} flexDirection="flex-row" />
+
+            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="Beyond the Logo: Building a Cohesive " subHeading2="Brand Identity" heading1="From Concept to Creation: Crafting " heading2="Packaging Designs" heading3=" that Captivate" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
-                    <DesignHeader heading="A Symphony of Design Solutions for" subHeading="Your Products" para="We offer a comprehensive range of packaging and labeling design services to cater to your specific needs. Here's a glimpse into how we can help you create packaging and labeling that sells:" />
+                    <DesignHeader heading="For Your Products, a Symphony of " subHeading="Design Solutions" para="We provide a full spectrum of labelling and packaging design services to meet your particular requirements:" />
                 </div>
                 <div className="tellStoryContent flex flex-col-reverse md:flex-col sm:px-10 lg:px-20 w-full pb-20">
                     <Story setContent={setContent} content={content} arrayData={[1, 2]} />
@@ -57,10 +60,10 @@ export default function PackagingLabelDesigns() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/smart-equity-financing-agreement-for-startup.png" heading1="Ready to transform your " heading2="into potent marketing tools?" heading3="into potent marketing tools?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignEarth.png" heading1="Beyond the Box: Examining " heading2="Extra Design" heading3="Options" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
-            <div className="mt-28 sm:mt-52">
-                <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Drive your product&apos;s success with compelling design: Act now!" para="Investing in professional packaging and labeling design is an investment in your product&apos;s success. At Logo Design Maker, we offer a comprehensive suite of design services to cater to your specific needs and product positioning. Our experienced designers can create visually captivating packaging and labels that not only grab attention but also effectively communicate your brand message and entice customers to choose your product." />
+            <div className="mt-28 sm:mt-40">
+                <ServicesCTA imgSrc="/services/SocialMediaDesignFuel.png" heading="Are you prepared to use custom packaging design to elevate your brand?" para="Allow our staff of skilled designers to assist you create bespoke packaging designs that will not only look amazing but also be carefully planned to meet your marketing objectives. Get a free consultation with us now to find out how we can make your brand stand out from the competitors." />
             </div>
 
             <Faqq faqs={faqs} />

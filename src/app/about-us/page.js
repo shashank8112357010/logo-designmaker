@@ -38,7 +38,7 @@ export default function AboutUs() {
                             Unveiling the Soul of Logo Design:
                             Your Brand&apos;s Creative Companion
                         </h1>
-                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
+                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-center max-w-[350px] sm:max-w-[500px] text-primaryGray">
                             Welcome to the heart of Logo Design Maker, where passionate designers and strategic thinking collide to craft <strong> memorable logos</strong> that elevate your brand.
                         </p>
                     </div>
@@ -73,7 +73,7 @@ export default function AboutUs() {
                                 The Human Advantage:
                                 <span className="text-primaryGreen">&nbsp; Why We Go Beyond AI</span>
                             </h2>
-                            <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] ">
+                            <p className="font-normal text-mobBody sm:text-tabBody lg:text-lapBody tracking-[0.5px] leading-[18px] lg:leading-[28px] text-primaryGray ">
                                 In the age of automation, you might wonder why choose human designers over AI logo makers? The answer lies in the power of human connection and strategic thinking. Unlike AI, our designers don&apos;t just generate generic visuals. They take the time to understand your brand on a deeper level.
                             </p>
 

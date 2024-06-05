@@ -38,7 +38,7 @@ export default function ServiceDesign({ imgSrc, subHeading1, subHeading2, headin
                                             {/* <div className="w-6 h-2 relative mt-[18px]">
                                             </div> */}
                                             <div className="text-primaryGreen font-bold text-mobBody sm:text-tabBody lg:text-lapBody leading-[21px] sm:leading-[25px] lg:leading-[28px] tracking-[-1px]">
-                                                <div className="font-normal text-white mt-4" dangerouslySetInnerHTML={{ __html: item.subHeading }}>
+                                                <div className="font-normal text-primaryGray mt-4" dangerouslySetInnerHTML={{ __html: item.subHeading }}>
                                                 </div>
                                             </div>
                                         </div>
