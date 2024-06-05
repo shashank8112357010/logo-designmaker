@@ -20,7 +20,7 @@ export default function MagazineDesign() {
                     <Image src="/pricing/RightGrPricing.png" width={856} height={815} alt="linear-gradient-bottom" />
                 </div>
 
-                <main className="top-[40%] md:top-[40%] z-30 min-h-[641px] absolute sm:px-0 sm:mt-5">
+                <main className="top-[40%] sm:top-[30%] z-30 min-h-[641px] absolute sm:px-0 sm:mt-5">
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
                         <span className="font-[100px] text-center w-full font-springRainSolid text-white leading-[25px] lg:leading-[45px] text-[20px] lg:text-[35px]">
                             Services
@@ -28,16 +28,19 @@ export default function MagazineDesign() {
                         <h1 className="w-full text-mobHeaderTex text-centert sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] max-w-[300px] sm:max-w-5xl">
                             Captivate Your Audience with Award-Winning <span className="text-primaryGreen">Magazine Design</span>
                         </h1>
-                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
-                            In today&apos;s digital world, magazines still have a huge impact. At Logo Design Maker, we&apos;re all about creating eye-catching designs that really connect with people. Whether you&apos;re starting from scratch or giving your magazine a makeover, our team is here to make it happen.
+                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-primaryGray text-center max-w-[350px] sm:max-w-[500px] md:max-w-[700px] px-2 sm:px-0">
+                            In the digital era of today, well-designed publications are still quite powerful. A visually arresting magazine design may draw readers in, improve reading, and make an impression that lasts a lifetime. At Logo Design Maker, we specialize in producing visually attractive magazine designs that are also expertly developed to excite your target market and improve your brand. Our staff of talented designers can assist you in realizing your idea whether you're starting a new magazine or redesigning an old one.
+
                         </p>
                     </div>
                 </main>
-
             </div>
-            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Art & Science of " heading2="Magazine Design" para1="Magazine design is a blend of art and science. Our designers understand the importance of visual appeal, clear hierarchy, and user-friendly layouts that guide readers through your content. We also consider the specific needs of your target audience and the overall tone of your magazine." para2="From crafting eye-catching magazine cover designs that grab attention on newsstands to designing layouts that enhance readability and information flow, we ensure your magazine delivers a truly immersive experience for your readers." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Magazine with " heading2="Our Magazine Design Services" para="When you choose Logo Design Maker for your magazine design, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <div className="mt-64 sm:mt-0">
+                <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="The Art & Science of " heading2="Magazine Design" para1="Designing a magazine combines science and art. Visual appeal, a clear hierarchy, and user-friendly layouts that lead readers through your material are all important to our designers. We also take into account the general tenor of your publication and the particular requirements of your target reader." para2="We guarantee your magazine provides a very immersive experience for your readers, from creating visually arresting magazine cover designs that draw attention on newsstands to creating layouts that improve reading and content flow." withButton={true} flexDirection="flex-row" />
+            </div>
+
+            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Magazine with " heading2="Our Magazine Design Services" para="You gain the following when you use Logo Design Maker for your magazine design:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
             <DesignProcess heading="Our Collaborative Magazine Design Process" designProcess={designProcess} />
 

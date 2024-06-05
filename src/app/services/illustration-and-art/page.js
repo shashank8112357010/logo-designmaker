@@ -47,7 +47,7 @@ export default function IllustrationArt() {
 
             <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="Creating Visual Narratives from " heading2=" Concept to Creation" para1={<span>We can help with everything from unique mascots for your business to eye-catching illustrations for your website and interesting graphics for your marketing materials. Our <strong> graphic design and illustration </strong> services are customized to your vision and demands.</span>} para2="By working together, we will learn about your target market, ideal aesthetic, and brand identity. Your idea will then be translated by our artists into visually stunning images that will captivate your audience and make an impression." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/illustrationDesgin.png" subHeading1="From Concept to Creation: " subHeading2="Crafting Visual Narratives" heading1="Business Results to Brand Resonance: The Strategic Benefits of " heading2="Art and Illustration" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignBeyond.png" subHeading1="From Concept to Creation: " subHeading2="Crafting Visual Narratives" heading1="Business Results to Brand Resonance: The Strategic Benefits of " heading2="Art and Illustration" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
@@ -61,10 +61,10 @@ export default function IllustrationArt() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/readyToUnleash.png" heading1="Boost the Development of Your " heading2="Brand " heading3=": Act Right Now!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignEarth.png" heading1="Boost the Development of Your " heading2="Brand " heading3=": Act Right Now!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className="mt-0 md:mt-28">
-                <ServicesCTA imgSrc="/services/takeYourAction.png" heading="All set to give your brand the power of art and illustration?" para="Tell your brand narrative, but make it visual! Work with Logo Design Maker to let our group of gifted artists to bring your brand to life with eye-catching images and distinctive graphics that enthrall your audience and take your business to new heights. Contact us now to start creating a work of art based on your brand identity!" />
+                <ServicesCTA imgSrc="/services/SocialMediaDesignFuel.png" heading="All set to give your brand the power of art and illustration?" para="Tell your brand narrative, but make it visual! Work with Logo Design Maker to let our group of gifted artists to bring your brand to life with eye-catching images and distinctive graphics that enthrall your audience and take your business to new heights. Contact us now to start creating a work of art based on your brand identity!" />
             </div>
 
             <Faqq faqs={faqs} />

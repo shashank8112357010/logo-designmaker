@@ -46,7 +46,7 @@ export default function PackagingLabelDesigns() {
 
             <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="Unleash the Power of " heading2="Custom Packaging Designs" para1={<span>First impressions of products are quite important in the competitive market of today. Leave simple packing behind! <strong>packaging label design</strong> created especially for you are effective marketing tools.</span>} para2={<span>Experienced <strong> package designers</strong> at Logo Design Maker create eye-catching, educational designs that increase sales and convey your business message. Your product is protected by our <strong> custom packaging design</strong>, which also makes it leap off the shelves rather than be missed.</span>} withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="Beyond the Logo: Building a Cohesive " subHeading2="Brand Identity" heading1="From Concept to Creation: Crafting " heading2="Packaging Designs" heading3=" that Captivate" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignBeyond.png" subHeading1="Beyond the Logo: Building a Cohesive " subHeading2="Brand Identity" heading1="From Concept to Creation: Crafting " heading2="Packaging Designs" heading3=" that Captivate" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">

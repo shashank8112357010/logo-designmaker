@@ -59,7 +59,7 @@ export default function BookMagazineDesigns() {
 
                 <ServicesBanner heading="Captivate Readers, Fuel Imagination: Unleash the Power of " subHeading="Book & Magazine Design" para={<span>As they say in publishing, first impressions count. An <strong>engaging magazine design</strong> or <strong>book cover design</strong> can make the difference between a reader picking it up and glancing right past it. We here at <strong> Logo Design Maker</strong> are aware of how important book design is to the success of your publication.</span>} />
 
-                <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="Beyond Aesthetics: " subHeading2=" Design that Tells a Story" heading1="Professional " heading2="Book & Magazine Design" heading3=": A Strategic Investment for Success"
+                <ServiceDesign imgSrc="/services/SocialMediaDesignBeyond.png" subHeading1="Beyond Aesthetics: " subHeading2=" Design that Tells a Story" heading1="Professional " heading2="Book & Magazine Design" heading3=": A Strategic Investment for Success"
                     flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
                 <div className="">
@@ -74,10 +74,10 @@ export default function BookMagazineDesigns() {
 
                 <Sliderr slideData={slideData} />
 
-                <ServiceDesign imgSrc="/services/readyToUnleash.png" heading1="Need Help with Your Book Design Project?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+                <ServiceDesign imgSrc="/services/SocialMediaDesignEarth.png" heading1="Need Help with Your Book Design Project?" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
                 <div className="">
-                    <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />
+                    <ServicesCTA imgSrc="/services/SocialMediaDesignFuel.png" heading="Fuel Your Publication's Success: Take Action Today!" para="Investing in professional book and magazine design is an investment in the success of your publication. At Logo Design Maker, we offer a variety of design packages to suit your specific needs and budget. Let our experienced designers create a visually stunning design that not only grabs attention but also accurately reflects the essence of your publication and fuels the imagination of your readers." />
                 </div>
 
                 <Faqq faqs={faqs} />

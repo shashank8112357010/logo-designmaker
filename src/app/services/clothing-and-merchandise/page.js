@@ -47,7 +47,7 @@ export default function ClothingMerchandise() {
 
             <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="From Concept to Creation: Crafting  " heading2="Wearable Stories " para1={<span>Whether you&apos;re launching a new clothing line, creating promotional <strong> merchandise for your business </strong>, or designing personalized gifts, we&apos;re here to help you translate your vision into reality. Our designers will work closely with you to understand your target audience, brand identity, and desired aesthetic.</span>} para2="Through a collaborative process, well develop captivating designs that resonate with your audience, spark conversations, and leave a lasting impression." withButton={true} flexDirection="flex-row" />
 
-            <ServiceDesign imgSrc="/services/customClothing&merhcandise.png" subHeading1="Beyond Function: " subHeading2="Apparel & Merchandise as Walking Billboards" heading1="The Strategic Benefits of " heading2="Custom Clothing & Merchandise" heading3=": From Brand Awareness to Fan Involvement" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignBeyond.png" subHeading1="Beyond Function: " subHeading2="Apparel & Merchandise as Walking Billboards" heading1="The Strategic Benefits of " heading2="Custom Clothing & Merchandise" heading3=": From Brand Awareness to Fan Involvement" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData1} />
 
             <div>
                 <div className="pt-20">
@@ -61,10 +61,10 @@ export default function ClothingMerchandise() {
 
             <Sliderr slideData={slideData} />
 
-            <ServiceDesign imgSrc="/services/readyToUnleash.png" heading1="Get Started Now to Grow Your Brand or Express Yourself " heading2="Stylishly!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignEarth.png" heading1="Get Started Now to Grow Your Brand or Express Yourself " heading2="Stylishly!" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData2} />
 
             <div className="mt-8 sm:mt-32 md:mt-44">
-                <ServicesCTA imgSrc="/services/takeYourAction.png" heading={<span>Ready to unleash the power of clothing and merchandise design?</span>} para={<span>Don&apos;t become part of the throng. Using personalized apparel and products created by <strong>Logo Design Maker</strong>, make a statement and stand out.<strong> Get in touch with us</strong> now and together we can turn your concepts into wearable masterpieces!</span>} />
+                <ServicesCTA imgSrc="/services/SocialMediaDesignFuel.png" heading={<span>Ready to unleash the power of clothing and merchandise design?</span>} para={<span>Don&apos;t become part of the throng. Using personalized apparel and products created by <strong>Logo Design Maker</strong>, make a statement and stand out.<strong> Get in touch with us</strong> now and together we can turn your concepts into wearable masterpieces!</span>} />
             </div>
 
             <Faqq faqs={faqs} />
