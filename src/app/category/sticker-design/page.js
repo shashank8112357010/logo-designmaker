@@ -29,7 +29,7 @@ export default function StickerDesign() {
                         <h1 className="w-full text-mobHeaderTex text-centert sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] max-w-[300px] sm:max-w-5xl">
                             Unleash Your Creativity: Custom <span className="text-primaryGreen">Sticker Design </span>for Every Occasion
                         </h1>
-                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
+                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px] md:max-w-[700px]">
                             Express yourself and virgin your personality with unequaled backbone designs. Whether you are decorating your laptop, water bottle, car, or only wanting to add a touch of whimsy to your quotidian life, impost stickers are a various and fun way to make a statement. At Logo Design Maker, we specialized in helping you bring your backbone pattern ideas to life. Design stickers online, with our easy choline or collaborate with our talented designers to make one of a kind stickers that are idealistic for you or your brand.
                         </p>
                     </div>
