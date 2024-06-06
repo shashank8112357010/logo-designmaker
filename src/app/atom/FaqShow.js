@@ -19,7 +19,7 @@ export default function FaqShow({ data, index, openIndex, setOpenIndex }) {
                 <Image src={isOpen ? "/home/UpArrow.png" : "/home/DownArrow.png"} width={15} height={15} alt={isOpen ? "DownArrowImg" : "UpArrowImg"} />
             </div>
             <div className="overflow-hidden">
-                <p className={`transition-all duration-500 ease-in-out ${isOpen ? "max-h-32" : "max-h-0"} text-mobBody max-w-xl lg:max-w-3xl sm:text-tabBody lg:text-lapBody text-primaryGrey`} dangerouslySetInnerHTML={{ __html: data.ans }}>
+                <p className={`transition-all duration-500 ease-in-out ${isOpen ? "max-h-40" : "max-h-0"} text-mobBody max-w-[75%] sm:text-tabBody lg:text-lapBody text-primaryGrey`} dangerouslySetInnerHTML={{ __html: data.ans }}>
                 </p>
             </div>
 

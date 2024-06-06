@@ -21,31 +21,32 @@ export default function BookCoverDesign() {
                     <Image src="/pricing/RightGrPricing.png" width={856} height={815} alt="linear-gradient-bottom" />
                 </div>
 
-                <main className="top-[40%] md:top-[40%] z-30 min-h-[641px] absolute sm:px-0 sm:mt-5">
+                <main className="top-[40%] sm:top-[30%] z-30 min-h-[641px] absolute sm:px-0 sm:mt-5">
                     <div className="flex justify-center items-center flex-col gap-2 sm:gap-6 w-full">
                         <span className="font-[100px] text-center w-full font-springRainSolid text-white leading-[25px] lg:leading-[45px] text-[20px] lg:text-[35px]">
                             Services
                         </span>
                         <h1 className="w-full text-mobHeaderTex text-centert sm:text-tabHeaderText lg:text-lapHeaderText font-bold leading-[28px] sm:leading-[35px] lg:leading-[58.85px] text-white capitalize text-center tracking-[-1px] lg:-tracking-[3px] max-w-[300px] sm:max-w-5xl">
-                            Unleash Your Book&apos;s Potential with a Stunning <span className="text-primaryGreen">Book Cover Design</span>
+                            Unleash Your Book&apos;s Potential with a Stunning <span className="text-primaryGreen"><strong> Book Cover Design</strong></span>
                         </h1>
-                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-white text-center max-w-[350px] sm:max-w-[500px]">
-                            Crafting unique book cover designs that captivate, reflect your story&apos;s essence, and entice readers to dive in. Let Logo Design Maker create your powerful marketing tool.
+                        <p className="text-tabHeaderBody font-medium leading-[22px] tracking-[0.2px] text-primaryGray text-center max-w-[350px] sm:max-w-[500px] md:max-w-[700px] px-2 sm:px-0">
+                            Your book cover pattern is the first gist your book makes on effectiveness readers. It&apos;s a right marketing tool that could pattern a book cover that grabs attention, accurately reflects your story is essence,&apos; and entices readers to dive in. At Logo Design Maker, we specialized in crafting book cover designs that are as unequaled as your book itself.
                         </p>
                     </div>
                 </main>
-
             </div>
 
-            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="The Power of a Professional " heading2="Book Cover Design" para1="In today's competitive publishing landscape, a professional book cover design is more important than ever. A well-designed cover can significantly increase your book's visibility and sales. It can help your book stand out on crowded shelves and online marketplaces, attracting the right readers and boosting your book's success." para2="Our experienced book cover designers understand the importance of creating covers that are not only visually appealing but also strategically designed to resonate with your target audience." withButton={true} flexDirection="flex-row" />
+            <div className="mt-64 sm:mt-0">
+                <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1="The Power of a Professional" heading2=" Book Cover Design" para1={<span>In today is competitor publishing landscape, a captain book cover pattern is more authorized than ever. A well designed cover could importantly improver your book is profile and sales. It could help your book stood out on crowded shelves and on line as well as &apos; marketplaces, attracting the right readers and boosting your book is success.</span>} para2={<span>Our experienced book cover designers learn the grandness of creating covers that are not only visually appealing but also strategically designed to vibrate with your direct audience.</span>} withButton={true} flexDirection="flex-row" />
+            </div>
 
-            <ServiceDesign imgSrc="/services/BrandDesigns.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Book with Our " heading2="Book Cover Design Services" para="When you choose Logo Design Maker for your book cover design, you benefit from:" flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
+            <ServiceDesign imgSrc="/services/SocialMediaDesignBeyond.png" subHeading1="BUILT FOR CREATIVE, PERFORMANCE & MARKETING TEAMS" heading1="Elevate Your Book with Our " heading2={<span><strong>Book Cover Design Services</strong></span>} para={<span>When you prefer Logo Design Maker for your book cover design, you welfare from:</span>} flexDirection="flex-row-reverse" servicesDesignData={servicesDesignData} />
 
-            <DesignProcess heading="Our Collaborative Book Cover Design Process" designProcess={designProcess} />
+            <DesignProcess heading="Our Collaborative Magazine Design Process" designProcess={designProcess} />
 
-            <ServiceIntro imgSrc="/services/Building Web and App Development.png" heading1="Unparalleled Quality & Exceptional Service" para1="At Logo Design Maker, we are passionate about helping authors bring their stories to life with captivating book cover designs. We believe a professional cover is an investment in your book's success. We offer a collaborative and transparent process, ensuring you're involved every step of the way." para2="Our team of experienced and talented book cover designers is dedicated to creating high-quality covers that not only look amazing but also effectively market your book." withButton={true} flexDirection="flex-row" />
+            <ServiceIntro imgSrc="/services/clothing&merchandiseDesign.png" heading1={<span>Unparalleled Quality & Exceptional Service</span>} para1={<span>At Logo Design Maker, we are aflame about helping authors bring their stories to life with captivating book cover designs. We consider a captain cover is an investing in your book is success. We offer a cooperative and vaporous process, ensuring you was involved every step of the way.</span>} para2={<span>Our team of experienced and talented book cover designers was dedicated to creating high quality covers that not only looked amazing but also efficaciously marketed your book.</span>} withButton={true} flexDirection="flex-row" />
 
-            <ServicesCTA imgSrc="/services/takeYourAction.png" heading="Ready to Unlock Your Book's Full Potential?" para="Partner with Logo Design Maker and experience the difference a human touch can make. Contact us today to schedule a free consultation and discuss your custom logo design needs." />
+            <ServicesCTA imgSrc="/services/SocialMediaDesignFuel.png" heading="Ready to Unlock Your Book's Full Potential?" para={<span>Do not settee for an unpainted cover that blends into the background. Let our skilled designers make a book cover pattern that captures the meat of your book and compels readers to dive in. Contact us today for a free audience and discovered how we could help you promote your book with a pattern a book cover that truly stands out.</span>} />
 
             <Faqq faqs={faqs} />
 

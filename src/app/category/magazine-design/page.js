@@ -16,7 +16,7 @@ export default function MagazineDesign() {
                 <div className="absolute left-0 top-20">
                     <Image src="/pricing/LeftGrPricing.png" width={856} height={815} alt="linear-gradient-top" />
                 </div>
-                <div className="absolute top-20 right-0 ">
+                <div className="absolute top-20 right-0">
                     <Image src="/pricing/RightGrPricing.png" width={856} height={815} alt="linear-gradient-bottom" />
                 </div>
 
