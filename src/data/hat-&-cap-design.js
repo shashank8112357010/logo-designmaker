@@ -7,10 +7,10 @@ export const servicesDesignData = [
 ]
 
 export const faqs = [
-    { id: 1, ques: "What kinds of hats and caps can you design?", ans: "We offer an extensive variety of custom hat and cap design choices including baseball caps, snapbacks, beanies, and more. Go ahead and examine your particular requirements with our team." },
-    { id: 2, ques: "How long does the hat and cap design process take?", ans: "The course of events for our hat and cap design services varies relying upon the intricacy and quantity of the request. Typically, the interaction takes half a month from initial consultation to final conveyance." },
-    { id: 3, ques: "Can I demand modifications to the hat designs?", ans: "Absolutely! We offer limitless amendments during the design phase to guarantee your custom hats and caps meet your exact specifications and satisfaction." },
-    { id: 4, ques: " What makes Logo Design Maker's hat and cap design administrations unique?", ans: "Our emphasis on personalized help, top notch materials, and a collaborative design process separates us. Our accomplished hat designers are dedicated to rejuvenating your vision with creativity and accuracy." }
+    { id: 1, ques: "What kinds of hats and caps can you design?", ans: "We offer an extensive variety of <strong>custom hat and cap design</strong> choices including baseball caps, snapbacks, beanies, and more. Go ahead and examine your particular requirements with our team." },
+    { id: 2, ques: "How long does the hat and cap design process take?", ans: "The course of events for our <strong>hat and cap design services</strong> varies relying upon the intricacy and quantity of the request. Typically, the interaction takes half a month from initial consultation to final conveyance." },
+    { id: 3, ques: "Can I demand modifications to the hat designs?", ans: "Absolutely! We offer limitless amendments during the design phase to guarantee your <strong>custom hats and caps</strong> meet your exact specifications and satisfaction." },
+    { id: 4, ques: " What makes Logo Design Maker's hat and cap design administrations unique?", ans: "Our emphasis on personalized help, top notch materials, and a collaborative design process separates us. Our accomplished <strong>hat designers</strong> are dedicated to rejuvenating your vision with creativity and accuracy." }
 ]
 
 export const designProcess = [
