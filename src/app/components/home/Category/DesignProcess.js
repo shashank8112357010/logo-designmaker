@@ -2,9 +2,9 @@ export default function DesignProcess({ heading, designProcess }) {
     return (
         <div>
             <div className="text-center flex flex-col items-center gap-2 mb-6">
-                <div className="max-w-[280px] sm:max-w-[380px] lg:max-w-[650px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white">
+                <h2 className="max-w-[280px] sm:max-w-[380px] lg:max-w-[650px] lg:text-[38px] sm:text-[25px] text-[18px] font-bold leading-[21px] sm:leading-[29px] lg:leading-[44px] tracking-[-1px] text-white">
                     {heading}
-                </div>
+                </h2>
 
                 <div className="my-10 flex flex-wrap flex-row justify-center gap-16 px-4">
                     {designProcess.map((item) => {

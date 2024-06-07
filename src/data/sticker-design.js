@@ -5,16 +5,16 @@ export const servicesDesignData = [
 ]
 
 export const faqs = [
-    { id: 1, ques: "What type of materials do you offer for backbone  printing?", ans: "We offer a change of high quality materials to suit your appropriate needs. This includes vinyl, saved materials as well as and even glow in the dark options! Let us know your desired application, and we recommended the idealistic corporeal for your backbone design." },
-    { id: 2, ques: "What is the titular order bar for impost stickers?", ans: "We offer conciliatory order quantities to hold your needs. Whether you need a few stickers for yourself or a large bar for encouragement purposes, we could activity your order. Contact us for details on our titular order quantities and pricing options." },
-    { id: 3, ques: "Can I upload my own art for my backbone design?", ans: "Absolutely! Our on line, choline allows you to upload your own graphics,' logos, or illustrations to integrated into your backbone design. This is a great way to make truly personalized stickers that beam your unequaled style or brand identity." },
-    { id: 4, ques: "How long does it take to scram my impost stickers?", ans: "The reversal time for impost stickers depends on the complexness of your design, elect material,' and order quantity. However, we pride ourselves on fast reversal times. When you pattern your own stickers Joline,' you saw an estimated bringing date before placing your order. For projects involving our pattern team, we provided an Ameline based on the learn scope. <br/> We learn that receiving your impost stickers quick is important.That's why we prioritized efficacious yield processes and worked diligently to get your stickers to you as quick as possible." }
+    { id: 1, ques: "How long does the sticker design process take?", ans: "The sticker design process normally requires 1 fourteen days, contingent upon the intricacy and the quantity of amendments. We want to convey great sticker designs proficiently." },
+    { id: 2, ques: " Could I at any point demand updates for my custom sticker design?", ans: "Indeed, we offer limitless amendments during the design stage to guarantee you are totally happy with your<strong> custom stickers</strong>." },
+    { id: 3, ques: "What configurations will I accept my last sticker design in?", ans: "You will accept your custom stickers in different arrangements appropriate for both print and computerized use, including PNG, JPEG, and PDF." },
+    { id: 4, ques: " Do you offer design services for explicit sorts of stickers, similar to car stickers?", ans: "Totally! We spend significant time in an extensive variety of <strong>sticker designs</strong>, including <strong>car sticker designs</strong> business special stickers, from there, the sky's the limit. Reach us to examine your particular requirements." }
 ]
 
 export const designProcess = [
-    { id: 0, heading: "Initial Consultation", para: "Describe your desired sticker design concept to our experienced designers. Provide any inspiration, color preferences, or specific elements you envision." },
-    { id: 1, heading: "Content & Style Analysis", para: "Our designers will develop several unique sticker design concepts based on your input." },
-    { id: 2, heading: "Content & Style Analysis", para: "Our team will translate your vision into a professional sticker design. We offer multiple revision rounds to ensure you're completely satisfied with the final product." },
-    { id: 3, heading: "Revisions & Refinement", para: "We work closely with you throughout the process, incorporating your feedback and refining the design until it exceeds your expectations." },
-    { id: 4, heading: "Final Delivery", para: "You'll receive your final sticker design files in various formats optimized for different e-reader platforms." },
+    { id: 0, heading: "Share Your Vision", para: "Begin by sharing your thoughts and prerequisites for the custom sticker design. This assists us with grasping your vision and objectives." },
+    { id: 1, heading: "Associate with a Designer", para: "Timetable video call with one of our accomplished designers to examine your venture exhaustively. This joint effort guarantees your sticker designs line up with your image or individual style." },
+    { id: 2, heading: "Audit Introductory Concepts", para: "Our designer will introduce beginning sticker design ideas in light of your conversations. Give input and ideas to refine the designs." },
+    { id: 3, heading: "Refine and Finalize", para: "In the wake of consolidating your criticism, we conclude the design, guaranteeing it measures up to your assumptions. Limitless corrections are accessible to accomplish flawlessness." },
+    { id: 4, heading: "Download and Use", para: "Once supported, download your custom stickers in different arrangements reasonable for print and computerized use. Partake in your customized stickers and do something significant!" },
 ]
